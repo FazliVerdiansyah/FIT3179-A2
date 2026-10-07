@@ -1,0 +1,15 @@
+# raw data, too large for git
+data/GMN/*.txt
+data/GMN/*.csv
+data/cobs/cobs.csv
+gmn_data/
+sandbox/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# os junk
+.DS_Store
+Thumbs.db

@@ -1,0 +1,23 @@
+instrument_type,observations,median_aperture_cm
+Newtonian,23048,30.0
+Schmidt-Cassegrain,5775,35.0
+Refractor,5394,10.0
+Binoculars,4689,7.0
+Cassegrain reflector,3098,31.5
+Ritchey-Chretien,1675,20.3
+Camera lens,1300,6.7
+Prime focus of a reflector,467,51.0
+Hyperboloid astro-camera,455,30.5
+Coronagraph,453,0.8
+Naked eye,307,0.7
+Schmidt-Newtonian,147,20.0
+Monocular 1x,85,5.0
+Schmidt reflector,82,28.0
+Maksutov,46,11.0
+Jones-Bird telescope,45,31.0
+"""small telescopes and finders"" with aperture not exceeding 4 inches",42,7.4
+Multiple-Mirror Telescope,9,20.0
+"""small telescopes"" with aperture in range 4-10 inches",8,15.5
+"""for observations with the largest telescopes""",6,61.0
+Volosov-Newtonian,3,15.0
+Klevtsov-Cassegrain,2,37.6
