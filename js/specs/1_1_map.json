@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "1.1 MPC observatory sites, proportional symbols per 5-degree grid cell",
+  "width": "container",
+  "height": "container",
+  "projection": { "type": "equalEarth", "fit": { "type": "Sphere" } },
+  "layer": [
+    {
+      "data": { "sphere": true },
+      "mark": { "type": "geoshape", "fill": "#f6f6f3", "stroke": "@grid", "strokeWidth": 1 }
+    },
+    {
+      "data": {
+        "url": "data/prepared/world-110m.json",
+        "format": { "type": "topojson", "feature": "countries" }
+      },
+      "mark": { "type": "geoshape", "fill": "#e8e7e1", "stroke": "#ffffff", "strokeWidth": 0.6 }
+    },
+    {
+      "data": { "url": "data/prepared/mpc_sites.csv" },
+      "transform": [
+        { "calculate": "floor(datum.lat / 5) * 5 + ',' + floor(datum.lon / 5) * 5", "as": "cell" },
+        {
+          "aggregate": [
+            { "op": "count", "as": "sites" },
+            { "op": "mean", "field": "lat", "as": "clat" },
+            { "op": "mean", "field": "lon", "as": "clon" }
+          ],
+          "groupby": ["cell"]
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "color": "@mpc",
+        "opacity": 0.35,
+        "stroke": "@mpc",
+        "strokeWidth": 1,
+        "strokeOpacity": 0.9
+      },
+      "encoding": {
+        "longitude": { "field": "clon", "type": "quantitative" },
+        "latitude": { "field": "clat", "type": "quantitative" },
+        "size": {
+          "field": "sites",
+          "type": "quantitative",
+          "title": "Sites per 5° cell",
+          "scale": { "type": "linear", "range": [0, { "expr": "width * width / 620" }], "zero": true },
+          "legend": { "values": [10, 50, 100], "orient": "bottom", "direction": "horizontal", "symbolFillColor": "@mpc", "symbolOpacity": 0.35, "symbolStrokeColor": "@mpc" }
+        },
+        "order": { "field": "sites", "sort": "descending" },
+        "tooltip": [
+          { "field": "sites", "type": "quantitative", "title": "Sites in this 5° cell" }
+        ]
+      }
+    },
+    {
+      "data": { "url": "data/prepared/mpc_sites.csv" },
+      "mark": { "type": "circle", "size": 5, "color": "#0d366b", "opacity": 0.75 },
+      "encoding": {
+        "longitude": { "field": "lon", "type": "quantitative" },
+        "latitude": { "field": "lat", "type": "quantitative" },
+        "tooltip": [
+          { "field": "name", "title": "Site" },
+          { "field": "code", "title": "MPC code" },
+          { "field": "lat", "type": "quantitative", "format": ".2f", "title": "Latitude" },
+          { "field": "lon", "type": "quantitative", "format": ".2f", "title": "Longitude" },
+          { "field": "country", "title": "Country (spatial join)" }
+        ]
+      }
+    }
+  ]
+}

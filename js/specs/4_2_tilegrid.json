@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "4.2 NASA Night Sky Network member clubs per US state on an equal-area tile grid",
+  "width": 528,
+  "height": 396,
+  "autosize": { "type": "pad" },
+  "data": {
+    "url": "data/prepared/us_clubs_by_state.csv",
+    "format": { "parse": { "row": "number", "col": "number", "clubs": "number" } }
+  },
+  "encoding": {
+    "x": { "field": "col", "type": "ordinal", "axis": null, "scale": { "domain": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "paddingInner": 0.08 } },
+    "y": { "field": "row", "type": "ordinal", "axis": null, "scale": { "domain": [0, 1, 2, 3, 4, 5, 6, 7, 8], "paddingInner": 0.08 } }
+  },
+  "layer": [
+    {
+      "mark": { "type": "rect", "cornerRadius": 3 },
+      "encoding": {
+        "color": {
+          "condition": { "test": "datum.clubs === 0", "value": "@nodata" },
+          "field": "clubs",
+          "type": "quantitative",
+          "title": "Member clubs",
+          "scale": {
+            "type": "threshold",
+            "domain": [3, 6, 10, 15, 25],
+            "range": ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95"]
+          },
+          "legend": { "orient": "top", "direction": "horizontal", "labelExpr": "datum.label" }
+        },
+        "tooltip": [
+          { "field": "name", "title": "State" },
+          { "field": "clubs", "type": "quantitative", "title": "Member clubs" }
+        ]
+      }
+    },
+    {
+      "mark": { "type": "text", "fontSize": 11, "fontWeight": 600, "baseline": "middle" },
+      "encoding": {
+        "text": { "field": "state" },
+        "color": {
+          "condition": { "test": "datum.clubs >= 15", "value": "#ffffff" },
+          "value": "@ink"
+        },
+        "tooltip": [
+          { "field": "name", "title": "State" },
+          { "field": "clubs", "type": "quantitative", "title": "Member clubs" }
+        ]
+      }
+    },
+    {
+      "data": { "values": [{ "col": 0, "row": 8 }] },
+      "mark": { "type": "rect", "cornerRadius": 3, "color": "@nodata" }
+    },
+    {
+      "data": { "values": [{ "col": 0, "row": 8, "t": "No member clubs in the network list" }] },
+      "mark": { "type": "text", "align": "left", "dx": 28, "fontSize": 11, "color": "@ink2" },
+      "encoding": { "text": { "field": "t" } }
+    }
+  ]
+}

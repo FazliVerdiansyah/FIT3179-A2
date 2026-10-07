@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "2.1 Lorenz curve of COBS observations across observers, least to most active",
+  "width": "container",
+  "height": 360,
+  "data": { "url": "data/prepared/cobs_lorenz.csv" },
+  "encoding": {
+    "x": {
+      "field": "cum_observers",
+      "type": "quantitative",
+      "title": "Cumulative share of observers (least → most active)",
+      "scale": { "domain": [0, 1] },
+      "axis": { "format": ".0%", "values": [0, 0.25, 0.5, 0.75, 1], "gridDash": [] }
+    },
+    "y": {
+      "field": "cum_obs",
+      "type": "quantitative",
+      "title": "Cumulative share of observations",
+      "scale": { "domain": [0, 1] },
+      "axis": { "format": ".0%", "values": [0, 0.25, 0.5, 0.75, 1], "gridDash": [] }
+    }
+  },
+  "layer": [
+    {
+      "data": { "values": [{ "a": 0, "b": 0 }, { "a": 1, "b": 1 }] },
+      "mark": { "type": "line", "color": "@muted", "strokeWidth": 1.5, "strokeDash": [5, 4] },
+      "encoding": {
+        "x": { "field": "a", "type": "quantitative" },
+        "y": { "field": "b", "type": "quantitative" }
+      }
+    },
+    {
+      "data": { "values": [{ "a": 0.36, "b": 0.30, "t": "Equal contribution" }] },
+      "mark": { "type": "text", "align": "left", "color": "@muted", "fontSize": 11 },
+      "encoding": {
+        "x": { "field": "a", "type": "quantitative" },
+        "y": { "field": "b", "type": "quantitative" },
+        "text": { "field": "t" }
+      }
+    },
+    {
+      "mark": { "type": "area", "color": "@cobs", "opacity": 0.1 }
+    },
+    {
+      "mark": { "type": "line", "color": "@cobs", "strokeWidth": 2 },
+      "encoding": {
+        "tooltip": [
+          { "field": "rank", "type": "quantitative", "title": "Observers counted" },
+          { "field": "cum_observers", "type": "quantitative", "format": ".1%", "title": "Share of observers" },
+          { "field": "cum_obs", "type": "quantitative", "format": ".1%", "title": "Share of observations" }
+        ]
+      }
+    },
+    {
+      "transform": [
+        { "filter": "datum.p90 === true || datum.p90 === 'True'" },
+        { "calculate": "1", "as": "top" }
+      ],
+      "mark": { "type": "rule", "color": "@ink", "strokeWidth": 1.5 },
+      "encoding": { "y2": { "field": "top" } }
+    },
+    {
+      "transform": [{ "filter": "datum.p90 === true || datum.p90 === 'True'" }],
+      "mark": { "type": "point", "filled": true, "size": 70, "color": "@ink", "stroke": "@surface", "strokeWidth": 2 }
+    },
+    {
+      "transform": [
+        { "filter": "datum.p90 === true || datum.p90 === 'True'" },
+        { "joinaggregate": [{ "op": "max", "field": "rank", "as": "bottom_n" }] },
+        { "calculate": "'Top 10% of observers'", "as": "l1" },
+        { "calculate": "'file ' + format(1 - datum.cum_obs, '.0%') + ' of all observations'", "as": "l2" },
+        { "calculate": "toNumber(datum.cum_obs) + 0.17", "as": "mid" }
+      ],
+      "layer": [
+        {
+          "mark": { "type": "text", "align": "right", "dx": -8, "dy": -8, "fontSize": 11, "fontWeight": 600, "color": "@ink" },
+          "encoding": { "y": { "field": "mid", "type": "quantitative" }, "text": { "field": "l1" } }
+        },
+        {
+          "mark": { "type": "text", "align": "right", "dx": -8, "dy": 7, "fontSize": 11, "color": "@ink2" },
+          "encoding": { "y": { "field": "mid", "type": "quantitative" }, "text": { "field": "l2" } }
+        }
+      ]
+    }
+  ]
+}

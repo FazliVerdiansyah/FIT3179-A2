@@ -1,0 +1,45 @@
+country,sites,observers,label
+United States,605,20,True
+Spain,324,12,True
+Italy,259,15,True
+Germany,191,17,True
+France,143,7,True
+Japan,142,12,True
+United Kingdom,129,23,True
+Australia,110,11,True
+Chile,67,1,False
+Russia,59,13,True
+China,52,7,False
+Argentina,38,3,False
+Canada,38,4,False
+Switzerland,35,1,False
+Brazil,34,18,True
+Austria,31,3,False
+South Africa,27,1,False
+Ukraine,24,4,False
+New Zealand,22,5,False
+Finland,21,4,False
+Poland,21,16,False
+Romania,19,1,False
+South Korea,18,1,False
+Hungary,16,3,False
+Netherlands,15,2,False
+Czech Republic,15,16,False
+Belgium,15,5,False
+Thailand,9,2,False
+Mexico,9,2,False
+Sweden,9,4,False
+Slovakia,8,6,False
+Morocco,8,1,False
+United Arab Emirates,7,1,False
+Slovenia,7,3,False
+India,7,3,False
+Norway,6,2,False
+Uruguay,4,1,False
+Belarus,3,1,False
+Venezuela,3,2,False
+Malaysia,3,1,False
+Bolivia,2,2,False
+Saudi Arabia,2,1,False
+Puerto Rico,1,1,False
+Oman,1,1,False

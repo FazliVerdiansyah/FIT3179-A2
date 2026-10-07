@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "1.3 MPC observatory sites per country vs distinct COBS observers per country, log-log",
+  "width": "container",
+  "height": 360,
+  "data": { "url": "data/prepared/country_sites_observers.csv" },
+  "encoding": {
+    "x": {
+      "field": "sites",
+      "type": "quantitative",
+      "title": "MPC observatory sites (log scale)",
+      "scale": { "type": "log", "domain": [1, 1000], "nice": false },
+      "axis": { "values": [1, 3, 10, 30, 100, 300, 1000], "format": "~s", "gridDash": [] }
+    },
+    "y": {
+      "field": "observers",
+      "type": "quantitative",
+      "title": "COBS observers, 2021–2025 (log scale)",
+      "scale": { "type": "log", "domain": [1, 30], "nice": false },
+      "axis": { "values": [1, 2, 5, 10, 20, 30], "gridDash": [] }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "circle",
+        "size": 70,
+        "color": "@ink2",
+        "opacity": 0.75,
+        "stroke": "@surface",
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "tooltip": [
+          { "field": "country", "title": "Country" },
+          { "field": "sites", "type": "quantitative", "title": "MPC sites" },
+          { "field": "observers", "type": "quantitative", "title": "COBS observers" }
+        ]
+      }
+    },
+    {
+      "transform": [{ "filter": "datum.label === true || datum.label === 'True'" }],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "color": "@ink",
+        "align": { "expr": "datum.country === 'United States' ? 'center' : 'left'" },
+        "dx": { "expr": "datum.country === 'United States' ? -8 : 7" },
+        "dy": { "expr": "datum.country === 'Australia' || datum.country === 'Italy' || datum.country === 'Spain' ? 11 : datum.country === 'United States' ? -9 : -6" }
+      },
+      "encoding": { "text": { "field": "country" } }
+    }
+  ]
+}

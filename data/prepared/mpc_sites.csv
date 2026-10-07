@@ -1,0 +1,2696 @@
+code,name,lat,lon,country
+000,Greenwich,51.477,0.0,United Kingdom
+001,Crowborough,51.052,0.154,United Kingdom
+002,Rayleigh,51.653,0.62,United Kingdom
+003,Montpellier,43.651,3.9,France
+004,Toulouse,43.612,1.462,France
+005,Meudon,48.805,2.231,France
+006,"Fabra Observatory, Barcelona",41.419,2.124,Spain
+007,Paris,48.836,2.337,France
+008,Algiers-Bouzareah,36.801,3.036,Algeria
+009,Berne-Uecht,46.954,7.442,Switzerland
+010,Caussols,43.751,6.921,France
+011,Wetzikon,47.319,8.798,Switzerland
+012,Uccle,50.799,4.358,Belgium
+013,Leiden,52.155,4.484,Netherlands
+014,Marseilles,43.306,5.395,France
+015,Utrecht,52.085,5.129,Netherlands
+016,Besancon,47.25,5.989,France
+017,Hoher List,50.161,6.849,Germany
+018,Dusseldorf-Bilk,51.207,6.761,Germany
+019,Neuchatel,46.997,6.958,Switzerland
+020,Nice,43.722,7.3,France
+021,Karlsruhe,49.024,8.386,Germany
+022,Pino Torinese,45.038,7.775,Italy
+023,Wiesbaden,50.081,8.262,Germany
+024,Heidelberg-Konigstuhl,49.399,8.722,Germany
+025,Stuttgart,48.783,9.196,Germany
+026,Berne-Zimmerwald,46.877,7.465,Switzerland
+027,Milan,45.466,9.191,Italy
+028,Wurzburg,49.791,9.936,Germany
+029,Hamburg-Bergedorf,53.48,10.241,Germany
+030,"Arcetri Observatory, Florence",43.751,11.254,Italy
+031,Sonneberg,50.377,11.19,Germany
+032,Jena,50.925,11.583,Germany
+033,"Karl Schwarzschild Observatory, Tautenburg",50.98,11.711,Germany
+034,"Monte Mario Observatory, Rome",41.922,12.452,Italy
+035,Copenhagen,55.687,12.576,Denmark
+036,Castel Gandolfo,41.747,12.65,Italy
+037,"Collurania Observatory, Teramo",42.657,13.733,Italy
+038,Trieste,45.643,13.77,Italy
+039,Lund,55.698,13.187,Sweden
+040,"Lohrmann Institute, Dresden",51.031,13.73,Germany
+041,Innsbruck,47.268,11.381,Austria
+042,Potsdam,52.38,13.064,Germany
+043,"Asiago Astrophysical Observatory, Padua",45.866,11.526,Italy
+044,"Capodimonte Observatory, Naples",40.863,14.256,Italy
+045,Vienna (since 1879),48.232,16.339,Austria
+046,"Klet Observatory, Ceske Budejovice",48.863,14.288,Czech Republic
+047,Poznan,52.399,16.878,Poland
+048,Hradec Kralove,50.177,15.841,Czech Republic
+049,Uppsala-Kvistaberg,59.5,17.607,Sweden
+050,Stockholm (before 1931),59.342,18.058,Sweden
+051,"Royal Observatory, Cape of Good Hope",-33.934,18.477,South Africa
+052,Stockholm-Saltsjobaden,59.272,18.308,Sweden
+053,"Konkoly Observatory, Budapest (since 1933)",47.5,18.964,Hungary
+054,Brorfelde,55.622,11.665,Denmark
+055,Cracow,50.065,19.96,Poland
+056,Skalnate Pleso,49.19,20.234,Slovakia
+057,Belgrade,44.804,20.513,Serbia
+058,Kaliningrad,54.713,20.495,Russia
+059,Lomnicky Stit,49.196,20.22,Slovakia
+060,Warsaw-Ostrowik,52.09,21.42,Poland
+061,Uzhhorod,48.633,22.298,Ukraine
+062,Turku,60.452,22.229,Finland
+063,Turku-Tuorla,60.416,22.445,Finland
+064,Turku-Kevola,60.42,22.75,Finland
+065,Traunstein,47.862,12.632,Germany
+066,Athens,37.972,23.718,Greece
+067,Lviv University Observatory,49.833,24.03,Ukraine
+068,Lviv Polytechnic Institute,49.836,24.014,Ukraine
+069,Baldone,56.773,24.404,Latvia
+070,Vilnius (before 1939),54.683,25.286,Lithuania
+071,"NAO Rozhen, Smolyan",41.693,24.738,Bulgaria
+072,Scheuren Observatory,51.089,7.17,Germany
+073,Bucharest,44.412,26.094,Romania
+074,"Boyden Observatory, Bloemfontein",-29.038,26.406,South Africa
+075,Tartu,58.38,26.722,Estonia
+076,Johannesburg-Hartbeespoort,-25.773,27.877,South Africa
+077,"Yale-Columbia Station, Johannesburg",-26.187,28.029,South Africa
+078,Johannesburg,-26.182,28.075,South Africa
+079,"Radcliffe Observatory, Pretoria",-25.788,28.229,South Africa
+080,Istanbul,41.013,28.967,Turkey
+081,"Leiden Station, Johannesburg",-25.773,27.877,South Africa
+082,St. Polten,48.088,15.756,Austria
+083,Holosiivskyi district-Kyiv,50.365,30.506,Ukraine
+084,Pulkovo,59.772,30.327,Russia
+085,Kyiv,50.453,30.502,Ukraine
+086,Odesa,46.477,30.758,Ukraine
+087,Helwan,29.859,31.341,Egypt
+088,Kottomia,29.934,31.828,Egypt
+089,Mykolaiv,46.972,31.975,Ukraine
+090,Mainz,49.943,8.25,Germany
+091,"Observatoire de Nurol, Aurec sur Loire",45.381,4.209,France
+092,Torun-Piwnice,53.096,18.555,Poland
+093,Skibotn,69.349,20.365,Norway
+094,Crimea-Simeiz,44.403,33.997,Russia
+095,Crimea-Nauchnyi,44.727,34.016,Russia
+096,Merate,45.699,9.428,Italy
+097,"Wise Observatory, Mitzpeh Ramon",30.596,34.762,Israel
+098,"Asiago Observatory, Cima Ekar, 182 cm Copernicus",45.849,11.569,Italy
+099,Lahti,61.13,25.535,Finland
+100,Ahtari,62.617,24.141,Finland
+101,Kharkiv,50.003,36.232,Ukraine
+102,Zvenigorod,55.7,36.76,Russia
+103,Ljubljana,46.044,14.528,Slovenia
+104,San Marcello Pistoiese,44.064,10.804,Italy
+105,Moscow,55.756,37.571,Russia
+106,Crni Vrh,45.946,14.071,Slovenia
+107,Cavezzo,44.863,11.003,Italy
+108,Montelupo,43.738,11.028,Italy
+109,Algiers-Kouba,36.733,3.07,Algeria
+110,Rostov,57.189,39.415,Russia
+111,"Piazzano Observatory, Florence",43.679,10.972,Italy
+112,"Pleiade Observatory, Verona",45.484,10.904,Italy
+113,"Volkssternwarte Drebach, Schoenbrunn",50.677,13.017,Germany
+114,"Engelhardt Observatory, Zelenchukskaya Station",43.656,41.428,Russia
+115,Zelenchukskaya,43.647,41.441,Russia
+116,Giesing,48.115,11.596,Germany
+117,Sendling,48.113,11.538,Germany
+118,"Astronomical and Geophysical Observatory, Modra",48.373,17.274,Slovakia
+119,Abastuman,41.754,42.82,Georgia
+120,Visnjan,45.278,13.726,Croatia
+121,"Kharkiv University, Chuhuivskyi district Station",49.641,36.934,Ukraine
+122,Pises Observatory,44.04,3.504,France
+123,Byurakan,40.335,44.292,Armenia
+124,Castres,43.601,2.255,France
+125,Tbilisi,41.717,44.79,Georgia
+126,Monte Viseggi L. Zannoni Observatory,44.133,9.79,Italy
+127,Bornheim,50.76,6.98,Germany
+128,Saratov,51.538,46.007,Russia
+129,Ordubad,39.135,45.92,Azerbaijan
+130,Lumezzane,45.665,10.24,Italy
+131,Observatoire de l'Ardeche,44.677,4.725,France
+132,Bedoin,44.113,5.246,France
+133,Les Tardieux,43.362,5.091,France
+134,Groszschwabhausen,50.928,11.482,Germany
+135,Kasan,55.79,49.121,Russia
+136,"Engelhardt Observatory, Kasan",55.839,48.816,Russia
+137,Givatayim Observatory,32.07,34.815,Israel
+138,Village-Neuf,47.605,7.572,France
+139,Antibes,43.606,7.111,France
+140,Augerolles,45.718,3.629,France
+141,Hottviller,49.067,7.367,France
+142,Sinsen,51.664,7.187,Germany
+143,Gnosca,46.231,9.024,Switzerland
+144,Bray et Lu,49.139,1.666,France
+145,'s-Gravenwezel,51.24,4.56,Belgium
+146,Frignano,44.288,10.667,Italy
+147,Osservatorio Astronomico di Suno,45.637,8.574,Italy
+148,Guitalens,43.644,2.038,France
+149,Beine-Nauroy,49.25,4.224,France
+150,Maisons Laffitte,48.944,2.157,France
+151,"Eschenberg Observatory, Winterthur",47.476,8.744,Switzerland
+152,Moletai Astronomical Observatory,55.316,25.563,Lithuania
+153,Stuttgart-Hoffeld,48.738,9.175,Germany
+154,Cortina,46.542,12.104,Italy
+155,"Ole Romer Observatory, Aarhus",56.128,10.197,Denmark
+156,Catania Astrophysical Observatory,37.503,15.086,Italy
+157,Frasso Sabino,42.228,12.812,Italy
+158,Promiod,45.786,7.603,Italy
+159,Monte Agliale,43.995,10.515,Italy
+160,Castelmartini,43.823,10.841,Italy
+161,Cerrina Tololo Observatory,45.088,8.161,Italy
+162,Potenza,40.65,15.78,Italy
+163,"Roeser Observatory, Luxembourg",49.543,6.149,Luxembourg
+164,St. Michel sur Meurthe,48.316,6.886,France
+165,"Piera Observatory, Barcelona",41.522,1.755,Spain
+166,Upice,50.507,16.012,Czech Republic
+167,Bulach Observatory,47.52,8.573,Switzerland
+168,Kourovskaya,57.037,59.547,Russia
+169,Airali Observatory,45.077,8.402,Italy
+170,Observatorio de Begues,41.332,1.921,Spain
+171,"Flarestar Observatory, San Gwann",35.91,14.47,Malta
+172,Onnens,46.794,7.036,Switzerland
+173,"St. Clotilde, Reunion",-20.898,55.506,France
+174,"Nyrola Observatory, Jyvaskyla",62.347,25.513,Finland
+175,"F.-X. Bagnoud Observatory, St-Luc",46.231,7.608,Switzerland
+176,Observatorio Astronomico de Consell,39.654,2.822,Spain
+177,Le Cres,43.647,3.941,France
+178,Collonges,46.135,6.134,France
+179,Monte Generoso,45.928,9.018,Switzerland
+180,Mauguio,43.568,3.952,France
+181,"Observatoire des Makes, Saint-Louis",-21.2,55.41,France
+182,"St. Paul, Reunion",-21.013,55.259,France
+183,"Starlab Observatory, Karachay-Cherkessia",43.65,41.42,Russia
+184,"Valmeca Observatory, Puimichel",43.981,6.036,France
+185,Observatoire Astronomique Jurassien-Vicques,47.353,7.422,Switzerland
+186,Kitab,39.134,66.882,Uzbekistan
+187,"Astronomical Observatory, Borowiec",52.277,17.073,Poland
+188,Maidanak,38.673,66.896,Uzbekistan
+189,Geneva (before 1967),46.2,6.151,Switzerland
+190,Gissar,38.49,68.682,Tajikistan
+191,Dushanbe,38.561,68.781,Tajikistan
+192,Tashkent,41.325,69.294,Uzbekistan
+193,Sanglok,38.261,69.218,Tajikistan
+194,Tivoli,-23.462,18.009,Namibia
+195,"Untermenzing Observatory, Munich",48.184,11.449,Germany
+196,Homburg-Erbach,49.332,7.333,Germany
+197,Bastia,44.257,12.184,Italy
+198,Wildberg,48.632,8.757,Germany
+199,"Telescope Jean-Marc Salomon, Buthiers",48.292,2.438,France
+200,Beersel Hills Observatory,50.76,4.304,Belgium
+201,Jonathan B. Postel Observatory,45.785,7.603,Italy
+202,"Tamaris Observatoire, La Seyne sur Mer",43.095,5.9,France
+203,GiaGa Observatory,45.541,8.995,Italy
+204,Schiaparelli Observatory,45.868,8.77,Italy
+205,"Obs. Casalecchio di Reno, Bologna",44.472,11.273,Italy
+206,"Haagaar Observatory, Eina",60.601,10.567,Norway
+207,Osservatorio Antonio Grosso,45.545,9.306,Italy
+208,Rivalta,44.949,9.588,Italy
+209,"Asiago Observatory, Cima Ekar, 67/92 cm Schmidt",45.85,11.569,Italy
+210,Alma-Ata,43.188,76.957,Kazakhstan
+211,Scandicci,43.762,11.176,Italy
+212,Observatorio La Dehesilla,36.653,-4.643,Spain
+213,Observatorio Montcabre,41.52,2.385,Spain
+214,Garching Observatory,48.257,11.657,Germany
+215,Buchloe,48.017,10.733,Germany
+216,Observatoire des Cote de Meuse,49.002,5.691,France
+217,Assah,43.226,77.871,Kazakhstan
+218,Hyderabad,17.432,78.454,India
+219,Japal-Rangapur,17.098,78.728,India
+220,"Vainu Bappu Observatory, Kavalur",12.576,78.826,India
+221,"IAS Observatory, Hakos",-23.236,16.362,Namibia
+222,Yerres-Canotiers,48.71,2.494,France
+223,Madras,13.069,80.246,India
+224,Ottmarsheim,47.785,7.502,France
+225,Northwood Ridge Observatory,43.228,-71.175,United States
+226,"Guido Ruggieri Observatory, Padua",45.434,11.886,Italy
+227,"OrbitJet Observatory, Colden",42.638,-78.715,United States
+228,"Bruno Zugna Observatory, Trieste",45.642,13.875,Slovenia
+229,"G. C. Gloriosi Astronomical Observatory, Salerno",40.691,14.974,Italy
+230,Mt. Wendelstein Observatory,47.704,12.013,Germany
+231,Vesqueville,50.005,5.398,Belgium
+232,Masquefa Observatory,41.509,1.332,Spain
+233,"Sauro Donati Astronomical Observatory, San Vito",43.855,10.54,Italy
+234,Coddenham Observatory,52.145,1.128,United Kingdom
+235,"CAST Observatory, Talmassons",45.936,13.114,Italy
+236,Tomsk,56.468,84.946,Russia
+237,Baugy,47.084,2.733,France
+238,Grorudalen Optical Observatory,59.949,10.909,Norway
+239,Trebur,49.925,8.411,Germany
+240,Herrenberg Sternwarte,48.624,8.833,Germany
+241,Schaerding,48.444,13.47,Austria
+242,Varennes,43.479,1.696,France
+243,"Umbrella Observatory, Fredenbeck",53.528,9.413,Germany
+246,Klet Observatory-KLENOT,48.864,14.285,Czech Republic
+251,Arecibo,18.343,-66.753,Puerto Rico
+252,"Goldstone DSS 13, Fort Irwin",35.247,-116.795,United States
+253,"Goldstone DSS 14, Fort Irwin",35.426,-116.89,United States
+254,"Haystack, Westford",42.623,-71.489,United States
+255,Yevpatoriya,45.189,33.187,Russia
+256,Green Bank,38.433,-79.84,United States
+257,"Goldstone DSS 25, Fort Irwin",35.338,-116.875,United States
+259,EISCAT Tromso UHF,69.586,19.226,Norway
+260,Siding Spring Observatory-DSS,-31.277,149.066,Australia
+261,Palomar Mountain-DSS,33.357,-116.86,United States
+262,"European Southern Observatory, La Silla-DSS",-29.259,-70.734,Chile
+263,Canberra DSS 35,-35.396,148.981,Australia
+264,Canberra DSS 36,-35.395,148.979,Australia
+265,Canberra DSS 43,-35.402,148.981,Australia
+266,New Horizons KBO Search-Subaru,19.826,-155.476,United States
+267,New Horizons KBO Search-CFHT,19.826,-155.469,United States
+268,Magellan-Clay Telescope,-29.014,-70.692,Chile
+269,Magellan-Baade Telescope,-29.015,-70.691,Chile
+271,"ATCA, W196 reduction, DSS 47",-30.313,149.55,Australia
+272,Canberra DSS 34,-35.398,148.982,Australia
+276,Plonsk,52.627,20.383,Poland
+277,"Royal Observatory, Blackford Hill, Edinburgh",55.925,-3.183,United Kingdom
+278,"Peking, Transit of Venus site",39.904,116.449,China
+279,"Seeberg Observatory, Gotha (1787-1857)",50.934,10.728,Germany
+280,Lilienthal,53.141,8.912,Germany
+281,Bologna,44.496,11.352,Italy
+282,Nimes,43.84,4.36,France
+283,Bremen,53.076,8.816,Germany
+284,Driesen,52.838,15.831,Poland
+285,"Flammarion Observatory, Juvisy",48.694,2.371,France
+286,Yunnan Observatory,25.025,102.788,China
+287,"Ceduna 30, UTAS",-31.868,133.81,Australia
+290,Mt. Graham-VATT,32.701,-109.892,United States
+291,LPL/Spacewatch II,31.962,-111.6,United States
+292,"Burlington, New Jersey",40.072,-74.894,United States
+293,Burlington remote site,39.798,-74.41,United States
+294,"Astrophysical Obs., College of Staten Island",40.604,-74.153,United States
+295,"Catholic University Observatory, Washington",38.937,-77.0,United States
+296,"Dudley Observatory, Albany (after 1893)",42.654,-73.78,United States
+297,Middlebury,44.015,-73.181,United States
+298,Van Vleck Observatory,41.555,-72.659,United States
+299,"Bosscha Observatory, Lembang",-6.826,107.616,Indonesia
+300,Bisei Spaceguard Center-BATTeRS,34.672,133.544,Japan
+301,Mont Megantic,45.455,-71.153,Canada
+302,University of the Andes station,8.673,-71.12,Venezuela
+303,"OAN de Llano del Hato, Merida",8.788,-70.87,Venezuela
+304,Las Campanas Observatory,-29.015,-70.691,Chile
+305,"Purple Mountain, Hainan Island station",34.945,109.551,China
+306,"Observatorio Taya Beixo, Barquisimeto",10.076,-69.323,Venezuela
+307,"Shattuck Observatory, Hanover",43.704,-72.283,United States
+308,"Usuda Deep Space Center, 64-m, Nagano",36.132,138.363,Japan
+309,Cerro Paranal,-24.627,-70.404,Chile
+310,Minor Planet Center Test Code,42.381,-71.128,United States
+312,"Tsingtao field station, Xisha Islands",16.832,112.334,
+318,Quinns Rock,-31.65,115.691,Australia
+319,"Perth Observatory, Perth-Lowell Telescope",-32.008,116.135,Australia
+320,Chiro Observatory,-30.93,116.438,Australia
+321,Craigie,-31.79,115.757,Australia
+322,"Perth Observatory, Bickley-MCT",-32.009,116.134,Australia
+323,"Perth Observatory, Bickley",-32.009,116.135,Australia
+324,"Peking Observatory, Shaho Station",40.101,116.328,China
+327,"Peking Observatory, Xinglong Station",40.394,117.575,China
+330,"Purple Mountain Observatory, Nanking",32.067,118.821,China
+333,Desert Eagle Observatory,31.963,-110.476,United States
+334,Tsingtao,36.07,120.32,China
+337,Sheshan,31.096,121.184,China
+340,Toyonaka,34.807,135.485,Japan
+341,Akashina,36.329,137.949,Japan
+342,Shishikui,33.551,134.319,Japan
+343,Younchun,38.2,127.126,South Korea
+344,Bohyunsan Optical Astronomy Observatory,36.165,128.977,South Korea
+345,Sobaeksan Optical Astronomy Observatory,36.935,128.458,South Korea
+346,KNUE Astronomical Observatory,36.508,127.385,South Korea
+347,Utsunomiya-Imaizumi,36.563,139.909,Japan
+348,Ayabe,35.308,135.267,Japan
+349,Ageo,35.956,139.566,Japan
+350,Kurohone,36.482,139.264,Japan
+351,Sakamoto,35.068,135.868,Japan
+352,Konan,34.947,136.178,Japan
+353,Nishi Kobe,34.741,135.065,Japan
+354,Kawachi,36.867,140.021,Japan
+355,Hadano,35.388,139.213,Japan
+356,Kogota,38.54,141.087,Japan
+357,Shimotsuma,36.184,140.006,Japan
+358,Nanyo,38.045,140.159,Japan
+359,Wakayama,34.214,135.172,Japan
+360,Kuma Kogen,33.674,132.944,Japan
+361,Sumoto,34.35,134.893,Japan
+362,Ray Observatory,42.645,140.655,Japan
+363,Yamada,33.56,130.77,Japan
+364,YCPM Kagoshima Station,31.645,130.575,Japan
+365,Uto Observatory,34.409,135.958,Japan
+366,Miyasaka Observatory,35.862,138.3,Japan
+367,Yatsuka,35.5,133.167,Japan
+368,Ochiai,35.805,138.812,Japan
+369,Chichibu,35.989,139.15,Japan
+370,Kochi,33.552,133.527,Japan
+371,Tokyo-Okayama,34.574,133.596,Japan
+372,Geisei,33.527,133.828,Japan
+373,Oishi,34.132,135.34,Japan
+374,Minami-Oda Observatory,35.095,134.72,Japan
+375,Uzurano,34.951,134.871,Japan
+376,Uenohara,35.69,139.039,Japan
+377,"Kwasan Observatory, Kyoto",34.995,135.793,Japan
+378,Murou,34.573,136.011,Japan
+379,Hamamatsu-Yuto,34.703,137.628,Japan
+380,Ishiki,34.815,137.035,Japan
+381,Tokyo-Kiso,35.797,137.625,Japan
+382,Tokyo-Norikura,36.114,137.555,Japan
+383,Chirorin,36.762,137.896,Japan
+384,Shimada,34.818,138.179,Japan
+385,Nihondaira Observatory,34.97,138.468,Japan
+386,Yatsugatake-Kobuchizawa,35.891,138.322,Japan
+387,Tokyo-Dodaira,36.006,139.194,Japan
+388,Tokyo-Mitaka,35.672,139.542,Japan
+389,Tokyo (before 1938),35.654,139.745,Japan
+390,Utsunomiya,36.556,139.872,Japan
+391,"Sendai Observatory, Ayashi Station",38.265,140.778,Japan
+392,JCPM Sapporo Station,42.913,141.367,Japan
+393,JCPM Sakura Station,36.091,140.129,Japan
+394,JCPM Hamatonbetsu Station,45.112,142.321,Japan
+395,Tokyo-Asahikawa,43.841,142.358,Japan
+396,Asahikawa,43.743,142.421,Japan
+397,Sapporo Science Center,43.034,141.476,Japan
+398,Nagatoro,36.125,139.108,Japan
+399,Kushiro,43.078,144.59,Japan
+400,Kitami,43.758,143.783,Japan
+401,Oosato,36.112,139.421,Japan
+402,Dynic Astronomical Observatory,35.208,136.308,Japan
+403,Kani,35.413,137.056,Japan
+404,Yamamoto,37.824,140.929,Japan
+405,Kamihoriguchi,36.297,139.329,Japan
+406,Bibai,43.255,141.823,Japan
+407,Kahoku,38.442,140.31,Japan
+408,Nyukasa,35.9,138.175,Japan
+409,Kiyose and Mizuho,35.767,139.521,Japan
+410,Sengamine,35.128,134.891,Japan
+411,Oizumi,36.25,139.417,Japan
+412,Iwaki,36.96,140.599,Japan
+413,Siding Spring Observatory,-31.277,149.066,Australia
+414,Mount Stromlo,-35.321,149.008,Australia
+415,Kambah,-35.397,149.064,Australia
+416,Barton,-35.312,149.134,Australia
+417,Yanagida Astronomical Observatory,37.335,137.137,Japan
+418,Tamworth,-31.081,150.94,Australia
+419,Windsor,-33.609,150.833,Australia
+420,Sydney,-33.862,151.205,Australia
+421,"Mt. Kajigamori, Otoyo",33.756,133.765,Japan
+422,Loomberah,-31.335,151.046,Australia
+423,North Ryde,-33.805,151.125,Australia
+424,Macquarie,-35.255,149.066,Australia
+425,"Taylor Range Observatory, Brisbane",-27.463,152.932,Australia
+426,Woomera,-31.197,136.822,Australia
+427,Stockport,-34.333,138.728,Australia
+428,Reedy Creek,-28.11,153.397,Australia
+429,Hawker,-35.253,149.04,Australia
+430,"Rainbow Observatory, near Coonabarabran",-31.278,149.212,Australia
+431,"Mt. Tarana Observatory, Bathurst",-33.435,149.758,Australia
+432,Boambee,-30.339,153.082,Australia
+433,Bagnall Beach Observatory,-32.738,152.108,Australia
+434,S. Benedetto Po,45.052,10.921,Italy
+435,"G. Colombo Astronomical Observatory, Padua",45.404,11.894,Italy
+436,Osservatorio di Livergnano,44.328,11.336,Italy
+437,Haverford,40.011,-75.303,United States
+438,"Smith College Observatory, Northampton",42.317,-72.638,United States
+439,"ROTSE-III, Los Alamos",35.869,-106.746,United States
+440,Elginfield Observatory,43.192,-81.316,Canada
+441,"Swilken Brae, St. Andrews",56.338,-2.83,United Kingdom
+442,Gualba Observatory,41.708,-2.518,Spain
+443,"Obs. Astronomico Plomer, Buenos Aires",-34.633,-58.534,Argentina
+444,Star Cruiser Observatory,33.484,-116.721,United States
+445,Observatorio d'Ontinyent,38.818,-0.58,Spain
+446,"Kingsnake Observatory, Seguin",29.569,-97.833,United States
+447,Centennial Observatory,39.621,-104.794,United States
+448,"Desert Moon Observatory, Las Cruces",32.388,-106.72,United States
+449,"Griffin Hunter Observatory, Bethune",34.384,-80.35,United States
+450,"Carla Jane Observatory, Charlotte",35.151,-80.666,United States
+451,"West Skies Observatory, Mulvane",37.492,-97.243,United States
+452,"Big Cypress Observatory, Fort Lauderdale",26.179,-80.894,United States
+453,Edwards Raven Observatory,34.985,-117.867,United States
+454,Maryland Space Grant Consortium Observatory,39.332,-76.623,United States
+455,CBA Concord,37.99,-122.036,United States
+456,Daventry Observatory,52.253,-1.172,United Kingdom
+457,Partizanske,48.628,18.34,Slovakia
+458,Guadarrama Observatory,40.647,-4.019,Spain
+459,"Smith River Observatory, Danbury",43.541,-71.883,United States
+460,"Area 52 Observatory, Nashville",33.982,-94.002,United States
+461,"University of Szeged, Piszkesteto Stn. (Konkoly)",47.917,19.894,Hungary
+462,Mount Belleview Observatory,38.921,-76.916,United States
+463,"Sommers-Bausch Observatory, Boulder",40.004,-105.262,United States
+464,"Toby Point Observatory, Narragansett",41.411,-71.499,United States
+465,Takapuna,-36.804,174.78,New Zealand
+466,"Mount Molehill Observatory, Auckland",-36.942,174.849,New Zealand
+467,Auckland Observatory,-36.908,174.777,New Zealand
+468,"Astronomical Observatory, Campo Catino",41.821,13.33,Italy
+469,Courroux,47.356,7.382,Switzerland
+470,Ceccano,41.57,13.328,Italy
+471,Houstrup,55.782,8.239,Denmark
+472,Merlette,44.695,6.32,France
+473,Remanzacco,46.086,13.317,Italy
+474,"Mount John Observatory, Lake Tekapo",-43.987,170.465,New Zealand
+475,Turin (before 1913),45.069,7.696,Italy
+476,"Grange Observatory, Bussoleno",45.142,7.141,Italy
+477,Galleywood,51.703,0.486,United Kingdom
+478,Lamalou-les-Bains,43.589,3.09,France
+479,Sollies-Pont,43.194,6.05,France
+480,Cockfield,52.166,0.773,United Kingdom
+481,Moorwarfen,53.554,7.931,Germany
+482,St. Andrews,56.337,-2.815,United Kingdom
+483,"Carter Observatory, Black Birch Station",-41.749,173.804,New Zealand
+484,"Happy Valley, Wellington",-41.34,174.759,New Zealand
+485,"Carter Observatory, Wellington",-41.284,174.765,New Zealand
+486,Palmerston North,-40.237,175.47,New Zealand
+487,Macnairston Observatory,55.439,-4.556,United Kingdom
+488,Newcastle-upon-Tyne,55.001,-1.634,United Kingdom
+489,Hemingford Abbots,52.352,-0.13,United Kingdom
+490,Wimborne Minster,50.839,-2.0,United Kingdom
+491,Centro Astronomico de Yebes,40.525,-3.1,Spain
+492,Mickleover,52.914,-1.53,United Kingdom
+493,Calar Alto,37.224,-2.546,Spain
+494,Stakenbridge,52.413,-2.164,United Kingdom
+495,Altrincham,53.376,-2.338,United Kingdom
+496,Bishopstoke,50.963,-1.314,United Kingdom
+497,Loudwater,51.609,-0.706,United Kingdom
+498,Earls Barton,52.262,-0.742,United Kingdom
+499,Cheam,51.37,-0.209,United Kingdom
+501,Herstmonceux,50.869,0.348,United Kingdom
+502,Colchester,51.916,0.848,United Kingdom
+503,Cambridge,52.214,0.095,United Kingdom
+504,Le Creusot,46.823,4.394,France
+505,Simon Stevin,51.566,4.564,Netherlands
+506,Bendestorf,53.303,9.96,Germany
+507,Nyenheim,51.949,5.22,Netherlands
+508,Zeist,51.949,5.29,Netherlands
+509,La Seyne sur Mer,43.099,5.872,France
+510,Siegen,50.91,8.026,Germany
+511,Haute Provence,43.932,5.716,France
+512,Leiden (before 1860),52.158,4.489,Netherlands
+513,Lyons,45.695,4.786,France
+514,Mundenheim (1907-1913),49.456,8.438,Germany
+515,"Volkssternwarte Dhaun, near Kirn",49.815,7.496,Germany
+516,Hamburg (before 1909),53.551,9.973,Germany
+517,Geneva (from 1967),46.311,6.136,Switzerland
+518,"Marine Observatory, Hamburg",53.548,9.973,Germany
+519,Meschede,51.342,8.287,Germany
+520,Bonn,50.729,7.097,Germany
+521,"Remeis Observatory, Bamberg",49.885,10.888,Germany
+522,Strasbourg,48.584,7.768,France
+523,Frankfurt,50.117,8.651,Germany
+524,Mannheim,49.485,8.46,Germany
+525,Marburg,50.812,8.769,Germany
+526,Kiel,54.341,10.148,Germany
+527,Altona,53.545,9.943,Germany
+528,Gottingen,51.53,9.943,Germany
+529,Christiania,59.912,10.723,Norway
+530,Lubeck,53.857,10.69,Germany
+531,"Collegio Romano, Rome",41.898,12.48,Italy
+532,Munich,48.146,11.608,Germany
+533,Padua,45.4,11.872,Italy
+534,Leipzig (since 1861),51.335,12.391,Germany
+535,Palermo,38.112,13.358,Italy
+536,Berlin-Babelsberg,52.407,13.106,Germany
+537,"Urania Observatory, Berlin",52.526,13.364,Germany
+538,Pola,44.863,13.846,Croatia
+539,Kremsmunster,48.056,14.132,Austria
+540,Linz,48.443,14.275,Austria
+541,Prague,50.077,14.395,Czech Republic
+542,Falkensee,52.567,13.037,Germany
+543,Leipzig (before 1861),51.338,12.369,Germany
+544,"Wilhelm Foerster Observatory, Berlin",52.457,13.351,Germany
+545,Vienna (before 1879),48.21,16.382,Austria
+546,"Oppolzer Observatory, Vienna",48.215,16.355,Austria
+547,Breslau,51.116,17.036,Poland
+548,Berlin (1835-1913),52.504,13.395,Germany
+549,Uppsala,59.858,17.626,Sweden
+550,Schwerin,53.628,11.42,Germany
+551,Hurbanovo,47.874,18.19,Slovakia
+552,"Osservatorio S. Vittore, Bologna",44.468,11.342,Italy
+553,Chorzow,50.3,18.994,Poland
+554,"Burgsolms Observatory, Wetzlar",50.539,8.396,Germany
+555,Cracow-Fort Skala,50.054,19.826,Poland
+556,"Reintal, near Munich",47.589,11.26,Germany
+557,Ondrejov,49.915,14.78,Czech Republic
+558,Warsaw,52.218,21.03,Poland
+559,Serra La Nave,37.618,14.98,Italy
+560,Madonna di Dossobuono,45.407,10.931,Italy
+561,Piszkesteto Stn. (Konkoly),47.917,19.894,Hungary
+562,"Figl Observatory, Vienna",48.084,15.924,Austria
+563,Seewalchen,47.953,13.6,Austria
+564,Herrsching,48.03,11.19,Germany
+565,Bassano Bresciano,45.318,10.134,Italy
+566,Haleakala-NEAT/GEODSS,20.708,-156.258,United States
+567,Chions,45.843,12.712,Italy
+568,Maunakea,19.826,-155.472,United States
+569,Helsinki,60.155,24.959,Finland
+570,Vilnius (since 1939),54.682,25.299,Lithuania
+571,Cavriana,45.355,10.63,Italy
+572,Cologne,50.927,6.89,Germany
+573,Eldagsen,52.175,9.661,Germany
+574,Gottolengo,45.297,10.267,Italy
+575,La Chaux de Fonds,47.089,6.808,Switzerland
+576,Burwash,50.995,0.376,United Kingdom
+577,Metzerlen Observatory,47.463,7.5,Switzerland
+578,Linden Observatory,-26.205,27.99,South Africa
+579,Novi Ligure,44.787,8.85,Italy
+580,Graz,47.067,15.494,Austria
+581,Sedgefield,-33.995,22.8,South Africa
+582,Orwell Park,52.009,1.241,United Kingdom
+583,Odesa-Mayaky,46.397,30.272,Ukraine
+584,Leningrad,59.942,30.295,Russia
+585,Kyiv comet station,50.298,30.525,Ukraine
+586,Pic du Midi,42.937,0.142,France
+587,Sormano,45.883,9.229,Italy
+588,Eremo di Tizzano,44.462,11.25,Italy
+589,Santa Lucia Stroncone,42.519,12.644,Italy
+590,Metzerlen,47.463,7.46,Switzerland
+591,Resse Observatory,52.507,9.626,Germany
+592,Solingen,51.174,7.021,Germany
+593,Monte Argentario,42.431,11.17,Italy
+594,Monte Autore,41.957,13.203,Italy
+595,Farra d'Isonzo,45.916,13.526,Italy
+596,Colleverde di Guidonia,41.984,12.618,Italy
+597,Springe,52.171,9.663,Germany
+598,Loiano,44.259,11.334,Italy
+599,Campo Imperatore-CINEOS,42.444,13.558,Italy
+600,"TLC Observatory, Bologna",44.359,11.471,Italy
+601,"Engelhardt Observatory, Dresden",51.038,13.728,Germany
+602,"Urania Observatory, Vienna",48.212,16.385,Austria
+603,Bothkamp,54.203,10.13,Germany
+604,"Archenhold Sternwarte, Berlin-Treptow",52.487,13.475,Germany
+605,Marl,51.674,7.113,Germany
+606,Norderstedt,53.684,9.996,Germany
+607,"Hagen Observatory, Ronkhausen",51.219,8.0,Germany
+608,Haleakala-AMOS,20.708,-156.258,United States
+609,Osservatorio Polino,42.571,12.853,Italy
+610,Pianoro,44.392,11.343,Italy
+611,"Starkenburg Sternwarte, Heppenheim",49.648,8.653,Germany
+612,Lenkerbeck,51.411,7.1,Germany
+613,Heisingen,51.41,7.071,Germany
+614,Soisy-sur-Seine,48.635,2.467,France
+615,St. Veran,44.698,6.907,France
+616,Brno,49.204,16.583,Czech Republic
+617,Arbonne la Foret,48.416,2.572,France
+618,Martigues,43.419,5.008,France
+619,Sabadell,41.55,2.09,Spain
+620,Observatorio Astronomico de Mallorca,39.644,2.952,Spain
+621,Bergisch Gladbach,51.086,7.485,Germany
+622,Oberwichtrach,46.645,7.568,Switzerland
+623,Liege,50.618,5.567,Belgium
+624,Dertingen,49.763,9.617,Germany
+625,Kihei-AMOS Remote Maui Experimental Site,20.746,-156.432,United States
+626,Geel,51.157,4.986,Belgium
+627,Blauvac,44.042,5.215,France
+628,Mulheim-Ruhr,51.427,6.844,Germany
+629,Szeged Observatory,46.25,20.151,Hungary
+630,Osenbach,47.993,7.237,France
+631,Hamburg-Georgswerder,53.509,10.023,Germany
+632,San Polo A Mosciano,43.728,11.174,Italy
+633,Romito,44.1,9.934,Italy
+634,Crolles,45.527,5.146,France
+635,Pergignan,42.7,2.902,France
+636,Essen,51.395,6.979,Germany
+637,Hamburg-Himmelsmoor,53.703,10.09,Germany
+638,Detmold,51.94,8.893,Germany
+639,Dresden,51.094,13.723,Germany
+640,Senftenberger Sternwarte,50.087,13.6,Czech Republic
+641,Overberg,-34.535,20.027,South Africa
+642,"Oak Bay, Victoria",48.428,-123.315,Canada
+643,OCA-Anza Observatory,33.484,-116.721,United States
+644,Palomar Mountain/NEAT,33.357,-116.86,United States
+645,Apache Point-Sloan Digital Sky Survey,32.781,-105.821,United States
+646,"Santana Observatory, Rancho Cucamonga",33.997,-117.563,United States
+647,"Stone Finder Observatory, Calgary",50.778,-114.032,Canada
+648,"Winer Observatory, Sonoita",31.666,-110.602,United States
+649,"Powell Observatory, Louisburg",38.646,-94.7,United States
+650,Temecula,33.467,-117.097,United States
+651,"Grasslands Observatory, Tucson",31.67,-110.581,United States
+652,"Rock Finder Observatory, Calgary",51.117,-114.067,Canada
+653,"Torus Observatory, Buckley",47.183,-122.132,United States
+654,"Table Mountain Observatory, Wrightwood-PHMC",34.382,-117.682,United States
+655,Sooke,48.367,-123.617,Canada
+656,Victoria,48.353,-123.608,Canada
+657,"Climenhaga Observatory, Victoria",48.462,-123.31,Canada
+658,Dominion Astrophysical Observatory,48.52,-123.417,Canada
+659,"Heron Cove Observatory, Orcas",48.6,-122.949,United States
+660,"Leuschner Observatory, Berkeley",37.873,-122.262,United States
+661,"Rothney Astrophysical Observatory, Priddis",50.868,-114.288,Canada
+662,"Lick Observatory, Mount Hamilton",37.34,-121.646,United States
+663,Red Mountain Observatory,33.496,-111.686,United States
+664,Manastash Ridge Observatory,46.949,-120.722,United States
+665,Wallis Observatory,34.811,-119.01,United States
+666,Moorpark College Observatory,34.302,-118.831,United States
+667,Wanapum Dam,46.903,-119.991,United States
+668,San Emigdio Peak,34.857,-119.18,United States
+669,Ojai,34.467,-119.176,United States
+670,Camarillo,34.221,-119.044,United States
+671,Stony Ridge,34.302,-117.998,United States
+672,Mount Wilson,34.225,-118.056,United States
+673,"Table Mountain Observatory, Wrightwood",34.382,-117.682,United States
+674,"Ford Observatory, Wrightwood",34.382,-117.664,United States
+675,Palomar Mountain,33.354,-116.863,United States
+676,San Clemente,33.418,-117.609,United States
+677,Lake Arrowhead,34.274,-117.172,United States
+678,Fountain Hills,33.636,-111.74,United States
+679,San Pedro Martir,31.043,-115.463,Mexico
+680,Los Angeles,33.804,-115.22,United States
+681,Calgary,51.086,-114.114,Canada
+682,Kanab,37.047,-112.362,United States
+683,"Goodricke-Pigott Observatory, Tucson",32.155,-111.082,United States
+684,Prescott,34.513,-112.49,United States
+685,Williams,35.352,-112.16,United States
+686,"U. of Minn. Infrared Obs., Mt. Lemmon",32.441,-110.791,United States
+687,"Northern Arizona University, Flagstaff",35.185,-111.653,United States
+688,"Lowell Observatory, Anderson Mesa Station",35.096,-111.536,United States
+689,"U.S. Naval Observatory, Flagstaff",35.184,-111.74,United States
+690,"Lowell Observatory, Flagstaff",35.202,-111.663,United States
+691,"Steward Observatory, Kitt Peak-Spacewatch",31.962,-111.6,United States
+692,"Steward Observatory, Tucson",32.233,-110.949,United States
+693,"Catalina Station, Tucson",32.417,-110.733,United States
+694,"Tumamoc Hill, Tucson",32.213,-111.006,United States
+695,Kitt Peak,31.958,-111.595,United States
+696,"Whipple Observatory, Mt. Hopkins",31.689,-110.885,United States
+697,"Kitt Peak, McGraw-Hill",31.951,-111.616,United States
+698,Mt. Bigelow,32.417,-110.733,United States
+699,Lowell Observatory-LONEOS,35.096,-111.537,United States
+700,Chinle,36.351,-109.618,United States
+701,"Junk Bond Observatory, Sierra Vista",31.476,-110.203,United States
+702,"Joint Obs. for cometary research, Socorro",33.984,-107.188,United States
+703,University of Arizona Catalina Sky Survey,32.417,-110.733,United States
+704,"Lincoln Laboratory ETS, New Mexico",33.818,-106.659,United States
+705,Apache Point,32.781,-105.821,United States
+706,Salida,38.582,-106.063,United States
+707,Chamberlin field station,39.466,-105.44,United States
+708,"Chamberlin Observatory, Denver",39.676,-104.952,United States
+709,"W & B Observatory, Cloudcroft",32.956,-105.771,United States
+710,"MPO Observatory, Florissant",38.881,-105.266,United States
+711,"McDonald Observatory, Fort Davis",30.672,-104.022,United States
+712,"USAF Academy Observatory, Colorado Springs",39.007,-104.881,United States
+713,Thornton,39.88,-105.01,United States
+714,Bagdad,34.574,-113.183,United States
+715,"Jornada Observatory, Las Cruces",32.385,-106.724,United States
+716,"Palmer Divide Observatory, Colorado Springs",39.085,-104.751,United States
+717,Prude Ranch,30.611,-103.952,United States
+718,Tooele,40.641,-112.296,United States
+719,Etscorn Observatory,34.073,-106.914,United States
+720,Universidad de Monterrey,25.643,-100.374,Mexico
+721,Lime Creek,40.399,-100.269,United States
+722,Missouri City,29.604,-95.581,United States
+723,"Cottonwood Observatory, Ada",34.875,-96.67,United States
+724,"National Observatory, Tacubaya",19.405,-99.195,Mexico
+725,Fair Oaks Ranch,29.766,-98.655,United States
+726,Brainerd,46.449,-94.307,United States
+727,"Zeno Observatory, Edmond",35.613,-97.461,United States
+728,Corpus Christi,27.692,-97.392,United States
+729,"Glenlea Astronomical Observatory, Winnipeg",49.645,-97.121,Canada
+730,"University of North Dakota, Grand Forks",47.912,-97.159,United States
+731,"Rose-Hulman Observatory, Terre Haute",39.481,-87.329,United States
+732,Oaxaca,17.182,-96.77,Mexico
+733,"Allen, Texas",33.159,-96.645,United States
+734,"Farpoint Observatory, Eskridge",38.89,-96.002,United States
+735,"George Observatory, Needville",29.375,-95.594,United States
+736,Houston,29.618,-96.664,United States
+737,"New Bullpen Observatory, Alpharetta",34.177,-84.337,United States
+738,Observatory of the State University of Missouri,38.945,-92.327,United States
+739,"Sunflower Observatory, Olathe",38.869,-94.756,United States
+740,"SFA Observatory, Nacogdoches",31.757,-94.662,United States
+741,"Goodsell Observatory, Northfield",44.462,-93.15,United States
+742,"Drake University, Des Moines",41.596,-93.688,United States
+743,"University of Minnesota, Minneapolis",44.983,-92.239,United States
+744,"Doyan Rose Observatory, Indianapolis",39.847,-86.162,United States
+745,"Morrison Obervatory, Glasgow",39.229,-92.825,United States
+746,"Brooks Observatory, Mt. Pleasant",43.588,-84.775,United States
+747,Highland Road Park Observatory,30.346,-91.071,United States
+748,"Van Allen Observatory, Iowa City",41.495,-91.532,United States
+749,Oakwood,34.205,-83.836,United States
+750,"Hobbs Observatory, Fall Creek",44.816,-91.272,United States
+751,Lake Saint Louis,38.8,-90.756,United States
+752,"Puckett Observatory, Mountain Town",34.732,-84.535,United States
+753,"Washburn Observatory, Madison",43.076,-89.409,United States
+754,"Yerkes Observatory, Williams Bay",42.57,-88.557,United States
+755,Optec Observatory,42.915,-85.352,United States
+756,"Dearborn Observatory, Evanston (bef. July 1939)",42.058,-87.674,United States
+757,High Point,36.039,-79.995,United States
+758,"BCC Observatory, Cocoa",28.385,-80.762,United States
+759,Nashville,36.053,-86.805,United States
+760,"Goethe Link Observatory, Brooklyn",39.549,-86.395,United States
+761,Zephyrhills,28.271,-82.354,United States
+762,"Four Winds Observatory, Lake Leelanau",44.957,-85.799,United States
+763,King City,43.915,-79.534,Canada
+764,"Puckett Observatory, Stone Mountain",33.722,-84.856,United States
+765,Cincinnati,39.139,-84.423,United States
+766,"Michigan State University Obs., East Lansing",42.707,-84.483,United States
+767,Ann Arbor,42.28,-83.73,United States
+768,"Dearborn Observatory, Evanston (aft. Oct. 1939)",42.059,-87.675,United States
+769,"McMillin Observatory, Columbus",39.998,-83.011,United States
+770,"Crescent Moon Observatory, Columbus",39.225,-85.921,United States
+771,"Boyeros Observatory, Havana",23.013,-82.43,Cuba
+772,"Boltwood Observatory, Stittsville",45.254,-75.914,Canada
+773,"Warner and Swasey Observatory, Cleveland",41.537,-81.568,United States
+774,"Warner and Swasey Nassau Station, Chardon",41.592,-81.075,United States
+775,"Sayre Observatory, South Bethlehem",40.606,-75.383,United States
+776,"Foggy Bottom, Hamilton",42.816,-75.533,United States
+777,Toronto,43.667,-79.398,Canada
+778,"Allegheny Observatory, Pittsburgh",40.483,-80.022,United States
+779,"David Dunlap Observatory, Richmond Hill",43.863,-79.422,Canada
+780,"Leander McCormick Observatory, Charlottesville",38.034,-78.522,United States
+781,Quito,-0.234,-78.492,Ecuador
+782,"Quito, comet astrograph station",0.0,-78.35,Ecuador
+783,Rixeyville,38.651,-77.98,United States
+784,"Stull Observatory, Alfred University",42.251,-77.785,United States
+785,"Fitz-Randolph Observatory, Princeton",40.346,-74.646,United States
+786,"U.S. Naval Obs., Washington (since 1893)",38.92,-77.065,United States
+787,"U.S. Naval Obs., Washington (before 1893)",38.894,-77.051,United States
+788,"Mount Cuba Observatory, Wilmington",39.784,-75.633,United States
+789,"Litchfield Observatory, Clinton",43.055,-75.406,United States
+790,"Dominion Observatory, Ottawa",45.394,-75.716,Canada
+791,"Flower and Cook Observatory, Philadelphia",39.999,-75.476,United States
+792,"University of Rhode Island, Quonochontaug",41.353,-71.701,United States
+793,"Dudley Observatory, Albany (before 1893)",42.663,-73.748,United States
+794,"Vassar College Observatory, Poughkeepsie",41.688,-73.89,United States
+795,Rutherford,40.81,-73.961,United States
+796,Stamford,41.09,-73.55,United States
+797,"Yale Observatory, New Haven",41.316,-72.925,United States
+798,"Yale Observatory, Bethany",41.427,-72.985,United States
+799,Winchester,42.453,-71.135,United States
+800,"Harvard Observatory, Arequipa",-16.375,-71.549,Peru
+801,Oak Ridge Observatory,42.505,-71.558,United States
+802,"Harvard Observatory, Cambridge",42.381,-71.128,United States
+803,Taunton,41.9,-71.083,United States
+804,Santiago-San Bernardo,-33.563,-70.688,Chile
+805,Santiago-Cerro El Roble,-32.982,-71.02,Chile
+806,Santiago-Cerro Calan,-33.397,-70.549,Chile
+807,"Cerro Tololo Observatory, La Serena",-30.169,-70.806,Chile
+808,El Leoncito,-31.802,-69.329,Argentina
+809,"European Southern Observatory, La Silla",-29.259,-70.734,Chile
+810,"Wallace Observatory, Westford",42.61,-71.485,United States
+811,"Maria Mitchell Observatory, Nantucket",41.281,-70.104,United States
+812,Vina del Mar,-32.958,-71.546,Chile
+813,Santiago-Quinta Normal (1862-1920),-33.445,-70.692,Chile
+814,North Scituate,41.851,-71.581,United States
+815,Santiago-Santa Lucia (1849-1861),-33.44,-70.652,Chile
+816,Rand Observatory,44.339,-74.242,United States
+817,Sudbury,42.35,-71.39,United States
+818,"Gemeaux Observatory, Laval",45.351,-73.583,Canada
+819,Val-des-Bois,45.895,-75.615,Canada
+820,Tarija,-21.596,-64.624,Bolivia
+821,Cordoba-Bosque Alegre,-31.598,-64.55,Argentina
+822,Cordoba,-31.42,-64.199,Argentina
+823,Fitchburg,42.61,-71.831,United States
+824,Lake Clear,44.342,-74.247,United States
+825,Granville,42.338,-71.74,United States
+826,Plessissville,46.22,-71.772,Canada
+827,Saint-Felicien,48.651,-72.461,Canada
+828,Assonet,41.803,-71.024,United States
+829,Complejo Astronomico El Leoncito,-31.799,-69.302,Argentina
+830,Hudson,42.797,-71.43,United States
+831,"Rosemary Hill Observatory, University of Florida",29.402,-82.587,United States
+832,Etters,40.165,-76.815,United States
+833,"Obs. Astronomico de Mercedes, Buenos Aires",-34.63,-58.537,Argentina
+834,Buenos Aires-AAAA,-34.605,-58.435,Argentina
+835,"Drum Hill Station, Chelmsford",42.612,-71.357,United States
+836,"Furnace Brook Observatory, Cranston",41.758,-71.499,United States
+837,Jupiter,26.916,-80.245,United States
+838,Dayton,39.743,-84.137,United States
+839,La Plata,-34.908,-57.932,Argentina
+840,Flint,43.015,-83.717,United States
+841,"Martin Observatory, Blacksburg",37.333,-80.558,United States
+842,Gettysburg College Observatory,39.831,-77.232,United States
+843,"Emerald Lane Observatory, Decatur",34.523,-86.935,United States
+844,Observatorio Astronomico Los Molinos,-34.755,-56.19,Uruguay
+845,"Ford Observatory, Ithaca",42.417,-76.494,United States
+846,"Principia Astronomical Observatory, Elsah",38.85,-90.345,United States
+847,"Lunar Cafe Observator, Flint",45.042,-84.025,United States
+848,"Tenagra Observatory, Cottage Grove",43.702,-122.978,United States
+849,"Everstar Observatory, Olathe",38.904,-94.831,United States
+850,"Cordell-Lorenz Observatory, Sewanee",35.204,-85.92,United States
+851,"Burke-Gaffney Observatory, Halifax",44.631,-63.58,Canada
+852,"River Moss Observatory, St. Peters",38.789,-90.595,United States
+853,Biosphere 2 Observatory,32.581,-110.847,United States
+854,"Sabino Canyon Observatory, Tucson",32.3,-110.82,United States
+855,"Wayside Observatory, Minnetonka",44.921,-93.462,United States
+856,Riverside,33.995,-117.446,United States
+857,"Iowa Robotic Observatory, Sonoita",31.665,-110.601,United States
+858,"Tebbutt Observatory, Edgewood",35.094,-106.22,United States
+859,Wykrota Observatory-CEAMIG,-19.824,-43.69,Brazil
+860,Valinhos,-23.003,-46.965,Brazil
+861,Barao Geraldo,-22.782,-47.08,Brazil
+862,Saku,36.141,138.526,Japan
+863,Furukawa,36.261,137.18,Japan
+864,Kumamoto,32.676,130.753,Japan
+865,"Emmy Observatory, New Paltz",41.709,-74.121,United States
+866,"U.S. Naval Academy, Michelson",38.981,-76.49,United States
+867,Saji Observatory,35.339,134.122,Japan
+868,Hidaka Observatory,33.923,135.136,Japan
+869,Tosa,33.493,133.43,Japan
+870,Campinas,-22.901,-46.826,Brazil
+871,Akou,34.749,134.392,Japan
+872,Tokushima,34.09,134.241,Japan
+873,Kurashiki Observatory,34.593,133.772,Japan
+874,"Observatorio do Pico dos Dias, Itajuba",-22.536,-45.583,Brazil
+875,Yorii,36.099,139.235,Japan
+876,Honjo,36.228,139.247,Japan
+877,Okutama,35.814,139.083,Japan
+878,Kagiya,34.987,136.914,Japan
+879,Tokai,35.041,137.354,Japan
+880,Rio de Janeiro,-22.895,-43.223,Brazil
+881,Toyota,35.135,137.257,Japan
+882,JCPM Oi Station,35.169,137.356,Japan
+883,Shizuoka,35.02,138.422,Japan
+884,Kawane,35.141,138.079,Japan
+885,JCPM Yakiimo Station,34.957,138.467,Japan
+886,Mishima,35.171,138.937,Japan
+887,Ojima,36.245,139.337,Japan
+888,Gekko,35.125,138.995,Japan
+889,Karasuyama,36.655,140.143,Japan
+890,JCPM Tone Station,35.919,140.25,Japan
+891,JCPM Kimachi Station,38.275,140.863,Japan
+892,YGCO Hoshikawa and Nagano Stations,36.14,139.475,Japan
+893,Sendai Municipal Observatory,38.259,140.862,Japan
+894,Kiyosato,35.899,138.448,Japan
+895,Hatamae,38.309,140.72,Japan
+896,Yatsugatake South Base Observatory,35.879,138.368,Japan
+897,YGCO Chiyoda Station,36.194,139.493,Japan
+898,Fujieda,34.902,138.188,Japan
+899,Toma,43.841,142.55,Japan
+900,Moriyama,35.05,135.99,Japan
+901,Tajimi,35.343,137.088,Japan
+902,Ootake,34.221,132.221,Japan
+903,Fukuchiyama and Kannabe,35.271,135.174,Japan
+904,Go-Chome and Kobe-Suma,34.617,135.12,Japan
+905,Nachi-Katsuura Observatory,33.61,135.925,Japan
+906,Cobram,-35.916,145.667,Australia
+907,Melbourne,-37.832,144.976,Australia
+908,Toyama,36.625,137.247,Japan
+909,Snohomish Hilltop Observatory,47.944,-122.128,United States
+910,Caussols-ODAS,43.749,6.927,France
+911,"Collins Observatory, Corning Community College",42.118,-77.077,United States
+912,"Carbuncle Hill Observatory, Greene",41.707,-71.766,United States
+913,"Observatorio Kappa Crucis, Montevideo",-34.913,-56.184,Uruguay
+914,"Underwood Observatory, Hubbardston",42.531,-71.989,United States
+915,"River Oaks Observatory, New Braunfels",29.79,-98.121,United States
+916,"Oakley Observatory, Terre Haute",39.484,-87.316,United States
+917,Pacific Lutheran University Keck Observatory,47.144,-122.448,United States
+918,"Badlands Observatory, Quinn",43.991,-102.131,United States
+919,Desert Beaver Observatory,32.75,-111.682,United States
+920,"RIT Observatory, Rochester",43.076,-77.665,United States
+921,"SW Institute for Space Research, Cloudcroft",32.991,-105.528,United States
+922,"Timberland Observatory, Decatur",34.671,-87.167,United States
+923,"The Bradstreet Observatory, St. Davids",40.051,-75.37,United States
+924,Observatoire du Cegep de Trois-Rivieres,46.476,-72.323,Canada
+925,Palominas Observatory,31.401,-110.141,United States
+926,"Tenagra II Observatory, Nogales",31.462,-110.879,United States
+927,Madison-YRS,42.791,-89.438,United States
+928,"Moonedge Observatory, Northport",40.905,-73.324,United States
+929,Port Allen,30.407,-91.224,United States
+930,"S. S. Observatory, Pamatai",-17.551,-149.588,Fr. Polynesia
+931,Puna'auia,-17.634,-149.616,Fr. Polynesia
+932,"John J. McCarthy Obs., New Milford",41.526,-73.426,United States
+933,"Rockland Observatory, Sierra Vista",31.476,-110.266,United States
+934,Poway Valley,32.967,-117.043,United States
+935,"Wyrick Observatory, Haymarket",38.856,-77.661,United States
+936,"Ibis Observatory, Manhattan",39.189,-96.621,United States
+937,"Bradbury Observatory, Stockton-on-Tees",54.595,-1.31,United Kingdom
+938,Linhaceira,39.523,-8.384,Portugal
+939,Observatorio Rodeno,39.76,-0.397,Spain
+940,Waterlooville,50.897,-1.039,United Kingdom
+941,Observatorio Pla D'Arguines,39.753,-0.386,Spain
+942,Grantham,52.927,-0.636,United Kingdom
+943,Peverell,50.392,-4.134,United Kingdom
+944,"Observatorio Geminis, Dos Hermanas",37.281,-5.917,Spain
+945,Observatorio Monte Deva,43.489,-5.601,Spain
+946,Ametlla de Mar,40.93,0.793,Spain
+947,Saint-Sulpice,49.352,2.124,France
+948,Pymoor,52.469,0.219,United Kingdom
+949,Durtal,47.678,-0.183,France
+950,La Palma,28.76,-17.882,Spain
+951,Highworth,51.636,-1.702,United Kingdom
+952,Marxuquera,38.953,-0.242,Spain
+953,Montjoia,41.859,2.134,Spain
+954,Teide Observatory,28.298,-16.509,Spain
+955,Sassoeiros,38.7,-9.326,Portugal
+956,Observatorio Pozuelo,40.441,-3.809,Spain
+957,Merignac,44.823,-0.649,France
+958,Observatoire de Dax,43.693,-1.031,France
+959,Ramonville Saint Agne,43.549,1.465,France
+960,Rolvenden,51.032,0.611,United Kingdom
+961,"City Observatory, Calton Hill, Edinburgh",55.957,-3.179,United Kingdom
+962,Gandia,38.976,-0.181,Spain
+963,Werrington,52.617,-0.267,United Kingdom
+964,Southend Bradfield,51.434,-1.157,United Kingdom
+965,"Observacao Astronomica no Algarve, Portimao",37.191,-8.599,Portugal
+966,Church Stretton,52.534,-2.796,United Kingdom
+967,Greens Norton,52.137,-1.022,United Kingdom
+968,Haverhill,52.085,0.425,United Kingdom
+969,London-Regents Park,51.522,-0.155,United Kingdom
+970,Chelmsford,51.745,0.493,United Kingdom
+971,Lisbon,38.712,-9.188,Portugal
+972,Dun Echt,57.16,-2.417,United Kingdom
+973,Harrow,51.579,-0.333,United Kingdom
+974,Genoa Observatory,44.435,8.844,Italy
+975,Observatorio Astronomico de Valencia,39.478,-0.367,Spain
+976,Leamington Spa,52.318,-1.533,United Kingdom
+977,Markree,54.176,-8.452,Ireland
+978,Conder Brow,54.028,-2.755,United Kingdom
+979,South Wonston,51.121,-1.33,United Kingdom
+980,Lancaster,54.031,-2.78,United Kingdom
+981,Armagh,54.353,-6.648,United Kingdom
+982,"Dunsink Observatory, Dublin",53.387,-6.338,Ireland
+983,San Fernando,36.466,-6.205,Spain
+984,Eastfield,50.921,-2.73,United Kingdom
+985,Telford,52.648,-2.468,United Kingdom
+986,Ascot,51.409,-0.639,United Kingdom
+987,"Isle of Man Observatory, Foxdale",54.178,-4.627,Isle of Man
+988,Glasgow,55.878,-4.294,United Kingdom
+989,"Wilfred Hall Observatory, Preston",53.801,-2.594,United Kingdom
+990,Madrid,40.408,-3.688,Spain
+991,Liverpool (since 1867),53.401,-3.072,United Kingdom
+992,Liverpool (before 1867),53.414,-3.0,United Kingdom
+993,Woolston Observatory,51.047,-2.504,United Kingdom
+994,Godalming,51.172,-0.612,United Kingdom
+995,Durham,54.768,-1.582,United Kingdom
+996,Oxford,51.76,-1.252,United Kingdom
+997,Hartwell,51.859,-0.85,United Kingdom
+998,London-Mill Hill,51.613,-0.242,United Kingdom
+999,Bordeaux-Floirac,44.835,-0.527,France
+A00,Gravesend,51.43,0.377,United Kingdom
+A01,Masia Cal Maciarol Modul 2,42.018,0.744,Spain
+A02,Masia Cal Maciarol Modul 8,42.018,0.744,Spain
+A03,Torredembarra,41.15,1.4,Spain
+A04,Saint-Caprais,43.873,1.718,France
+A05,Belesta,43.445,1.818,France
+A06,Mataro,41.573,2.442,Spain
+A07,Gretz-Armainvilliers,48.743,2.744,France
+A08,Malibert,43.435,2.885,France
+A09,Quincampoix,49.527,1.18,France
+A10,Observatorio Astronomico de Corbera,41.266,1.928,Spain
+A11,Wormhout,50.88,2.472,France
+A12,Stazione Astronomica di Sozzago,45.397,8.748,Italy
+A13,"Observatoire Naef, Ependes",46.762,7.139,Switzerland
+A14,Les Engarouines Observatory,44.022,5.186,France
+A15,"Josef Bresser Sternwarte, Borken",51.849,6.797,Germany
+A16,Tentlingen,46.771,7.192,Switzerland
+A17,"Guidestar Observatory, Weinheim",49.545,8.681,Germany
+A18,Herne,51.528,7.176,Germany
+A19,Koln,50.923,7.074,Germany
+A20,Sogel,52.844,7.519,Germany
+A21,Irmtraut,50.553,8.058,Germany
+A22,Starkenburg Sternwarte-SOHAS,49.648,8.653,Germany
+A23,Weinheim,49.534,8.668,Germany
+A24,"New Millennium Observatory, Mozzate",45.675,8.948,Italy
+A25,Nova Milanese,45.587,9.192,Italy
+A26,Darmstadt,49.81,8.657,Germany
+A27,"Eridanus Observatory, Langelsheim",51.908,10.324,Germany
+A28,Kempten,47.727,10.334,Germany
+A29,Santa Maria a Monte,43.736,10.673,Italy
+A30,Crespadoro,45.645,11.223,Italy
+A31,Corcaroli Observatory,45.651,11.419,Italy
+A32,Panker,54.343,10.552,Germany
+A33,Volkssternwarte Kirchheim,50.875,11.016,Germany
+A34,Grosshabersdorf,49.598,10.791,Germany
+A35,Hormersdorf Observatory,50.671,12.898,Germany
+A36,Ganda di Aviatico,45.795,9.791,Italy
+A37,Mueggelheim,52.41,13.662,Germany
+A38,"Campocatino Automated Telescope, Collepardo",41.765,13.375,Italy
+A39,Altenburg,50.984,12.419,Germany
+A40,Pieta,35.895,14.498,Malta
+A41,"Rezman Observatory, Kamnik",46.24,14.591,Slovenia
+A42,Gehrden,52.301,9.502,Germany
+A43,"Inastars Observatory, Potsdam (before 2006)",52.359,13.09,Germany
+A44,Altschwendt,48.333,13.697,Austria
+A45,Karrenkneul,51.395,9.362,Germany
+A46,Lelekovice,49.293,16.582,Czech Republic
+A47,Matera,40.669,16.603,Italy
+A48,Povegliano Veronese,45.347,10.888,Italy
+A49,Uppsala-Angstrom,59.838,17.637,Sweden
+A50,Andrushivka Astronomical Observatory,50.001,28.997,Ukraine
+A51,Danzig,54.382,18.667,Poland
+A52,Etyek,47.444,18.755,Hungary
+A53,Peschiera del Garda,45.434,10.688,Italy
+A54,Ostrorog,52.628,16.622,Poland
+A55,Osservatorio Astronomico Vallemare di Borbona,42.486,13.118,Italy
+A56,Parma,44.534,10.32,Italy
+A57,"Osservatorio Astron. Margherita Hack, Firenze",43.742,11.103,Italy
+A58,Observatoire de Chalandray-Canotiers,48.693,2.469,France
+A59,Karlovy Vary Observatory,50.216,12.907,Czech Republic
+A60,"YSTAR-NEOPAT Station, Sutherland",-32.38,20.811,South Africa
+A61,Tortona,44.904,8.858,Italy
+A62,Aichtal,48.621,9.23,Germany
+A63,"Cosmosoz Obs., Tassin la Demi Lune",45.768,4.757,France
+A64,Couvaloup de St-Cergue,46.449,6.115,Switzerland
+A65,Le Couvent de Lentin,44.097,2.408,France
+A66,"Stazione Osservativa Astronomica, Livorno",43.533,10.316,Italy
+A67,Chiusa di Pesio,44.323,7.678,Italy
+A68,"Swedenborg Obs., Bockholmwik",54.812,9.653,Germany
+A69,Osservatorio Palazzo Bindi Sergardi,43.321,11.33,Italy
+A70,Lumijoki,64.826,25.203,Finland
+A71,Stixendorf,48.429,15.453,Austria
+A72,Radebeul Observatory,51.116,13.622,Germany
+A73,"Penzing Astrometric Obs., Vienna",48.194,16.29,Austria
+A74,Bergen-Enkheim Observatory,50.159,8.762,Germany
+A75,"Fort Pius Observatory, Barcelona",41.398,2.186,Spain
+A76,"Andromeda Observatory, Miskolc",48.07,20.836,Hungary
+A77,"Observatoire Chante-Perdrix, Dauban",44.0,5.647,France
+A78,Stia,43.135,11.715,Italy
+A79,"Zvezdno Obshtestvo Observatory, Plana",42.064,23.843,Bulgaria
+A80,Lindenberg Observatory,52.209,14.122,Germany
+A81,"Balzaretto Observatory, Rome",41.87,12.403,Italy
+A82,Osservatorio Astronomico di Trieste,45.643,13.874,Slovenia
+A83,Jakokoski Observatory,62.727,29.997,Finland
+A84,TUBITAK National Observatory,36.825,30.333,Turkey
+A85,"Odesa  Astronomical Observatory, Kryzhanovka",46.56,30.806,Ukraine
+A86,Albigneux,45.538,4.355,France
+A87,Rimbach,49.604,8.766,Germany
+A88,Bolzaneto,44.457,8.901,Italy
+A89,"Sterni Observatory, Kempten",47.709,10.331,Germany
+A90,"Sant Gervasi Observatory, Barcelona",41.402,2.143,Spain
+A91,Hankasalmi Observatory,62.254,26.6,Finland
+A92,"Urseanu Observatory, Bucharest",44.449,26.093,Romania
+A93,Lucca,43.858,10.419,Italy
+A94,Cormons,45.957,13.458,Italy
+A95,"Taurus Hill Observatory, Varkaus",62.315,28.389,Finland
+A96,Klosterneuburg,48.296,16.287,Austria
+A97,Stammersdorf,48.303,16.422,Austria
+A98,"Observatory Mazzarot-1, Baran'",54.491,30.209,Belarus
+A99,Osservatorio del Monte Baldo,45.698,10.859,Italy
+B00,Savigny-le-Temple,48.575,2.577,France
+B01,"Taunus Observatory, Frankfurt",50.222,8.446,Germany
+B02,Kielce,50.881,20.657,Poland
+B03,"Alter Satzberg, Vienna",48.217,16.27,Austria
+B04,"OAVdA, Saint-Barthelemy",45.79,7.479,Italy
+B05,"Ka-Dar Observatory, Barybino",55.248,37.883,Russia
+B06,Montseny Astronomical Observatory,41.722,2.534,Spain
+B07,Camorino,46.164,9.003,Switzerland
+B08,San Lazzaro di Savena,44.456,11.381,Italy
+B09,Capannoli,43.586,10.671,Italy
+B10,"Observatoire des Baronnies Provencales, Moydans",44.408,5.515,France
+B11,"Osservatorio Cima Rest, Magasa",45.775,10.629,Italy
+B12,"Koschny Observatory, Noordwijkerhout",52.265,4.491,Netherlands
+B13,Osservatorio di Tradate,45.712,8.931,Italy
+B14,Ca del Monte,44.818,9.076,Italy
+B15,"Inastars Observatory, Potsdam (since 2006)",52.424,13.013,Germany
+B16,"1st Moscow Gymnasium Observatory, Lipki",55.77,36.955,Russia
+B17,AZT-8 Yevpatoriya,45.22,33.163,Russia
+B18,Terskol,43.275,42.501,Russia
+B19,"Observatorio Iluro, Mataro",41.538,2.441,Spain
+B20,"Observatorio Carmelita, Tiana",41.484,2.264,Spain
+B21,"Gaisberg Observatory, Schaerding",48.543,13.474,Austria
+B22,Observatorio d'Ager,42.02,0.744,Spain
+B23,Fiamene,45.576,10.971,Italy
+B24,Cesson,48.554,2.598,France
+B25,Catania,37.549,15.056,Italy
+B26,"Observatoire des Terres Blanches, Reillanne",43.878,5.667,France
+B27,"Picard Observatory, St. Veit",48.477,14.154,Austria
+B28,"Mandi Observatory, Pagnacco",46.097,13.184,Italy
+B29,"L'Ampolla Observatory, Tarragona",40.807,0.67,Spain
+B30,Szamotuly-Galowo,52.596,16.569,Poland
+B31,"Southern African Large Telescope, Sutherland",-32.376,20.811,South Africa
+B32,Gelenau,50.703,12.949,Germany
+B33,"Libbiano Observatory, Peccioli",43.555,10.778,Italy
+B34,"Green Island Observatory, Gecitkale",35.258,33.726,N. Cyprus
+B35,"Bareket Observatory, Macabim",31.888,35.032,Palestine
+B36,"Redshed Observatory, Kallham",48.275,13.712,Austria
+B37,"Obs. de L' Ametlla del Valles, Barcelona",41.651,2.259,Spain
+B38,Santa Mama,43.631,11.857,Italy
+B39,Tradate,45.712,8.907,Italy
+B40,"Skylive Observatory, Catania",37.603,15.071,Italy
+B41,Zlin Observatory,49.217,17.692,Czech Republic
+B42,Vitebsk,55.058,30.325,Belarus
+B43,Hennef,50.746,7.309,Germany
+B44,Eygalayes,44.238,5.591,France
+B45,Narama,50.18,19.936,Poland
+B46,"Sintini Observatory, Alfonsine",44.504,12.054,Italy
+B47,"Metsala Observatory, Espoo",60.198,24.75,Finland
+B48,Bocholt,51.85,6.598,Germany
+B49,"Paus Observatory, Sabadell",41.551,2.112,Spain
+B50,"Corner Observatory, Durmersheim",48.943,8.277,Germany
+B51,Vallauris,43.578,7.067,France
+B52,Observatorio El Far,42.25,2.997,Spain
+B53,"Casal Lumbroso, Rome",41.875,12.354,Italy
+B54,Ager,42.019,0.744,Spain
+B55,Comeglians,46.508,12.876,Italy
+B56,"Observatorio Sant Pere, Mataro",41.539,2.449,Spain
+B57,"Laietania Observatory, Parets del Valles",41.565,2.224,Spain
+B58,"Polaris Observatory, Budapest",47.553,19.025,Hungary
+B59,Borken,51.834,6.879,Germany
+B60,"Deep Sky Observatorium, Bad Bentheim",52.299,7.175,Germany
+B61,"Valldoreix Obs.,Sant Cugat del Valles",41.457,2.043,Spain
+B62,Brelingen,52.556,9.685,Germany
+B63,"Solaris Observatory, Luczanowice",50.112,20.108,Poland
+B64,"Slope Rock Observatory, Hyvinkaa",60.638,24.888,Finland
+B65,"Komakallio Observatory, Kirkkonummi",60.173,24.388,Finland
+B66,Osservatorio di Casasco,44.817,9.007,Italy
+B67,"Sternwarte Mirasteilas, Falera",46.804,9.224,Switzerland
+B68,Mount Matajur Observatory,46.203,13.54,Slovenia
+B69,"Owls and Ravens Observatory, Holzgerlingen",48.635,9.017,Germany
+B70,Sant Celoni,41.691,2.494,Spain
+B71,Observatorio El Vendrell,41.19,1.521,Spain
+B72,Soerth Observatory,50.699,7.681,Germany
+B73,"Mauren Valley Observatory, Holzgerlingen",48.641,8.985,Germany
+B74,Santa Maria de Montmagastrell,41.72,1.105,Spain
+B75,"Stazione Astronomica Betelgeuse, Magnago",45.585,8.805,Italy
+B76,"Sternwarte Schonfeld, Dresden",51.032,13.894,Germany
+B77,"Schafmatt Observatory, Aarau",47.42,7.951,Switzerland
+B78,"Astrophoton Observatory, Audorf",47.964,14.128,Austria
+B79,Marana Observatory,45.638,11.21,Italy
+B80,Osservatorio Astronomico Campomaggiore,42.174,12.741,Italy
+B81,Caimari,39.772,2.899,Spain
+B82,Maidbronn,49.846,9.972,Germany
+B83,Gieres,45.185,5.798,France
+B84,"Cyclops Observatory, Oostkapelle",51.572,3.538,Netherlands
+B85,Beilen Observatory,52.867,6.51,Netherlands
+B86,Sternwarte Hagen,51.346,7.456,Germany
+B87,Banyoles,42.114,2.77,Spain
+B88,"Bigmuskie Observatory, Mombercelli",44.817,8.297,Italy
+B89,Observatori Astronomic de Tiana,41.492,2.262,Spain
+B90,"Malina River Observatory, Povoletto",46.15,13.297,Italy
+B91,Bollwiller,47.865,7.255,France
+B92,Chinon,47.169,0.275,France
+B93,Hoogeveen,52.713,6.479,Netherlands
+B94,Petrozavodsk,61.772,34.282,Russia
+B95,Achternholt,53.048,8.155,Germany
+B96,"Brixiis Observatory, Kruibeke",51.164,4.31,Belgium
+B97,"Sterrenwacht Andromeda, Meppel",52.005,6.112,Netherlands
+B98,Siena,43.318,11.313,Italy
+B99,Santa Coloma de Gramenet,42.019,0.744,Spain
+C00,Velikie Luki,56.322,30.515,Russia
+C01,"Lohrmann-Observatorium, Triebenberg",51.027,13.923,Germany
+C02,Observatorio Royal Park,41.731,2.53,Spain
+C03,"Clayhole Observatory, Jokela",60.552,24.961,Finland
+C04,Kramatorsk,48.798,37.633,Ukraine
+C05,Konigsleiten,47.248,12.115,Austria
+C06,Krasnoyarsk,56.012,92.974,Russia
+C07,"Anysllum Observatory, Ager",42.019,0.744,Spain
+C08,Fiby,59.884,17.376,Sweden
+C09,Rouet,43.823,3.804,France
+C10,Maisoncelles,48.718,3.426,France
+C11,"City Observatory, Slany",50.237,14.09,Czech Republic
+C12,"Berta Observatory, Sabadell",41.536,2.111,Spain
+C13,Como,45.805,9.1,Italy
+C14,"Sky Vistas Observatory, Eichgraben",48.151,15.967,Austria
+C15,ISON-Ussuriysk Observatory,43.698,132.166,Russia
+C16,"Isarwinkel Observatory, Bad Tolz",47.749,11.573,Germany
+C17,"Pingu, Ager",42.019,0.744,Spain
+C18,Frasnes-Lez-Anvaing,50.684,3.604,Belgium
+C19,"ROSA Observatory, Vaucluse",44.384,5.423,France
+C20,"Kislovodsk Mtn. Astronomical Stn., Pulkovo Obs.",43.742,42.662,Russia
+C21,"Observatorio Via Lactea, Ager",42.019,0.744,Spain
+C22,Oberwiesenthal,50.416,12.96,Germany
+C23,Olmen,51.14,5.154,Belgium
+C24,Seveso,45.642,9.133,Italy
+C25,"Pulkovo Observatory Station, Campo Imperatore",42.444,13.558,Italy
+C26,"Levendaal Observatory, Leiden",52.155,4.499,Netherlands
+C27,Pallerols,41.618,1.353,Spain
+C28,Wellinghofen,51.469,7.483,Germany
+C29,Observatori Astronomic de Les Planes de Son,42.618,1.079,Spain
+C30,"Petrozavodsk University Obs., Sheltozero Stn.",61.404,35.342,Russia
+C31,"Sternwarte Neanderhoehe Hochdahl e.V., Erkrath",51.209,6.982,Germany
+C32,"Ka-Dar Observatory, TAU Station, Nizhny Arkhyz",43.65,41.426,Russia
+C33,"Observatorio CEAM, Caimari",39.772,2.899,Spain
+C34,Baja Astronomical Observatory,46.181,19.011,Hungary
+C35,Terrassa,41.572,2.035,Spain
+C36,"Starry Wanderer Observatory, Baran'",54.48,30.309,Belarus
+C37,Stowupland,52.197,1.018,United Kingdom
+C38,"Varuna Observatory, Cuorgne",45.406,7.649,Italy
+C39,Nijmegen,51.829,5.799,Netherlands
+C40,Kuban State University Astrophysical Observatory,45.02,39.031,Russia
+C41,"MASTER-II Observatory, Kislovodsk",43.742,42.661,Russia
+C42,"Xingming Observatory, Mt. Nanshan",43.471,87.178,China
+C43,Hoyerswerda,51.448,14.279,Germany
+C44,"A. Volta Observatory, Lanzo d'Intelvi",45.975,9.022,Italy
+C45,La Giustiniana,41.988,12.406,Italy
+C46,"Horizon Observatory, Petropavlovsk",54.878,69.122,Kazakhstan
+C47,Nonndorf,48.787,15.236,Austria
+C48,"Sayan Solar Observatory, Irkutsk",51.62,100.921,Russia
+C60,"Argelander Institute for Astronomy Obs., Bonn",50.73,7.069,Germany
+C61,Chelles,48.88,2.582,France
+C62,"Eurac Observatory, Bolzano",46.494,11.347,Italy
+C63,"Giuseppe Piazzi Observatory, Ponte in Valtellina",46.189,9.98,Italy
+C64,Puchenstuben,47.929,15.284,Austria
+C65,Observatori Astronomic del Montsec,42.052,0.73,Spain
+C66,Observatorio El Cielo de Consell,39.667,2.805,Spain
+C67,Gnevsdorf,53.404,12.22,Germany
+C68,"Ellinogermaniki Agogi Observatory, Pallini",37.998,23.893,Greece
+C69,"Bayerwald Sternwarte, Neuhuette",48.928,13.361,Germany
+C70,"Uiterstegracht Station, Leiden",52.157,4.498,Netherlands
+C71,Sant Marti Sesgueioles,41.702,1.489,Spain
+C72,Palestrina,41.837,12.872,Italy
+C73,Galati Observatory,45.419,28.032,Romania
+C74,"Observatorio El Teatrillo de Lyra, Ager",42.02,0.745,Spain
+C75,"Whitestar Observatory, Borgobello",46.163,13.222,Italy
+C76,"Observatorio Estels, Ager",42.019,0.744,Spain
+C77,Bernezzo Observatory,44.385,7.454,Italy
+C78,"Martin S. Kraar Observatory, Rehovot",31.908,34.812,Israel
+C79,"Roser Observatory, Blanes",41.678,2.786,Spain
+C80,"Don Astronomical Observatory, Rostov-on-Don",47.285,39.765,Russia
+C81,Dolomites Astronomical Observatory,46.241,10.841,Italy
+C82,"Osservatorio Astronomico Nastro Verde, Sorrento",40.619,14.358,Italy
+C83,Badalozhnyj Observatory,56.084,91.842,Russia
+C84,Badalona,41.446,2.244,Spain
+C85,"Observatorio Cala d'Hort, Ibiza",38.891,1.241,Spain
+C86,Blanes,41.678,2.781,Spain
+C87,Rimbach,49.621,8.769,Germany
+C88,"Montarrenti Observatory, Siena",43.233,11.183,Italy
+C89,Astronomical Station Vidojevica,43.14,21.556,Serbia
+C90,Vinyols,41.11,1.052,Spain
+C91,"Montevenere Observatory, Monzuno",44.243,11.226,Italy
+C92,"Valdicerro Observatory, Loreto",43.426,13.61,Italy
+C93,"Bellavista Observatory, L'Aquila",42.335,13.406,Italy
+C94,"MASTER-II Observatory, Tunka",51.81,103.067,Russia
+C95,"SATINO Remote Observatory, Haute Provence",43.932,5.712,France
+C96,"OACL Observatory, Mosciano Sant Angelo",42.754,13.879,Italy
+C97,"Al-Fulaij Observatory, Oman",23.629,57.976,Oman
+C98,"Osservatorio Casellina, Scandicci",43.765,11.176,Italy
+C99,"Observatori Can Roig, Llagostera",41.827,2.896,Spain
+D00,ASC-Kislovodsk Observatory,43.74,42.654,Russia
+D01,"Andean Northern Observatory, Nummi-Pusula",60.353,23.931,Finland
+D02,Observatori Petit Sant Feliu,41.384,2.052,Spain
+D03,"Rantiga Osservatorio, Tincana",44.441,10.589,Italy
+D04,Krasnodar,44.894,38.857,Russia
+D05,ISON-Terskol Observatory,43.275,42.5,Russia
+D06,"Associazione Tuscolana di Astronomia, Domatore",41.75,12.77,Italy
+D07,Wegberg,51.143,6.209,Germany
+D08,"Ghezz Observatory, Leontica",46.455,8.919,Switzerland
+D09,"Observatory Gromme, Maasmechelen",50.942,5.679,Belgium
+D10,Gaertringen,48.649,8.902,Germany
+D11,Bastidan Observatory,43.791,5.628,France
+D12,"Filzi School Observatory, Laives",46.423,11.338,Italy
+D13,Cat's Eye Observatory,42.48,11.564,Italy
+D14,"Nanchuan Observatory, Guangzhou",23.144,113.323,China
+D15,"Sternwarte F.Schiller-Gymnasium, Weimar",50.983,11.318,Germany
+D16,"Po Leung Kuk Observatory, Tuen Mun",22.377,113.964,Hong Kong
+D17,Hong Kong,22.475,114.22,Hong Kong
+D18,Mt. Guizi Observatory,30.521,114.358,China
+D19,Hong Kong Space Museum Sai Kung iObservatory,22.408,114.323,Hong Kong
+D20,"Zadko Observatory, Wallingup Plain",-31.356,115.713,Australia
+D21,Shenton Park,-31.962,115.815,Australia
+D22,"UWA Observatory, Crawley",-31.979,115.817,Australia
+D23,"OAIA, Alcarras",41.562,0.519,Spain
+D24,"LightBuckets Observatory, Pingelly",-32.514,117.09,Australia
+D25,"Tzec Maun Observatory, Pingelly (before 2010)",-32.513,117.09,Australia
+D26,"Peyrole Observatory, Peyrole",43.808,1.921,France
+D27,"Observatoire de Fontcaude, Juvignac",43.627,3.804,France
+D28,"Escaldarium Observatory,Caldes de Montbui",41.62,2.183,Spain
+D29,"Purple Mountain Observatory, XuYi Station",32.734,118.464,China
+D30,"Sternwarte Silbergraben, Erfurt",50.943,11.084,Germany
+D31,"Osservatorio Aldebaran, Rivalba",44.504,10.098,Italy
+D32,"JiangNanTianChi Observatory, Mt. Getianling",30.469,119.6,China
+D33,"Kenting Observatory, Checheng",22.05,120.698,Taiwan
+D34,"Kenting Observatory, Hengchun",21.95,120.784,Taiwan
+D35,Lulin Observatory,23.469,120.874,Taiwan
+D36,"Tataka, Mt. Yu-Shan National Park",23.487,120.89,Taiwan
+D37,"Lulin Widefield Telescope, Mt. Lulin",23.469,120.873,Taiwan
+D38,"Tecnosky Astropark, Felizzano",44.913,8.438,Italy
+D39,"Shandong University Observatory, Weihai",37.536,122.05,China
+D40,Frosinone,41.653,13.338,Italy
+D41,Osservatorio Astronomico Orciatico,43.429,10.717,Italy
+D42,"Piero Angela Observatory, Scandicci",43.748,11.191,Italy
+D43,"45th Parallel Observatory, Pino Torinese",45.045,7.77,Italy
+D44,Ishigakijima Astronomical Observatory,24.373,124.139,Japan
+D45,"Kamyk, Trzesn",50.335,21.493,Poland
+D46,Observatory Bad Wurzach,47.906,9.903,Germany
+D47,"BigBang Observatory, Manciano",42.48,11.564,Italy
+D48,Niederbexbach Observatory,49.331,7.264,Germany
+D49,L'Ametlla de Mar,40.877,0.794,Spain
+D50,"Vaucluse Observatoire Celeste, Blauvac",44.039,5.215,France
+D51,Plateau Astronomique La Couronne,44.083,1.948,France
+D52,"ULU Observatory, Caselle Landi",45.098,9.798,Italy
+D53,ISON-Blagoveschensk Observatory,50.319,127.482,Russia
+D54,"MASTER-II Observatory, Blagoveshchensk",50.319,127.483,Russia
+D55,"Kangwon Science High School Observatory, Ksho",37.373,127.975,South Korea
+D56,"Osservatorio Sideris Oculus, San Pietro in Gu",45.608,11.674,Italy
+D57,"Gimhae Astronomical Observatory, Uhbang-dong",35.253,128.887,South Korea
+D58,"KSA SEM Observatory, Danggam-dong",35.166,129.025,South Korea
+D59,"MARIAMIR, Saint-Jeannet",43.748,7.156,France
+D60,"Sparky's Stars, Masseris",46.184,13.551,Italy
+D61,"Suntopia Marina, Sumoto",34.328,134.913,Japan
+D62,Miyaki-Argenteus,33.289,130.449,Japan
+D63,"G. Pascoli Observatory, Barga (since June 2023)",44.081,10.461,Italy
+D64,"Fucama, Casalincontrada",42.306,14.11,Italy
+D65,"G. Beltrame, Arcugnano Vicenza",45.497,11.535,Italy
+D66,Civico Osservatorio Astronomico di Rozzano,45.377,9.148,Italy
+D67,"Tula Rooftop Observatory, Tula",54.209,37.625,Russia
+D68,"Osservatorio Galileo, Padova",45.465,11.736,Italy
+D69,JMU Space-Observatory,49.783,9.97,Germany
+D70,Tosa,33.468,133.469,Japan
+D71,"ObservaSTYRium, Stainz bei Straden",46.822,15.892,Austria
+D72,"WAA Remote Observatory, Hakos",-23.237,16.361,Namibia
+D73,"SNX-NET, Hakos",-23.237,16.361,Namibia
+D74,Nakagawa,33.949,134.682,Japan
+D75,Cariati,39.489,16.956,Italy
+D76,"AAT-Terrassa, Terrassa",41.565,2.007,Spain
+D77,TD-TRO (Tuscany Remote Observatory),43.429,10.717,Italy
+D78,Iga-Ueno,34.769,136.133,Japan
+D79,"YSVP Observatory, Vale Park",-34.884,138.631,Australia
+D80,Gumma Astronomical Observatory,36.596,138.973,Japan
+D81,Nagano,36.669,138.224,Japan
+D82,Wallaroo,-33.931,137.632,Australia
+D83,Miwa,36.496,138.468,Japan
+D84,Hallet Cove,-35.086,138.509,Australia
+D85,Ingle Farm,-34.821,138.66,Australia
+D86,Penwortham,-33.919,138.641,Australia
+D87,Brooklyn Park,-34.926,138.55,Australia
+D88,Hiratsuka,35.37,139.314,Japan
+D89,Yamagata,38.185,140.338,Japan
+D90,"RAS Observatory, Moorook",-34.269,140.342,Australia
+D91,Adati,37.666,140.825,Japan
+D92,Osaki,38.566,140.946,Japan
+D93,Sendai Astronomical Observatory,38.255,140.755,Japan
+D94,"Takanezawa, Tochigi",36.628,139.996,Japan
+D95,Kurihara,38.801,141.068,Japan
+D96,"Tzec Maun Observatory, Moorook",-34.269,140.342,Australia
+D97,Berri,-34.245,140.57,Australia
+D98,Loiano TANDEM,44.259,11.334,Italy
+D99,"AstroKoT, Port-Ste-Marie",44.262,0.391,France
+E00,Castlemaine,-37.06,144.209,Australia
+E01,Barfold,-37.099,144.541,Australia
+E03,"RAS Observatory, Officer",-38.136,145.382,Australia
+E04,"Pacific Sky Observatory, Saipan",15.157,145.74,N. Mariana Is.
+E05,"Earl Hill Observatory, Trinity Beach",-16.795,145.697,Australia
+E07,Murrumbateman,-34.959,148.999,Australia
+E08,"Wobblesock Observatory, Coonabarabran",-31.227,149.334,Australia
+E09,"Oakley Southern Sky Observatory, Coonabarabran",-31.281,149.081,Australia
+E10,Siding Spring-Faulkes Telescope South,-31.273,149.071,Australia
+E11,"Frog Rock Observatory, Mudgee",-32.456,149.663,Australia
+E12,Siding Spring Survey,-31.273,149.064,Australia
+E13,Wanniassa,-35.39,149.097,Australia
+E14,"Hunters Hill Observatory, Ngunnawal",-35.162,149.11,Australia
+E15,"Magellan Observatory, near Goulburn",-34.999,149.606,Australia
+E16,"Grove Creek Observatory, Trunkey",-33.83,149.366,Australia
+E17,Leura,-33.707,150.342,Australia
+E18,"BDI Observatory, Regents Park",-34.01,151.027,Australia
+E19,Kingsgrove,-33.948,151.096,Australia
+E20,Marsfield,-33.771,151.103,Australia
+E21,"Norma Rose Observatory, Leyburn",-27.986,151.567,Australia
+E22,"Univ. of Southern Queensland Obs., Mt. Kent",-27.798,151.855,Australia
+E23,Arcadia,-33.621,151.071,Australia
+E24,"Tangra Observatory, St. Clair",-33.81,150.777,Australia
+E25,Rochedale (APTA),-27.564,153.117,Australia
+E26,"RAS Observatory, Biggera Waters",-27.934,153.397,Australia
+E27,Thornlands,-27.566,153.267,Australia
+E28,"Kuriwa Observatory, Hawkesbury Heights",-33.664,150.641,Australia
+E29,Mardella Observatory,-32.31,115.955,Australia
+E41,Strathalbyn,-35.24,138.89,Australia
+E42,"AUSTRALIA1/SRI, Swan Reach",-34.544,139.57,Australia
+E52,"The Rock Regional Observatory, The Rock",-35.268,147.096,Australia
+E54,TransAstra at Springbrook,-31.282,149.081,Australia
+E55,GOTO South,-31.274,149.064,Australia
+E62,"Slooh.com Australia, Coonabarabran",-31.282,149.081,Australia
+E81,Nelson,-41.274,173.262,New Zealand
+E83,"Wither Observatory, Witherlea",-41.536,173.957,New Zealand
+E84,Twizel Observatory,-44.258,170.102,New Zealand
+E85,Farm Cove,-36.896,174.894,New Zealand
+E86,"Speranza Observatory, Otaki",-40.762,175.169,New Zealand
+E87,Turitea,-40.412,175.654,New Zealand
+E89,"Geyserland Observatory, Pukehangi",-38.136,176.204,New Zealand
+E94,"Possum Observatory, Gisborne",-38.63,177.883,New Zealand
+F51,"Pan-STARRS 1, Haleakala",20.707,-156.256,United States
+F52,"Pan-STARRS 2, Haleakala",20.707,-156.256,United States
+F59,"Ironwood Remote Observatory, Hawaii",21.311,-158.059,United States
+F60,"Ironwood Observatory, Hawaii",21.645,-158.047,United States
+F65,Haleakala-Faulkes Telescope North,20.707,-156.258,United States
+F84,"Hibiscus Observatory, Punaauia",-17.634,-149.616,Fr. Polynesia
+F85,"Tiki Observatory, Punaauia",-17.634,-149.616,Fr. Polynesia
+F86,"Moana Observatory, Punaauia",-17.634,-149.616,Fr. Polynesia
+G00,"AZM Martinsberg, Oed",48.382,15.126,Austria
+G01,Universitaetssternwarte Oldenburg,53.153,8.165,Germany
+G02,"KYSUCE Observatory, Kysucke Nove Mesto",49.307,18.765,Slovakia
+G03,"Capricornus Observatory, Csokako",47.363,18.261,Hungary
+G04,"Schuelerlabor Astronomie St. 7, Wuppertal",51.231,7.141,Germany
+G05,"Piconcillo, Sierra Morena",38.177,-5.466,Spain
+G06,"Dordrecht, Sterrenburg",51.779,4.672,Netherlands
+G07,Millau Observatory,44.096,3.064,France
+G08,"Observatorio Les Pedritxes, Matadepera",41.62,1.997,Spain
+G09,"SWF Observatory, South Woodham Ferrers",51.648,0.611,United Kingdom
+G10,"Clavier Observatory, Lora Del Rio",37.668,-5.549,Spain
+G11,"Breitenweg Observatory, Herkenrath",50.993,7.184,Germany
+G12,"Sternwarte EG, Lippstadt",51.676,8.331,Germany
+G13,"Astronomihagen, Fannrem",63.214,9.772,Norway
+G14,"Novaloop Observatory, Mougins",43.609,7.005,France
+G15,"Magroforte Observatory, Alessandria",44.772,9.118,Italy
+G16,"OmegaLab Observatory, Palermo",38.1,13.349,Italy
+G17,"BAS Observatory, Scandicci",43.752,11.203,Italy
+G18,"ALMO Observatory, Padulle",44.627,11.281,Italy
+G19,"Immanuel Kant Observatory,Limbach",50.861,12.746,Germany
+G20,Brignoles Observatory,43.401,6.06,France
+G21,Osservatorio Castrofilippo,37.347,13.738,Italy
+G22,"Experimenta Observatory, Heilbronn",49.144,9.214,Germany
+G23,"Vulpecula Observatory, Budapest",47.589,19.092,Hungary
+G24,Dettenhausen,48.613,9.094,Germany
+G25,Sherbrooke,45.416,-71.895,Canada
+G26,"Fushan Observatory, Mt Shaohua",34.508,109.824,China
+G27,"Fabra Observatory, Montsec",42.052,0.729,Spain
+G28,"Wyncroft Observatory, Attleborough",52.511,1.008,United Kingdom
+G29,Requena,39.491,-1.088,Spain
+G30,Casselman,45.306,-75.093,Canada
+G31,CCAT Trieste,45.715,13.725,Italy
+G32,"Elena Remote Observatory, San Pedro de Atacama",-22.953,-68.18,Chile
+G33,Wickede,51.529,7.609,Germany
+G34,Oberfrauendorf,50.86,13.702,Germany
+G35,"Elephant Head Obsevatory, Sahuarita",31.945,-110.842,United States
+G36,Calar Alto-CASADO,37.223,-2.548,Spain
+G37,Lowell Discovery Telescope,34.744,-111.422,United States
+G38,"Observatorio La Senda, Cabanillas del Campo",40.641,-3.232,Spain
+G39,"ROAD, San Pedro de Atacama",-22.953,-68.18,Chile
+G40,Slooh.com Canary Islands Observatory,28.3,-16.508,Spain
+G41,"Insperity Observatory, Humble",29.967,-95.262,United States
+G42,"Observatorio Astronomico UAdeC, Saltillo",25.428,-100.977,Mexico
+G43,"Observatorio Buenaventura Suarez, San Luis",-33.152,-66.312,Argentina
+G44,"Observatorio Longa Vista, Sao Paulo",-22.987,-46.694,Brazil
+G45,"Space Surveillance Telescope, Atom Site",33.739,-106.364,United States
+G46,Pinto Valley Observatory,35.225,-115.338,United States
+G47,"HillTopTop Observatory, Edgewood",35.05,-106.193,United States
+G48,"Harlingten Research Observatory, Rancho Hildalgo",31.947,-108.899,United States
+G49,Minnetonka,44.954,-93.406,United States
+G50,"Organ Mesa Observatory, Las Cruces",32.296,-106.67,United States
+G51,"Byrne Observatory, Sedgwick Reserve",34.691,-120.042,United States
+G52,"Stone Edge Observatory, El Verano",38.289,-122.504,United States
+G53,"Alder Springs Observatory, Auberry",37.071,-119.413,United States
+G54,Hemet,33.694,-116.937,United States
+G55,Bakersfield,35.371,-118.905,United States
+G56,Walnut Creek,37.924,-122.071,United States
+G57,"Dilbert Observatory, Forest Grove",45.532,-123.144,United States
+G58,"Chabot Space and Science Center, Oakland",37.819,-122.182,United States
+G59,"Maiden Lane Obs., Bainbridge Island",47.662,-122.547,United States
+G60,"Carroll Observatory, Montecito",34.448,-119.661,United States
+G61,Pleasanton,37.656,-121.848,United States
+G62,"Sunriver Nature Center Observatory, Sunriver",43.876,-121.453,United States
+G63,"Mill Creek Observatory, The Dalles",45.549,-121.314,United States
+G64,Blue Canyon Observatory,39.274,-120.709,United States
+G65,"Vulcan North, Lick Observatory, Mount Hamilton",37.343,-121.639,United States
+G66,"Lake Forest Observatory, Forest Hills",38.712,-121.083,United States
+G67,"Rancho Del Sol, Camino",38.721,-120.635,United States
+G68,"Sierra Stars Observatory, Markleeville",38.812,-119.775,United States
+G69,"Via Capote Sky Observatory, Thousand Oaks",34.17,-118.984,United States
+G70,"Francisquito Observatory, Los Angeles",34.463,-118.545,United States
+G71,Rancho Palos Verdes,33.772,-118.395,United States
+G72,University Hills,34.064,-118.176,United States
+G73,Mount Wilson-TIE,34.213,-118.06,United States
+G74,"Boulder Knolls Observatory, Escondido",33.225,-117.115,United States
+G75,"Starry Knight Observatory, Coto de Caza",33.484,-116.722,United States
+G76,"Altimira Observatory, Coto de Caza",33.592,-117.582,United States
+G77,Baldwin Lake,34.284,-116.282,United States
+G78,"Desert Wanderer Observatory, El Centro",32.78,-115.687,United States
+G79,Goat Mountain Astronomical Research Station,34.291,-116.384,United States
+G80,"Sierra Remote Observatories, Auberry",37.07,-119.413,United States
+G81,Temecula,33.487,-117.087,United States
+G82,"SARA Observatory, Kitt Peak",31.961,-111.599,United States
+G83,Mt. Graham-LBT,32.702,-109.89,United States
+G84,Mount Lemmon SkyCenter,32.443,-110.789,United States
+G85,"Vermillion Cliffs Observatory, Kanab",37.029,-112.435,United States
+G86,Tucson-Winterhaven,32.27,-110.93,United States
+G87,"Calvin M. Hooper Memorial Observatory, Hyde Park",41.808,-111.811,United States
+G88,"LAMP Observatory, New River",33.934,-112.112,United States
+G89,"Kachina Observatory, Flagstaff",35.1,-111.693,United States
+G90,"Three Buttes Observatory, Tucson",32.642,-111.034,United States
+G91,"Whipple Observatory, Mt. Hopkins--2MASS",31.681,-110.878,United States
+G92,"Jarnac Observatory, Vail",31.976,-110.719,United States
+G93,"Sonoita Research Observatory, Sonoita",31.662,-110.627,United States
+G94,"Sonoran Skies Observatory, St. David",31.929,-110.073,United States
+G95,"Hereford Arizona Observatory, Hereford",31.452,-110.238,United States
+G96,University of Arizona Mt. Lemmon Survey,32.443,-110.789,United States
+G97,"Astronomical League Alpha Observatory, Portal",31.933,-109.131,United States
+G98,"Calvin-Rehoboth Observatory, Rehoboth",35.525,-108.656,United States
+G99,"NF Observatory, Silver City",32.771,-108.19,United States
+H00,Tyrone,32.711,-108.301,United States
+H01,"Magdalena Ridge Observatory, Socorro",33.985,-107.189,United States
+H02,"Sulphur Flats Observatory, La Cueva",35.882,-106.629,United States
+H03,"Sandia View Observatory, Rio Rancho",35.273,-106.645,United States
+H04,Santa Fe,35.64,-105.974,United States
+H05,"Edmund Kline Observatory, Deer Trail",39.644,-103.929,United States
+H06,"iTelescope Observatory, Mayhill",32.903,-105.529,United States
+H07,"7300 Observatory, Cloudcroft",32.903,-105.529,United States
+H08,"BlackBird Observatory, Cloudcroft",32.904,-105.529,United States
+H09,"Antelope Hills Observatory, Bennett",39.697,-104.411,United States
+H10,"Tzec Maun Observatory, Mayhill",32.903,-105.529,United States
+H11,"LightBuckets Observatory, Rodeo",31.861,-109.016,United States
+H12,"TechDome, Mayhill",32.903,-105.529,United States
+H13,"Lenomiya Observatory, Casa Grande",32.902,-111.748,United States
+H14,"Morning Star Observatory, Tucson",32.276,-110.788,United States
+H15,"ISON-NM Observatory, Mayhill",32.903,-105.528,United States
+H16,"HUT Observatory, Eagle",39.633,-106.711,United States
+H17,Angel Peaks Observatory,38.517,-105.617,United States
+H18,"Vail View Observatory, Vail",31.974,-110.712,United States
+H19,"Lone Star Observatory, Caney",34.183,-96.137,United States
+H20,"Eastern Illinois University Obs., Charleston",39.477,-88.183,United States
+H21,"Astronomical Research Observatory, Westfield",39.483,-87.968,United States
+H22,Terre Haute,39.346,-87.263,United States
+H23,"Pear Tree Observatory, Valparaiso",30.506,-86.501,United States
+H24,"J. C. Veen Observatory, Lowell",42.905,-85.401,United States
+H25,"Harvest Moon Observatory, Northfield",44.499,-93.129,United States
+H26,"Doc Greiner Research Observatory, Janesvillle",42.786,-89.211,United States
+H27,"Moonglow Observatory, Warrensburg",38.829,-93.769,United States
+H28,"Preston Hills Observatory, Celina",33.276,-96.769,United States
+H29,"Ivywood Observatory, Edmond",35.634,-97.451,United States
+H30,"University of Oklahoma Observatory, Norman",35.202,-97.444,United States
+H31,"Star Ridge Observatory, Weimar",29.612,-96.67,United States
+H32,"Texas A&M Physics Observatory, College Station",30.573,-96.367,United States
+H33,"Bixhoma Observatory, Bixby",36.008,-95.878,United States
+H34,Chapel Hill,32.309,-95.174,United States
+H35,Leavenworth,39.362,-95.048,United States
+H36,"Sandlot Observatory, Scranton",38.798,-95.707,United States
+H37,"Grems Timmons Observatories, Graettinger",43.258,-94.8,United States
+H38,"Timberline Observatory, Urbandale",41.44,-94.014,United States
+H39,"S.O.S. Observatory, Minneapolis",44.91,-93.317,United States
+H40,Nubbin Ridge Observatory,34.485,-93.269,United States
+H41,Petit Jean Mountain,35.14,-92.926,United States
+H42,"Wartburg College Observatory, Waverly",42.734,-92.492,United States
+H43,Conway,35.088,-92.5,United States
+H44,Cascade Mountain,35.128,-92.202,United States
+H45,"Arkansas Sky Obs., Petit Jean Mountain South",35.12,-92.917,United States
+H46,"Ricky Observatory, Blue Springs",39.004,-94.27,United States
+H47,Vicksburg,32.266,-90.856,United States
+H48,"PSU Greenbush Observatory, Pittsburg",37.513,-94.986,United States
+H49,"ATU Astronomical Observatory, Russellville",35.295,-93.136,United States
+H50,"University of Central Arkansas Obs., Conway",35.082,-92.459,United States
+H51,"Greiner Research Observatory, Verona",43.12,-89.6,United States
+H52,"Hawkeye Observatory, Durand",42.439,-89.326,United States
+H53,Thompsonville,37.945,-88.772,United States
+H54,"Cedar Drive Observatory, Pulaski",44.615,-88.349,United States
+H55,"Astronomical Research Observatory, Charleston",39.488,-88.144,United States
+H56,Northbrook Meadow Observatory,42.136,-87.832,United States
+H57,"Ohio State University Observatory, Lima",40.735,-84.028,United States
+H58,"NASA/MSFC ALaMO, Redstone Arsenal",34.657,-86.665,United States
+H59,"Prairie Grass Observatory, Camp Cullom",40.313,-86.635,United States
+H60,"Heartland Observatory, Carmel",39.973,-86.135,United States
+H61,Newcastle,43.916,-78.583,Canada
+H62,Calvin College Observatory,42.93,-85.588,United States
+H63,"DeKalb Observatory, Auburn",41.311,-85.072,United States
+H64,"Thomas More College Observatory, Crestview Hills",39.021,-84.564,United States
+H65,"Waltonfields Observatory, Walton",38.841,-84.564,United States
+H66,Yellow Springs,39.784,-83.854,United States
+H67,"Stonegate Observatory, Ann Arbor",42.298,-83.838,United States
+H68,"Red Barn Observatory, Ty Ty",31.41,-83.652,United States
+H69,"Perkins Observatory, Delaware",40.251,-83.055,United States
+H70,Asheville,35.601,-82.554,United States
+H71,Chula,31.56,-83.517,United States
+H72,"Evelyn L. Egan Observatory, Fort Myers",26.46,-81.774,United States
+H73,"Lakeland Astronomical Observatory, Kirtland",41.637,-81.365,United States
+H74,"Bar J Observatory, New Smyrna Beach",28.916,-81.125,United States
+H75,"Indian Hill North Observatory, Huntsburg",41.548,-81.081,United States
+H76,"Oakridge Observatory, Miami",25.657,-80.587,United States
+H77,Buehler Observatory,26.079,-80.235,United States
+H78,"University of Narino Observatory, Pasto",1.213,-77.291,Colombia
+H79,"York University Observatory, Toronto",43.774,-79.507,Canada
+H80,"Halsted Observatory, Princeton",40.349,-74.664,United States
+H81,"Hartung-Boothroyd Observatory, Ithaca",42.458,-76.385,United States
+H82,"CBA-NOVAC Observatory, Front Royal",38.985,-78.216,United States
+H83,"Timberlake Observatory, Oakton",38.902,-77.336,United States
+H84,"Northview Observatory, Mendon",42.994,-77.504,United States
+H85,Silver Spring,39.032,-76.997,United States
+H86,"CBA-East Observatory, Laurel",39.114,-76.842,United States
+H87,"Fenwick Observatory, Richmond",37.619,-77.564,United States
+H88,"Hope Observatory, Belcamp",39.475,-76.242,United States
+H89,"Galaxy Blues Observatory, Gatineau",45.481,-75.702,Canada
+H90,Ottawa,45.455,-75.527,Canada
+H91,"Reynolds Observatory, Potsdam",44.678,-74.952,United States
+H92,Arcturus Observatory,39.934,-74.379,United States
+H93,Berkeley Heights,40.69,-74.424,United States
+H94,Cedar Knolls,40.825,-74.456,United States
+H95,"NJIT Observatory, Newark",40.742,-74.179,United States
+H96,"Observatoire des Pleiades, Mandeville",46.354,-73.386,Canada
+H97,"Talcott Mountain Science Center, Avon",41.811,-72.799,United States
+H98,"Dark Rosanne Obs., Middlefield",41.517,-72.735,United States
+H99,"Sunhill Observatory, Newton",42.331,-71.196,United States
+I00,"Carbuncle Hill Observatory, Coventry",41.685,-71.771,United States
+I01,"Clay Center Observatory, Brookline",42.308,-71.137,United States
+I02,"Cerro Tololo Observatory, La Serena--2MASS",-30.168,-70.805,Chile
+I03,"European Southern Obs., La Silla--ASTROVIRTEL",-29.259,-70.734,Chile
+I04,Mamalluca Observatory,-29.99,-70.685,Chile
+I05,Las Campanas Observatory-TIE,-29.004,-70.702,Chile
+I06,"Werner Schmidt Obs., Dennis-Yarmouth Regional HS",41.678,-70.194,United States
+I07,"Conlin Hill Observatory, Oxford",42.129,-71.903,United States
+I08,"Alianza S4, Cerro Burek",-31.787,-69.307,Argentina
+I09,Cerro Armazones,-24.598,-70.196,Chile
+I10,"CAO, San Pedro de Atacama (until 2012)",-22.952,-68.18,Chile
+I11,"Gemini South Observatory, Cerro Pachon",-30.241,-70.737,Chile
+I12,"Phillips Academy Observatory, Andover",42.648,-71.129,United States
+I13,"Burleith Observatory, Washington D.C.",38.915,-77.07,United States
+I14,"Tigh Speuran Observatory, Framingham",42.34,-71.411,United States
+I15,"Wishing Star Observatory, Barrington",41.762,-71.299,United States
+I16,"IAA-AI Atacama, San Pedro de Atacama",-22.953,-68.18,Chile
+I17,"Thomas G. Cupillari Observatory, Fleetville",41.596,-75.678,United States
+I18,"Fan Mountain Observatory, Covesville",37.878,-78.693,United States
+I19,"Observatorio El Gato Gris, Tanti",-31.357,-64.593,Argentina
+I20,"Observatorio Astronomico Salvador, Rio Cuarto",-33.107,-64.318,Argentina
+I21,"El Condor Observatory, Cordoba",-31.371,-64.172,Argentina
+I22,"Abbey Ridge Observatory, Stillwater Lake",44.689,-63.826,Canada
+I23,"Frosty Cold Observatory, Mash Harbor",44.521,-67.734,United States
+I24,"Lake of the Woods Observatory, Locust Grove",38.343,-77.769,United States
+I25,"ECCCO Observatory, Bosque Alegre",-31.795,-64.556,Argentina
+I26,"Observatorio Kappa Crucis, Cordoba",-31.424,-64.179,Argentina
+I27,"Barred Owl Observatory, Carp",45.347,-75.999,Canada
+I28,"Starhoo Observatory, Lakeville",41.814,-70.911,United States
+I29,"Middlesex School Observatory, Concord",42.498,-71.367,United States
+I30,Observatorio Geminis Austral,-32.984,-60.658,Argentina
+I31,Observatorio Astronomico del Colegio Cristo Rey,-32.954,-60.635,Argentina
+I32,"Observatorio Beta Orionis, Rosario",-32.981,-60.654,Argentina
+I33,"SOAR, Cerro Pachon",-30.238,-70.734,Chile
+I34,Morgantown,40.147,-75.87,United States
+I35,Sidoli,-34.807,-58.443,Argentina
+I36,"Observatorio Los Campitos, Canuelas",-35.008,-58.717,Argentina
+I37,"Astrodomi Observatory, Santa Rita",-34.44,-58.647,Argentina
+I38,"Observatorio Los Algarrobos, Salto",-31.393,-57.979,Uruguay
+I39,"Observatorio Cruz del Sur, San Justo",-34.67,-58.573,Argentina
+I40,La Silla--TRAPPIST,-29.255,-70.739,Chile
+I41,Palomar Mountain--ZTF,33.357,-116.86,United States
+I42,Westport Observatory,41.596,-71.092,United States
+I43,"Tarleton State University Obs., Stephenville",32.216,-98.098,United States
+I44,"Northwest Florida State College, Niceville",30.542,-86.482,United States
+I45,"W Crusis Astronomical Observatory, San Justo",-34.678,-58.572,Argentina
+I46,"The Cottage Observatory, Altoona",40.465,-78.389,United States
+I47,"Pierre Auger Observatory, Malargue",-35.495,-69.45,Argentina
+I48,"Observatorio El Catalejo, Santa Rosa",-36.638,-64.324,Argentina
+I49,"Sunflower Observatory, Santa Fe",35.709,-106.014,United States
+I50,"P2 Observatory, Mayhill",32.903,-105.529,United States
+I51,Clinton,38.712,-76.945,United States
+I52,"Steward Observatory, Mt. Lemmon Station",32.443,-110.789,United States
+I53,Armilla,37.14,-3.622,Spain
+I54,"Observatorio Las Vaguadas, Badajoz",38.849,-6.969,Spain
+I55,Valencia,39.492,-0.358,Spain
+I56,"Observatorio Astronomico John Beckman, Almeria",36.85,-2.289,Spain
+I57,Elche,38.302,-0.674,Spain
+I58,Betera,39.557,-0.463,Spain
+I59,"Observatorio Fuente de los matos, Muriedas",43.416,-3.844,Spain
+I60,Guernanderf,47.722,-2.822,France
+I61,Ourense,42.327,-7.851,Spain
+I62,Observatorio Helios Ontigola,40.01,-3.574,Spain
+I63,"Cygnus Observatory, New Airesford",51.086,-1.167,United Kingdom
+I64,Maidenhead,51.519,-0.706,United Kingdom
+I65,Yunquera,36.736,-4.92,Spain
+I66,"Taurus Australis Observatory, Brasilia",-15.857,-48.0,Brazil
+I67,Hartley Wintney,51.306,-0.912,United Kingdom
+I68,Pousada dos Anoes Observatory,-14.317,-47.502,Brazil
+I69,"AGM Observatory, Marrakech",31.627,-7.993,Morocco
+I70,"Gedney House Observatory, Kirton",52.927,-0.058,United Kingdom
+I71,"Observatorio Los Milanos, Caceres",39.449,-6.33,Spain
+I72,"Observatorio Carpe-Noctem, Madrid",40.711,-4.015,Spain
+I73,"Salvia Observatory, Saulges",47.983,-0.413,France
+I74,"Baxter Garden Observatory, Salisbury",51.075,-1.813,United Kingdom
+I75,"Observatorio Los Caracoles, Castello",39.979,-0.035,Spain
+I76,"Observatorio Tesla, Valdemorillo",40.501,-4.063,Spain
+I77,"CEAMIG-REA Observatory, Belo Horizonte",-19.83,-43.998,Brazil
+I78,"Observatorio Principia, Malaga",36.733,-4.428,Spain
+I79,"AstroCamp, Nerpio",38.166,-2.327,Spain
+I80,"Rose Cottage Observatory, Keighley",53.882,-1.867,United Kingdom
+I81,"Tarbatness Observatory, Portmahomack",57.844,-3.799,United Kingdom
+I82,Guimar,28.317,-16.42,Spain
+I83,"Cherryvalley Observatory, Rathmolyon",53.487,-6.81,Ireland
+I84,"Cerro del Viento, Badajoz",38.866,-6.979,Spain
+I85,Las Negras,36.881,-2.015,Spain
+I86,"Observatorio UCM, Madrid",40.451,-3.726,Spain
+I87,"Astroshot Observatory, Monasterevin",53.136,-7.041,Ireland
+I88,Fuensanta de Martos,37.647,-3.918,Spain
+I89,"iTelescope Observatory, Nerpio",38.165,-2.326,Spain
+I90,Blackrock Castle Observatory,51.9,-8.402,Ireland
+I91,Retamar,36.848,-2.308,Spain
+I92,"Astreo Observatory, Mairena del Aljarafe",37.346,-6.047,Spain
+I93,St Pardon de Conques,44.559,-0.203,France
+I94,"Observatorio Rho Ophiocus, Las Rozas de Madrid",40.496,-3.863,Spain
+I95,Observatorio de la Hita,39.569,-3.186,Spain
+I96,"Hyperion Observatory, Urbanizacion Caraquiz",40.794,-3.496,Spain
+I97,"Penn Heights Observatory, Rickmansworth",51.64,-0.498,United Kingdom
+I98,El Berrueco,40.883,-3.587,Spain
+I99,"Observatorio Blanquita, Vaciamadrid",40.353,-3.54,Spain
+J00,Segorbe,39.853,-0.494,Spain
+J01,"Observatorio Cielo Profundo, Leon",42.378,-5.716,Spain
+J02,Busot,38.476,-0.445,Spain
+J03,"Gothers Observatory, St. Dennis",50.394,-4.868,United Kingdom
+J04,"ESA Optical Ground Station, Tenerife",28.301,-16.512,Spain
+J05,"Bootes Observatory, Boecillo",41.546,-4.704,Spain
+J06,"Trent Astronomical Observatory, Clifton",52.909,-1.188,United Kingdom
+J07,"Observatorio SPAG Monfrague, Palazuelo-Empalme",39.935,-6.105,Spain
+J08,"Observatorio Zonalunar, Puzol",39.627,-0.345,Spain
+J09,Balbriggan,53.615,-6.208,Ireland
+J10,Alicante,38.426,-0.402,Spain
+J11,Matosinhos,41.766,-8.682,Portugal
+J12,Caraquiz,40.793,-3.489,Spain
+J13,La Palma-Liverpool Telescope,28.763,-17.879,Spain
+J14,La Corte,28.405,-14.007,Spain
+J15,Muxagata,41.037,-7.169,Portugal
+J16,"An Carraig Observatory, Loughinisland",54.338,-5.796,United Kingdom
+J17,Ragdon,52.526,-2.797,United Kingdom
+J18,"Dingle Observatory, Montgomery",52.511,-3.094,United Kingdom
+J19,El Maestrat,40.221,-0.17,Spain
+J20,Aravaca,40.459,-3.781,Spain
+J21,El Boalo,40.723,-3.92,Spain
+J22,"Tacande Observatory, La Palma",28.642,-17.868,Spain
+J23,Centre Astronomique de La Couyere,47.893,-1.506,France
+J24,Observatorio Altamira,28.247,-16.443,Spain
+J25,"Penamayor Observatory, Nava",43.359,-5.511,Spain
+J26,"The Spaceguard Centre, Knighton",52.325,-3.019,United Kingdom
+J27,El Guijo Observatory,40.608,-4.031,Spain
+J28,Jaen,37.782,-3.786,Spain
+J29,"Observatorio Nira, Tias",28.958,-13.658,Spain
+J30,"Observatorio Ventilla, Madrid",40.468,-3.707,Spain
+J31,La Axarquia,36.73,-4.226,Spain
+J32,Aljaraque,37.27,-7.022,Spain
+J33,"University of Hertfordshire Obs., Bayfordbury",51.775,-0.094,United Kingdom
+J34,La Fecha,41.625,-4.773,Spain
+J35,"Tucci Observatory, Martos",37.713,-3.971,Spain
+J36,"Observatorio DiezALaOnce, Illana",40.172,-3.055,Spain
+J37,Huelva,37.259,-6.935,Spain
+J38,"Observatorio La Vara, Valdes",43.473,-6.391,Spain
+J39,Ingenio,27.92,-15.436,Spain
+J40,Malaga,36.719,-4.442,Spain
+J41,Raheny,53.381,-6.181,Ireland
+J42,Puzol,39.617,-0.301,Spain
+J43,"Oukaimeden Observatory, Marrakech",31.207,-7.866,Morocco
+J44,"Observatorio Iturrieta, Alava",42.793,-2.345,Spain
+J45,"Observatorio Montana Cabreja, Vega de San Mateo",28.012,-15.533,Spain
+J46,"Observatorio Montana Blanca, Tias",28.957,-13.641,Spain
+J47,Observatorio Nazaret,29.041,-13.556,Spain
+J48,"Observatory Mackay, La Laguna",28.472,-16.304,Spain
+J49,Santa Pola,38.193,-0.552,Spain
+J50,La Palma-NEON,28.76,-17.882,Spain
+J51,"Observatorio Atlante, Tenerife",28.466,-16.271,Spain
+J52,Observatorio Pinsoro,42.199,-1.339,Spain
+J53,Posadas,37.802,-5.107,Spain
+J54,Bradford Robotic Telescope,28.298,-16.509,Spain
+J55,Los Altos de Arguineguin Observatory,27.769,-15.686,Spain
+J56,Observatorio La Avejerilla,27.963,-15.546,Spain
+J57,Centro Astronomico Alto Turia 1,39.95,-1.109,Spain
+J58,"Brynllefrith Observatory, Llantwit Fardre",51.556,-3.336,United Kingdom
+J59,"Observatorio Linceo, Santander",43.464,-3.797,Spain
+J60,"Tocororo Observatory, Arquillinos",41.711,-5.659,Spain
+J61,"Brownstown Observatory, Kilcloon",53.424,-6.574,Ireland
+J62,"Kingsland Observatory, Boyle",53.923,-8.365,Ireland
+J63,San Gabriel,38.329,-0.517,Spain
+J64,La Mata,38.028,-0.654,Spain
+J65,Celbridge,53.344,-6.55,Ireland
+J66,Kinver,52.453,-2.217,United Kingdom
+J67,Observatorio La Puebla de Vallbona,39.64,-0.533,Spain
+J68,"Tweenhills Observatory, Hartpury",51.914,-2.295,United Kingdom
+J69,"North Observatory, Clanfield",50.939,-1.02,United Kingdom
+J70,"Obs. Astronomico Vega del Thader, El Palmar",37.939,-1.16,Spain
+J71,Willow Bank Observatory,53.687,-2.105,United Kingdom
+J72,Valle del Sol,37.85,-1.034,Spain
+J73,Quainton,51.872,-0.917,United Kingdom
+J74,Bilbao,43.252,-2.904,Spain
+J75,"OAM Observatory, La Sagra",37.982,-2.565,Spain
+J76,La Murta,37.84,-1.203,Spain
+J77,"Golden Hill Observatory, Stourton Caundle",50.931,-2.405,United Kingdom
+J78,Murcia,38.015,-1.176,Spain
+J79,"Observatorio Calarreona, Aguilas",37.389,-1.619,Spain
+J80,Sainte Helene,44.974,-0.892,France
+J81,Guirguillano,42.712,-1.865,Spain
+J82,Leyland,53.685,-2.693,United Kingdom
+J83,"Olive Farm Observatory, Hoghton",53.74,-2.612,United Kingdom
+J84,"South Observatory, Clanfield",50.939,-1.02,United Kingdom
+J85,Makerstoun,55.579,-2.517,United Kingdom
+J86,Sierra Nevada Observatory,37.064,-3.385,Spain
+J87,La Canada,40.604,-4.493,Spain
+J88,"Strawberry Field Obs., Southampton",50.922,-1.441,United Kingdom
+J89,Tres Cantos Observatory,40.599,-3.714,Spain
+J90,West Challow,51.594,-1.468,United Kingdom
+J91,"Alt emporda Observatory, Figueres",42.273,-2.952,Spain
+J92,Beaconsfield,51.622,-0.651,United Kingdom
+J93,"Mount Tuffley Observatory, Gloucester",51.831,-2.257,United Kingdom
+J94,Abbeydale,51.844,-2.211,United Kingdom
+J95,Great Shefford,51.475,-1.447,United Kingdom
+J96,Observatorio de Cantabria,42.772,-3.943,Spain
+J97,Alginet,39.251,-0.467,Spain
+J98,Observatorio Manises,39.493,-0.466,Spain
+J99,Burjassot,39.508,-0.422,Spain
+K00,Hanau,50.108,8.948,Germany
+K01,"Astrognosis Observatory, Bradwell",51.877,0.621,United Kingdom
+K02,"Eastwood Observatory, Leigh on Sea",51.569,0.668,United Kingdom
+K03,Observatori AAS Montsec,42.019,0.744,Spain
+K04,"Lo Fossil Observatory, Ager",42.019,0.744,Spain
+K05,"Eden Observatory, Banham",52.454,1.023,United Kingdom
+K06,"Observatorio Montagut, Can Sola",41.539,2.0,Spain
+K07,"Observatoire de Gravelle, St. Maurice",48.817,2.461,France
+K08,"Observatorio Lledoner, Vallirana",41.387,1.88,Spain
+K09,Llica d'Amunt,41.603,2.24,Spain
+K10,"Micro Palomar, Reilhanette",44.17,5.421,France
+K11,Observatoire de Pommier,45.879,2.881,France
+K12,Obsevatorio Astronomico de Marratxi,39.633,2.727,Spain
+K13,"Albireo Observatory, Inca",39.728,2.912,Spain
+K14,Observatorio de Sencelles,39.661,2.913,Spain
+K15,Murviel-les-Montpellier,43.616,3.755,France
+K16,Reilhanette,44.167,5.421,France
+K17,"Observatoire des Valentines, Bex",46.248,7.027,Switzerland
+K18,Hesingue,47.576,7.524,France
+K19,"PASTIS Observatory, Banon",43.999,5.647,France
+K20,"Danastro Observatory, Romeree",50.135,4.68,Belgium
+K21,Saint-Saturnin-les-Avignon,43.959,4.929,France
+K22,"Les Barres Observatory, Lamanon",43.693,5.076,France
+K23,Gorgonzola,45.536,9.402,Italy
+K24,Schmelz,49.443,6.861,Germany
+K25,"Haute Provence Sud, Saint-Michel-l'Observatoire",43.917,5.714,France
+K26,Contern,49.582,6.22,Luxembourg
+K27,"St-Martin Observatory, Amathay Vesigneux",47.027,6.209,France
+K28,Sternwarte Eckdorf,50.804,6.895,Germany
+K29,Stellarium Gornergrat,45.983,7.783,Switzerland
+K30,Luscherz,47.047,7.148,Switzerland
+K31,Osservatorio Astronomico di Bellino,44.579,7.004,Italy
+K32,"Maritime Alps Observatory, Cuneo",44.364,7.53,Italy
+K33,San Defendente,44.395,7.498,Italy
+K34,Turin,45.109,7.7,Italy
+K35,Huenfelden,50.313,8.164,Germany
+K36,Ebersheim,49.918,8.249,Germany
+K37,Cereseto,45.075,8.315,Italy
+K38,"M57 Observatory, Saltrio",45.874,8.918,Switzerland
+K39,Serra Observatory,44.534,8.956,Italy
+K40,Altdorf,48.625,9.014,Germany
+K41,"Vegaquattro Astronomical Obs., Novi Ligure",44.771,8.793,Italy
+K42,Knielingen,49.036,8.333,Germany
+K43,"OVM Observatory, Chiesa in Valmalencom",46.31,9.839,Italy
+K44,"Marienburg Sternwarte, Hildesheim",52.13,9.973,Germany
+K45,"Oss. Astronomico di Punta Falcone, Piombino",42.933,10.498,Italy
+K46,Bamberg,49.885,10.911,Germany
+K47,"BSCR Observatory, Santa Maria a Monte",43.689,10.688,Italy
+K48,"Keyhole Observatory, San Giorgio di Mantova",45.209,10.839,Italy
+K49,"Carpione Observatory, Spedaletto",43.681,11.186,Italy
+K50,"Sternwarte Feuerstein, Ebermannstadt",49.79,11.133,Germany
+K51,"Osservatorio del Celado, Castello Tesino",46.03,11.658,Italy
+K52,"Gwen Observatory, San Francesco al Campo",45.231,7.648,Italy
+K53,Marina di Cerveteri,41.981,12.046,Italy
+K54,Astronomical Observatory University of Siena,43.313,11.337,Italy
+K55,Wallhausen,49.887,7.765,Germany
+K56,Osservatorio di Foligno,42.96,12.705,Italy
+K57,Fiore Observatory,45.786,13.044,Italy
+K58,Gevelsberg,51.301,7.45,Germany
+K59,"Elsterland Observatory, Jessnigk",51.748,13.277,Germany
+K60,Lindby,55.436,13.511,Sweden
+K61,Rokycany Observatory,49.751,13.603,Czech Republic
+K62,Teplice Observatory,50.638,13.847,Czech Republic
+K63,"G. Pascoli Observatory, Barga (before June 2023)",44.083,10.463,Italy
+K64,Waizenreuth,49.935,11.744,Germany
+K65,Cesena,44.142,12.234,Italy
+K66,Osservatorio Astronomico di Anzio,41.463,12.629,Italy
+K67,"Bayerwald Sternwarte, Spiegelau",48.928,13.361,Germany
+K68,"Osservatorio Elianto, Pontecagnano",40.658,14.905,Italy
+K69,Riethnordhausen,51.091,10.994,Germany
+K70,Rosarno,38.489,15.974,Italy
+K71,Neutraubling,48.99,12.216,Germany
+K72,Celico,39.311,16.34,Italy
+K73,Gravina in Puglia,40.821,16.416,Italy
+K74,"Muensterschwarzach Observatory, Schwarzach",49.805,10.236,Germany
+K75,"Astro Dolomites, Santa Cristina Valgardena",46.561,11.729,Italy
+K76,"BSA Osservatorio, Savigliano",44.581,7.629,Italy
+K77,"EHB01 Observatory, Engelhardsberg",49.797,11.29,Germany
+K78,"iota Scorpii Observatory, La Spezia",44.126,9.854,Italy
+K79,Erfurt,50.959,11.058,Germany
+K80,"Platanus Observatory, Lusowko",52.442,16.637,Poland
+K81,"P.M.P.H.R. Deep Sky Observatory, Atina",41.625,13.785,Italy
+K82,"Alphard Observatory, Ostuni",40.689,17.589,Italy
+K83,"Osservatorio Astronomico Beppe Forti, Montelupo",43.755,11.043,Italy
+K84,"Felliscopio Observatory, Fellicarolo",44.188,10.759,Italy
+K85,Kelmis,50.724,6.032,Germany
+K86,Brescia,45.549,10.182,Italy
+K87,Dettelbach Vineyard Observatory,49.808,10.17,Germany
+K88,"GINOP-KHK, Piszkesteto",47.917,19.894,Hungary
+K89,"Digital Stargate Observatory, Manciano",42.48,11.563,Italy
+K90,Sopot Astronomical Observatory,44.53,20.546,Serbia
+K91,Sutherland-LCO A,-32.381,20.81,South Africa
+K92,Sutherland-LCO B,-32.381,20.81,South Africa
+K93,Sutherland-LCO C,-32.381,20.81,South Africa
+K94,Sutherland,-32.38,20.811,South Africa
+K95,"MASTER-SAAO Observatory, Sutherland",-32.381,20.811,South Africa
+K96,Savelli Observatory,39.314,16.751,Italy
+K97,Freconrupt,48.468,7.18,France
+K98,"6ROADS Observatory 1, Wojnowko",52.634,17.072,Poland
+K99,Derenivka Observatory,48.563,22.454,Ukraine
+L00,"East Rome Observatory, Rome",41.907,12.538,Italy
+L01,"Visnjan Observatory, Tican",45.291,13.749,Croatia
+L02,"NOAK Observatory, Stavraki",39.652,20.817,Greece
+L03,"SGT Observatory, Gaflenz",47.897,14.731,Austria
+L04,"ROASTERR-1 Observatory, Cluj-Napoca",46.821,23.596,Romania
+L05,"Dridri Observatory, Franciacorta",45.597,10.07,Italy
+L06,"Sormano 2 Observatory, Bellagio Via Lattea",45.97,9.254,Italy
+L07,"Osservatorio Salvatore di Giacomo, Agerola",40.624,14.564,Italy
+L08,"Metsahovi Optical Telescope, Metsahovi",60.221,24.394,Finland
+L09,Sutherland-LCO Aqawan A #1,-32.381,20.81,South Africa
+L10,Kryoneri Observatory,37.972,22.619,Greece
+L11,Sandvreten Observatory,59.805,17.209,Sweden
+L12,Koksijde,51.113,2.678,Belgium
+L13,"Stardust Observatory, Brasov",45.642,25.622,Romania
+L14,Planetarium de Vaulx-en-Velin Observatory,45.778,4.922,France
+L15,"St. George Observatory, Ploiesti",45.007,25.978,Romania
+L16,"Stardreams Observatory, Valenii de Munte",45.204,26.046,Romania
+L17,Observatori Astronomic Albanya,42.307,2.711,Spain
+L18,"QOS Observatory, Zalistsi",48.848,26.718,Ukraine
+L19,"Osservatorio Felsina AAB, Montepastore",44.356,11.153,Italy
+L20,"AG_Sarajevo Observatory, Sarajevo",43.845,18.321,Bosnia and Herzegovina
+L21,"Ostrov Observatory, Constanta",44.028,27.421,Romania
+L22,Barlad Observatory,46.232,27.67,Romania
+L23,Schela Observatory,45.5,27.832,Romania
+L24,Gauteng,-26.103,27.929,South Africa
+L25,Smolecin,53.354,14.437,Poland
+L26,"Sanderphil Urban Observatory, Civitavecchia",42.077,11.81,Italy
+L27,"29PREMOTE Observatory, Dauban",44.0,5.647,France
+L28,ISON-Castelgrande Observatory,40.818,15.463,Italy
+L29,"Drebach-South Observatory, Windhoek",-23.46,18.017,Namibia
+L30,"Lohbach Observatory, Benninghofen",51.477,7.515,Germany
+L31,"RaSo Observatory, Chemnitz",50.86,12.856,Germany
+L32,Korea Microlensing Telescope Network-SAAO,-32.379,20.81,South Africa
+L33,Ananiv,47.736,29.955,Ukraine
+L34,"Galhassin Robotic Telescope, Isnello",37.939,14.021,Italy
+L35,"DreamSky Observatory, Lisnyky",50.263,30.509,Ukraine
+L36,Ondrejov--BlueEye600 Telescope,49.91,14.78,Czech Republic
+L37,"Observatorio Alnitak, El Puerto de Santa Maria",36.585,-6.261,Spain
+L38,"Gartensternwarte Schafsweide, Sehlde",52.095,9.7,Germany
+L39,"Osservatorio Spica, Signa",43.789,11.04,Italy
+L40,Sternwarte Saarbruecken Rastpfuhl,49.253,6.957,Germany
+L41,Ponte Uso,43.989,12.302,Italy
+L42,Observatory-Astrocamp Manciano,42.647,11.563,Italy
+L43,"Ager, Leida",42.019,0.744,Spain
+L44,"AstroVal, Le Chenit",46.62,6.221,Switzerland
+L45,"ObsCT, Catania",37.537,15.062,Italy
+L46,Observatorio Majadahonda,40.461,-3.881,Spain
+L47,"Osservatorio Astronomico, Piobbico",43.586,12.507,Italy
+L48,"CNVL Observatory, Baia Mare",47.658,23.569,Romania
+L49,"VEGA-Sternwarte, Dorfleiten",47.924,13.007,Austria
+L50,"GenShtab Observatory, Nauchnyi",44.739,34.011,Russia
+L51,"MARGO, Nauchnyi",44.729,34.016,Russia
+L52,MASTER-Tavrida,44.73,34.017,Russia
+L53,"Aldo Agnetti Observatory, Como",45.705,9.034,Italy
+L54,"Berthelot Observatory, Hunedoara",45.617,22.889,Romania
+L55,"Sura Gardens, Dnipro",48.321,35.088,Ukraine
+L56,"Sternwarte Limburg, Limburg",50.382,8.059,Germany
+L57,"Bacau Observatory, Bacau",46.566,26.904,Romania
+L58,Heavenly Owl observatory,46.331,30.571,Ukraine
+L59,"Compustar Observatory, Rouen",49.438,1.226,France
+L60,"Popovich Observatory, Ivanivka",49.934,30.697,Ukraine
+L61,"MONET South, Sutherland",-32.379,20.81,South Africa
+L62,"Hypatia Observatory, Rimini",44.086,12.529,Italy
+L63,"HOB Observatory, Capraia Fiorentina",43.738,11.009,Italy
+L64,"Martesana Observatory, Cassina de Pecchi",45.524,9.363,Italy
+L65,"Bredenkamp Observatory, Bremen",53.075,8.828,Germany
+L66,"MeerLICHT-1, Sutherland",-32.38,20.811,South Africa
+L67,"Cherkizovo Observatory, Moscow Oblast",55.961,37.799,Russia
+L68,"PESCOPE, Port Elizabeth",-33.988,25.537,South Africa
+L69,"LaCaille Observatory, Pretoria",-25.834,28.214,South Africa
+L70,"Zvjezdarnica Graberje, Zagreb",45.82,15.923,Croatia
+L71,"Vedrus Observatory, Azovskaya",44.791,38.584,Russia
+L72,Melezhy Astrophoto Observatory,56.049,38.693,Russia
+L73,"Beato Ermanno Observatory, Impruneta",43.675,11.262,Italy
+L74,"AstroColauri, Naples",40.879,14.211,Italy
+L75,Tartu Observatory of Tartu University,58.264,26.464,Estonia
+L76,"Nomad Observatory, Kochevanchik",46.976,39.652,Russia
+L77,"RDSS, Kovalevka",47.337,39.82,Russia
+L78,"San Marco Observatory, Salerno",40.683,14.78,Italy
+L79,"BOSZA Observatory, Szalanta",45.953,18.22,Hungary
+L80,"SpringBok Observatory, Tivoli",-23.46,18.018,Namibia
+L81,Skygems Namibia Remote Observatory,-23.236,16.362,Namibia
+L82,"Crow Observatory, Portalegre",39.276,-7.32,Portugal
+L83,"UJA Observatory, Jaen",37.787,-3.778,Spain
+L84,"Kairos Observatory, Letnik",46.034,41.28,Russia
+L85,"BiAnto Observatory, Lauria",40.029,15.863,Italy
+L86,"Giordano Bruno Observatory, Brallo",44.755,9.263,Italy
+L87,"Moonbase South Observatory, Hakos",-23.236,16.362,Namibia
+L88,"Stazione Astronomica Le Pleiadi, Pantane",39.103,16.542,Italy
+L89,"PAO, Prato",43.865,11.144,Italy
+L90,"ABObservatory, Rosarno",38.456,15.979,Italy
+L91,"Antares MTM Observatory, S. Donato",41.705,13.808,Italy
+L92,San Costantino,38.705,16.002,Italy
+L93,"Garraf Observatory, Sant Pere de Ribes",41.259,1.772,Spain
+L94,"Observatorio MOMA, Oviedo",43.364,-5.854,Spain
+L95,Observatorio Astronomico de Cartagena,37.612,-1.048,Spain
+L96,ISON-Byurakan Observatory,40.348,44.274,Armenia
+L97,"Castle Fields Observatory, Calne",51.437,-2.008,United Kingdom
+L98,"La Sagra Observatory, Puebla de Don Fadrique",37.983,-2.566,Spain
+L99,Novosilky,50.608,30.603,Ukraine
+M00,"Viestikallio, Artjarvi",60.734,26.212,Finland
+M01,Weizmann Astrophysical Observatory,30.053,35.041,Israel
+M02,Astropriorat Observatory,41.123,0.864,Spain
+M03,Badalona Boreal,41.456,2.258,Spain
+M04,"Pujalt Observatory, Barcelona",41.717,1.426,Spain
+M05,"Observatoire de la Nine, Canens",43.215,1.332,France
+M06,"PeLe's Observatory, Ager",42.019,0.744,Spain
+M07,Siek,53.637,10.294,Germany
+M08,"CHON, Stekene",51.202,4.038,Belgium
+M09,Observatory Gromme - Oudsbergen,51.033,5.601,Belgium
+M10,"CPF Observatory, St Vallier de Thiey",43.692,6.854,France
+M11,"Novaastro Observatory, Banon",43.999,5.647,France
+M12,Puschino,56.11,47.864,Russia
+M13,"Lucie Berger Observatory, Strasbourg",48.578,7.742,France
+M14,Schiaparelli Gallarate Station,45.673,8.789,Italy
+M15,"Virgo Oservatory, Seveso",45.64,9.151,Italy
+M16,Osservatorio Il Coreggiolo,44.095,9.773,Italy
+M17,"SN1572 Tycho Observatory, La Spezia",44.111,9.809,Italy
+M18,Koeditz,50.336,11.839,Germany
+M19,"Osservatorio Explorer, Pula",44.864,13.883,Croatia
+M20,"Polse di Cougnes Observatory, Zuglio",46.469,13.012,Italy
+M21,"Schiaparelli Southern Observatory, Hakos",-23.237,16.361,Namibia
+M22,"ATLAS South Africa, Sutherland",-32.38,20.811,South Africa
+M23,"ELTE Gothard Observatory, Szombathely",47.258,16.604,Hungary
+M24,"La Macchina del Tempo, Ardore Marina",38.17,16.201,Italy
+M25,"Einarin Observatory, Tampere",61.495,23.828,Finland
+M26,"Zen Observatory, Scandicci",43.775,11.135,Italy
+M27,"Elijah Observatory, Lajatico",43.429,10.718,Italy
+M28,"Lesedi Telescope-SAAO Observatory, Sutherland",-32.38,20.811,South Africa
+M29,"O.M.Ni.A. Observatory, Cesena",44.148,12.249,Italy
+M30,"Zeta Aquarii Observatory, Brasov",45.644,25.62,Romania
+M31,"Ursa Havaintokeskus,  Artjarvi",60.734,26.213,Finland
+M32,"Sunny Transcarpathian, Mukachevo",48.379,22.709,Ukraine
+M33,"OWL-Net, Mitzpe Ramon",30.598,34.763,Israel
+M34,"AGO70, Astronomical Observatory, Modra",48.373,17.274,Slovakia
+M35,"PS Observatory, Parjol",46.575,26.617,Romania
+M36,"Opicina, Trieste",45.694,13.796,Italy
+M37,"Astronomsko drustvo Nanos, Ajdovscina",45.92,13.912,Slovenia
+M38,"Harsona Observatory, Nyiregyhaza",47.946,21.767,Hungary
+M39,"AUTH Observatory, Thessaloniki",40.631,22.959,Greece
+M40,"OSTS-NRIAG, Kottamia",29.936,31.827,Egypt
+M41,Jeddah,21.522,39.258,Saudi Arabia
+M42,"Emirates Observatory, Al Rahba",24.581,54.671,United Arab Emirates
+M43,"Al Sadeem Observatory, Abu Dhabi",24.176,54.685,United Arab Emirates
+M44,"Al-Khatim Observatory, Abu Dhabi",24.22,54.92,United Arab Emirates
+M45,"Starhopper Observatory, Sfantu Gheorghe",45.866,25.769,Romania
+M46,"Althuraya Astronomy Center, Dubai",25.213,55.45,United Arab Emirates
+M47,"Sharjah Observatory, Sharjah",25.283,55.462,United Arab Emirates
+M48,"GAC - Via L. Sturzo Observatory, Catania",37.507,15.092,Italy
+M49,"IAS Remote Observatory, Hakos",-23.237,16.362,Namibia
+M50,"Virtual Telescope Project, Manciano",42.48,11.564,Italy
+M51,"Robert Mayer Sternwarte, Heilbronn",49.139,9.227,Germany
+M52,Sassari,40.728,8.578,Italy
+M53,"CAS Observatory, Preetz",54.22,10.282,Germany
+M54,Observatoire Albireo de Biot,43.617,7.078,France
+M55,"Luckystar Observatory, Vazec",49.054,19.987,Slovakia
+M56,Varedo,45.604,9.175,Italy
+M57,"Wide-field Mufara Telescope, Isnello",37.869,14.02,Italy
+M58,"VdS Remote Observatory, Hakos",-23.237,16.361,Namibia
+M59,"Rondchamp Observatory, Reconvilier",47.233,7.229,Switzerland
+M60,"Virgil Observatory, Loiano",44.262,11.326,Italy
+M61,Observatory Moers Kapellen,51.42,6.586,Germany
+M62,Lajoux Observatory,47.281,7.134,Switzerland
+M63,"RPF Observatory, Gagliano del Capo",39.843,18.37,Italy
+M64,"Holbrook, Heathfield",50.967,0.24,United Kingdom
+M65,"Mustola Observatory, Lappeenranta",61.065,28.325,Finland
+M66,"SNX-NET, Prodromos",34.932,32.84,Cyprus
+M67,"Kolobov Observatory, Magnitogorsk",53.805,58.636,Russia
+M68,"School 1502 Rooftop Obs., Moscow",55.76,37.831,Russia
+M69,Emirates Astronomical Observatory L.L.C,23.578,54.745,United Arab Emirates
+M70,"BOOTES-6, Bloemfontein",-29.039,26.404,South Africa
+M71,"AUTH Astronomical Station, Noesis",40.563,22.996,Greece
+M72,"AUTH Astronomical Station, Cyprus",34.932,32.84,Cyprus
+M73,"Eden Emirates Observatory, Abu Dhabi",23.578,54.745,United Arab Emirates
+M75,"Online observatory, Peschany",45.743,39.512,Russia
+M77,Mezmay Comet Search Center,44.205,39.966,Russia
+M90,Chervishevo,56.946,65.429,Russia
+N27,Omsk-Yogik Observatory,54.748,73.725,Russia
+N30,"Zeds Astronomical Observatory, Lahore",31.473,74.369,Pakistan
+N31,"Eden Astronomical Observatory, Lahore",31.514,74.444,Pakistan
+N42,Tien-Shan Astronomical Observatory,43.057,76.972,Kazakhstan
+N43,"Plateau Observatory for Dome A, Kunlun Station",-80.417,77.117,
+N44,"Shache Station, Langan Village",38.385,77.139,China
+N50,"Himalayan Chandra Telescope, IAO, Hanle",32.78,78.964,India
+N51,"GROWTH India Telescope, IAO, Hanle",32.779,78.965,India
+N53,International Liquid Mirror Telescope,29.362,79.685,India
+N54,"Purple Mountain Observatory, Jiama'erdeng",32.325,80.027,China
+N55,"Corona Borealis Observatory, Ngari, Tibet",32.326,80.026,China
+N56,"Jiama'erdeng Tianwentai JIST project, Ali, Tibet",32.325,80.027,China
+N57,"YLT, NAOC",32.306,80.046,China
+N82,Multa Observatory,50.172,85.955,Russia
+N83,"LW-1, NAOC-Korla",41.553,86.235,China
+N85,Megrez-NAOC,43.476,87.177,China
+N86,"Xingming Observatory-KATS, Nanshan",43.474,87.179,China
+N87,"Nanshan Station, Xinjiang Observatory",43.474,87.175,China
+N88,"Xingming Observatory #3, Nanshan",43.472,87.173,China
+N89,"Xingming Observatory #2, Nanshan",43.471,87.179,China
+N94,Altay Astronomical Observatory,47.588,88.728,China
+N98,"Xingyuan Observatory #2, Qitai",43.597,89.754,China
+O02,"Galaxy Tibet YBJ Observatory,Yangbajing",30.103,90.526,China
+O17,"Purple Mountain Observatory, Lenghu-1",38.589,93.887,China
+O18,"WFST, Lenghu",38.608,93.895,China
+O37,"TRT-NEO, Chiangmai",18.59,98.486,Thailand
+O38,"Purple Mountain Observatory, Dayao",25.698,101.045,China
+O39,"BOOTES-4, Lijiang",26.696,100.031,China
+O40,"Xingyuan, Daocheng",29.013,100.229,China
+O41,"Choakanan Observatory, Lampang",18.337,99.466,Thailand
+O42,"Gaomeigu Gemini Observatory, LiJiang",26.723,100.029,China
+O43,"Observatori Negara, Langkawi",6.307,99.781,Malaysia
+O44,"Lijiang Station, Yunnan Observatories",26.695,100.03,China
+O45,"Yunnan-HK Observatory, Gaomeigu",26.698,100.033,China
+O46,Daocheng Glacier Observatory,29.012,100.227,China
+O47,"Yunling Observatory, Yunnan",25.624,101.134,China
+O48,"Purple Mountain Observatory, Yaoan (0.8-m)",25.527,101.182,China
+O49,"Purple Mountain Observatory, Yaoan Station",25.529,101.181,China
+O50,"Hin Hua Observatory, Klang",3.033,101.439,Malaysia
+O51,"Akin Observatory, Rayong",12.735,101.279,Thailand
+O52,"Astro820, Samut Prakan",13.579,100.73,Thailand
+O53,"Pakchong, Nachonratchasima",14.669,101.404,Thailand
+O54,"TSky Observatory, Chonburi",13.295,100.949,Thailand
+O55,"Telok Kemang Observatory, Port Dickson",2.445,101.854,Malaysia
+O56,Jaichalad-Pailin Observatory,14.698,101.455,Thailand
+O57,ROP KKN Observatory,16.761,102.631,Thailand
+O58,"SSTAC, Pak Chong",14.698,101.454,Thailand
+O68,"LW-2, NAOC-Zhongwei",37.63,105.331,China
+O72,"OWL-Net, Songino",47.886,106.335,Mongolia
+O75,ISON-Hureltogoot Observatory,47.865,107.052,Mongolia
+O85,"LiShan Observatory, Lintong",34.352,109.213,China
+P07,"Space Surveillance Telescope, HEH Station",-21.896,114.09,Australia
+P13,"Baihuashan Observatory, Beijing",39.838,115.573,China
+P14,Nedlands,-31.984,115.812,Australia
+P18,"Birch Forest Observatory, LaBaGouMen",40.899,116.611,China
+P21,"6R-AUS1, Youndegin",-31.821,117.281,Australia
+P22,"LW-3, NAOC-Xinglong",40.394,117.576,China
+P25,"Kinmen Educational Remote Observatory, Jincheng",24.432,118.313,Taiwan
+P30,"Jiangnantianchi Observatory, Anji",30.469,119.597,China
+P31,"Starlight Observatory, Tianhuangping",30.469,119.597,China
+P34,"Lvye Observatory, Suzhou",31.321,120.32,China
+P35,"Cuteip Remote Observatory, Changhua",24.093,120.557,Taiwan
+P36,"ULTRA Observatory,Suzhou",31.303,120.627,China
+P37,"HuiWen High School Observatory, Taichung City",24.153,120.64,Taiwan
+P38,Checheng Elementary School Observatory,22.075,120.714,Taiwan
+P40,"Chinese Culture University, Taipei",25.135,121.54,Taiwan
+P41,"Merak, NAOC",37.198,121.786,China
+P48,"ASTEP, Concordia Station",-75.1,123.324,
+P61,Jilin Observatory,43.824,126.33,China
+P62,Jeonbuk Science High School Observatory,36.014,127.036,South Korea
+P63,"GSA Observatory, Gwangju",35.228,126.848,South Korea
+P64,"GSHS Observatory, Suwon",37.309,127.005,South Korea
+P65,"OWL-Net, Daedeok",36.398,127.376,South Korea
+P66,Deokheung Optical Astronomy Observatory,34.526,127.447,South Korea
+P67,Kangwon National University Observatory,37.872,127.742,South Korea
+P68,DDSHS Biryong Observatory,36.333,127.474,South Korea
+P69,ChungBuk National University Observatory,36.782,127.476,South Korea
+P71,Miryang Arirang Astronomical Observatory,35.503,128.761,South Korea
+P72,"OWL-Net, Mt. Bohyun",36.164,128.976,South Korea
+P73,"BSH Byulsem Observatory, Busan",35.263,129.082,South Korea
+P87,"Hirao Observatory, Yamaguchi",33.954,132.094,Japan
+P93,"Space Tracking and Communications Center, JAXA",34.672,133.544,Japan
+Q02,"Sakai Observatory, Osaka",34.471,135.493,Japan
+Q06,"Tarui Observatory, Tarui",35.395,136.495,Japan
+Q10,Toyokawa Observatory,34.844,137.329,Japan
+Q11,Shinshiro,34.984,137.521,Japan
+Q12,Nagano Observatory,36.477,137.825,Japan
+Q14,Goto Astronomical Observatory in Yatsugatake,35.893,138.304,Japan
+Q19,Machida,35.574,139.439,Japan
+Q20,"Swan Reach Imaging, Glenalta",-34.544,139.57,Australia
+Q21,Southern Utsunomiya,36.507,139.853,Japan
+Q22,"SNX-NET, Moorook",-34.269,140.342,Australia
+Q23,Sukagawa,37.296,140.386,Japan
+Q24,Katori,35.899,140.524,Japan
+Q33,"Nayoro Observatory, Hokkaido University",44.374,142.483,Japan
+Q38,Swan Hill,-35.352,143.551,Australia
+Q54,"Harlingten Telescope, Greenhill Observatory",-42.431,147.288,Australia
+Q55,"SkyMapper, Siding Spring",-31.272,149.061,Australia
+Q56,"Heaven's Mirror Observatory, Yass",-34.864,148.976,Australia
+Q57,Korea Microlensing Telescope Network-SSO,-31.271,149.062,Australia
+Q58,Siding Spring-LCO Clamshell #1,-31.273,149.071,Australia
+Q59,Siding Spring-LCO Clamshell #2,-31.273,149.071,Australia
+Q60,"ISON-SSO Observatory, Siding Spring",-31.273,149.069,Australia
+Q61,"PROMPT, Siding Spring",-31.272,149.062,Australia
+Q62,"iTelescope Observatory, Siding Spring",-31.273,149.064,Australia
+Q63,Siding Spring-LCO A,-31.273,149.071,Australia
+Q64,Siding Spring-LCO B,-31.273,149.071,Australia
+Q65,Warrumbungle Observatory,-31.276,149.193,Australia
+Q66,"Siding Spring-Janess-G, JAXA",-31.273,149.064,Australia
+Q67,"JBL Observatory, Bathurst",-33.397,149.492,Australia
+Q68,"Blue Mountains Observatory, Leura",-33.702,150.337,Australia
+Q69,Hazelbrook,-33.713,150.449,Australia
+Q70,"Glenlee Observatory, Glenlee",-23.269,150.5,Australia
+Q71,"SNX-NET, Siding Spring",-31.273,149.07,Australia
+Q73,"Buckthorn, Thornton",-32.766,151.649,Australia
+Q78,"Woogaroo Observatory, Forest Lake",-27.606,152.948,Australia
+Q79,Samford Valley Observatory,-27.368,152.848,Australia
+Q80,Birkdale,-27.503,153.216,Australia
+Q81,Caloundra West,-26.801,153.096,Australia
+R13,GOTO North,28.76,-17.879,Spain
+R14,VillaDeMazoElHoyo,28.621,-17.768,Spain
+R16,"Tafuriaste, La Orotava",28.389,-16.535,Spain
+R17,ATLAS-TDO,28.299,-16.51,Spain
+R18,"Two-meter Twin Telescope, TTT4",28.299,-16.51,Spain
+R20,"LaMelira, Las Palmas de Gran Canaria",28.153,-15.423,Spain
+R37,"NEObserver Trevinca, Trevinca Skies",42.222,-6.988,Spain
+R38,PixelSkiesAstro,37.742,-2.643,Spain
+R39,"Dobsonian Power, Algarve",37.134,-7.693,Portugal
+R40,"STB Astro Observatory, Setubal",38.517,-8.83,Portugal
+R41,"UAM, Madrid",40.546,-3.696,Spain
+R42,Observatorio Astronomico del Moncayo,41.837,-1.754,Spain
+R43,TransAstra TKO at e-EYE,38.215,-6.627,Spain
+R44,Metis Trevinca Skies,42.223,-6.988,Spain
+R45,"Tycho Brahe, Trevinca",42.222,-6.988,Spain
+R46,"Lovell (76-m, Jodrell Bank)",53.237,-2.309,United Kingdom
+R47,Madrid DSS-63 (70-m),40.431,-4.248,Spain
+R48,Centro Astronomico Alto Turia 2,39.95,-1.109,Spain
+R49,"Observatorio Villuercas-Navezuelas, Navezuelas",39.513,-5.44,Spain
+R50,Obsservatorio astronomico Orion,41.884,-5.593,Spain
+R51,"Astrogredos Observatory, Arenas de San Pedro",40.17,-5.082,Spain
+R52,"Observatorio IES Al-Baytar, Benalmadena",36.595,-4.535,Spain
+R53,"Pinos, Alhaurin de la Torre",36.655,-4.587,Spain
+R54,"Petit Cosquet, Bangor",47.314,-3.212,France
+R55,"ALFA CENTAURI, LAS MESAS",39.385,-2.768,Spain
+R56,"Scott Street Observatory, Lake Tekapo",-44.009,170.484,New Zealand
+R57,"Aorangi Iti Observatory, Lake Tekapo",-44.008,170.473,New Zealand
+R58,"Beverly-Begg Observatory, Dunedin",-45.864,170.49,New Zealand
+R59,"Camarasa Observatory, Astrocamp Nerpio",38.165,-2.327,Spain
+R60,"MonitorMyPlanet, Nerpio",38.166,-2.327,Spain
+R61,Landete-Kea,39.905,-1.37,Spain
+R62,"lama'stro, Le Genest-Saint-Isle",48.097,-0.887,France
+R63,"Observatorio Sureste Estelar, Fuente Alamo",37.717,-1.22,Spain
+R64,Steyning Observatory,50.888,-0.332,United Kingdom
+R65,"R. F. Joyce Observatory, Christchurch",-43.499,172.35,New Zealand
+R66,"Mooray Observatory, Christchurch",-43.495,172.588,New Zealand
+R67,"Chinon Private Observatory, Chinon",47.173,0.283,France
+R68,Bourgeon Observatory,46.227,-0.323,France
+R69,SAT01-Mntlouis sur Loire,47.377,0.803,France
+R70,"WATCH, Beychac Et Caillau",44.872,-0.38,France
+R71,"Erchico, San Vicente Del Raspeig",38.41,-0.495,Spain
+R72,"RubiObservatory, Rubi",41.49,2.035,Spain
+R73,"Observatoire de Tauxigny, Tauxigny",47.223,0.833,France
+R74,"Observatori Puig d'Agulles, Vallirana",41.383,1.935,Spain
+R75,"Rodamir, Roda de Bara",41.188,1.455,Spain
+R76,"LEPTINA-ONE, Estinnes-au-val",50.417,4.107,Belgium
+R77,Observatoire de l'etoile qui rit,43.786,3.727,France
+R78,"Crystal Lake Observatory, Ngutunui",-38.094,175.091,New Zealand
+R79,"Observatoire Hubert Reeves, Mars",45.007,4.334,France
+R80,Observatoire International de Beauvert,44.969,4.411,France
+R81,"Obs Vallespir, Sabadell",41.564,2.087,Spain
+R83,"Observatoire Banon La Tuilerie, Banon",44.0,5.646,France
+R85,"Telescope Leonard de Vinci, GAPRA, Antibes",43.604,7.072,France
+R86,"Mont-Soleil, Saint-Imier",47.164,6.989,Switzerland
+R87,Observatoire de la Cote d'Azur,43.754,6.923,France
+R88,"La Porte des Etoiles, Corgemont",47.19,7.144,Switzerland
+R91,ETH Honggerberg Observatory,47.408,8.511,Switzerland
+R92,Osterholz-Scharmbeck,53.219,8.781,Germany
+R93,"Sanse Observatory, San Sebastiano Curone",44.787,9.067,Italy
+R95,"Fiammetta Observatory, La Spezia",44.133,9.79,Italy
+R96,Osservatorio Pierino Zambonini,44.3,10.431,Italy
+R97,Baudenbach,49.625,10.54,Germany
+R98,Otus Scopes Observatory,42.76,10.888,Italy
+R99,"Giuliano Betti Observatory, Firenze",43.753,11.238,Italy
+S03,"Stierlingwald, Buermoos",47.977,12.922,Austria
+S04,Osservatorio Astronomico Narciso Spuntoni,41.956,12.713,Italy
+S05,Sternwarte Burghausen,48.174,12.833,Germany
+S06,ASTRIS Osservatorio Astronomico Claudio Del Sole,42.006,13.076,Italy
+S15,"Namibia1/HAKOS, Hakos, Namibia, Hakos",-23.237,16.361,Namibia
+S16,ASI Matera Flyeye,40.65,16.705,Italy
+S24,"Szilard Leo Observatory, Bujak",47.884,19.547,Hungary
+S30,"Zenit, Hajduboszormeny",47.678,21.497,Hungary
+S42,Institute of Space Science Magurele,44.347,26.029,Romania
+S43,"StarBlazer Observatory, Bucharest",44.489,26.022,Romania
+S45,"SkyQuest Observatory, Sahateni",45.062,26.465,Romania
+S47,Alfastar - Astroclubul Bucuresti,43.925,27.297,Bulgaria
+S61,"Mykolaiv, 0.3m f/5 Telescope",46.972,31.973,Ukraine
+S86,Alamri astronomical observatory,23.344,40.325,Saudi Arabia
+S89,"FASTAU, Astrofarm Astroverts",43.65,41.425,Russia
+S93,INASAN-Kislovodsk Observatory,43.743,42.666,Russia
+T02,"SNX-NET, Wailuku",20.901,-156.504,United States
+T03,Haleakala-LCO Clamshell #3,20.707,-156.258,United States
+T04,Haleakala-LCO OGG B #2,20.707,-156.258,United States
+T05,"ATLAS-HKO, Haleakala",20.708,-156.257,United States
+T07,"ATLAS-MLO Auxiliary Camera, Mauna Loa",19.536,-155.576,United States
+T08,"ATLAS-MLO, Mauna Loa",19.536,-155.576,United States
+T09,"Subaru Telescope, Maunakea",19.826,-155.476,United States
+T10,"Submillimeter Array, Maunakea (SMA)",19.824,-155.478,United States
+T11,"United Kingdom Infrared Telescope, Maunakea",19.823,-155.47,United States
+T12,"University of Hawaii 88-inch telescope, Maunakea",19.823,-155.469,United States
+T13,"NASA Infrared Telescope Facility, Maunakea",19.826,-155.472,United States
+T14,"Canada-France-Hawaii Telescope, Maunakea",19.826,-155.469,United States
+T15,"Gemini North Observatory, Maunakea",19.824,-155.469,United States
+T16,"W. M. Keck Observatory, Keck 1, Maunakea",19.826,-155.475,United States
+T17,"W. M. Keck Observatory, Keck 2, Maunakea",19.827,-155.474,United States
+T35,Astronomical Society of Tahiti,-17.563,-149.61,Fr. Polynesia
+U52,"Shasta Valley Observatory, Grenada",41.579,-122.549,United States
+U53,"Murray Hill Observatory, Beaverton",45.45,-122.84,United States
+U54,"Hume Observatory, Santa Rosa",38.566,-122.687,United States
+U55,"Golden Ears Observatory, Maple Ridge",49.253,-122.585,Canada
+U56,Palo Alto,37.433,-122.131,United States
+U57,"Black Mountain Observatory, Los Altos",37.367,-122.159,United States
+U62,TransAstra TKO at SkiesAway,35.808,-121.045,United States
+U63,"Burnt Tree Hill Observatory, Cle Elum",47.163,-120.805,United States
+U64,"CWU-Lind Observatory, Ellensburg",47.0,-120.538,United States
+U65,"CWU Observatory, Ellensburg",47.002,-120.54,United States
+U66,June Lake Overlook,37.781,-119.079,United States
+U67,"Jack C. Davis Observatory, Carson City",39.186,-119.796,United States
+U68,"JPL SynTrack Robotic Telescope, Auberry",37.07,-119.413,United States
+U69,"iTelescope SRO Observatory, Auberry",37.07,-119.413,United States
+U70,"RASC Observatory, Alder Springs",37.07,-119.413,United States
+U71,"AHS Observatory, Castaic",34.486,-118.637,United States
+U72,Tarzana,34.183,-118.54,United States
+U73,Redondo Beach,33.822,-118.383,United States
+U74,"JPL SynTrack Robotic Telescope 2, Auberry",37.07,-119.413,United States
+U75,Newport Beach,33.608,-117.816,United States
+U76,"Maury Lewin Observatory, Glendora",34.142,-117.872,United States
+U77,"Rani Observatory, San Diego",32.947,-117.082,United States
+U78,Cedar Glen Observatory,34.259,-117.155,United States
+U79,"Cosmos Research Center, Encinitas",33.072,-117.208,United States
+U80,"CS3-DanHenge Observatory, Landers",34.273,-116.385,United States
+U81,"CS3-Trojan Station, Landers",34.273,-116.385,United States
+U82,"CS3-Palmer Divide Station, Landers",34.272,-116.385,United States
+U83,Mount Laguna Observatory,32.842,-116.427,United States
+U86,"BOOTES-5, Bajo California",31.045,-115.464,Mexico
+U91,"BURSST, Beryl",37.827,-113.695,United States
+U92,"Astrottica Network USA2, Pie Town",34.322,-108.17,United States
+U93,"Skygems Dreamscope Utah, Beryl Junction",37.763,-113.712,United States
+U94,"iTelescope Observatory, Beryl Junction",37.738,-113.698,United States
+U95,"USA1/HCRO, Pie Town",34.322,-108.17,United States
+U96,Athabasca University Geophysical Observatory,54.714,-113.314,Canada
+U97,"JPL SynTrack Robotic Telescope 3, Flagstaff",35.203,-111.667,United States
+U98,"NAC Observatory, Benson",31.941,-110.257,United States
+U99,"BCC Observatory, Black Canyon City",34.065,-112.146,United States
+V00,Kitt Peak-Bok,31.963,-111.6,United States
+V01,"Mountainville Observatory, Alpine",40.449,-111.761,United States
+V02,"Command Module, Tempe",33.4,-111.942,United States
+V03,Big Water,37.083,-111.669,United States
+V04,"FRoST, Anderson Mesa",35.096,-111.537,United States
+V05,"Rusty Mountain Observatory, Gold Canyon",33.31,-111.368,United States
+V06,Catalina Sky Survey-Kuiper,32.417,-110.733,United States
+V07,"Whipple Observatory, Mount Hopkins-PAIRITEL",31.681,-110.878,United States
+V08,"Mountain Creek Ranch, Vail",32.08,-110.661,United States
+V09,"Moka Observatory, Benson",31.941,-110.258,United States
+V10,"Sierra Sinagua Observatory, Flagstaff",35.17,-111.672,United States
+V11,"Saguaro Observatory, Tucson",32.209,-110.789,United States
+V12,Elgin,31.666,-110.602,United States
+V13,"Little Moose Observatory, Timber Lakes",40.452,-111.217,United States
+V14,"Moose Springs Observatory, Timber Lakes",40.456,-111.217,United States
+V15,"OWL-Net, Mt. Lemmon",32.442,-110.789,United States
+V16,"Dark Sky New Mexico, Animas",31.947,-108.897,United States
+V17,"Leo Observatory, Tucson",32.374,-111.017,United States
+V18,"MASTER-OAGH Observatory, Sonora",31.056,-110.382,Mexico
+V19,Whiskey Creek Observatory,32.83,-108.209,United States
+V20,"Killer Rocks Observatory, Pie Town",34.327,-108.222,United States
+V21,Cewanee Observatory at DSNM,31.947,-108.898,United States
+V22,"Insight Remote Observatory, Pie Town",34.327,-108.184,United States
+V23,"FOAH Observatory, Magdalena",34.148,-107.236,United States
+V24,"Sonoran Desert Skies Observatory, Pearce",31.867,-109.516,United States
+V25,"Tortugas Mountain Observatory, Las Cruces",32.293,-106.698,United States
+V26,"UAS-ISON Observatory, Cosala",24.402,-106.61,Mexico
+V27,"North Mesa Observatory, Los Alamos",35.89,-106.282,United States
+V28,"Deep Sky West Observatory, Rowe",35.331,-105.654,United States
+V29,Tzec Maun Cloudcroft Facility,32.979,-105.733,United States
+V30,"Heaven on Earth Observatory, Mayhill",32.904,-105.529,United States
+V31,"Hazardous Observatory, Mayhill",32.914,-105.525,United States
+V32,"Canvas View New Mexico Skies, Mayhill",32.903,-105.529,United States
+V33,"Finlaystone Observatory, Angel Fire",36.38,-105.28,United States
+V34,"Baker Observatory, Black Forest",39.005,-104.63,United States
+V35,"Deep Sky Observatory Collaborative, Pier 5",30.588,-104.081,United States
+V36,"The Ranch Observatory, Lakewood",32.639,-104.383,United States
+V37,McDonald Observatory-LCO ELP,30.68,-104.015,United States
+V38,McDonald Observatory-LCO ELP Aqawan A #1,30.68,-104.015,United States
+V39,McDonald Observatory-LCO ELP B,30.68,-104.015,United States
+V40,"Divine Creation Observatory, Fort Davis",30.588,-104.081,United States
+V41,Rapid City,44.052,-103.274,United States
+V42,"Dimension Point, Mayhill",32.913,-105.525,United States
+V43,"Chiricahua Skies Observatory, Sunizona",31.867,-109.516,United States
+V44,"Coyote Watcher, Pie Town",34.322,-108.17,United States
+V45,McDonald Observatory-LCO ELP Aqawan B #1,30.68,-104.015,United States
+V46,"Walnut Park Observatory, Los Alamos",35.891,-106.305,United States
+V47,McDonald Observatory-LCO ELP Aqawan B #2,30.68,-104.015,United States
+V48,TransAstra at Winer,31.666,-110.602,United States
+V54,"Observatoire LAURIER, El Marques",20.601,-100.308,Mexico
+V55,"The Gikem Observatory, Rockwood",31.547,-99.382,United States
+V56,"Stonehenge Observatory, Novice",31.937,-99.696,United States
+V57,"Starfront Observatories, Rockwood",31.547,-99.382,United States
+V58,"Medina Dome, Medina",29.778,-99.265,United States
+V59,"Millwood Observatory, Comfort",30.046,-98.927,United States
+V60,Putman Mountain Observatory,30.534,-98.905,United States
+V61,"Shed of Science South, Pontotoc",30.976,-98.943,United States
+V62,"Live Oak Observatory, Pontotoc",30.976,-98.943,United States
+V63,"Tara Observatory, Cherokee",30.975,-98.943,United States
+V70,"Starry Night Observatory, Columbus",29.619,-96.664,United States
+V72,"JDP Observatory, Omaha",41.274,-96.11,United States
+V74,"Katy Observatory, Katy",29.703,-95.843,United States
+V75,"Live Oak Observatory, Lake Jackson",29.044,-95.434,United States
+V78,Spirit Marsh Observatory. Sauk Centre,45.661,-94.892,United States
+V81,Fayetteville,36.095,-94.24,United States
+V83,"Rolling Hills Observatory, Warrensburg",38.677,-93.743,United States
+V86,"Rattle Snake Observatory, Sedalia",38.633,-93.107,United States
+V88,"River Ridge Observatory, Conway",34.946,-92.572,United States
+V92,"White County Observatory, Searcy",35.235,-91.65,United States
+V93,"Pin Oak Observatory, Fort Madison",40.653,-91.384,United States
+V94,"Cherokeeridge Observatory, Fort Madison",40.644,-91.338,United States
+W04,"Mark Evans Observatory, Bloomington",40.492,-88.991,United States
+W05,"Tree Gate Farm Observatory, Starkville",33.348,-88.733,United States
+W08,"Jimginny Observatory, Naperville",41.759,-88.117,United States
+W09,"Willowed Plains Observatory, Manteno",41.256,-87.852,United States
+W11,"Northwest Indiana Robotic Telescope, Lowell",41.271,-87.375,United States
+W13,"Star Quarry Observatory, Bedford",38.977,-86.526,United States
+W14,Harvest,34.817,-86.755,United States
+W15,"Wayne Observatory, Franklin",35.912,-86.809,United States
+W16,Pleasant Groves Observatory,34.712,-86.231,United States
+W17,"Arrowhead, Sheridan",40.128,-86.229,United States
+W18,"Red Fox Observatory, Pendleton",40.008,-85.75,United States
+W19,Kalamazoo,42.3,-85.627,United States
+W20,"Moeller Observatory, Manchester",38.713,-83.514,United States
+W21,"Spots Observatory, Bethesda",38.957,-77.094,United States
+W22,"WestRock Observatory, Columbus",32.46,-84.996,United States
+W23,"Hevonen Farm Observatory, Oxford",39.492,-84.62,United States
+W24,"Shamrock Banks Observatory, Clare",43.831,-84.762,United States
+W25,"RMS Observatory, Cincinnati",39.163,-84.365,United States
+W26,"Starpool Observatory, Hampstead",39.587,-76.871,United States
+W27,"RCNS, New Milford",41.526,-73.426,United States
+W28,"Ex Nihilo Observatory, Winder",33.983,-83.612,United States
+W29,"Adena Brook Observatory, Columbus",40.049,-83.006,United States
+W30,"Georgia College Observatory, Milledgeville",33.083,-83.229,United States
+W31,"Deerlick Observatory, Crawfordville",33.555,-82.763,United States
+W32,Crawfordville Observatory,33.556,-82.762,United States
+W33,"Transit Dreams Observatory, Campobello",35.078,-82.165,United States
+W34,"Squirrel Valley Observatory, Columbus",35.225,-82.155,United States
+W35,"Buffalo Creek Observatory, Nahunta",31.147,-81.961,United States
+W36,"EliLauren Observatory, Neilltown",41.62,-79.498,United States
+W37,"Transit Dreams Observatory-North, Hamburg NY",42.668,-78.78,United States
+W38,"Dark Sky Observatory, Boone",36.253,-81.415,United States
+W39,Robinson Observatory,28.592,-81.191,United States
+W40,Hampden-Sydney Observatory,37.238,-78.471,United States
+W41,Anderson Observatory,37.222,-80.46,United States
+W42,"Mind's Eye Observatory, Vero Beach",27.765,-80.534,United States
+W43,"MT_Hope_Cavu, Otisville",41.444,-74.568,United States
+W44,"Duo Ursi de Saltu, Scarsdale",41.015,-73.78,United States
+W45,"Benito Loyola Observatory, Virginia Beach",36.729,-76.062,United States
+W46,Foxfire Village,35.146,-79.588,United States
+W47,"SNX-NET, Rio Hurtado",-30.471,-70.765,Chile
+W48,"BKH Observatory, Chapel Hill",35.831,-79.113,United States
+W49,"CBA-MM Observatory, Mountain Meadows",38.953,-78.932,United States
+W50,Apex,35.69,-78.746,United States
+W51,Custer Institute and Observatory,41.052,-72.435,United States
+W52,US Naval Academy Hopper Hall Observatory,38.985,-76.486,United States
+W53,Hagerstown,39.639,-77.685,United States
+W54,"Mark Slade Remote Observatory, Wilderness",38.334,-77.711,United States
+W55,"Natelli Observatory, Frederick",39.408,-77.416,United States
+W56,"Pineapple Observatory, Frederick",39.46,-77.474,United States
+W57,ESA TBT La Silla Observatory,-29.255,-70.739,Chile
+W58,"ALPHA Observatory, South Laurel",39.047,-76.85,United States
+W59,"The Dark Side Observatory, Weatherly",40.898,-75.892,United States
+W60,"AstroExplor Observatory, Tinjaca",5.611,-73.634,Colombia
+W61,"Leeside Observatory, Elgin",44.586,-76.255,Canada
+W62,"Comet Hunter Observatory2, New Ringgold",40.745,-75.862,United States
+W63,"Observatorio Astronomico UTP, Pereira",4.791,-75.69,Colombia
+W64,"Red Lion Observatory, Southampton Twsp",39.887,-74.73,United States
+W65,"Observatoire GOZ, Montpellier",45.85,-75.208,Canada
+W66,"SVH Observatory, Blairstown",40.96,-74.946,United States
+W67,"Paul Robinson Observatory, Voorhees State Park",40.682,-74.898,United States
+W68,"ATLAS Chile, Rio Hurtado",-30.471,-70.765,Chile
+W69,"OLPH Observatory, Brooklyn",40.639,-74.015,United States
+W70,"Loose Goose Observatory, Saint-Jerome",45.793,-74.086,Canada
+W71,"Rand II Observatory, Lake Placid",44.261,-74.007,United States
+W72,"Trumbull Observatory, Trumbull",41.243,-73.179,United States
+W73,"Observatorio Astronomico de Moquegua, Carumas",-16.828,-70.678,Peru
+W74,"Danish Telescope, La Silla",-29.258,-70.738,Chile
+W75,"SPECULOOS-South Observatory, Paranal",-24.616,-70.391,Chile
+W76,"CHILESCOPE Observatory, Rio Hurtado",-30.473,-70.763,Chile
+W77,"Skyledge Observatory, Killingworth",41.336,-72.599,United States
+W78,"Clay Telescope, Harvard University",42.377,-71.117,United States
+W79,Cerro Tololo-LCO Aqawan B #1,-30.168,-70.805,Chile
+W80,Westwood,42.247,-71.232,United States
+W81,"Nebula Knoll Observatory, East Wakefield",43.666,-71.0,United States
+W82,"Mendel Observatory, Merrimack College",42.669,-71.122,United States
+W83,"Whitin Observatory, Wellesley",42.295,-71.303,United States
+W84,Cerro Tololo-DECam,-30.17,-70.806,Chile
+W85,Cerro Tololo-LCO A,-30.167,-70.805,Chile
+W86,Cerro Tololo-LCO B,-30.167,-70.805,Chile
+W87,Cerro Tololo-LCO C,-30.168,-70.805,Chile
+W88,"Slooh.com Chile Observatory, La Dehesa",-33.269,-70.534,Chile
+W89,Cerro Tololo-LCO Aqawan A #1,-30.168,-70.805,Chile
+W90,Phillips Exeter Academy Grainger Observatory,42.979,-70.942,United States
+W91,"VHS-VISTA, Cerro Paranal",-24.616,-70.397,Chile
+W92,"MASTER-OAFA Observatory, San Juan",-31.802,-69.326,Argentina
+W93,Korea Microlensing Telescope Network-CTIO,-30.167,-70.804,Chile
+W94,"MAPS, San Pedro de Atacama",-22.953,-68.18,Chile
+W95,"Observatorio Panameno, San Pedro de Atacama",-22.953,-68.18,Chile
+W96,"CAO, San Pedro de Atacama (since 2013)",-22.954,-68.18,Chile
+W97,"Atacama Desert Observatory, San Pedro de Atacama",-22.953,-68.18,Chile
+W98,"Polonia Observatory, San Pedro de Atacama",-22.953,-68.18,Chile
+W99,"SON, San Pedro de Atacama Station",-22.953,-68.18,Chile
+X00,Observatorio Astronomico Tolar,-24.59,-67.399,Argentina
+X01,"Observatory Hurtado, El Sauce",-30.471,-70.765,Chile
+X02,"Telescope Live, El Sauce",-30.471,-70.765,Chile
+X03,"Observatoire SADR, Poroto",-30.534,-70.796,Chile
+X04,"MCD Observatory, Saint-Anaclet",48.47,-68.433,Canada
+X05,"Simonyi Survey Telescope, Rubin Observatory",-30.245,-70.749,Chile
+X06,"Skygems Chile, Rio Hurtado",-30.526,-70.854,Chile
+X07,"iTelescope Deep Sky Chile, Rio Hurtado",-30.526,-70.854,Chile
+X08,"ShAO Chile station, El Sauce",-30.47,-70.765,Chile
+X09,"Deep Random Survey, Rio Hurtado",-30.526,-70.853,Chile
+X10,"OVTLN, San Pedro de Atacama",-22.953,-68.18,Chile
+X11,"VLT Survey Telescope, Paranal",-24.626,-70.404,Chile
+X12,Observatorio Los Cabezones,-36.636,-64.288,Argentina
+X13,Observatorio Remoto Bosque Alegre,-31.598,-64.55,Argentina
+X14,"Observatorio Orbis Tertius, Cordoba",-31.39,-64.168,Argentina
+X15,"ABYO, San Pedro de Atacama",-22.953,-68.179,Chile
+X16,"Astronomia Sigma Octante, Cochabamba",-17.365,-66.15,Bolivia
+X17,BlackGEM,-29.257,-70.738,Chile
+X18,"6R-POL2, San Pedro de Atacama",-22.953,-68.179,Chile
+X19,"Santel Observatory, El Leoncito",-31.803,-69.326,Argentina
+X20,"BOOTES-7, San Pedro Atacama",-22.953,-68.179,Chile
+X21,"RoSaMund Obervatory - DSC, Rio Hurtado",-30.526,-70.853,Chile
+X22,"BTN-1, Deep Sky Chile",-30.527,-70.853,Chile
+X23,"OVTLN2, San Pedro de Atacama",-22.953,-68.179,Chile
+X24,"Observatorio Desierto Cosmico, Atacama",-27.566,-70.012,Chile
+X25,UBC Southern Observatory,-30.527,-70.853,Chile
+X26,"NAOS, Alta Gracia",-31.638,-64.428,Argentina
+X27,SARA-CT,-30.172,-70.799,Chile
+X28,"CHILE1/ODC, Atacama",-27.566,-70.012,Chile
+X29,Observatorio Astronomico Municipal de Funes,-32.917,-60.862,Argentina
+X31,"Galileo Galilei Observatory, Oro Verde",-31.823,-60.521,Argentina
+X33,"OARU, Manaus",-2.997,-60.01,Brazil
+X38,"Observatorio Pueyrredon, La Lonja",-34.436,-58.863,Argentina
+X39,"Observatorio Antares, Pilar",-34.385,-58.862,Argentina
+X40,"Cielos de Banfield, Banfield",-34.747,-58.383,Argentina
+X41,"Observatorio Proton-Proton, Longchamps",-34.852,-58.394,Argentina
+X50,Observatorio Astronomico de Montevideo,-34.904,-56.176,Uruguay
+X57,"Polo Astronomico CMF,Foz do Iguacu",-25.435,-54.594,Brazil
+X60,Guaraciaba Observatory,-26.549,-53.574,Brazil
+X70,"Observatorio OATU, Tupi Paulista",-21.385,-51.567,Brazil
+X71,"OASMiS, Sao Miguel da Serra",-26.376,-51.08,Brazil
+X72,"Waccobs, Sao Leopoldo",-29.767,-51.121,Brazil
+X74,Observatorio Campo dos Amarais,-21.394,-50.506,Brazil
+X76,"SUN Observatory, Redencao",-8.036,-50.009,Brazil
+X77,"Centro Astron. Nevoeiro, Antonio Olinto",-25.909,-50.075,Brazil
+X86,"Ottoservatorio, Tatui",-23.393,-47.782,Brazil
+X87,"Dogsheaven Observatory, Brasilia",-15.892,-47.911,Brazil
+X88,"Observatorio Adhara, Sorocaba",-23.445,-47.509,Brazil
+X89,"Rocca Observatory, Brasilia",-15.844,-47.782,Brazil
+X90,"Carina Observatory, Brasilia",-15.657,-47.868,Brazil
+X91,"Orion-Colesanti observatory, Mairinque",-23.57,-47.211,Brazil
+X93,Munhoz Observatory,-22.629,-46.395,Brazil
+X98,"Observatorio Pedra Preta, Itajuba",-22.489,-45.416,Brazil
+Y00,"SONEAR Observatory, Oliveira",-20.715,-44.785,Brazil
+Y01,"SONEAR 2 Observatory, Belo Horizonte",-19.882,-43.984,Brazil
+Y05,"SONEAR Wykrota-CEAMIG, Serra da Piedade",-19.824,-43.69,Brazil
+Y16,"ROCG, Campos dos Goytacazes",-21.745,-41.312,Brazil
+Y20,"Omega Centauri Observatory, Cariacica",-20.337,-40.368,Brazil
+Y28,"OASI, Nova Itacuruba",-8.789,-38.687,Brazil
+Y40,"Discovery Observatory, Caruaru",-8.289,-35.961,Brazil
+Y63,"SNX-NET, Oukaimeden",31.207,-7.866,Morocco
+Y64,"Transient Survey Telescope (TST), Teide",28.299,-16.51,Spain
+Y65,"Two-meter Twin Telescope, TTT1",28.299,-16.51,Spain
+Y66,"Two-meter Twin Telescope, TTT2",28.299,-16.509,Spain
+Y67,"High Atlas Window to the Kosmos,Oukaimeden",31.206,-7.867,Morocco
+Y68,"Two-meter Twin Telescope, TTT3",28.299,-16.509,Spain
+Y70,"ApolloIV5, Fregenal de la Sierra",38.216,-6.628,Spain
+Y71,"Makroskooppi, Fregenal de la Sierra",38.216,-6.627,Spain
+Y75,"Abraham Zacut, Salamanca",38.262,-5.419,Spain
+Y76,"Observatorio NovaCanet, Canet de Berenguer",39.686,-0.208,Spain
+Y77,"Cotos de Monterrey, Venturada",40.79,-3.611,Spain
+Y78,Tros Alt,39.401,-0.534,Spain
+Y79,Observatoire de la grande vallee,45.517,-0.007,France
+Y80,"Brenehuen, Grand-Champ",47.739,-2.834,France
+Y81,"Forthimage, Edinburgh",55.913,-3.427,United Kingdom
+Y82,"LPMR Observatory, Broad Chalke",51.026,-1.935,United Kingdom
+Y83,"Observatorio Arcosur, Zaragoza",41.621,-0.952,Spain
+Y84,Observatoire de Bretagne,48.375,-1.88,France
+Y85,"Magalofes Observatory, Fene",43.457,-8.146,Spain
+Y86,Observatorio de Seron,37.352,-2.52,Spain
+Y87,"Trevinca Skies-Amalthea, Trevinca",42.222,-6.988,Spain
+Y88,"ASERO, Valdin",42.222,-6.988,Spain
+Y89,"Proxima Centauri Observatory, Valdin",42.222,-6.988,Spain
+Y90,"Observatorio ESTELIA, Ladines",43.204,-5.445,Spain
+Y91,"Ras Algethi, Ronda",36.732,-5.166,Spain
+Y92,"JD Cassini, Piconcillo",38.177,-5.465,Spain
+Y93,"Observatorio Azahar, Valoria la Buena",41.798,-4.567,Spain
+Y94,"LCB Lugueros observatory, Valdelugueros",42.984,-5.414,Spain
+Y95,Pradillos Ferez,38.348,-2.001,Spain
+Y96,Observatorio de Vega del Codorno,40.417,-1.911,Spain
+Y97,"Bommes Observatory, Bommes",44.55,-0.357,France
+Y98,"Southside Observatory, Steeple Aston",51.928,-1.313,United Kingdom
+Y99,Observatorio del Lucero del Alba,41.642,-0.927,Spain
+Z00,"BOOTES-1, Mazagon",37.104,-6.734,Spain
+Z01,"OWL-Net, Oukaimeden",31.206,-7.867,Morocco
+Z02,"HAO observatory, Oukaimeden",31.206,-7.867,Morocco
+Z03,"Rio Cofio, Robledo de Chavela",40.524,-4.267,Spain
+Z04,"MAO, Ain Laqsab",33.601,-7.018,Morocco
+Z05,"Observatorio Horus, Cartama",36.711,-4.636,Spain
+Z06,"Marina Sky, Nerpio",38.166,-2.327,Spain
+Z07,"Ad Astra Sangos Observatory, Alhendin",37.111,-3.639,Spain
+Z08,"Telescope Live, Oria",37.501,-2.409,Spain
+Z09,"Old Orchard Observatory, Fiddington",51.16,-3.121,United Kingdom
+Z10,"PGC, Fregenal de la Sierra",38.216,-6.628,Spain
+Z11,"Appledorne Observatory, Farnsfield",53.106,-1.033,United Kingdom
+Z12,"La Romaneta, Monovar",38.384,-0.904,Spain
+Z13,"Observatorio AGP GUAM 4, Malaga",36.723,-4.455,Spain
+Z14,"ART, Fregenal de la Sierra",38.216,-6.628,Spain
+Z15,Southwater,51.019,-0.347,United Kingdom
+Z16,Asociacion Astronomica de Cartagena,37.612,-1.048,Spain
+Z17,Tenerife-LCO Aqawan A #2,28.3,-16.512,Spain
+Z18,"Gran Telescopio Canarias, Roque de los Muchachos",28.757,-17.892,Spain
+Z19,La Palma-TNG,28.754,-17.889,Spain
+Z20,La Palma-MERCATOR,28.762,-17.878,Spain
+Z21,Tenerife-LCO Aqawan A #1,28.3,-16.512,Spain
+Z22,"MASTER-IAC Observatory, Tenerife",28.299,-16.511,Spain
+Z23,"Nordic Optical Telescope, La Palma",28.757,-17.885,Spain
+Z24,"Tenerife Observatory-LCO B, Tenerife",28.301,-16.512,Spain
+Z25,"Artemis Observatory, Teide",28.3,-16.51,Spain
+Z26,"Observatorio Astronomico Arcangel, Las Zocas",28.078,-16.61,Spain
+Z27,"Observatorio Coralito, La Laguna",28.472,-16.3,Spain
+Z28,"Northern Skygems Observatory, Nerpio",38.166,-2.327,Spain
+Z29,Observatorio Astronomico Sobradillo,41.372,-5.881,Spain
+Z30,"Glyn Marsh Observatory, Douglas",54.178,-4.475,Isle of Man
+Z31,"Tenerife Observatory-LCO A, Tenerife",28.3,-16.512,Spain
+Z32,Observatorio Astrofisico de Javalambre,40.042,-1.016,Spain
+Z33,"6ROADS Observatory 2, Nerpio",38.166,-2.327,Spain
+Z34,NNHS Drummonds Observatory,52.302,-0.888,United Kingdom
+Z35,OAO University Observatory Station Aras,39.945,-1.101,Spain
+Z36,Cancelada,36.461,-5.054,Spain
+Z37,"Northolt Branch Observatory 3, Blandford Forum",50.839,-2.196,United Kingdom
+Z38,"Picoto Observatory, Leiria",39.856,-8.847,Portugal
+Z39,Observatorio Costa Teguise,28.996,-13.501,Spain
+Z40,"El Manzanillo Observatory, Puerto de la Torre",36.734,-4.487,Spain
+Z41,"Irydeo Observatory, Camarma de Esteruelas",40.561,-3.374,Spain
+Z42,"Rushay Farm Observatory, Sturminster Newton",50.934,-2.334,United Kingdom
+Z43,Landehen,48.434,-2.538,France
+Z44,"Observatorio Terminus, A Coruna",43.318,-8.328,Spain
+Z45,"Cosmos Observatory, Marbella",36.516,-4.857,Spain
+Z46,Cardiff,51.514,-3.193,United Kingdom
+Z47,Runcorn,53.333,-2.707,United Kingdom
+Z48,"Northolt Branch Observatory 2, Shepherd's Bush",51.5,-0.251,United Kingdom
+Z49,Alston Observatory,53.801,-2.594,United Kingdom
+Z50,Mazariegos,42.026,-4.716,Spain
+Z51,"Anunaki Observatory, Rivas Vaciamadrid",40.361,-3.551,Spain
+Z52,"The Studios Observatory, Grantham",52.915,-0.661,United Kingdom
+Z53,"TRAPPIST-North, Oukaimeden",31.206,-7.866,Morocco
+Z54,"Greenmoor Observatory, Woodcote",51.529,-1.078,United Kingdom
+Z55,"Uraniborg Observatory, Ecija",37.542,-5.085,Spain
+Z56,Knocknaboola,52.086,-9.788,Ireland
+Z57,"Observatorio Zuben, Alhaurin de la Torre",36.657,-4.574,Spain
+Z58,ESA TBT Cebreros Observatory,40.454,-4.369,Spain
+Z59,Chelford Observatory,53.274,-2.285,United Kingdom
+Z60,Observatorio Zaldibia,43.039,-2.149,Spain
+Z61,"Montecanal Observatory, Zaragoza",41.629,-0.936,Spain
+Z62,Observatorio Forcarei,42.611,-8.371,Spain
+Z63,"Skybor Observatory, Borja",41.83,-1.53,Spain
+Z64,Observatorio el Miron del Cielo,42.352,-7.858,Spain
+Z65,Observatorio Astronomico Corgas,42.249,-7.827,Spain
+Z66,"DeSS Deimos Sky Survey, Niefla Mountain",38.544,-4.408,Spain
+Z67,Dunboyne Castle Observatory,53.414,-6.477,Ireland
+Z68,"Observatorio Torreaguila, Barbano",38.869,-6.6,Spain
+Z69,Observatorio Mazagon Huelva,37.131,-6.813,Spain
+Z70,Ponferrada,42.575,-6.643,Spain
+Z71,"Observatorio Norba Caesarina, Aldea Moret",39.451,-6.39,Spain
+Z72,"Cademuir Observatory, Dalkey",53.273,-6.111,Ireland
+Z73,"Observatorio Nuevos Horizontes, Camas",37.403,-6.033,Spain
+Z74,Amanecer de Arrakis,37.334,-5.844,Spain
+Z75,"Observatorio Sirius, Las Lomas",42.598,-5.532,Spain
+Z76,"Observatorio Carda, Villaviciosa",43.481,-5.436,Spain
+Z77,Osuna,37.231,-5.11,Spain
+Z78,"Arroyo Observatory, Arroyo Hurtado",38.097,-1.676,Spain
+Z79,Calar Alto TNO Survey,37.221,-2.547,Spain
+Z80,Northolt Branch Observatory,51.555,-0.372,United Kingdom
+Z81,Observatorio Estrella de Mar,36.721,-4.268,Spain
+Z82,"BOOTES-2 Observatory, Algarrobo",36.759,-4.041,Spain
+Z83,"Chicharronian 3C Observatory, Tres Cantos",40.61,-3.712,Spain
+Z84,Calar Alto-Schmidt,37.224,-2.548,Spain
+Z85,Observatorio Sierra Contraviesa,36.877,-3.25,Spain
+Z86,St. Mellons,51.524,-3.11,United Kingdom
+Z87,"Stanley Laver Observatory, Pontesbury",52.648,-2.898,United Kingdom
+Z88,"Fosseway Observatory, Stratton-on-the-Fosse",51.255,-2.49,United Kingdom
+Z89,Macclesfield,53.265,-2.172,United Kingdom
+Z90,Albox,37.406,-2.152,Spain
+Z91,Curdridge,50.916,-1.25,United Kingdom
+Z92,"Almalex Observatory, Leeds",53.838,-1.608,United Kingdom
+Z93,"Observatorio Polop, Alicante",38.617,-0.144,Spain
+Z94,Kempshott,51.247,-1.144,United Kingdom
+Z95,Astronomia Para Todos Remote Observatory,39.95,-1.109,Spain
+Z96,Observatorio Cesaraugusto,41.696,-0.806,Spain
+Z97,"OPERA Observatory, Saint Palais",45.302,-0.584,France
+Z98,"Observatorio TRZ, Betera",39.601,-0.478,Spain
+Z99,"Clixby Observatory, Cleethorpes",53.546,-0.021,United Kingdom

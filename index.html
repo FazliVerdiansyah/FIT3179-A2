@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Who Looks Up</title>
+  <meta name="description" content="Amateur astronomy 2021–2025: where the telescopes are, who files observations, which sky events draw people out, and how cheap cameras widened access.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script src="js/config.js"></script>
+  <script src="js/dashboard.js"></script>
+</head>
+<body>
+<main class="page">
+
+  <header class="masthead">
+    <h1>Who looks up? Amateur astronomy, 2021–2025</h1>
+    <p class="subtitle">Five public archives on who owns the equipment, who files the observations, what draws people outside, and how technology changed the hobby.</p>
+    <ul class="facts">
+      <li><strong>Data window</strong> 1 Jan 2021 – 31 Dec 2025</li>
+      <li><strong>Sources</strong> COBS · Global Meteor Network · Globe at Night · Minor Planet Center · NASA Night Sky Network</li>
+      <li><strong>Last updated</strong> 7 October 2026</li>
+    </ul>
+  </header>
+
+  <p class="lede">Amateur astronomers do more than look. They estimate comet brightness, run automated meteor cameras and count stars from their back gardens, and those records feed real research. This dashboard follows five public archives from 2021 to 2025 to ask three questions: who these amateurs are, what they observe with, and what gets them outside.</p>
+
+  <!-- ============================== 01 ============================== -->
+  <section class="section" id="s1">
+    <div class="section-head"><span class="section-num">01</span><h2>Where the telescopes are</h2></div>
+    <p class="section-text">Ownership is concentrated. The Minor Planet Center lists 2,695 observing sites with usable coordinates, professional and amateur alike, and four countries (the United States, Spain, Italy and Germany) hold 51% of them. The equipment used to file comet observations clusters at a few standard sizes, and the countries with the most sites also have the most active comet observers. That raises the next question: does owning the gear mean using it?</p>
+
+    <div class="grid">
+      <article class="card span-12">
+        <h3>Registered observing sites, sized by sites per 5° grid cell</h3>
+        <div class="chart map" data-spec="1_1_map"></div>
+        <div class="card-foot">
+          <p class="caption">Sites crowd into Europe, the continental United States and Japan. Africa, Central Asia and most of South America are nearly empty, and only 331 of the 2,695 sites lie south of the equator. Hover a dot for the individual site.</p>
+          <details class="meta">
+            <summary>Source: Minor Planet Center, <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">List of Observatory Codes</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>Current list (codes registered up to the download date), worldwide</dd>
+              <dt>N</dt><dd data-n="1.1" data-unit="sites">[TODO]</dd>
+              <dt>Prepared</dt><dd>Latitude from parallax constants; sites with no constants (space and roving codes) dropped; binned to 5° cells in the browser</dd>
+              <dt>Licence</dt><dd>Terms: [TODO] no terms page found; see the <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">source list</a></dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid">
+      <article class="card span-6">
+        <h3>Aperture by instrument type, comet observations</h3>
+        <div class="chart" data-spec="1_2_ridgeline"></div>
+        <div class="card-foot">
+          <p class="caption">Newtonian reflectors carry the record (23,045 of 47,037 observations, 49%), with most between 15 and 50 cm. Binoculars and refractors sit near 7 and 10 cm. The sharp spikes at 20.3, 30, 40 and 50 cm look like standard commercial apertures <span class="verify">[VERIFY]</span>. Each ridge is scaled to its own peak, so compare shapes, not heights.</p>
+          <details class="meta">
+            <summary>Source: COBS Comet Observation Database, <a href="https://cobs.si/">cobs.si</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>Observation dates 2021–2025, worldwide</dd>
+              <dt>N</dt><dd data-n="1.2" data-unit="observations">[TODO]</dd>
+              <dt>Prepared</dt><dd>Instrument types with ≥ 200 observations; apertures above 60 cm (197 obs.) omitted; Gaussian density, 1.5 cm bandwidth</dd>
+              <dt>Licence</dt><dd>CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">COBS data policy</a></dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+
+      <article class="card span-6">
+        <h3>Observing sites vs active comet observers, by country</h3>
+        <div class="chart" data-spec="1_3_scatter"></div>
+        <div class="card-foot">
+          <p class="caption">Countries with more registered sites tend to have more comet observers: the United States, United Kingdom, Germany and Italy lead on both. Brazil, Poland and the Czech Republic sit above the pack, with 16 to 18 observers each from 15 to 34 sites.</p>
+          <details class="meta">
+            <summary>Source: <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">Minor Planet Center</a> and <a href="https://cobs.si/">COBS</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>MPC current list; COBS observation dates 2021–2025; worldwide</dd>
+              <dt>N</dt><dd data-n="1.3" data-unit="countries">[TODO]</dd>
+              <dt>Prepared</dt><dd>MPC site country from a point-in-polygon join on Natural Earth 1:50m boundaries (52 coastal sites snapped to the nearest border within 150 km); countries in both sources only</dd>
+              <dt>Licence</dt><dd>COBS: CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">data policy</a>; MPC: [TODO] terms</dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================== 02 ============================== -->
+  <section class="section" id="s2">
+    <div class="section-head"><span class="section-num">02</span><h2>Observation records over time</h2></div>
+    <p class="section-text">Contribution is unequal. Owning a telescope and filing observations are different things: COBS received 47,037 comet observations from 265 observers between 2021 and 2025, and a small core supplied most of them. What that core watched shifted from month to month with whichever comet was bright, which sets up the question of what makes people go out at all.</p>
+
+    <div class="grid">
+      <article class="card span-4">
+        <h3>Share of observations by share of observers</h3>
+        <div class="chart" data-spec="2_1_lorenz"></div>
+        <div class="card-foot">
+          <p class="caption">The curve stays near the floor until the last tenth: the 26 most active observers, 10% of the total, filed 74% of all observations.</p>
+          <details class="meta">
+            <summary>Source: COBS Comet Observation Database, <a href="https://cobs.si/">cobs.si</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>Observation dates 2021–2025, worldwide</dd>
+              <dt>N</dt><dd data-n="2.1" data-unit="observations">[TODO]</dd>
+              <dt>Prepared</dt><dd>Observations counted per observer code, ranked least to most active, cumulated</dd>
+              <dt>Licence</dt><dd>CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">COBS data policy</a></dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+
+      <article class="card span-8">
+        <h3>Monthly observations by comet</h3>
+        <div class="chart" data-spec="2_2_streamgraph"></div>
+        <div class="card-foot">
+          <p class="caption">Each bright comet swells the stream for a few months and then fades. Tsuchinshan-ATLAS rose most sharply, with 873 observations in October 2024. Even so, the eight most-watched comets account for only 30% of observations; the long tail of other comets (grey) makes up the rest.</p>
+          <details class="meta">
+            <summary>Source: COBS Comet Observation Database, <a href="https://cobs.si/">cobs.si</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>Observation dates 2021–2025, worldwide</dd>
+              <dt>N</dt><dd data-n="2.2" data-unit="observations">[TODO]</dd>
+              <dt>Prepared</dt><dd>Monthly counts; top 8 comets by total observations, all others grouped as Other; centred stack</dd>
+              <dt>Licence</dt><dd>CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">COBS data policy</a></dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================== 03 ============================== -->
+  <section class="section" id="s3">
+    <div class="section-head"><span class="section-num">03</span><h2>Celestial events compared</h2></div>
+    <p class="section-text">Events drive attention, but not every event. Lining comet-observing activity up against 16 eclipses and comet close approaches shows which ones actually pulled observers outside. Meteor showers, recorded by automated cameras rather than by people deciding to go out, give the contrasting case: activity that arrives on schedule every year.</p>
+
+    <div class="grid">
+      <article class="card span-12">
+        <h3>Daily comet observations, folded into three bands, with event dates</h3>
+        <div class="chart" data-spec="3_1_horizon"></div>
+        <div class="card-foot">
+          <p class="caption">Darker bands mark busier weeks. The clearest surges come around comet apparitions (early 2023, spring and autumn 2024, late 2025), while most eclipse dates pass without a change. The regular monthly ripple in the lightest band probably tracks moonlight <span class="verify">[VERIFY]</span>.</p>
+          <details class="meta">
+            <summary>Source: <a href="https://cobs.si/">COBS</a>; eclipse dates from Eclipse Predictions by Fred Espenak, NASA's GSFC, <a href="https://eclipse.gsfc.nasa.gov/SEsearch/">eclipse.gsfc.nasa.gov</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>1 Jan 2021 – 31 Dec 2025 (1,826 days), worldwide</dd>
+              <dt>N</dt><dd data-n="3.1" data-unit="observations">[TODO]</dd>
+              <dt>Prepared</dt><dd>Daily counts, zero-filled; centred 7-day mean folded into 0–30, 30–60 and 60–90 bands</dd>
+              <dt>Licence</dt><dd>COBS: CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">data policy</a>; event dates are facts cited to NASA</dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid">
+      <article class="card span-6">
+        <h3>Shower meteors by solar longitude, one ring per year</h3>
+        <div class="chart fixed" data-spec="3_2_radial"></div>
+        <div class="card-foot">
+          <p class="caption">The Perseids (140°), Geminids (261–262°) and Quadrantids (282–283°) peak within one degree of solar longitude every year from 2021 to 2025. The rings grow outward each year as the network adds cameras, which Section 5 examines.</p>
+          <details class="meta">
+            <summary>Source: Global Meteor Network, <a href="https://globalmeteornetwork.org/data/traj_summary_data/">trajectory summaries</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>2021–2025, GMN stations worldwide</dd>
+              <dt>N</dt><dd data-n="3.2" data-unit="shower meteors">[TODO]</dd>
+              <dt>Prepared</dt><dd>Trajectories seen by ≥ 2 stations; sporadics dropped; 1° solar-longitude bins; square-root radius</dd>
+              <dt>Licence</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+
+      <article class="card span-6">
+        <h3>Comet observations before and around each event</h3>
+        <div class="chart" data-spec="3_3_dumbbell"></div>
+        <div class="card-foot">
+          <p class="caption">The close approaches of C/2022 E3 (ZTF) and Tsuchinshan-ATLAS more than doubled daily comet observations. Most eclipses barely moved the comet record, and the April and October 2023 solar eclipses fell below baseline. The September 2025 lunar eclipse overlaps the rise of comet C/2025 A6 (Lemmon) <span class="verify">[VERIFY]</span>.</p>
+          <details class="meta">
+            <summary>Source: <a href="https://cobs.si/">COBS</a>; eclipse dates from Fred Espenak, NASA's GSFC, <a href="https://eclipse.gsfc.nasa.gov/SEsearch/">eclipse.gsfc.nasa.gov</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>16 events, May 2021 – Sep 2025, worldwide</dd>
+              <dt>N</dt><dd data-n="3.3" data-unit="event-days">[TODO]</dd>
+              <dt>Prepared</dt><dd>Baseline = median daily count 90 to 30 days before; event = mean daily count within ±15 days; sorted by the gap</dd>
+              <dt>Licence</dt><dd>COBS: CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">data policy</a></dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================== 04 ============================== -->
+  <section class="section" id="s4">
+    <div class="section-head"><span class="section-num">04</span><h2>Community participation</h2></div>
+    <p class="section-text">Community sustains it. Not everyone owns a telescope: Globe at Night asks anyone to count the stars they can see, and NASA's Night Sky Network lists the clubs that run public observing nights. Both reach past the equipped core of Sections 1 and 2, into countries and towns with few registered sites.</p>
+
+    <div class="grid">
+      <article class="card span-6">
+        <h3>Globe at Night submissions by country and year</h3>
+        <div class="chart" data-spec="4_1_heatmap"></div>
+        <div class="card-foot">
+          <p class="caption">The United States leads every year, but Croatia and Uruguay come next, and neither is a major site holder in Section 1 (5 and 4 sites). Participation is fragile: Uruguay fell from 5,020 submissions in 2021 to 370 in 2024, and total submissions halved from 25,259 to 12,524 over the window.</p>
+          <details class="meta">
+            <summary>Source: Globe at Night, <a href="https://globeatnight.org/maps-data/">maps and data</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>UT dates 2021–2025, worldwide; top 25 countries by total</dd>
+              <dt>N</dt><dd data-n="4.1" data-unit="submissions">[TODO]</dd>
+              <dt>Prepared</dt><dd>Rows at 0°,0° dropped; US state suffixes merged into United States; year from UT date; grey = no submissions</dd>
+              <dt>Licence</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+
+      <article class="card span-6">
+        <h3>Night Sky Network member clubs per US state</h3>
+        <div class="chart fixed" data-spec="4_2_tilegrid"></div>
+        <div class="card-foot">
+          <p class="caption">California has the most member clubs (44), ahead of Texas (22) and Florida (21). The grey tiles (Alaska, Mississippi, South Dakota and Washington DC) have no clubs in this list. These are Night Sky Network member clubs, not all astronomy clubs.</p>
+          <details class="meta">
+            <summary>Source: NASA Night Sky Network, <a href="https://nightsky.jpl.nasa.gov/clubs/">club list</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>Clubs listed at time of collection; 50 states, DC and Puerto Rico</dd>
+              <dt>N</dt><dd data-n="4.2" data-unit="clubs">[TODO]</dd>
+              <dt>Prepared</dt><dd>Clubs counted per state; hand-assigned tile grid in data/prepared/us_state_grid.csv</dd>
+              <dt>Licence</dt><dd>[TODO] terms of the NASA/JPL club list</dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============================== 05 ============================== -->
+  <section class="section" id="s5">
+    <div class="section-head"><span class="section-num">05</span><h2>Technology and accessibility</h2></div>
+    <p class="section-text">Technology changed access. The Global Meteor Network runs on small video cameras operated by volunteers <span class="verify">[VERIFY]</span>, and between 2021 and 2025 the number of active stations rose from 390 to 1,856. If the archive grew because the sky got busier, each camera would record more every year; if it grew because more people joined, the rate per camera would hold steady.</p>
+
+    <div class="grid">
+      <article class="card span-12">
+        <h3>Camera stations vs meteor trajectories, joined in year order</h3>
+        <div class="chart" data-spec="5_1_connected"></div>
+        <div class="card-foot">
+          <p class="caption">Each year moves up and to the right along the dashed constant-rate line. Trajectories per station stayed between 420 and 556, so the near-fivefold growth in records comes from more cameras, not more meteors. Station codes span 23 country prefixes in 2021 and 40 in 2025.</p>
+          <details class="meta">
+            <summary>Source: Global Meteor Network, <a href="https://globalmeteornetwork.org/data/traj_summary_data/">trajectory summaries</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>2021–2025, GMN stations worldwide</dd>
+              <dt>N</dt><dd data-n="5.1" data-unit="trajectories">[TODO]</dd>
+              <dt>Prepared</dt><dd>Trajectories seen by ≥ 2 stations, sporadics kept; stations = distinct codes in participating_stations; country = 2-letter code prefix</dd>
+              <dt>Licence</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="closing-block">
+    <h2>What it adds up to</h2>
+    <p class="closing">Taken together, the five sections describe a hobby that is concentrated but widening. Equipment and observation records sit with a few countries and a few dedicated people. Bright comets, not eclipses, are what bring comet observers out in numbers, and casual programmes and clubs reach places the equipped core does not. The steepest growth came from automated cameras, which suggests that the next gains in amateur data will come from sensors more than eyepieces <span class="verify">[VERIFY]</span>.</p>
+  </section>
+
+  <footer class="page-foot">
+    <p>Built with Vega-Lite. Data prepared by <code>prep/prepare_data.py</code>; every figure in the text comes from <code>data/prepared/</code>. Claims marked [VERIFY] go beyond what the chart shows on its own.</p>
+  </footer>
+
+</main>
+</body>
+</html>

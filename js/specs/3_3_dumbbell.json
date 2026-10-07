@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "3.3 COBS daily observations before vs around each celestial event, sorted by the size of the gap",
+  "width": "container",
+  "height": { "step": 22 },
+  "padding": { "top": 50, "left": 4, "right": 4, "bottom": 4 },
+  "data": {
+    "url": "data/prepared/event_response.csv",
+    "format": { "parse": { "baseline": "number", "peak": "number", "gap": "number", "ratio": "number" } }
+  },
+  "encoding": {
+    "y": {
+      "field": "label",
+      "type": "nominal",
+      "title": null,
+      "sort": { "field": "gap", "order": "descending" },
+      "axis": { "labelLimit": 270, "labelColor": "@ink2", "labelFontSize": 11, "grid": true, "gridColor": "#f1f0eb" }
+    },
+    "x": {
+      "type": "quantitative",
+      "title": "COBS observations per day",
+      "scale": { "domain": [0, 50] },
+      "axis": { "gridDash": [] }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "rule", "strokeWidth": 2, "color": "@axis" },
+      "encoding": {
+        "x": { "field": "baseline" },
+        "x2": { "field": "peak" }
+      }
+    },
+    {
+      "transform": [
+        { "fold": ["baseline", "peak"], "as": ["window", "value"] },
+        {
+          "calculate": "datum.window === 'baseline' ? 'Baseline (median, days −90 to −30)' : 'Event window (mean, ±15 days)'",
+          "as": "window_label"
+        }
+      ],
+      "mark": { "type": "point", "filled": true, "size": 80, "opacity": 1, "stroke": "@surface", "strokeWidth": 2 },
+      "encoding": {
+        "x": { "field": "value" },
+        "color": {
+          "field": "window_label",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": ["Baseline (median, days −90 to −30)", "Event window (mean, ±15 days)"],
+            "range": ["@baseline", "@cobs"]
+          },
+          "legend": { "orient": "none", "legendX": -150, "legendY": -46, "direction": "vertical", "labelLimit": 260 }
+        },
+        "tooltip": [
+          { "field": "event", "title": "Event" },
+          { "field": "date", "title": "Date" },
+          { "field": "baseline", "type": "quantitative", "format": ".1f", "title": "Baseline obs/day" },
+          { "field": "peak", "type": "quantitative", "format": ".1f", "title": "Around event obs/day" },
+          { "field": "gap", "type": "quantitative", "format": "+.1f", "title": "Gap" }
+        ]
+      }
+    }
+  ]
+}

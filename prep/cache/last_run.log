@@ -1,0 +1,72 @@
+Events
+  events.csv 16 events
+
+MPC
+  sites 2,695, matched to a code 2,695
+  country assigned 2,692 (of which 52 by nearest coastline within 150 km), unassigned 3
+  mpc_sites.csv                      2,695 rows    142.9 KB
+
+COBS
+  raw 47,136, in 2021-2025 by observation date 47,037
+  cobs_aperture.csv                    384 rows     10.3 KB
+  countries with sites and observers 44; COBS-only ['Gibraltar', 'Iran', 'Macao', 'Philippines']
+  country_sites_observers.csv           44 rows      0.9 KB
+  observers 265; top 10% (26) file 73.6%
+  cobs_lorenz.csv                      266 rows      7.6 KB
+  cobs_comets_monthly.csv              540 rows     29.4 KB
+  cobs_daily.csv                     1,826 rows     26.5 KB
+                                   event  baseline  peak    gap
+    Comet C/2022 E3 ZTF closest to Earth      17.0 42.35  25.35
+Comet Tsuchinshan-ATLAS closest to Earth      22.0 45.77  23.77
+                     Total lunar eclipse      17.0 33.45  16.45
+                   Partial solar eclipse      20.0 33.61  13.61
+   Annular solar eclipse (South America)      23.0 34.13  11.13
+          Comet Leonard closest to Earth      22.0 28.13   6.13
+                   Partial solar eclipse      21.0 26.42   5.42
+     Total solar eclipse (North America)      28.0 33.06   5.06
+        Total solar eclipse (Antarctica)      23.0 23.45   0.45
+                     Total lunar eclipse      18.0 18.42   0.42
+                     Total lunar eclipse      20.0 19.94  -0.06
+                     Total lunar eclipse      24.0 23.74  -0.26
+                   Partial lunar eclipse      23.0 22.48  -0.52
+                     Total lunar eclipse      17.0 15.61  -1.39
+        Annular solar eclipse (Americas)      36.0 25.55 -10.45
+        Hybrid solar eclipse (Australia)      33.0 18.77 -14.23
+  event_response.csv                    16 rows      1.9 KB
+  cobs_method_by_year.csv                5 rows      0.1 KB
+
+Globe at Night
+  rows 91,560, after 0/0 + year + country filters 91,559, countries 147
+  gan_country_year.csv                 125 rows      2.9 KB
+  gan_year.csv                           5 rows      0.1 KB
+
+Night Sky Network clubs
+  us_state_grid.csv                     52 rows      0.9 KB
+  clubs 410, states/territories with clubs 48, without ['AK', 'SD', 'DC', 'MS']
+  us_clubs_by_state.csv                 52 rows      1.0 KB
+
+GMN
+  2021: rows 211,851, >=2 stations 211,851, stations 390, station countries 23, shower meteors 66,132
+  2022: rows 334,661, >=2 stations 334,661, stations 700, station countries 32, shower meteors 103,021
+  2023: rows 451,903, >=2 stations 451,903, stations 1,077, station countries 34, shower meteors 133,219
+  2024: rows 705,964, >=2 stations 705,964, stations 1,269, station countries 38, shower meteors 188,037
+  2025: rows 966,063, >=2 stations 966,063, stations 1,856, station countries 40, shower meteors 259,440
+  gmn_yearly.csv                         5 rows      0.2 KB
+  gmn_sollon.csv                     1,800 rows     23.6 KB
+  gmn_shower_peaks.csv                   3 rows      0.1 KB
+  chart_counts.csv                      12 rows      0.8 KB
+
+Rows behind each chart
+ chart                        file       n                                                       note
+events                  events.csv      16                                 celestial events 2021-2025
+   1.1               mpc_sites.csv    2695                    MPC sites with valid parallax constants
+   1.2           cobs_aperture.csv   46562               11 instrument types with >= 200 observations
+   1.3 country_sites_observers.csv      44      countries present in both MPC (spatial join) and COBS
+   2.1             cobs_lorenz.csv   47037                                              265 observers
+   2.2     cobs_comets_monthly.csv   47037                top 8 comets by observations, rest as Other
+   3.1              cobs_daily.csv   47037                                    1,826 days, zero-filled
+   3.3          event_response.csv    1472 event-days of COBS counts in the baseline and peak windows
+   4.1        gan_country_year.csv   88962                            top 25 countries by submissions
+   4.2       us_clubs_by_state.csv     410                                     member clubs per state
+   5.1              gmn_yearly.csv 2670442         trajectories seen by >= 2 stations, sporadics kept
+   3.2              gmn_sollon.csv  749849          shower meteors only, >= 2 stations, 1-degree bins

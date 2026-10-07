@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- Dev harness: renders one spec at a given card width.
+     prep/preview.html?spec=1_1_map&w=1300 -->
+<html>
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+<script src="../js/config.js"></script>
+<style>body{margin:16px;font-family:system-ui;background:#fff} #c{border:1px dashed #ccc}</style>
+</head>
+<body>
+<div id="c"></div>
+<pre id="err" style="color:#b00"></pre>
+<script>
+const q = new URLSearchParams(location.search);
+const el = document.getElementById("c");
+el.style.width = (q.get("w") || 800) + "px";
+function tok(n){if(typeof n==="string")return n.startsWith("@")&&n.slice(1) in DASH.colors?DASH.colors[n.slice(1)]:n;
+ if(Array.isArray(n))return n.map(tok); if(n&&typeof n==="object"){const o={};for(const[k,v]of Object.entries(n))o[k]=tok(v);return o;} return n;}
+fetch(`../js/specs/${q.get("spec")}.json`).then(r=>r.json()).then(s=>{
+  s=tok(s); s.config={...DASH.vlConfig,...(s.config||{})};
+  return vegaEmbed(el,s,{actions:false,renderer:"svg",loader:vega.loader({baseURL:"../"})});
+}).then(()=>document.title="done").catch(e=>{document.getElementById("err").textContent=e.stack||e;});
+</script>
+</body>
+</html>

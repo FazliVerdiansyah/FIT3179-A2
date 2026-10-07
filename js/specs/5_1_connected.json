@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "5.1 GMN camera stations active per year vs trajectories recorded, joined in year order",
+  "width": "container",
+  "height": 380,
+  "data": {
+    "url": "data/prepared/gmn_yearly.csv",
+    "format": { "parse": { "year": "number", "stations": "number", "trajectories": "number", "station_countries": "number" } }
+  },
+  "transform": [
+    {
+      "joinaggregate": [
+        { "op": "sum", "field": "trajectories", "as": "all_traj" },
+        { "op": "sum", "field": "stations", "as": "all_stations" }
+      ]
+    },
+    { "calculate": "datum.all_traj / datum.all_stations", "as": "rate" },
+    { "calculate": "datum.trajectories / datum.stations", "as": "per_station" }
+  ],
+  "encoding": {
+    "x": {
+      "field": "stations",
+      "type": "quantitative",
+      "title": "Camera stations active that year",
+      "scale": { "domain": [0, 2000] },
+      "axis": { "gridDash": [], "values": [0, 250, 500, 750, 1000, 1250, 1500, 1750, 2000], "labelExpr": "format(datum.value, ',')" }
+    },
+    "y": {
+      "field": "trajectories",
+      "type": "quantitative",
+      "title": "Meteor trajectories recorded",
+      "scale": { "domain": [0, 1000000] },
+      "axis": { "gridDash": [], "values": [0, 200000, 400000, 600000, 800000, 1000000], "labelExpr": "datum.value === 0 ? '0' : format(datum.value / 1e6, '.1f') + 'M'" }
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        { "aggregate": [{ "op": "max", "field": "rate", "as": "rate" }] },
+        { "calculate": "[0, 1950]", "as": "sx" },
+        { "flatten": ["sx"] },
+        { "calculate": "datum.sx * datum.rate", "as": "sy" }
+      ],
+      "mark": { "type": "line", "color": "@muted", "strokeWidth": 1.5, "strokeDash": [5, 4] },
+      "encoding": {
+        "x": { "field": "sx", "type": "quantitative" },
+        "y": { "field": "sy", "type": "quantitative" }
+      }
+    },
+    {
+      "transform": [
+        { "aggregate": [{ "op": "max", "field": "rate", "as": "rate" }] },
+        { "calculate": "1560", "as": "sx" },
+        { "calculate": "datum.sx * datum.rate", "as": "sy" },
+        { "calculate": "'Constant rate: ' + format(datum.rate, ',.0f') + ' trajectories per station'", "as": "t" }
+      ],
+      "mark": { "type": "text", "align": "left", "dx": 6, "dy": 16, "fontSize": 11, "color": "@ink2" },
+      "encoding": {
+        "x": { "field": "sx", "type": "quantitative" },
+        "y": { "field": "sy", "type": "quantitative" },
+        "text": { "field": "t" }
+      }
+    },
+    {
+      "mark": { "type": "line", "color": "@gmn", "strokeWidth": 2 },
+      "encoding": { "order": { "field": "year", "type": "ordinal" } }
+    },
+    {
+      "mark": { "type": "point", "filled": true, "size": 110, "opacity": 1, "stroke": "@surface", "strokeWidth": 2 },
+      "encoding": {
+        "color": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year",
+          "scale": { "scheme": "dash-years" },
+          "legend": null
+        },
+        "tooltip": [
+          { "field": "year", "title": "Year" },
+          { "field": "stations", "type": "quantitative", "format": ",", "title": "Stations" },
+          { "field": "trajectories", "type": "quantitative", "format": ",", "title": "Trajectories" },
+          { "field": "per_station", "type": "quantitative", "format": ",.0f", "title": "Trajectories per station" },
+          { "field": "station_countries", "type": "quantitative", "title": "Station country prefixes" }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": 600,
+        "color": "@ink",
+        "align": { "expr": "datum.trajectories > datum.rate * datum.stations ? 'right' : 'left'" },
+        "dx": { "expr": "datum.trajectories > datum.rate * datum.stations ? -10 : 10" },
+        "dy": { "expr": "datum.trajectories > datum.rate * datum.stations ? -10 : 12" }
+      },
+      "encoding": { "text": { "field": "year", "type": "ordinal" } }
+    }
+  ]
+}

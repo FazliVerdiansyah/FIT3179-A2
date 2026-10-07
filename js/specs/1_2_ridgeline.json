@@ -1,0 +1,251 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "1.2 Aperture distribution per COBS instrument type, one density ridge each, rows overlapped",
+  "width": "container",
+  "height": 360,
+  "data": {
+    "url": "data/prepared/cobs_aperture.csv"
+  },
+  "params": [
+    {
+      "name": "overlap",
+      "value": 1.25
+    }
+  ],
+  "transform": [
+    {
+      "filter": "datum.aperture_cm <= 60"
+    },
+    {
+      "calculate": "sequence(0, datum.n)",
+      "as": "rep"
+    },
+    {
+      "flatten": [
+        "rep"
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "median",
+          "field": "aperture_cm",
+          "as": "median_cm"
+        }
+      ],
+      "groupby": [
+        "instrument"
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "dense_rank",
+          "as": "row"
+        }
+      ],
+      "sort": [
+        {
+          "field": "median_cm",
+          "order": "ascending"
+        },
+        {
+          "field": "instrument"
+        }
+      ]
+    },
+    {
+      "density": "aperture_cm",
+      "groupby": [
+        "row",
+        "instrument",
+        "median_cm",
+        "obs_total"
+      ],
+      "bandwidth": 1.5,
+      "extent": [
+        0,
+        60
+      ],
+      "steps": 240
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "density",
+          "as": "peak"
+        },
+        {
+          "op": "max",
+          "field": "row",
+          "as": "rows"
+        }
+      ]
+    },
+    {
+      "joinaggregate": [
+        {
+          "op": "max",
+          "field": "density",
+          "as": "ridge_peak"
+        }
+      ],
+      "groupby": [
+        "instrument"
+      ]
+    },
+    {
+      "calculate": "datum.rows - datum.row",
+      "as": "base"
+    },
+    {
+      "calculate": "datum.base + overlap * datum.density / datum.ridge_peak",
+      "as": "top"
+    }
+  ],
+  "layer": [
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "max",
+              "field": "base",
+              "as": "base"
+            }
+          ],
+          "groupby": [
+            "instrument"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "rule",
+        "color": "@axis",
+        "strokeWidth": 1
+      },
+      "encoding": {
+        "y": {
+          "field": "base",
+          "type": "quantitative",
+          "axis": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "area",
+        "interpolate": "monotone",
+        "fill": "@cobs",
+        "fillOpacity": 0.6,
+        "stroke": "@surface",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "detail": {
+          "field": "instrument"
+        },
+        "x": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Aperture (cm)",
+          "scale": {
+            "domain": [
+              0,
+              60
+            ],
+            "nice": false
+          },
+          "axis": {
+            "grid": true,
+            "values": [
+              0,
+              10,
+              20,
+              30,
+              40,
+              50,
+              60
+            ],
+            "gridDash": []
+          }
+        },
+        "y": {
+          "field": "top",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              11.3
+            ],
+            "nice": false,
+            "zero": true
+          },
+          "axis": null
+        },
+        "y2": {
+          "field": "base"
+        },
+        "tooltip": [
+          {
+            "field": "instrument",
+            "title": "Instrument"
+          },
+          {
+            "field": "obs_total",
+            "type": "quantitative",
+            "format": ",",
+            "title": "Observations"
+          },
+          {
+            "field": "median_cm",
+            "type": "quantitative",
+            "format": ".1f",
+            "title": "Median aperture (cm)"
+          }
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [
+            {
+              "op": "max",
+              "field": "base",
+              "as": "base"
+            }
+          ],
+          "groupby": [
+            "instrument",
+            "median_cm"
+          ]
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": -8,
+        "dy": -2,
+        "color": "@ink2",
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "datum": 0,
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "base",
+          "type": "quantitative",
+          "axis": null
+        },
+        "text": {
+          "field": "instrument"
+        }
+      }
+    }
+  ]
+}

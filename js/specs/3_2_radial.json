@@ -1,0 +1,134 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "3.2 GMN shower meteors per 1-degree solar longitude bin, one ring per year, radius on a square-root scale",
+  "width": 470,
+  "height": 470,
+  "autosize": { "type": "pad" },
+  "params": [
+    { "name": "hole", "value": 0.14 },
+    { "name": "nmax", "value": 17000 }
+  ],
+  "encoding": {
+    "x": { "field": "px", "type": "quantitative", "scale": { "domain": [-1.18, 1.18] }, "axis": null },
+    "y": { "field": "py", "type": "quantitative", "scale": { "domain": [-1.18, 1.18] }, "axis": null }
+  },
+  "layer": [
+    {
+      "data": { "values": [{ "v": 1000 }, { "v": 5000 }, { "v": 15000 }] },
+      "transform": [
+        { "calculate": "sequence(0, 361, 3)", "as": "deg" },
+        { "flatten": ["deg"] },
+        { "calculate": "hole + (1 - hole) * sqrt(datum.v / nmax)", "as": "r" },
+        { "calculate": "datum.r * sin(datum.deg * PI / 180)", "as": "px" },
+        { "calculate": "datum.r * cos(datum.deg * PI / 180)", "as": "py" }
+      ],
+      "mark": { "type": "line", "color": "@grid", "strokeWidth": 1, "strokeCap": "butt" },
+      "encoding": { "detail": { "field": "v" }, "order": { "field": "deg", "type": "quantitative" } }
+    },
+    {
+      "data": { "values": [{ "v": 1000 }, { "v": 5000 }, { "v": 15000 }] },
+      "transform": [
+        { "calculate": "hole + (1 - hole) * sqrt(datum.v / nmax)", "as": "r" },
+        { "calculate": "datum.r * sin(-8 * PI / 180)", "as": "px" },
+        { "calculate": "datum.r * cos(-8 * PI / 180)", "as": "py" },
+        { "calculate": "format(datum.v, ',') + (datum.v === 15000 ? ' meteors per 1°' : '')", "as": "label" }
+      ],
+      "mark": { "type": "text", "fontSize": 10, "color": "@muted", "align": "right", "dy": -3 },
+      "encoding": { "text": { "field": "label" } }
+    },
+    {
+      "data": {
+        "values": [
+          { "deg": 0, "label": "0° · ~20 Mar" },
+          { "deg": 90, "label": "90° · ~21 Jun" },
+          { "deg": 180, "label": "180° · ~23 Sep" },
+          { "deg": 270, "label": "270° · ~22 Dec" }
+        ]
+      },
+      "transform": [
+        { "calculate": "[hole, 1.02]", "as": "rr" },
+        { "flatten": ["rr"] },
+        { "calculate": "datum.rr * sin(datum.deg * PI / 180)", "as": "px" },
+        { "calculate": "datum.rr * cos(datum.deg * PI / 180)", "as": "py" }
+      ],
+      "layer": [
+        {
+          "mark": { "type": "line", "color": "@grid", "strokeWidth": 1 },
+          "encoding": { "detail": { "field": "deg" } }
+        },
+        {
+          "transform": [{ "filter": "datum.rr > 1" }],
+          "mark": {
+            "type": "text",
+            "fontSize": 10,
+            "color": "@muted",
+            "align": { "expr": "datum.deg === 90 ? 'left' : datum.deg === 270 ? 'right' : 'center'" },
+            "baseline": { "expr": "datum.deg === 0 ? 'bottom' : datum.deg === 180 ? 'top' : 'middle'" },
+            "dx": { "expr": "datum.deg === 90 ? 4 : datum.deg === 270 ? -4 : 0" },
+            "dy": { "expr": "datum.deg === 0 ? -4 : datum.deg === 180 ? 4 : 0" }
+          },
+          "encoding": { "text": { "field": "label" } }
+        }
+      ]
+    },
+    {
+      "data": { "url": "data/prepared/gmn_sollon.csv", "format": { "parse": { "year": "number", "sol_lon": "number", "n": "number" } } },
+      "transform": [
+        { "calculate": "hole + (1 - hole) * sqrt(datum.n / nmax)", "as": "r" },
+        { "calculate": "datum.r * sin((datum.sol_lon + 0.5) * PI / 180)", "as": "px" },
+        { "calculate": "datum.r * cos((datum.sol_lon + 0.5) * PI / 180)", "as": "py" }
+      ],
+      "mark": { "type": "line", "strokeWidth": 1.5, "strokeJoin": "round", "interpolate": "linear-closed" },
+      "encoding": {
+        "color": {
+          "field": "year",
+          "type": "ordinal",
+          "title": "Year",
+          "scale": { "scheme": "dash-years" },
+          "legend": { "orient": "top-left", "direction": "vertical", "symbolType": "stroke", "symbolStrokeWidth": 2 }
+        },
+        "detail": { "field": "year" },
+        "order": { "field": "sol_lon", "type": "quantitative" },
+        "tooltip": [
+          { "field": "year", "title": "Year" },
+          { "field": "sol_lon", "title": "Solar longitude (°)" },
+          { "field": "n", "type": "quantitative", "format": ",", "title": "Shower meteors" }
+        ]
+      }
+    },
+    {
+      "data": { "url": "data/prepared/gmn_sollon.csv", "format": { "parse": { "year": "number", "sol_lon": "number", "n": "number" } } },
+      "transform": [
+        { "calculate": "hole + (1 - hole) * sqrt(datum.n / nmax)", "as": "r" },
+        { "calculate": "datum.r * sin((datum.sol_lon + 0.5) * PI / 180)", "as": "px" },
+        { "calculate": "datum.r * cos((datum.sol_lon + 0.5) * PI / 180)", "as": "py" }
+      ],
+      "mark": { "type": "point", "size": 40, "opacity": 0, "filled": true },
+      "encoding": {
+        "tooltip": [
+          { "field": "year", "title": "Year" },
+          { "field": "sol_lon", "title": "Solar longitude (°)" },
+          { "field": "n", "type": "quantitative", "format": ",", "title": "Shower meteors" }
+        ]
+      }
+    },
+    {
+      "data": { "url": "data/prepared/gmn_shower_peaks.csv", "format": { "parse": { "sol_lon": "number", "n": "number", "n_max_year": "number" } } },
+      "transform": [
+        { "calculate": "hole + (1 - hole) * sqrt(datum.n_max_year / nmax) + 0.05", "as": "r" },
+        { "calculate": "datum.r * sin((datum.sol_lon + 0.5) * PI / 180)", "as": "px" },
+        { "calculate": "datum.r * cos((datum.sol_lon + 0.5) * PI / 180)", "as": "py" },
+        { "calculate": "datum.name + ' ' + datum.sol_lon + '°'", "as": "label" }
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "@ink",
+        "align": { "expr": "datum.sol_lon < 180 ? 'left' : 'right'" },
+        "dx": { "expr": "datum.sol_lon < 180 ? 4 : -4" }
+      },
+      "encoding": { "text": { "field": "label" } }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "3.1 Daily COBS observations 2021-2025 as a three-band horizon chart, with celestial events marked",
+  "width": "container",
+  "height": 170,
+  "params": [{ "name": "band", "value": 30 }],
+  "layer": [
+    {
+      "data": { "url": "data/prepared/cobs_daily.csv", "format": { "parse": { "date": "date", "n": "number" } } },
+      "transform": [
+        {
+          "window": [{ "op": "mean", "field": "n", "as": "n7" }],
+          "sort": [{ "field": "date" }],
+          "frame": [-3, 3]
+        },
+        { "calculate": "datum.n7", "as": "v" },
+        { "calculate": "min(datum.v, band)", "as": "b1" },
+        { "calculate": "clamp(datum.v - band, 0, band)", "as": "b2" },
+        { "calculate": "clamp(datum.v - 2 * band, 0, band)", "as": "b3" }
+      ],
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null,
+          "scale": { "domain": ["2021-01-01", "2025-12-31"] },
+          "axis": { "format": "%Y", "values": ["2021-01-01", "2022-01-01", "2023-01-01", "2024-01-01", "2025-01-01"], "grid": true, "gridDash": [], "labelAlign": "left", "labelPadding": 6 }
+        }
+      },
+      "layer": [
+        {
+          "mark": { "type": "area", "interpolate": "step", "clip": true },
+          "encoding": {
+            "y": { "field": "b1", "type": "quantitative", "scale": { "domain": [0, 30] }, "axis": null },
+            "color": { "datum": "0–30", "type": "nominal", "scale": { "domain": ["0–30", "30–60", "60–90"], "range": ["#9ec5f4", "#3987e5", "#184f95"] }, "legend": { "title": "Observations per day, 7-day mean", "orient": "top", "direction": "horizontal", "symbolType": "square" } }
+          }
+        },
+        {
+          "mark": { "type": "area", "interpolate": "step", "clip": true },
+          "encoding": { "y": { "field": "b2", "type": "quantitative" }, "color": { "datum": "30–60", "type": "nominal" } }
+        },
+        {
+          "mark": { "type": "area", "interpolate": "step", "clip": true },
+          "encoding": { "y": { "field": "b3", "type": "quantitative" }, "color": { "datum": "60–90", "type": "nominal" } }
+        },
+        {
+          "mark": { "type": "rule", "opacity": 0, "strokeWidth": 4 },
+          "encoding": {
+            "tooltip": [
+              { "field": "date", "type": "temporal", "format": "%a %d %b %Y", "title": "Date" },
+              { "field": "n", "type": "quantitative", "title": "Observations that day" },
+              { "field": "n7", "type": "quantitative", "format": ".1f", "title": "7-day mean" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "data": { "url": "data/prepared/events.csv", "format": { "parse": { "date": "date" } } },
+      "mark": { "type": "rule", "color": "@ink", "strokeWidth": 1.25, "opacity": 0.85 },
+      "encoding": {
+        "x": { "field": "date", "type": "temporal" },
+        "strokeDash": {
+          "field": "type",
+          "type": "nominal",
+          "title": "Event",
+          "scale": {
+            "domain": ["comet", "solar eclipse", "lunar eclipse"],
+            "range": [[1, 0], [6, 3], [2, 2]]
+          },
+          "legend": { "orient": "top", "direction": "horizontal", "symbolType": "stroke", "symbolStrokeWidth": 1.5, "symbolSize": 200 }
+        },
+        "tooltip": [
+          { "field": "event", "title": "Event" },
+          { "field": "date", "type": "temporal", "format": "%d %b %Y", "title": "Date" },
+          { "field": "type", "title": "Type" }
+        ]
+      }
+    }
+  ],
+  "resolve": { "scale": { "y": "shared" } }
+}

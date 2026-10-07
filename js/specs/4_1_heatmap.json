@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "4.1 Globe at Night submissions by country and year, top 25 countries, log colour scale",
+  "width": "container",
+  "height": { "step": 17 },
+  "data": {
+    "url": "data/prepared/gan_country_year.csv",
+    "format": { "parse": { "year": "number", "n": "number", "total": "number" } }
+  },
+  "encoding": {
+    "y": {
+      "field": "country",
+      "type": "nominal",
+      "title": null,
+      "sort": { "field": "total", "op": "max", "order": "descending" },
+      "axis": { "labelColor": "@ink2", "labelFontSize": 11 }
+    },
+    "x": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "axis": { "orient": "top", "labelAngle": 0, "labelColor": "@ink2", "domain": false, "ticks": false }
+    }
+  },
+  "layer": [
+    {
+      "mark": { "type": "rect", "stroke": "@surface", "strokeWidth": 2, "cornerRadius": 2 },
+      "encoding": {
+        "color": {
+          "condition": { "test": "datum.n === 0", "value": "@nodata" },
+          "field": "n",
+          "type": "quantitative",
+          "title": "Submissions (log scale)",
+          "scale": { "type": "log", "scheme": "dash-counts", "domain": [5, 10000], "clamp": true },
+          "legend": {
+            "orient": "top",
+            "direction": "horizontal",
+            "gradientLength": 220,
+            "values": [10, 100, 1000, 10000],
+            "format": "~s"
+          }
+        },
+        "tooltip": [
+          { "field": "country", "title": "Country" },
+          { "field": "year", "title": "Year" },
+          { "field": "n", "type": "quantitative", "format": ",", "title": "Submissions" },
+          { "field": "total", "type": "quantitative", "format": ",", "title": "2021–2025 total" }
+        ]
+      }
+    }
+  ]
+}
