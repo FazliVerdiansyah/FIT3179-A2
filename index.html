@@ -137,16 +137,16 @@
 
     <div class="grid">
       <article class="card span-12">
-        <h3>Daily comet observations, folded into three bands, with event dates</h3>
-        <div class="chart" data-spec="3_1_horizon"></div>
+        <h3>Comet observations per day, one square per day, with event windows outlined <span class="verify">[DRAFT]</span></h3>
+        <div class="chart fixed" data-spec="3_1_daily_waffle"></div>
         <div class="card-foot">
-          <p class="caption">Darker bands mark busier weeks. The clearest surges come around comet apparitions (early 2023, spring and autumn 2024, late 2025), while most eclipse dates pass without a change. The regular monthly ripple in the lightest band probably tracks moonlight <span class="verify">[VERIFY]</span>.</p>
+          <p class="caption">Each square is one day; darker means more observations. The orange-outlined weeks around C/2022 E3 (ZTF) in early 2023 and Tsuchinshan-ATLAS in October 2024 average 42 and 46 observations a day, against 26 across the whole period, while the grey-outlined eclipse weeks look like any other weeks. The busiest stretch, October to December 2025 (53 a day), has no event in the list at all and coincides with comet C/2025 A6 (Lemmon) <span class="verify">[VERIFY]</span>.</p>
           <details class="meta">
             <summary>Source: <a href="https://cobs.si/">COBS</a>; eclipse dates from Eclipse Predictions by Fred Espenak, NASA's GSFC, <a href="https://eclipse.gsfc.nasa.gov/SEsearch/">eclipse.gsfc.nasa.gov</a></summary>
             <dl>
               <dt>Coverage</dt><dd>1 Jan 2021 – 31 Dec 2025 (1,826 days), worldwide</dd>
               <dt>N</dt><dd data-n="3.1" data-unit="observations">[TODO]</dd>
-              <dt>Prepared</dt><dd>Daily counts, zero-filled; centred 7-day mean folded into 0–30, 30–60 and 60–90 bands</dd>
+              <dt>Prepared</dt><dd>Daily counts, zero-filled; one square per day (columns = Monday-based weeks, rows = weekdays); outlines = ±15 days of a comet close approach or an eclipse, overlapping days count as comet; dots = event days; grey = no observations</dd>
               <dt>Licence</dt><dd>COBS: CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">data policy</a>; event dates are facts cited to NASA</dd>
             </dl>
           </details>

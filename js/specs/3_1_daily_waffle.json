@@ -1,0 +1,118 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "DRAFT: 3.1 Daily COBS observations 2021-2025, one square per day in calendar layout (week columns, weekday rows), +-15-day comet and eclipse windows outlined",
+  "autosize": { "type": "pad" },
+  "data": {
+    "url": "data/prepared/cobs_daily.csv",
+    "format": { "parse": { "date": "date", "n": "number", "year": "number", "week": "number", "weekday": "number" } }
+  },
+  "facet": {
+    "row": {
+      "field": "year",
+      "type": "ordinal",
+      "title": null,
+      "header": { "labelAngle": 0, "labelAlign": "right", "labelAnchor": "middle", "labelPadding": 10, "labelFontSize": 12, "labelFontWeight": 600, "labelColor": "@ink2" }
+    }
+  },
+  "spacing": 10,
+  "resolve": { "scale": { "x": "shared", "y": "shared" } },
+  "spec": {
+    "width": { "step": 17 },
+    "height": { "step": 17 },
+    "encoding": {
+      "x": {
+        "field": "week",
+        "type": "ordinal",
+        "title": null,
+        "scale": {
+          "domain": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52],
+          "paddingInner": 0.14,
+          "paddingOuter": 0
+        },
+        "axis": {
+          "orient": "top",
+          "domain": false,
+          "ticks": false,
+          "labelAlign": "left",
+          "labelAngle": 0,
+          "values": [0, 5, 9, 13, 17, 22, 26, 30, 35, 39, 44, 48],
+          "labelExpr": "['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][indexof([0,5,9,13,17,22,26,30,35,39,44,48], datum.value)]"
+        }
+      },
+      "y": {
+        "field": "weekday",
+        "type": "ordinal",
+        "title": null,
+        "scale": { "domain": [0, 1, 2, 3, 4, 5, 6], "paddingInner": 0.14, "paddingOuter": 0 },
+        "axis": {
+          "values": [0, 2, 4],
+          "labelExpr": "['Mon','Tue','Wed','Thu','Fri','Sat','Sun'][datum.value]",
+          "labelFontSize": 10,
+          "labelPadding": 4
+        }
+      }
+    },
+    "layer": [
+      {
+        "mark": { "type": "rect", "cornerRadius": 2 },
+        "encoding": {
+          "color": {
+            "condition": { "test": "datum.n === 0", "value": "@nodata" },
+            "field": "n",
+            "type": "quantitative",
+            "title": "Observations per day",
+            "scale": {
+              "type": "threshold",
+              "domain": [10, 20, 30, 45, 60, 80],
+              "range": ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
+            },
+            "legend": { "orient": "top", "direction": "horizontal", "gradientLength": 220 }
+          },
+          "tooltip": [
+            { "field": "date", "type": "temporal", "format": "%a %d %b %Y", "title": "Date" },
+            { "field": "n", "type": "quantitative", "title": "Observations" },
+            { "field": "window", "title": "Window" },
+            { "field": "event", "title": "Event" }
+          ]
+        }
+      },
+      {
+        "transform": [{ "filter": "datum.window !== 'Other days'" }],
+        "mark": { "type": "rect", "filled": false, "cornerRadius": 2, "strokeWidth": { "expr": "datum.window === 'Comet window' ? 2 : 1" } },
+        "encoding": {
+          "stroke": {
+            "field": "window",
+            "type": "nominal",
+            "title": "±15 days around",
+            "scale": { "domain": ["Comet window", "Eclipse window"], "range": ["@cometWin", "@ink2"] },
+            "legend": {
+              "orient": "top",
+              "direction": "horizontal",
+              "symbolType": "square",
+              "symbolFillColor": "@surface",
+              "symbolStrokeWidth": 2,
+              "labelExpr": "datum.label === 'Comet window' ? 'a comet close approach' : 'an eclipse'"
+            }
+          },
+          "tooltip": [
+            { "field": "date", "type": "temporal", "format": "%a %d %b %Y", "title": "Date" },
+            { "field": "n", "type": "quantitative", "title": "Observations" },
+            { "field": "window", "title": "Window" },
+            { "field": "event", "title": "Event" }
+          ]
+        }
+      },
+      {
+        "transform": [{ "filter": "datum.event !== ''" }],
+        "mark": { "type": "point", "shape": "circle", "filled": true, "size": 26, "color": "@surface", "stroke": "@ink", "strokeWidth": 1.5, "opacity": 1 },
+        "encoding": {
+          "tooltip": [
+            { "field": "event", "title": "Event" },
+            { "field": "date", "type": "temporal", "format": "%a %d %b %Y", "title": "Date" },
+            { "field": "n", "type": "quantitative", "title": "Observations that day" }
+          ]
+        }
+      }
+    ]
+  }
+}

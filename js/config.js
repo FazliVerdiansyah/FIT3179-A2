@@ -38,6 +38,10 @@ const DASH = {
 
     // dumbbell baseline (a reference value, not a series hue)
     baseline: "#a8a79f",
+
+    // 3.1 event-window categories (comet window reuses the COBS hue, set below)
+    eclipseWin: "#8a8983",  // 3.5:1 on white
+    otherDays: "#dedcd5",
   },
 
   // sequential counts: blue 100 -> 700
@@ -49,6 +53,8 @@ const DASH = {
   // categorical, fixed order, for the one chart that needs identity (comets)
   categorical: ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#4a3aa7", "#e34948"],
 };
+
+DASH.colors.cometWin = DASH.colors.cobs;
 
 vega.scheme("dash-counts", DASH.counts);
 vega.scheme("dash-years", DASH.years);

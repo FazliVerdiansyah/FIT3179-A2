@@ -263,15 +263,55 @@ def prep_cobs(mpc):
         ~st.comet_label.str.startswith("C/"), st.comet_label.str.split(" ").str[:2].str.join(" "))
     write(st, "cobs_comets_monthly.csv", "2.2", len(cobs), "top 8 comets by observations, rest as Other")
 
-    # 3.1 horizon: daily counts with zero days filled
+    events = pd.read_csv(OUT / "events.csv", parse_dates=["date"])
+
+    # +-15-day event windows (the same window the 3.3 dumbbell uses). Eclipses are
+    # labelled first and comets override, so overlapping days count as comet windows.
     days = pd.date_range("2021-01-01", "2025-12-31", freq="D")
     daily = cobs.groupby("day").size().reindex(days, fill_value=0)
+    window = pd.Series("Other days", index=daily.index)
+    for kinds, label in [(["lunar eclipse", "solar eclipse"], "Eclipse window"), (["comet"], "Comet window")]:
+        for t in events[events.type.isin(kinds)].date:
+            window[(window.index >= t - pd.Timedelta(days=15)) & (window.index <= t + pd.Timedelta(days=15))] = label
+
+    # 3.1 daily waffle (draft): one square per day in calendar layout,
+    # columns = Monday-based week of the year, rows = weekday (0 = Monday).
+    # Also read by the horizon spec 3_1_horizon.json, which only uses date and n.
     dd = daily.rename("n").reset_index().rename(columns={"index": "date"})
+    jan1_wd = pd.to_datetime(dd.date.dt.year.astype(str) + "-01-01").dt.weekday
+    dd["year"] = dd.date.dt.year
+    dd["week"] = (dd.date.dt.dayofyear - 1 + jan1_wd) // 7
+    dd["weekday"] = dd.date.dt.weekday
+    dd["window"] = window.values
+    ev = events.set_index("date")
+    dd["event"] = dd.date.map(ev.event).fillna("")
+    dd["event_type"] = dd.date.map(ev.type).fillna("")
     dd["date"] = dd.date.dt.strftime("%Y-%m-%d")
-    write(dd, "cobs_daily.csv", "3.1", len(cobs), "1,826 days, zero-filled")
+    write(dd, "cobs_daily.csv", "3.1", int(dd.n.sum()), "1,826 days, zero-filled, one square per day")
+
+    # 3.1 alternative (waffle pair, kept for switching back): share of days vs
+    # share of observations in each window category, 100 squares each
+    order = {"Comet window": 0, "Eclipse window": 1, "Other days": 2}
+    ew = (pd.DataFrame({"n": daily, "category": window}).groupby("category")
+          .agg(days=("n", "size"), obs=("n", "sum")).reset_index())
+    ew["order"] = ew.category.map(order)
+    ew = ew.sort_values("order").reset_index(drop=True)
+    ew["obs_per_day"] = (ew.obs / ew.days).round(1)
+
+    def largest_remainder(counts, total=100):
+        exact = counts / counts.sum() * total
+        squares = np.floor(exact).astype(int)
+        short = total - squares.sum()
+        squares[(exact - squares).sort_values(ascending=False).index[:short]] += 1
+        return squares
+
+    for col in ["days", "obs"]:
+        ew[f"share_{col}"] = (ew[col] / ew[col].sum() * 100).round(1)
+        ew[f"squares_{col}"] = largest_remainder(ew[col])
+    print(ew.to_string(index=False))
+    write(ew, "event_windows.csv")
 
     # 3.3 dumbbell: baseline vs peak per event
-    events = pd.read_csv(OUT / "events.csv", parse_dates=["date"])
     rows = []
     for e in events.itertuples():
         base = daily[(daily.index >= e.date - pd.Timedelta(days=90)) &

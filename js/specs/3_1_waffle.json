@@ -1,0 +1,360 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "DRAFT: 3.1 Share of days vs share of COBS observations in +-15-day event windows, two 10x10 waffles (each square = 1%)",
+  "autosize": {
+    "type": "pad"
+  },
+  "data": {
+    "url": "data/prepared/event_windows.csv",
+    "format": {
+      "parse": {
+        "days": "number",
+        "obs": "number",
+        "order": "number",
+        "obs_per_day": "number",
+        "share_days": "number",
+        "share_obs": "number",
+        "squares_days": "number",
+        "squares_obs": "number"
+      }
+    }
+  },
+  "transform": [
+    {
+      "fold": [
+        "squares_days",
+        "squares_obs"
+      ],
+      "as": [
+        "measure",
+        "squares"
+      ]
+    },
+    {
+      "calculate": "sequence(0, datum.squares)",
+      "as": "cell"
+    },
+    {
+      "flatten": [
+        "cell"
+      ]
+    },
+    {
+      "window": [
+        {
+          "op": "row_number",
+          "as": "idx"
+        }
+      ],
+      "groupby": [
+        "measure"
+      ],
+      "sort": [
+        {
+          "field": "order"
+        },
+        {
+          "field": "cell"
+        }
+      ]
+    },
+    {
+      "calculate": "(datum.idx - 1) % 10",
+      "as": "col"
+    },
+    {
+      "calculate": "floor((datum.idx - 1) / 10)",
+      "as": "row"
+    }
+  ],
+  "spacing": 56,
+  "hconcat": [
+    {
+      "title": {
+        "text": "Share of days",
+        "subtitle": "each square = 1% of days",
+        "anchor": "start",
+        "fontSize": 12,
+        "subtitleColor": "@muted"
+      },
+      "transform": [
+        {
+          "filter": "datum.measure === 'squares_days'"
+        }
+      ],
+      "width": 250,
+      "height": 250,
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "cornerRadius": 2
+          },
+          "encoding": {
+            "x": {
+              "field": "col",
+              "type": "ordinal",
+              "axis": null,
+              "scale": {
+                "domain": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                "paddingInner": 0.1
+              }
+            },
+            "y": {
+              "field": "row",
+              "type": "ordinal",
+              "axis": null,
+              "scale": {
+                "domain": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                "paddingInner": 0.1
+              }
+            },
+            "color": {
+              "field": "category",
+              "type": "nominal",
+              "title": null,
+              "scale": {
+                "domain": [
+                  "Comet window",
+                  "Eclipse window",
+                  "Other days"
+                ],
+                "range": [
+                  "@cometWin",
+                  "@eclipseWin",
+                  "@otherDays"
+                ]
+              },
+              "legend": {
+                "orient": "top",
+                "direction": "horizontal",
+                "symbolType": "square",
+                "labelExpr": "datum.label === 'Other days' ? 'Other days' : datum.label + ' (±15 days)'"
+              }
+            },
+            "tooltip": [
+              {
+                "field": "category",
+                "title": "Category"
+              },
+              {
+                "field": "days",
+                "type": "quantitative",
+                "format": ",",
+                "title": "Days"
+              },
+              {
+                "field": "share_days",
+                "type": "quantitative",
+                "format": ".1f",
+                "title": "Share of days (%)"
+              },
+              {
+                "field": "obs_per_day",
+                "type": "quantitative",
+                "format": ".1f",
+                "title": "Observations per day"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "pivot": "category",
+              "value": "share_days",
+              "op": "max"
+            },
+            {
+              "calculate": "'Comet ' + format(datum['Comet window'], '.1f') + '%   ·   Eclipse ' + format(datum['Eclipse window'], '.1f') + '%   ·   Other ' + format(datum['Other days'], '.1f') + '%'",
+              "as": "label"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 11,
+            "color": "@ink2"
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "y": {
+              "value": 258
+            },
+            "text": {
+              "field": "label"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "text": "Share of observations",
+        "subtitle": "each square = 1% of comet observations",
+        "anchor": "start",
+        "fontSize": 12,
+        "subtitleColor": "@muted"
+      },
+      "transform": [
+        {
+          "filter": "datum.measure === 'squares_obs'"
+        }
+      ],
+      "width": 250,
+      "height": 250,
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "cornerRadius": 2
+          },
+          "encoding": {
+            "x": {
+              "field": "col",
+              "type": "ordinal",
+              "axis": null,
+              "scale": {
+                "domain": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                "paddingInner": 0.1
+              }
+            },
+            "y": {
+              "field": "row",
+              "type": "ordinal",
+              "axis": null,
+              "scale": {
+                "domain": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ],
+                "paddingInner": 0.1
+              }
+            },
+            "color": {
+              "field": "category",
+              "type": "nominal",
+              "title": null,
+              "scale": {
+                "domain": [
+                  "Comet window",
+                  "Eclipse window",
+                  "Other days"
+                ],
+                "range": [
+                  "@cometWin",
+                  "@eclipseWin",
+                  "@otherDays"
+                ]
+              }
+            },
+            "tooltip": [
+              {
+                "field": "category",
+                "title": "Category"
+              },
+              {
+                "field": "obs",
+                "type": "quantitative",
+                "format": ",",
+                "title": "Observations"
+              },
+              {
+                "field": "share_obs",
+                "type": "quantitative",
+                "format": ".1f",
+                "title": "Share of observations (%)"
+              },
+              {
+                "field": "obs_per_day",
+                "type": "quantitative",
+                "format": ".1f",
+                "title": "Observations per day"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "pivot": "category",
+              "value": "share_obs",
+              "op": "max"
+            },
+            {
+              "calculate": "'Comet ' + format(datum['Comet window'], '.1f') + '%   ·   Eclipse ' + format(datum['Eclipse window'], '.1f') + '%   ·   Other ' + format(datum['Other days'], '.1f') + '%'",
+              "as": "label"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "baseline": "top",
+            "fontSize": 11,
+            "color": "@ink2"
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "y": {
+              "value": 258
+            },
+            "text": {
+              "field": "label"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "color": "shared"
+    }
+  }
+}

@@ -83,4 +83,10 @@ Grey (`@nodata`) marks missing data and sits outside every scale.
   No row count is typed by hand.
 - Caption claims marked `[VERIFY]` go beyond what the chart shows on its own.
   `[TODO]` marks licence terms that could not be found (MPC, NASA Night Sky Network).
+- Chart 3.1 is a draft per-day waffle (`js/specs/3_1_daily_waffle.json`, data
+  `data/prepared/cobs_daily.csv`): one square per day, calendar layout, ±15-day
+  comet and eclipse windows outlined. Two earlier versions are kept for switching
+  back by changing `data-spec` on the 3.1 card in `index.html`:
+  `3_1_waffle` (share of days vs share of observations, data `event_windows.csv`)
+  and `3_1_horizon` (horizon chart, data `cobs_daily.csv`).
 - Light theme only.
