@@ -18,7 +18,7 @@
       "field": "month",
       "type": "temporal",
       "title": null,
-      "axis": { "format": "%Y", "tickCount": { "interval": "year" }, "grid": true, "gridDash": [] }
+      "axis": { "format": "%Y", "tickCount": { "interval": "year", "step": 1}, "grid": true, "gridDash": [] }
     }
   },
   "layer": [
