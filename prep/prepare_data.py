@@ -463,13 +463,21 @@ def prep_gmn():
     rad = pd.concat(radial)
     write(rad, "gmn_sollon.csv", "3.2", rad.n.sum(), "shower meteors only, >= 2 stations, 1-degree bins")
 
-    pk = pd.concat(peaks).groupby(["shower", "sol_lon"]).n.sum().reset_index()
-    pk = pk.loc[pk.groupby("shower").n.idxmax()]
+    # shower peak labels for 3.2. year "All": the peak of the five years summed,
+    # placed on the outermost ring. Each year: that year's own peak, placed on
+    # that year's ring (the chart's year menu shows one or the other).
+    # ring_n is the ring's value (all showers) at the label's longitude.
+    pky = pd.concat(peaks, ignore_index=True)
+    tot = pky.groupby(["shower", "sol_lon"]).n.sum().reset_index()
+    tot = tot.loc[tot.groupby("shower").n.idxmax()].assign(year="All")
+    tot["ring_n"] = [rad[rad.sol_lon == s].n.max() for s in tot.sol_lon]
+    per = pky.loc[pky.groupby(["shower", "year"]).n.idxmax()].copy()
+    ring = rad.set_index(["year", "sol_lon"]).n
+    per["ring_n"] = [ring[(y, s)] for y, s in zip(per.year, per.sol_lon)]
+    pk = pd.concat([tot, per], ignore_index=True)
     names = {"PER": "Perseids", "GEM": "Geminids", "QUA": "Quadrantids"}
     pk["name"] = pk.shower.map(names)
-    # the year-ring value at that longitude, for placing the label on the outermost ring
-    pk["n_max_year"] = [rad[(rad.sol_lon == s)].n.max() for s in pk.sol_lon]
-    write(pk, "gmn_shower_peaks.csv")
+    write(pk[["shower", "year", "sol_lon", "n", "name", "ring_n"]], "gmn_shower_peaks.csv")
 
 
 # --------------------------------------------------------------------------

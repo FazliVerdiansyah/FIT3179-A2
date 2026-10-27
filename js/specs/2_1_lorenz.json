@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "2.1 Lorenz curve of COBS observations across observers, least to most active",
   "width": "container",
-  "height": 360,
+  "height": "container",
   "data": { "url": "data/prepared/cobs_lorenz.csv" },
   "encoding": {
     "x": {
@@ -72,6 +72,15 @@
         { "calculate": "toNumber(datum.cum_obs) + 0.17", "as": "mid" }
       ],
       "layer": [
+        {
+          "description": "white halo behind both lines, so the dashed diagonal never cuts through the text",
+          "mark": { "type": "text", "align": "right", "dx": -8, "dy": -8, "fontSize": 11, "fontWeight": 600, "stroke": "@surface", "strokeWidth": 4, "strokeJoin": "round" },
+          "encoding": { "y": { "field": "mid", "type": "quantitative" }, "text": { "field": "l1" } }
+        },
+        {
+          "mark": { "type": "text", "align": "right", "dx": -8, "dy": 7, "fontSize": 11, "stroke": "@surface", "strokeWidth": 4, "strokeJoin": "round" },
+          "encoding": { "y": { "field": "mid", "type": "quantitative" }, "text": { "field": "l2" } }
+        },
         {
           "mark": { "type": "text", "align": "right", "dx": -8, "dy": -8, "fontSize": 11, "fontWeight": 600, "color": "@ink" },
           "encoding": { "y": { "field": "mid", "type": "quantitative" }, "text": { "field": "l1" } }

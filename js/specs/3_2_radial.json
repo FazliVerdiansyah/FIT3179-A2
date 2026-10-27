@@ -1,10 +1,21 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "3.2 GMN shower meteors per 1-degree solar longitude bin, one ring per year, radius on a square-root scale",
+  "description": "3.2 GMN shower meteors per 1-degree solar longitude bin, one ring per year, radius on a square-root scale. The Year menu (radial_year, bound to #radial-binds) shows one year or all five; the radius scale and year colours stay fixed, so a ring keeps its size and colour",
   "width": 470,
   "height": 470,
   "autosize": { "type": "pad" },
   "params": [
+    {
+      "name": "radial_year",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "2021", "2022", "2023", "2024", "2025"],
+        "labels": ["All years", "2021", "2022", "2023", "2024", "2025"],
+        "name": "Year",
+        "element": "#radial-binds"
+      }
+    },
     { "name": "hole", "value": 0.14 },
     { "name": "nmax", "value": 17000 }
   ],
@@ -74,18 +85,26 @@
     {
       "data": { "url": "data/prepared/gmn_sollon.csv", "format": { "parse": { "year": "number", "sol_lon": "number", "n": "number" } } },
       "transform": [
+        { "filter": "radial_year === 'All' || datum.year + '' === radial_year" },
         { "calculate": "hole + (1 - hole) * sqrt(datum.n / nmax)", "as": "r" },
         { "calculate": "datum.r * sin((datum.sol_lon + 0.5) * PI / 180)", "as": "px" },
         { "calculate": "datum.r * cos((datum.sol_lon + 0.5) * PI / 180)", "as": "py" }
       ],
-      "mark": { "type": "line", "strokeWidth": 1.5, "strokeJoin": "round", "interpolate": "linear-closed" },
+      "mark": { "type": "line", "strokeWidth": { "expr": "radial_year === 'All' ? 1.5 : 2.25" }, "strokeJoin": "round", "interpolate": "linear-closed" },
       "encoding": {
         "color": {
           "field": "year",
           "type": "ordinal",
           "title": "Year",
-          "scale": { "scheme": "dash-years" },
-          "legend": { "orient": "top-left", "direction": "vertical", "symbolType": "stroke", "symbolStrokeWidth": 2 }
+          "scale": { "scheme": "dash-years", "domain": [2021, 2022, 2023, 2024, 2025] },
+          "legend": {
+            "orient": "top-left",
+            "direction": "vertical",
+            "symbolType": "stroke",
+            "symbolStrokeWidth": 2,
+            "symbolOpacity": { "expr": "radial_year === 'All' || datum.value + '' === radial_year ? 1 : 0.25" },
+            "labelOpacity": { "expr": "radial_year === 'All' || datum.value + '' === radial_year ? 1 : 0.4" }
+          }
         },
         "detail": { "field": "year" },
         "order": { "field": "sol_lon", "type": "quantitative" },
@@ -99,6 +118,7 @@
     {
       "data": { "url": "data/prepared/gmn_sollon.csv", "format": { "parse": { "year": "number", "sol_lon": "number", "n": "number" } } },
       "transform": [
+        { "filter": "radial_year === 'All' || datum.year + '' === radial_year" },
         { "calculate": "hole + (1 - hole) * sqrt(datum.n / nmax)", "as": "r" },
         { "calculate": "datum.r * sin((datum.sol_lon + 0.5) * PI / 180)", "as": "px" },
         { "calculate": "datum.r * cos((datum.sol_lon + 0.5) * PI / 180)", "as": "py" }
@@ -113,9 +133,10 @@
       }
     },
     {
-      "data": { "url": "data/prepared/gmn_shower_peaks.csv", "format": { "parse": { "sol_lon": "number", "n": "number", "n_max_year": "number" } } },
+      "data": { "url": "data/prepared/gmn_shower_peaks.csv", "format": { "parse": { "year": "string", "sol_lon": "number", "n": "number", "ring_n": "number" } } },
       "transform": [
-        { "calculate": "hole + (1 - hole) * sqrt(datum.n_max_year / nmax) + 0.05", "as": "r" },
+        { "filter": "datum.year === radial_year" },
+        { "calculate": "hole + (1 - hole) * sqrt(datum.ring_n / nmax) + 0.05", "as": "r" },
         { "calculate": "datum.r * sin((datum.sol_lon + 0.5) * PI / 180)", "as": "px" },
         { "calculate": "datum.r * cos((datum.sol_lon + 0.5) * PI / 180)", "as": "py" },
         { "calculate": "datum.name + ' ' + datum.sol_lon + '°'", "as": "label" }

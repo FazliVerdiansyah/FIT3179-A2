@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "3.3 COBS daily observations before vs around each celestial event, sorted by the size of the gap",
   "width": "container",
-  "height": { "step": 22 },
+  "height": "container",
   "padding": { "top": 50, "left": 4, "right": 4, "bottom": 4 },
   "data": {
     "url": "data/prepared/event_response.csv",

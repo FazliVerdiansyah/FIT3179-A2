@@ -41,7 +41,7 @@
         <div class="chart-controls">
           <div class="chart-binds" id="map-binds"></div>
           <button type="button" class="map-reset">Reset view</button>
-          <span class="map-hint">Ctrl + scroll to zoom, drag to pan</span>
+          <span class="chart-hint">Ctrl + scroll to zoom, drag to pan</span>
         </div>
         <div class="chart map" data-spec="1_1_map" data-zoom></div>
         <div class="card-foot">
@@ -113,7 +113,7 @@
     <div class="grid">
       <article class="card span-4">
         <h3>Share of observations by share of observers</h3>
-        <div class="chart" data-spec="2_1_lorenz"></div>
+        <div class="chart fill" data-spec="2_1_lorenz"></div>
         <div class="card-foot">
           <p class="caption">The curve stays near the floor until the last tenth: the 26 most active observers, 10% of the total, filed 74% of all observations.</p>
           <details class="meta">
@@ -130,9 +130,14 @@
 
       <article class="card span-8">
         <h3>Monthly observations by comet</h3>
-        <div class="chart" data-spec="2_2_streamgraph"></div>
+        <div class="chart-controls">
+          <span class="range-readout" aria-live="polite">Showing all months, Jan 2021 – Dec 2025</span>
+          <button type="button" class="range-reset">Reset range</button>
+          <span class="chart-hint">Drag across the grey strip under the chart to pick months</span>
+        </div>
+        <div class="chart" data-spec="2_2_streamgraph" data-brush="brush"></div>
         <div class="card-foot">
-          <p class="caption">Each bright comet swells the stream for a few months and then fades. Tsuchinshan-ATLAS rose most sharply, with 873 observations in October 2024. Even so, the eight most-watched comets account for only 30% of observations; the long tail of other comets (grey) makes up the rest.</p>
+          <p class="caption">Each bright comet swells the stream for a few months and then fades. Tsuchinshan-ATLAS rose most sharply, with 873 observations in October 2024. Even so, the eight most-watched comets account for only 30% of observations; the long tail of other comets (grey) makes up the rest. Drag across the strip under the chart to zoom to a range of months.</p>
           <details class="meta">
             <summary>Source: COBS Comet Observation Database, <a href="https://cobs.si/">cobs.si</a></summary>
             <dl>
@@ -176,9 +181,12 @@
     <div class="grid">
       <article class="card span-6">
         <h3>Shower meteors by solar longitude, one ring per year</h3>
+        <div class="chart-controls">
+          <div class="chart-binds" id="radial-binds"></div>
+        </div>
         <div class="chart fixed" data-spec="3_2_radial"></div>
         <div class="card-foot">
-          <p class="caption">The Perseids (140°), Geminids (261–262°) and Quadrantids (282–283°) peak within one degree of solar longitude every year from 2021 to 2025. The rings grow outward each year as the network adds cameras, which Section 5 examines.</p>
+          <p class="caption">The Perseids (140°), Geminids (261–262°) and Quadrantids (282–283°) peak within one degree of solar longitude every year from 2021 to 2025. Shower meteors rose every year, from 66,132 in 2021 to 259,440 in 2025, as the network added cameras (Section 5), though single peaks did not always rise: the 2024 Geminids ring sits inside 2023's. Pick a year to show its ring alone.</p>
           <details class="meta">
             <summary>Source: Global Meteor Network, <a href="https://globalmeteornetwork.org/data/traj_summary_data/">trajectory summaries</a></summary>
             <dl>
@@ -193,7 +201,7 @@
 
       <article class="card span-6">
         <h3>Comet observations before and around each event</h3>
-        <div class="chart" data-spec="3_3_dumbbell"></div>
+        <div class="chart fill" data-spec="3_3_dumbbell"></div>
         <div class="card-foot">
           <p class="caption">The close approaches of C/2022 E3 (ZTF) and Tsuchinshan-ATLAS more than doubled daily comet observations. Most eclipses barely moved the comet record, and the April and October 2023 solar eclipses fell below baseline. The September 2025 lunar eclipse overlaps the rise of comet C/2025 A6 (Lemmon) <span class="verify">[VERIFY]</span>.</p>
           <details class="meta">
@@ -259,7 +267,7 @@
         <div class="chart-controls">
           <div class="chart-binds" id="sky-binds"></div>
           <button type="button" class="map-reset">Reset view</button>
-          <span class="map-hint">Ctrl + scroll to zoom, drag to pan</span>
+          <span class="chart-hint">Ctrl + scroll to zoom, drag to pan</span>
         </div>
         <div class="chart map" data-spec="4_3_skymap" data-zoom></div>
         <div class="card-foot">

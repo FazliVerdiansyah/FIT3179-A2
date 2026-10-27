@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "4.2 NASA Night Sky Network member clubs per US state on an equal-area tile grid",
+  "description": "4.2 NASA Night Sky Network member clubs per US state on an equal-area tile grid. States with no clubs are a separate layer with their own one-entry legend, so the grey key sits beside the colour scale instead of looking like a tile in the grid",
   "width": 528,
   "height": 396,
   "autosize": { "type": "pad" },
@@ -10,14 +10,18 @@
   },
   "encoding": {
     "x": { "field": "col", "type": "ordinal", "axis": null, "scale": { "domain": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "paddingInner": 0.08 } },
-    "y": { "field": "row", "type": "ordinal", "axis": null, "scale": { "domain": [0, 1, 2, 3, 4, 5, 6, 7, 8], "paddingInner": 0.08 } }
+    "y": { "field": "row", "type": "ordinal", "axis": null, "scale": { "domain": [0, 1, 2, 3, 4, 5, 6, 7, 8], "paddingInner": 0.08 } },
+    "tooltip": [
+      { "field": "name", "title": "State" },
+      { "field": "clubs", "type": "quantitative", "title": "Member clubs" }
+    ]
   },
   "layer": [
     {
+      "transform": [{ "filter": "datum.clubs > 0" }],
       "mark": { "type": "rect", "cornerRadius": 3 },
       "encoding": {
         "color": {
-          "condition": { "test": "datum.clubs === 0", "value": "@nodata" },
           "field": "clubs",
           "type": "quantitative",
           "title": "Member clubs",
@@ -26,12 +30,24 @@
             "domain": [3, 6, 10, 15, 25],
             "range": ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95"]
           },
-          "legend": { "orient": "top", "direction": "horizontal", "labelExpr": "datum.label" }
-        },
-        "tooltip": [
-          { "field": "name", "title": "State" },
-          { "field": "clubs", "type": "quantitative", "title": "Member clubs" }
-        ]
+          "legend": { "orient": "top", "direction": "horizontal", "titleOrient": "left", "titleAnchor": "start", "labelExpr": "datum.label" }
+        }
+      }
+    },
+    {
+      "transform": [
+        { "filter": "datum.clubs === 0" },
+        { "calculate": "'No member clubs in the network list'", "as": "key" }
+      ],
+      "mark": { "type": "rect", "cornerRadius": 3 },
+      "encoding": {
+        "fill": {
+          "field": "key",
+          "type": "nominal",
+          "title": null,
+          "scale": { "range": ["@nodata"] },
+          "legend": { "orient": "top", "symbolType": "square", "symbolSize": 200, "labelLimit": 300 }
+        }
       }
     },
     {
@@ -41,21 +57,8 @@
         "color": {
           "condition": { "test": "datum.clubs >= 15", "value": "#ffffff" },
           "value": "@ink"
-        },
-        "tooltip": [
-          { "field": "name", "title": "State" },
-          { "field": "clubs", "type": "quantitative", "title": "Member clubs" }
-        ]
+        }
       }
-    },
-    {
-      "data": { "values": [{ "col": 0, "row": 8 }] },
-      "mark": { "type": "rect", "cornerRadius": 3, "color": "@nodata" }
-    },
-    {
-      "data": { "values": [{ "col": 0, "row": 8, "t": "No member clubs in the network list" }] },
-      "mark": { "type": "text", "align": "left", "dx": 28, "fontSize": 11, "color": "@ink2" },
-      "encoding": { "text": { "field": "t" } }
     }
   ]
 }

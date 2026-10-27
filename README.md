@@ -113,6 +113,27 @@ The colour follows the continent, so filtering never repaints a point.
   copy of 1.1's, so change both together. Each 2° square is built as a GeoJSON
   polygon in the spec (`calculate`, corners clockwise, as d3 expects) and drawn
   with `geoshape`.
+- Streamgraph 2.2 has a time-range filter (overview + detail). The main stream
+  and the grey strip under it are one `vconcat` spec. Dragging across the
+  strip makes the interval param `brush`, and the main view's x domain is
+  `{"param": "brush"}`. Each comet's label moves to its peak inside the range;
+  comets with fewer than 20 observations in the range get no label, and labels
+  that share a month stack. Double-clicking the chart, or the card's Reset
+  range button, shows the whole period again. `enableRangeBrush` in
+  `dashboard.js` (turned on by `data-brush`) keeps the card's readout in step
+  and makes Reset send that double-click. `width: "container"` works on each
+  view in a `vconcat` but autosize `fit` does not, so the spec sets
+  `autosize: pad`.
+- Lorenz curve 2.1 and dumbbell 3.3 use `height: "container"` and
+  `class="chart fill"`. Each takes the height left in its card, so it lines up
+  with the taller card beside it (2.2, 3.2).
+- Radial chart 3.2 has a Year menu (`radial_year`, bound to `#radial-binds`):
+  all five rings, or one year's ring alone. The radius scale and the year
+  colours stay fixed, so a ring keeps its size and colour. Shower labels come
+  from `gmn_shower_peaks.csv`, which has a row per shower for `year` "All" (the
+  peak of the five years summed, placed on the outermost ring) and one per
+  shower and year (that year's peak, on that year's ring); `ring_n` is the
+  ring's value at the label's longitude.
 - Scatter 1.3 has its own continent menu (`scatter_continent`, independent of
   the map's) that filters the countries. The axes keep fixed domains, so a
   filter never rescales. The `<details data-table>` under it is filled by

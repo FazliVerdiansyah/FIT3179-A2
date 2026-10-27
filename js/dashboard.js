@@ -24,6 +24,17 @@ async function embedChart(el) {
     spec.config = { ...DASH.vlConfig, ...(spec.config || {}) };
     const { view } = await vegaEmbed(el, spec, { actions: false, renderer: "svg" });
     if ("zoom" in el.dataset) enableMapZoom(el, view);
+    if (el.dataset.brush) enableRangeBrush(el, view, el.dataset.brush);
+    // A .chart.fill (height "container") takes the height its card has left
+    // beside a taller card. Vega-Lite re-measures containers only on a window
+    // resize, so send one whenever this element changes size.
+    if (el.classList.contains("fill")) {
+      let frame = 0;
+      new ResizeObserver(() => {
+        cancelAnimationFrame(frame);
+        frame = requestAnimationFrame(() => window.dispatchEvent(new Event("resize")));
+      }).observe(el);
+    }
   } catch (err) {
     el.innerHTML = `<p class="chart-error">Chart ${file} failed to load: ${err.message}</p>`;
     console.error(file, err);
@@ -97,6 +108,29 @@ function enableMapZoom(el, view) {
   const endDrag = () => { last = null; el.classList.remove("dragging"); };
   el.addEventListener("pointerup", endDrag);
   el.addEventListener("pointercancel", endDrag);
+}
+
+// Time-range brush (2_2_streamgraph.json): the spec's interval param, named in
+// data-brush, sets the main view's time range. This keeps the card's readout
+// in step with it and wires the card's Reset button.
+function enableRangeBrush(el, view, name) {
+  const card = el.closest(".card");
+  const readout = card?.querySelector(".range-readout");
+  const fullText = readout?.textContent;
+  const fmt = (v) => new Date(v).toLocaleDateString("en-GB", { month: "short", year: "numeric" });
+
+  // Reset sends the double-click that Vega-Lite's interval selection already
+  // clears on, so the brush, its stored range and the main view all reset the
+  // same way as a double-click on the chart. (Setting the brush's signals from
+  // outside, via view.setState, leaves them out of step.)
+  card?.querySelector(".range-reset")?.addEventListener("click", () => {
+    el.querySelector("svg, canvas")?.dispatchEvent(new MouseEvent("dblclick", { bubbles: true }));
+  });
+
+  view.addSignalListener(name, (_, value) => {
+    const range = value && Object.values(value)[0];
+    if (readout) readout.textContent = range ? `Showing ${fmt(range[0])} – ${fmt(range[1])}` : fullText;
+  });
 }
 
 // Fill each card's "N" line from data/prepared/chart_counts.csv so no row count

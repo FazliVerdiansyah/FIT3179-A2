@@ -1,90 +1,146 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "2.2 Monthly COBS observations by comet, top 8 comets plus Other, centred stack",
-  "width": "container",
-  "height": 360,
+  "description": "2.2 Monthly COBS observations by comet, top 8 comets plus Other, centred stack. Overview + detail: dragging across the grey strip below (interval param 'brush') sets the main stream's time range; double-click the strip or press the card's Reset button (dashboard.js, data-brush) to show the whole period again",
   "data": { "url": "data/prepared/cobs_comets_monthly.csv", "format": { "parse": { "month": "date", "n": "number", "order": "number", "stack_order": "number" } } },
-  "transform": [
+  "autosize": { "type": "pad" },
+  "spacing": 14,
+  "vconcat": [
     {
-      "stack": "n",
-      "groupby": ["month"],
-      "sort": [{ "field": "stack_order", "order": "ascending" }],
-      "offset": "center",
-      "as": ["y0", "y1"]
-    }
-  ],
-  "encoding": {
-    "x": {
-      "field": "month",
-      "type": "temporal",
-      "title": null,
-      "axis": { "format": "%Y", "tickCount": { "interval": "year", "step": 1}, "grid": true, "gridDash": [] }
-    }
-  },
-  "layer": [
-    {
-      "mark": { "type": "area", "interpolate": "monotone", "stroke": "@surface", "strokeWidth": 0.75 },
-      "encoding": {
-        "y": { "field": "y0", "type": "quantitative", "axis": null },
-        "y2": { "field": "y1" },
-        "color": {
-          "field": "comet_label",
-          "type": "nominal",
-          "title": null,
-          "scale": {
-            "domain": [
-              "C/2023 A3 (Tsuchinshan-ATLAS)",
-              "12P/Pons-Brooks",
-              "29P/Schwassmann-Wachmann",
-              "C/2017 K2 (PANSTARRS)",
-              "C/2022 E3 (ZTF)",
-              "C/2020 V2 (ZTF)",
-              "C/2019 L3 (ATLAS)",
-              "C/2025 A6 (Lemmon)",
-              "Other"
-            ],
-            "range": ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#4a3aa7", "#e34948", "@nodata"]
-          },
-          "legend": { "orient": "bottom", "direction": "horizontal", "columns": 3, "symbolType": "square", "labelLimit": 220 }
-        },
-        "detail": { "field": "stack_order" },
-        "tooltip": [
-          { "field": "comet_label", "title": "Comet" },
-          { "field": "month", "type": "temporal", "format": "%B %Y", "title": "Month" },
-          { "field": "n", "type": "quantitative", "format": ",", "title": "Observations" }
-        ]
-      }
-    },
-    {
+      "width": "container",
+      "height": 290,
       "transform": [
         {
-          "joinaggregate": [
-            { "op": "min", "field": "y0", "as": "stream_bottom" },
-            { "op": "max", "field": "y1", "as": "stream_top" }
-          ],
-          "groupby": ["month"]
-        },
-        { "filter": "datum.comet_label !== 'Other'" },
-        {
-          "window": [{ "op": "row_number", "as": "rk" }],
-          "groupby": ["comet_label"],
-          "sort": [{ "field": "n", "order": "descending" }]
-        },
-        { "filter": "datum.rk === 1" },
-        { "calculate": "datum.side === 'below' ? datum.stream_bottom : datum.stream_top", "as": "edge" }
+          "stack": "n",
+          "groupby": ["month"],
+          "sort": [{ "field": "stack_order", "order": "ascending" }],
+          "offset": "center",
+          "as": ["y0", "y1"]
+        }
       ],
-      "mark": {
-        "type": "text",
-        "fontSize": 11,
-        "fontWeight": 600,
-        "color": "@ink",
-        "baseline": { "expr": "datum.side === 'below' ? 'top' : 'bottom'" },
-        "align": { "expr": "datum.month > datetime(2025, 5, 1) ? 'right' : 'center'" },
-        "dy": { "expr": "datum.side === 'below' ? 6 : -11" }
-      },
       "encoding": {
-        "y": { "field": "edge", "type": "quantitative" },
-        "text": { "field": "short" }
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "title": null,
+          "scale": { "domain": { "param": "brush" } },
+          "axis": {
+            "tickCount": {
+              "expr": "brush.month && time(brush.month[1]) - time(brush.month[0]) < 730 * 864e5 ? {interval: 'month', step: time(brush.month[1]) - time(brush.month[0]) < 270 * 864e5 ? 1 : 3} : {interval: 'year', step: 1}"
+            },
+            "labelExpr": "month(datum.value) === 0 ? timeFormat(datum.value, '%Y') : timeFormat(datum.value, '%b')",
+            "grid": true,
+            "gridDash": []
+          }
+        }
+      },
+      "layer": [
+        {
+          "mark": { "type": "area", "interpolate": "monotone", "stroke": "@surface", "strokeWidth": 0.75, "clip": true },
+          "encoding": {
+            "y": { "field": "y0", "type": "quantitative", "axis": null },
+            "y2": { "field": "y1" },
+            "color": {
+              "field": "comet_label",
+              "type": "nominal",
+              "title": null,
+              "scale": {
+                "domain": [
+                  "C/2023 A3 (Tsuchinshan-ATLAS)",
+                  "12P/Pons-Brooks",
+                  "29P/Schwassmann-Wachmann",
+                  "C/2017 K2 (PANSTARRS)",
+                  "C/2022 E3 (ZTF)",
+                  "C/2020 V2 (ZTF)",
+                  "C/2019 L3 (ATLAS)",
+                  "C/2025 A6 (Lemmon)",
+                  "Other"
+                ],
+                "range": ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#4a3aa7", "#e34948", "@nodata"]
+              },
+              "legend": { "orient": "top", "direction": "horizontal", "columns": 3, "symbolType": "square", "labelLimit": 220 }
+            },
+            "detail": { "field": "stack_order" },
+            "tooltip": [
+              { "field": "comet_label", "title": "Comet" },
+              { "field": "month", "type": "temporal", "format": "%B %Y", "title": "Month" },
+              { "field": "n", "type": "quantitative", "format": ",", "title": "Observations" }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "joinaggregate": [
+                { "op": "min", "field": "y0", "as": "stream_bottom" },
+                { "op": "max", "field": "y1", "as": "stream_top" }
+              ],
+              "groupby": ["month"]
+            },
+            { "filter": "datum.comet_label !== 'Other'" },
+            {
+              "calculate": "!length(data('brush_store')) || vlSelectionTest('brush_store', datum) ? 1 : 0",
+              "as": "in_range"
+            },
+            {
+              "window": [{ "op": "row_number", "as": "rk" }],
+              "groupby": ["comet_label"],
+              "sort": [{ "field": "in_range", "order": "descending" }, { "field": "n", "order": "descending" }]
+            },
+            { "filter": "datum.rk === 1" },
+            { "calculate": "datum.in_range && datum.n >= 20 ? datum.short : ''", "as": "label" },
+            {
+              "window": [{ "op": "row_number", "as": "lane" }],
+              "groupby": ["month", "side"],
+              "sort": [{ "field": "label", "order": "descending" }, { "field": "n", "order": "descending" }]
+            },
+            { "calculate": "datum.side === 'below' ? datum.stream_bottom : datum.stream_top", "as": "edge" },
+            {
+              "calculate": "(time(datum.month) - (brush.month ? time(brush.month[0]) : time(datetime(2021, 0, 1)))) / ((brush.month ? time(brush.month[1]) : time(datetime(2025, 11, 1))) - (brush.month ? time(brush.month[0]) : time(datetime(2021, 0, 1))))",
+              "as": "xpos"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "clip": true,
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "@ink",
+            "baseline": { "expr": "datum.side === 'below' ? 'top' : 'bottom'" },
+            "align": { "expr": "datum.xpos > 0.9 ? 'right' : datum.xpos < 0.06 ? 'left' : 'center'" },
+            "dy": { "expr": "datum.side === 'below' ? 6 + 13 * (datum.lane - 1) : -11 - 13 * (datum.lane - 1)" }
+          },
+          "encoding": {
+            "y": { "field": "edge", "type": "quantitative" },
+            "text": { "field": "label" }
+          }
+        }
+      ]
+    },
+    {
+      "width": "container",
+      "height": 36,
+      "params": [
+        {
+          "name": "brush",
+          "select": {
+            "type": "interval",
+            "encodings": ["x"],
+            "zoom": false,
+            "mark": { "fill": "@accent", "fillOpacity": 0.14, "stroke": "@accent", "strokeWidth": 1 }
+          }
+        }
+      ],
+      "transform": [{ "aggregate": [{ "op": "sum", "field": "n", "as": "total" }], "groupby": ["month"] }],
+      "mark": { "type": "area", "interpolate": "monotone", "color": "@axis" },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal",
+          "title": null,
+          "axis": { "format": "%Y", "tickCount": { "interval": "year", "step": 1 }, "grid": false }
+        },
+        "y": { "field": "total", "type": "quantitative", "axis": null },
+        "tooltip": null
       }
     }
   ]
