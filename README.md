@@ -124,9 +124,9 @@ The colour follows the continent, so filtering never repaints a point.
   and makes Reset send that double-click. `width: "container"` works on each
   view in a `vconcat` but autosize `fit` does not, so the spec sets
   `autosize: pad`.
-- Lorenz curve 2.1 and dumbbell 3.3 use `height: "container"` and
+- Ridgeline 1.2, Lorenz curve 2.1 and dumbbell 3.3 use `height: "container"` and
   `class="chart fill"`. Each takes the height left in its card, so it lines up
-  with the taller card beside it (2.2, 3.2).
+  with the taller card beside it (1.3, 2.2, 3.2).
 - Radial chart 3.2 has a Year menu (`radial_year`, bound to `#radial-binds`):
   all five rings, or one year's ring alone. The radius scale and the year
   colours stay fixed, so a ring keeps its size and colour. Shower labels come
@@ -138,11 +138,19 @@ The colour follows the continent, so filtering never repaints a point.
   the map's) that filters the countries. The axes keep fixed domains, so a
   filter never rescales. The `<details data-table>` under it is filled by
   `fillTables()` in `dashboard.js`, and any card can reuse it.
+- Two prepared files back prose rather than a chart:
+  `cobs_late2025_comets.csv` (every comet observed in October–December 2025,
+  with its share of each month, for the 3.1 caption) and
+  `cobs_method_by_year.csv` (camera vs visual COBS observations per year, for
+  the closing paragraph).
 - The chart N lines are filled at load time from `data/prepared/chart_counts.csv`.
   No row count is typed by hand.
-- Caption claims marked `[VERIFY]` go beyond what the chart shows on its own.
-  `[TODO]` marks licence terms that could not be found (MPC, NASA Night Sky Network).
-- Chart 3.1 is a draft per-day waffle (`js/specs/3_1_daily_waffle.json`, data
+- Claims that go beyond the data are cited inline (Section 5: Vida et al. 2021,
+  MNRAS 506, 5046; Western News 2021). Licences: the MPC states none and asks
+  for an acknowledgement, and NASA content (the Night Sky Network club list) is
+  generally not under US copyright with NASA credited as the source. Both
+  acknowledgements are in the page footer.
+- Chart 3.1 is a per-day waffle (`js/specs/3_1_daily_waffle.json`, data
   `data/prepared/cobs_daily.csv`): one square per day, calendar layout, ±15-day
   comet and eclipse windows outlined. Two earlier versions are kept for switching
   back by changing `data-spec` on the 3.1 card in `index.html`:

@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "1.2 Aperture distribution per COBS instrument type, one density ridge each, rows overlapped",
   "width": "container",
-  "height": 360,
+  "height": "container",
   "data": {
     "url": "data/prepared/cobs_aperture.csv"
   },

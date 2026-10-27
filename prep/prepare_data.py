@@ -336,6 +336,22 @@ def prep_cobs(mpc):
         ~st.comet_label.str.startswith("C/"), st.comet_label.str.split(" ").str[:2].str.join(" "))
     write(st, "cobs_comets_monthly.csv", "2.2", len(cobs), "top 8 comets by observations, rest as Other")
 
+    # 3.1 caption: which comets made October-December 2025 (the busiest stretch,
+    # with no listed event) busy. Every comet observed, by month, with its share
+    # of that month's observations. Most are folded into Other in 2.2.
+    late = cobs[cobs.date >= "2025-10-01"]
+    lc = late.groupby(["month", "comet_name"]).size().rename("n").reset_index()
+    lc["month_total"] = lc.groupby("month").n.transform("sum")
+    lc["share"] = (lc.n / lc.month_total).round(4)
+    lc = lc.sort_values(["month", "n"], ascending=[True, False])
+    lc["month"] = lc.month.dt.strftime("%Y-%m")
+    days = (END.normalize() - pd.Timestamp("2025-10-01")).days + 1
+    print(f"  Oct-Dec 2025: {len(late):,} observations, {len(late) / days:.1f} a day")
+    for m, g in lc.groupby("month"):
+        top = ", ".join(f"{r.comet_name} {r.share:.1%}" for r in g.head(4).itertuples())
+        print(f"    {m}: {g.month_total.iloc[0]:,} observations; {top}")
+    write(lc, "cobs_late2025_comets.csv")
+
     events = pd.read_csv(OUT / "events.csv", parse_dates=["date"])
 
     # +-15-day event windows (the same window the 3.3 dumbbell uses). Eclipses are

@@ -52,7 +52,7 @@
               <dt>Coverage</dt><dd>Current list (codes registered up to the download date), worldwide</dd>
               <dt>N</dt><dd data-n="1.1" data-unit="sites">[TODO]</dd>
               <dt>Prepared</dt><dd>Latitude from parallax constants; sites with no constants (space and roving codes) dropped; continent is Natural Earth's for the site's country, so Russia counts as Europe and overseas territories follow their country (Hawaii in North America, Réunion in Europe); the 3 sites outside every country outline take the nearest one's; binned to 5° cells in the browser</dd>
-              <dt>Licence</dt><dd>MPC terms: [TODO] no terms page found; see the <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">source list</a>. Natural Earth: <a href="https://www.naturalearthdata.com/about/terms-of-use/">public domain</a></dd>
+              <dt>Licence</dt><dd>MPC: no licence stated; used with the acknowledgement the <a href="https://minorplanetcenter.net/data">MPC asks for</a> (see the page footer). Natural Earth: <a href="https://www.naturalearthdata.com/about/terms-of-use/">public domain</a></dd>
             </dl>
           </details>
         </div>
@@ -62,9 +62,9 @@
     <div class="grid">
       <article class="card span-6">
         <h3>Aperture by instrument type, comet observations</h3>
-        <div class="chart" data-spec="1_2_ridgeline"></div>
+        <div class="chart fill" data-spec="1_2_ridgeline"></div>
         <div class="card-foot">
-          <p class="caption">Newtonian reflectors carry the record (23,045 of 47,037 observations, 49%), with most between 15 and 50 cm. Binoculars and refractors sit near 7 and 10 cm. The sharp spikes at 20.3, 30, 40 and 50 cm look like standard commercial apertures <span class="verify">[VERIFY]</span>. Each ridge is scaled to its own peak, so compare shapes, not heights.</p>
+          <p class="caption">Newtonian reflectors carry the record (23,045 of 47,037 observations, 49%), with most between 15 and 50 cm. Binoculars and refractors sit near 7 and 10 cm. The sharp spikes sit mostly on round metric values rather than inch sizes: 5,092 observations give 30.0 cm against 507 at 30.5 cm (12 inches), and 40 and 50 cm show the same pattern, which suggests observers round their aperture. Only 20.3 cm (8 inches, 1,651 observations) matches an inch size. Each ridge is scaled to its own peak, so compare shapes, not heights.</p>
           <details class="meta">
             <summary>Source: COBS Comet Observation Database, <a href="https://cobs.si/">cobs.si</a></summary>
             <dl>
@@ -95,7 +95,7 @@
               <dt>Coverage</dt><dd>MPC current list; COBS observation dates 2021–2025; worldwide</dd>
               <dt>N</dt><dd data-n="1.3" data-unit="countries">[TODO]</dd>
               <dt>Prepared</dt><dd>MPC site country from a point-in-polygon join on Natural Earth 1:50m boundaries (52 coastal sites snapped to the nearest border within 150 km); countries in both sources only; continent is Natural Earth's for the country (Russia counts as Europe)</dd>
-              <dt>Licence</dt><dd>COBS: CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">data policy</a>; MPC: [TODO] terms; Natural Earth: <a href="https://www.naturalearthdata.com/about/terms-of-use/">public domain</a></dd>
+              <dt>Licence</dt><dd>COBS: CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">data policy</a>; MPC: no licence stated, acknowledged as the <a href="https://minorplanetcenter.net/data">MPC asks</a>; Natural Earth: <a href="https://www.naturalearthdata.com/about/terms-of-use/">public domain</a></dd>
             </dl>
           </details>
         </div>
@@ -161,10 +161,10 @@
 
     <div class="grid">
       <article class="card span-12">
-        <h3>Comet observations per day, one square per day, with event windows outlined <span class="verify">[DRAFT]</span></h3>
+        <h3>Comet observations per day, one square per day, with event windows outlined</h3>
         <div class="chart fixed" data-spec="3_1_daily_waffle"></div>
         <div class="card-foot">
-          <p class="caption">Each square is one day; darker means more observations. The orange-outlined weeks around C/2022 E3 (ZTF) in early 2023 and Tsuchinshan-ATLAS in October 2024 average 42 and 46 observations a day, against 26 across the whole period, while the grey-outlined eclipse weeks look like any other weeks. The busiest stretch, October to December 2025 (53 a day), has no event in the list at all and coincides with comet C/2025 A6 (Lemmon) <span class="verify">[VERIFY]</span>.</p>
+          <p class="caption">Each square is one day; darker means more observations. The orange-outlined weeks around C/2022 E3 (ZTF) in early 2023 and Tsuchinshan-ATLAS in October 2024 average 42 and 46 observations a day, against 26 across the whole period, while the grey-outlined eclipse weeks look like any other weeks. The busiest stretch, October to December 2025 (53 a day), has no event in the list. It came from several comets at once: C/2025 A6 (Lemmon) made up 43% of October's observations, but in November and December no comet passed 15%, with C/2025 K1 (ATLAS), C/2025 R2 (SWAN) and 3I/ATLAS among the most observed.</p>
           <details class="meta">
             <summary>Source: <a href="https://cobs.si/">COBS</a>; eclipse dates from Eclipse Predictions by Fred Espenak, NASA's GSFC, <a href="https://eclipse.gsfc.nasa.gov/SEsearch/">eclipse.gsfc.nasa.gov</a></summary>
             <dl>
@@ -203,7 +203,7 @@
         <h3>Comet observations before and around each event</h3>
         <div class="chart fill" data-spec="3_3_dumbbell"></div>
         <div class="card-foot">
-          <p class="caption">The close approaches of C/2022 E3 (ZTF) and Tsuchinshan-ATLAS more than doubled daily comet observations. Most eclipses barely moved the comet record, and the April and October 2023 solar eclipses fell below baseline. The September 2025 lunar eclipse overlaps the rise of comet C/2025 A6 (Lemmon) <span class="verify">[VERIFY]</span>.</p>
+          <p class="caption">The close approaches of C/2022 E3 (ZTF) and Tsuchinshan-ATLAS more than doubled daily comet observations. Most eclipses barely moved the comet record, and the April and October 2023 solar eclipses fell below baseline. The September 2025 lunar eclipse overlaps the rise of comet C/2025 A6 (Lemmon), whose monthly observations went from 61 in August to 277 in September and 638 in October 2025.</p>
           <details class="meta">
             <summary>Source: <a href="https://cobs.si/">COBS</a>; eclipse dates from Fred Espenak, NASA's GSFC, <a href="https://eclipse.gsfc.nasa.gov/SEsearch/">eclipse.gsfc.nasa.gov</a></summary>
             <dl>
@@ -254,7 +254,7 @@
               <dt>Coverage</dt><dd>Clubs listed at time of collection; 50 states, DC and Puerto Rico</dd>
               <dt>N</dt><dd data-n="4.2" data-unit="clubs">[TODO]</dd>
               <dt>Prepared</dt><dd>Clubs counted per state; hand-assigned tile grid in data/prepared/us_state_grid.csv</dd>
-              <dt>Licence</dt><dd>[TODO] terms of the NASA/JPL club list</dd>
+              <dt>Licence</dt><dd>NASA content, generally not subject to US copyright, with NASA acknowledged as the source (<a href="https://www.nasa.gov/nasa-brand-center/images-and-media/">NASA media usage guidelines</a>)</dd>
             </dl>
           </details>
         </div>
@@ -271,7 +271,7 @@
         </div>
         <div class="chart map" data-spec="4_3_skymap" data-zoom></div>
         <div class="card-foot">
-          <p class="caption">Most reports come from bright skies. On clear nights 60.9% of reports saw no star fainter than magnitude 3, and 21.5% reached magnitude 5 or fainter. The darkest squares (mean 5.9 or more) are in west Texas, South Dakota, Colorado, north-west Mexico, Namibia and eastern Hungary; the brightest include western Java (486 reports, mean 1.2), northern Portugal and India, in line with city light pollution <span class="verify">[VERIFY]</span>. Grey squares have fewer than 10 reports.</p>
+          <p class="caption">Most reports come from bright skies. On clear nights 60.9% of reports saw no star fainter than magnitude 3, and 21.5% reached magnitude 5 or fainter. The darkest squares (mean 5.9 or more) are in west Texas, South Dakota, Colorado, north-west Mexico, Namibia and eastern Hungary; the brightest include western Java (486 reports, mean 1.2), northern Portugal and India. Grey squares have fewer than 10 reports.</p>
           <details class="meta">
             <summary>Source: Globe at Night, <a href="https://globeatnight.org/maps-data/">maps and data</a>; continents and basemap from <a href="https://www.naturalearthdata.com/">Natural Earth</a></summary>
             <dl>
@@ -290,7 +290,7 @@
   <section class="section" id="s5">
     <div class="section-intro">
       <div class="section-head"><span class="section-num">05</span><h2>Technology and accessibility</h2></div>
-      <p class="section-text">Technology changed access. The Global Meteor Network runs on small video cameras operated by volunteers <span class="verify">[VERIFY]</span>, and between 2021 and 2025 the number of active stations rose from 390 to 1,856. If the archive grew because the sky got busier, each camera would record more every year; if it grew because more people joined, the rate per camera would hold steady.</p>
+      <p class="section-text">Technology changed access. The Global Meteor Network runs on low-cost video cameras, each connected to a Raspberry Pi and hosted by amateur astronomers and professionals alike (<a href="https://doi.org/10.1093/mnras/stab2008">Vida et al., 2021</a>; <a href="https://news.westernu.ca/2021/07/global-meteor-network/">Western News, 2021</a>), and between 2021 and 2025 the number of active stations rose from 390 to 1,856. If the archive grew because the sky got busier, each camera would record more every year; if it grew because more people joined, the rate per camera would hold steady.</p>
     </div>
 
     <div class="grid">
@@ -316,7 +316,7 @@
   <section class="closing-block">
     <div class="closing-text">
       <h2>What it adds up to</h2>
-      <p class="closing">Taken together, the five sections describe a hobby that is concentrated but widening. Equipment and observation records sit with a few countries and a few dedicated people. Bright comets, not eclipses, are what bring comet observers out in numbers, and casual programmes and clubs reach places the equipped core does not. The steepest growth came from automated cameras, which suggests that the next gains in amateur data will come from sensors more than eyepieces <span class="verify">[VERIFY]</span>.</p>
+      <p class="closing">Taken together, the five sections describe a hobby that is concentrated but widening. Equipment and observation records sit with a few countries and a few dedicated people. Bright comets, not eclipses, are what bring comet observers out in numbers, and casual programmes and clubs reach places the equipped core does not. The steepest growth came from automated cameras, and comet observers are moving the same way: the share of COBS observations made with a camera rather than by eye rose from 62% in 2021 to 78% in 2025.</p>
     </div>
     <!-- one headline figure per section; each is already in that section's text or captions -->
     <ol class="findings" aria-label="One finding from each section">
@@ -329,7 +329,7 @@
   </section>
 
   <footer class="page-foot">
-    <p>Built with Vega-Lite. Data prepared by <code>prep/prepare_data.py</code>; every figure in the text comes from <code>data/prepared/</code>. Claims marked [VERIFY] go beyond what the chart shows on its own.</p>
+    <p>Built with Vega-Lite. Data prepared by <code>prep/prepare_data.py</code>; every figure in the text comes from <code>data/prepared/</code>. This research has made use of data and/or services provided by the International Astronomical Union's Minor Planet Center. Night Sky Network club list courtesy of NASA.</p>
   </footer>
 
 </main>
