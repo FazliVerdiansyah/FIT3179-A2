@@ -66,22 +66,35 @@ h3 {
 
 p { margin: 0; }
 
-/* ---- header ---- */
+/* ---- text rows: header, section intros and the closing sit on the same
+   12-column grid as the cards, so text fills the width and lines up with them ---- */
+.masthead,
+.section-intro,
+.closing-block {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0 var(--gutter);
+  align-items: start;
+}
+
+/* ---- header: title + subtitle | lede, facts across the bottom ---- */
 .masthead {
   border-bottom: 1px solid var(--border);
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   margin-bottom: 32px;
 }
+.masthead-title { grid-column: span 6; }
+.masthead .lede { grid-column: span 6; }
+.masthead .facts { grid-column: 1 / -1; }
 .subtitle {
   color: var(--ink-2);
   margin-top: 6px;
-  max-width: 70ch;
 }
 .facts {
   display: flex;
   flex-wrap: wrap;
   gap: 6px 28px;
-  margin: 16px 0 0;
+  margin: 20px 0 0;
   padding: 0;
   list-style: none;
   color: var(--muted);
@@ -89,25 +102,52 @@ p { margin: 0; }
 }
 .facts strong { color: var(--ink-2); font-weight: 600; }
 
-.lede, .closing {
-  max-width: 75ch;
-  color: var(--ink);
-}
+.lede, .closing { color: var(--ink); }
+
+/* ---- closing: paragraph | one finding per section ---- */
 .closing-block {
   border-top: 1px solid var(--border);
   margin-top: 56px;
   padding-top: 28px;
 }
+.closing-text { grid-column: span 5; }
 .closing-block h2 { margin-bottom: 12px; }
+.findings {
+  grid-column: span 7;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.findings a {
+  display: grid;
+  grid-template-columns: 2.5ch 7.5rem minmax(0, 1fr);
+  gap: 0 14px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink);
+  text-decoration: none;
+}
+.findings li:first-child a { border-top: 1px solid var(--border); }
+.findings-num {
+  color: var(--accent);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.findings-label { font-weight: 600; }
+.findings-text { color: var(--ink-2); }
+.findings a:hover .findings-text,
+.findings a:focus-visible .findings-text { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
 
-/* ---- sections ---- */
+/* ---- sections: number + title | intro text ---- */
 .section { margin-top: 56px; }
 
+.section-intro { margin-bottom: 20px; }
 .section-head {
+  grid-column: span 4;
   display: flex;
-  align-items: baseline;
-  gap: 14px;
-  margin-bottom: 10px;
+  flex-direction: column;
+  gap: 2px;
 }
 .section-num {
   font-size: var(--size-1);
@@ -117,9 +157,8 @@ p { margin: 0; }
   font-variant-numeric: tabular-nums;
 }
 .section-text {
-  max-width: 75ch;
+  grid-column: span 8;
   color: var(--ink);
-  margin-bottom: 20px;
 }
 
 /* ---- 12-column chart grid ---- */
@@ -248,7 +287,9 @@ p { margin: 0; }
 /* ---- one column under 900px ---- */
 @media (max-width: 900px) {
   .page { padding: 32px 16px 48px; }
-  .grid { grid-template-columns: minmax(0, 1fr); }
-  .span-12, .span-8, .span-6, .span-4 { grid-column: 1 / -1; }
+  .grid, .masthead, .section-intro, .closing-block { grid-template-columns: minmax(0, 1fr); }
+  .span-12, .span-8, .span-6, .span-4,
+  .masthead > *, .section-intro > *, .closing-block > * { grid-column: 1 / -1; }
+  .masthead .lede, .section-text, .findings { margin-top: 12px; }
   :root { --card-pad: 16px; --gutter: 16px; }
 }
