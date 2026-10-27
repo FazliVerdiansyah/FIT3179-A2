@@ -148,6 +148,32 @@ p { margin: 0; }
 .findings a:hover .findings-text,
 .findings a:focus-visible .findings-text { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
 
+/* ---- references: one alphabetical list, flowed into two columns so the
+   row fills evenly; hanging indent per entry ---- */
+.references {
+  border-top: 1px solid var(--border);
+  margin-top: 48px;
+  padding-top: 28px;
+}
+.references h2 { margin-bottom: 14px; }
+.ref-list {
+  columns: 2;
+  column-gap: var(--gutter);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--ink-2);
+  font-size: var(--size-3s);
+  line-height: 1.5;
+}
+.ref-list li {
+  break-inside: avoid;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  margin-bottom: 8px;
+  overflow-wrap: anywhere;
+}
+
 /* ---- sections: number + title | intro text ---- */
 .section { margin-top: 56px; }
 
@@ -305,5 +331,6 @@ p { margin: 0; }
   .span-12, .span-8, .span-6, .span-4,
   .masthead > *, .section-intro > *, .closing-block > * { grid-column: 1 / -1; }
   .masthead .lede, .section-text, .findings { margin-top: 12px; }
+  .ref-list { columns: 1; }
   :root { --card-pad: 16px; --gutter: 16px; }
 }

@@ -149,7 +149,8 @@ The colour follows the continent, so filtering never repaints a point.
 - The chart N lines are filled at load time from `data/prepared/chart_counts.csv`.
   No row count is typed by hand.
 - Claims that go beyond the data are cited inline (Section 5: Vida et al. 2021,
-  MNRAS 506, 5046; Western News 2021). Licences: the MPC states none and asks
+  MNRAS 506, 5046; Western News 2021). Every data source and cited work is
+  listed in the References section at the end of the page. Licences: the MPC states none and asks
   for an acknowledgement, and NASA content (the Night Sky Network club list) is
   generally not under US copyright with NASA credited as the source. Both
   acknowledgements are in the page footer.
