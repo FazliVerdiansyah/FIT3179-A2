@@ -1,9 +1,25 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "1.3 MPC observatory sites per country vs distinct COBS observers per country, log-log",
+  "description": "1.3 MPC observatory sites per country vs distinct COBS observers per country, log-log, coloured and shaped by continent; the continent menu filters the countries",
   "width": "container",
   "height": 360,
+  "params": [
+    {
+      "name": "scatter_continent",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+        "labels": ["World", "Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+        "name": "Continent",
+        "element": "#scatter-binds"
+      }
+    }
+  ],
   "data": { "url": "data/prepared/country_sites_observers.csv" },
+  "transform": [
+    { "filter": "scatter_continent === 'All' || datum.continent === scatter_continent" }
+  ],
   "encoding": {
     "x": {
       "field": "sites",
@@ -23,16 +39,36 @@
   "layer": [
     {
       "mark": {
-        "type": "circle",
-        "size": 70,
-        "color": "@ink2",
-        "opacity": 0.75,
+        "type": "point",
+        "filled": true,
+        "size": 100,
+        "opacity": 0.9,
         "stroke": "@surface",
         "strokeWidth": 2
       },
       "encoding": {
+        "color": {
+          "field": "continent",
+          "type": "nominal",
+          "title": "Continent",
+          "scale": {
+            "domain": ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+            "range": ["@africa", "@asia", "@europe", "@northAmerica", "@oceania", "@southAmerica"]
+          },
+          "legend": { "orient": "top", "direction": "horizontal", "columns": { "expr": "width < 480 ? 3 : 6" }, "symbolStrokeWidth": 0 }
+        },
+        "shape": {
+          "field": "continent",
+          "type": "nominal",
+          "title": "Continent",
+          "scale": {
+            "domain": ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+            "range": ["cross", "square", "circle", "triangle-up", "diamond", "triangle-down"]
+          }
+        },
         "tooltip": [
           { "field": "country", "title": "Country" },
+          { "field": "continent", "title": "Continent" },
           { "field": "sites", "type": "quantitative", "title": "MPC sites" },
           { "field": "observers", "type": "quantitative", "title": "COBS observers" }
         ]
@@ -45,10 +81,12 @@
         "fontSize": 11,
         "color": "@ink",
         "align": { "expr": "datum.country === 'United States' ? 'center' : 'left'" },
-        "dx": { "expr": "datum.country === 'United States' ? -8 : 7" },
-        "dy": { "expr": "datum.country === 'Australia' || datum.country === 'Italy' || datum.country === 'Spain' ? 11 : datum.country === 'United States' ? -9 : -6" }
+        "dx": { "expr": "datum.country === 'United States' ? 0 : 7" },
+        "dy": { "expr": "datum.country === 'Australia' || datum.country === 'Italy' || datum.country === 'Spain' ? 11 : datum.country === 'United States' ? -10 : -6" }
       },
-      "encoding": { "text": { "field": "country" } }
+      "encoding": {
+        "text": { "condition": { "test": "datum.country === 'United States'", "value": "USA" }, "field": "country" }
+      }
     }
   ]
 }

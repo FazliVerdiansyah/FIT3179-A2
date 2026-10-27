@@ -35,16 +35,21 @@
     <div class="grid">
       <article class="card span-12">
         <h3>Registered observing sites, sized by sites per 5° grid cell</h3>
-        <div class="chart map" data-spec="1_1_map"></div>
+        <div class="chart-controls">
+          <div class="chart-binds" id="map-binds"></div>
+          <button type="button" class="map-reset">Reset view</button>
+          <span class="map-hint">Ctrl + scroll to zoom, drag to pan</span>
+        </div>
+        <div class="chart map" data-spec="1_1_map" data-zoom></div>
         <div class="card-foot">
-          <p class="caption">Sites crowd into Europe, the continental United States and Japan. Africa, Central Asia and most of South America are nearly empty, and only 331 of the 2,695 sites lie south of the equator. Hover a dot for the individual site.</p>
+          <p class="caption">Sites crowd into Europe, the continental United States and Japan. Africa, Central Asia and most of South America are nearly empty, and only 331 of the 2,695 sites lie south of the equator. Europe alone holds 1,407 sites; Africa has 52. Pick a continent to filter the sites and zoom to it, and hover a dot for the individual site.</p>
           <details class="meta">
-            <summary>Source: Minor Planet Center, <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">List of Observatory Codes</a></summary>
+            <summary>Source: Minor Planet Center, <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">List of Observatory Codes</a>; continents and basemap from <a href="https://www.naturalearthdata.com/">Natural Earth</a></summary>
             <dl>
               <dt>Coverage</dt><dd>Current list (codes registered up to the download date), worldwide</dd>
               <dt>N</dt><dd data-n="1.1" data-unit="sites">[TODO]</dd>
-              <dt>Prepared</dt><dd>Latitude from parallax constants; sites with no constants (space and roving codes) dropped; binned to 5° cells in the browser</dd>
-              <dt>Licence</dt><dd>Terms: [TODO] no terms page found; see the <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">source list</a></dd>
+              <dt>Prepared</dt><dd>Latitude from parallax constants; sites with no constants (space and roving codes) dropped; continent is Natural Earth's for the site's country, so Russia counts as Europe and overseas territories follow their country (Hawaii in North America, Réunion in Europe); the 3 sites outside every country outline take the nearest one's; binned to 5° cells in the browser</dd>
+              <dt>Licence</dt><dd>MPC terms: [TODO] no terms page found; see the <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">source list</a>. Natural Earth: <a href="https://www.naturalearthdata.com/about/terms-of-use/">public domain</a></dd>
             </dl>
           </details>
         </div>
@@ -71,16 +76,23 @@
 
       <article class="card span-6">
         <h3>Observing sites vs active comet observers, by country</h3>
+        <div class="chart-controls">
+          <div class="chart-binds" id="scatter-binds"></div>
+        </div>
         <div class="chart" data-spec="1_3_scatter"></div>
         <div class="card-foot">
-          <p class="caption">Countries with more registered sites tend to have more comet observers: the United States, United Kingdom, Germany and Italy lead on both. Brazil, Poland and the Czech Republic sit above the pack, with 16 to 18 observers each from 15 to 34 sites.</p>
+          <p class="caption">Countries with more registered sites tend to have more comet observers: the United States, United Kingdom, Germany and Italy lead on both. Brazil, Poland and the Czech Republic sit above the pack, with 16 to 18 observers each from 15 to 34 sites. Europe supplies 21 of the 44 countries.</p>
+          <details class="data-table" data-table="data/prepared/country_sites_observers.csv"
+                   data-columns="country:Country,continent:Continent,sites:MPC sites,observers:COBS observers">
+            <summary>Data table</summary>
+          </details>
           <details class="meta">
-            <summary>Source: <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">Minor Planet Center</a> and <a href="https://cobs.si/">COBS</a></summary>
+            <summary>Source: <a href="https://minorplanetcenter.net/iau/lists/ObsCodes.html">Minor Planet Center</a> and <a href="https://cobs.si/">COBS</a>; continents from <a href="https://www.naturalearthdata.com/">Natural Earth</a></summary>
             <dl>
               <dt>Coverage</dt><dd>MPC current list; COBS observation dates 2021–2025; worldwide</dd>
               <dt>N</dt><dd data-n="1.3" data-unit="countries">[TODO]</dd>
-              <dt>Prepared</dt><dd>MPC site country from a point-in-polygon join on Natural Earth 1:50m boundaries (52 coastal sites snapped to the nearest border within 150 km); countries in both sources only</dd>
-              <dt>Licence</dt><dd>COBS: CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">data policy</a>; MPC: [TODO] terms</dd>
+              <dt>Prepared</dt><dd>MPC site country from a point-in-polygon join on Natural Earth 1:50m boundaries (52 coastal sites snapped to the nearest border within 150 km); countries in both sources only; continent is Natural Earth's for the country (Russia counts as Europe)</dd>
+              <dt>Licence</dt><dd>COBS: CC BY-NC-SA 4.0, <a href="https://cobs.si/help/data_policy/">data policy</a>; MPC: [TODO] terms; Natural Earth: <a href="https://www.naturalearthdata.com/about/terms-of-use/">public domain</a></dd>
             </dl>
           </details>
         </div>
@@ -226,6 +238,30 @@
               <dt>N</dt><dd data-n="4.2" data-unit="clubs">[TODO]</dd>
               <dt>Prepared</dt><dd>Clubs counted per state; hand-assigned tile grid in data/prepared/us_state_grid.csv</dd>
               <dt>Licence</dt><dd>[TODO] terms of the NASA/JPL club list</dd>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+
+    <div class="grid">
+      <article class="card span-12">
+        <h3>Where observers can still see stars: faintest star seen on clear nights, per 2° square</h3>
+        <div class="chart-controls">
+          <div class="chart-binds" id="sky-binds"></div>
+          <button type="button" class="map-reset">Reset view</button>
+          <span class="map-hint">Ctrl + scroll to zoom, drag to pan</span>
+        </div>
+        <div class="chart map" data-spec="4_3_skymap" data-zoom></div>
+        <div class="card-foot">
+          <p class="caption">Most reports come from bright skies. On clear nights 60.9% of reports saw no star fainter than magnitude 3, and 21.5% reached magnitude 5 or fainter. The darkest squares (mean 5.9 or more) are in west Texas, South Dakota, Colorado, north-west Mexico, Namibia and eastern Hungary; the brightest include western Java (486 reports, mean 1.2), northern Portugal and India, in line with city light pollution <span class="verify">[VERIFY]</span>. Grey squares have fewer than 10 reports.</p>
+          <details class="meta">
+            <summary>Source: Globe at Night, <a href="https://globeatnight.org/maps-data/">maps and data</a>; continents and basemap from <a href="https://www.naturalearthdata.com/">Natural Earth</a></summary>
+            <dl>
+              <dt>Coverage</dt><dd>UT dates 2021–2025, worldwide</dd>
+              <dt>N</dt><dd data-n="4.3" data-unit="clear-sky reports">[TODO]</dd>
+              <dt>Prepared</dt><dd>Reports with cloud cover "clear" and a limiting magnitude of 0–7 only; rows at 0°,0° dropped; 901 reports (2.1%) whose location lies on a different continent from the country they name dropped as location errors; mean limiting magnitude per 2° square where it has at least 10 reports, grey otherwise; continent from Natural Earth</dd>
+              <dt>Licence</dt><dd>Globe at Night: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>; Natural Earth: <a href="https://www.naturalearthdata.com/about/terms-of-use/">public domain</a></dd>
             </dl>
           </details>
         </div>

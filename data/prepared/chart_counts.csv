@@ -10,4 +10,5 @@ events,events.csv,16,celestial events 2021-2025
 3.3,event_response.csv,1472,event-days of COBS counts in the baseline and peak windows
 4.1,gan_country_year.csv,88962,top 25 countries by submissions
 4.2,us_clubs_by_state.csv,410,member clubs per state
+4.3,gan_sky_cells.csv,42301,"clear-sky reports, 2-degree squares"
 5.1,gmn_yearly.csv,2670442,"trajectories seen by >= 2 stations, sporadics kept"

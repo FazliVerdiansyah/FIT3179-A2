@@ -6,9 +6,11 @@ Writes  data/prepared/*.csv         (one file per chart, plus lookups)
 Run from the project root:
     py prep/prepare_data.py
 
-Network: on first run this downloads two reference files into prep/cache/
+Network: on first run this downloads reference files into prep/cache/
 (the MPC ObsCodes list, which carries the site codes that data/MPC lost,
-and the world-atlas 50m country boundaries used for the spatial join).
+the world-atlas 50m and 110m country boundaries used for the spatial join
+and the basemap, and the Natural Earth 50m countries table, whose CONTINENT
+field world-atlas drops).
 """
 
 import json
@@ -32,6 +34,8 @@ YEARS = range(2021, 2026)
 OBSCODES_URL = "https://minorplanetcenter.net/iau/lists/ObsCodes.html"
 WORLD50_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json"
 WORLD110_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"
+NE50_URL = ("https://cdn.jsdelivr.net/gh/nvkelso/natural-earth-vector@v5.1.2/"
+            "geojson/ne_50m_admin_0_countries.geojson")
 
 # world-atlas name -> display name, and COBS name -> display name
 ATLAS_DISPLAY = {
@@ -149,6 +153,59 @@ def assign_country(lon, lat, countries, max_km=150):
     return result, fallback
 
 
+def atlas_continents(topo):
+    """world-atlas country name -> Natural Earth CONTINENT.
+
+    world-atlas is built from Natural Earth but keeps only the name, so the
+    continent is joined back by name, falling back to the ISO numeric id
+    (world-atlas still says "Macedonia" where Natural Earth 5 has a new name).
+    """
+    ne = json.loads(fetch(NE50_URL, CACHE / "ne_50m_admin_0_countries.geojson")
+                    .read_text(encoding="utf-8"))
+    by_name = {f["properties"]["NAME"]: f["properties"]["CONTINENT"] for f in ne["features"]}
+    by_id = {str(f["properties"]["ISO_N3"]): f["properties"]["CONTINENT"] for f in ne["features"]}
+    out = {}
+    for g in topo["objects"]["countries"]["geometries"]:
+        name = g["properties"]["name"]
+        out[name] = by_name.get(name) or by_id.get(str(g.get("id")))
+    missing = [n for n, c in out.items() if c is None]
+    assert not missing, f"no Natural Earth continent for {missing}"
+    return out
+
+
+def ne_continent_by_name():
+    """Any Natural Earth name form (NAME, ADMIN, NAME_LONG, ...) -> CONTINENT.
+
+    Earlier fields win, so "France" is France (Europe), not the French Southern
+    Lands whose SOVEREIGNT is also France.
+    """
+    ne = json.loads(fetch(NE50_URL, CACHE / "ne_50m_admin_0_countries.geojson")
+                    .read_text(encoding="utf-8"))
+    out = {}
+    for key in ["NAME", "ADMIN", "NAME_LONG", "NAME_EN", "BRK_NAME", "FORMAL_EN", "NAME_SORT", "GEOUNIT"]:
+        for f in ne["features"]:
+            name = f["properties"].get(key)
+            if name:
+                out.setdefault(name, f["properties"]["CONTINENT"])
+    return out
+
+
+# Globe at Night country names that no Natural Earth name form matches
+GAN_CONTINENT = {"Macedonia": "Europe", "Virgin Islands": "North America",
+                 "St Kitts and Nevis": "North America", "Guadeloupe": "North America"}
+
+
+def write_basemap():
+    """world-atlas 110m basemap with a continent property on every country."""
+    topo = json.loads(fetch(WORLD110_URL, CACHE / "countries-110m.json").read_text(encoding="utf-8"))
+    cont = atlas_continents(topo)
+    for g in topo["objects"]["countries"]["geometries"]:
+        g["properties"]["continent"] = cont[g["properties"]["name"]]
+    path = OUT / "world-110m.json"
+    path.write_text(json.dumps(topo, separators=(",", ":")), encoding="utf-8")
+    print(f"  {'world-110m.json':32s} {len(cont):>7,} countries {path.stat().st_size / 1024:6.1f} KB")
+
+
 # --------------------------------------------------------------------------
 # MPC observatory sites
 # --------------------------------------------------------------------------
@@ -176,14 +233,26 @@ def prep_mpc():
     print(f"  sites {len(sites):,}, matched to a code {sites.code.notna().sum():,}")
     assert sites.code.notna().all(), "some MPC sites did not match an ObsCodes entry"
 
-    world = topo_polygons(fetch(WORLD50_URL, CACHE / "countries-50m.json"))
+    world50 = fetch(WORLD50_URL, CACHE / "countries-50m.json")
+    world = topo_polygons(world50)
     country, fallback = assign_country(sites.lon, sites.lat, world)
     sites["country"] = pd.Series(country).replace(ATLAS_DISPLAY)
     print(f"  country assigned {sites.country.notna().sum():,} "
           f"(of which {fallback} by nearest coastline within 150 km), "
           f"unassigned {sites.country.isna().sum()}")
 
-    out = sites.rename(columns={"Name": "name"})[["code", "name", "lat", "lon", "country"]]
+    # continent = Natural Earth continent of the site's country, so Russia is
+    # Europe and overseas territories follow their country. Sites outside every
+    # outline (Antarctic plateau, open sea) take the continent of the nearest one.
+    home = pd.Series(country)
+    lost = home.isna()
+    home[lost], _ = assign_country(sites.lon[lost], sites.lat[lost], world, max_km=np.inf)
+    sites["continent"] = home.map(atlas_continents(json.loads(world50.read_text(encoding="utf-8"))))
+    print("  continent " + ", ".join(f"{k} {v}" for k, v in sites.continent.value_counts().items()))
+    print("  sites with no country: "
+          + "; ".join(f"{r.Name} -> {r.continent}" for r in sites[lost].itertuples()))
+
+    out = sites.rename(columns={"Name": "name"})[["code", "name", "lat", "lon", "country", "continent"]]
     out["lat"], out["lon"] = out.lat.round(3), out.lon.round(3)
     write(out, "mpc_sites.csv", "1.1", note="MPC sites with valid parallax constants")
     return out
@@ -221,6 +290,10 @@ def prep_cobs(mpc):
     # label the top 10 by geometric mean of the two axes (distance along the log-log diagonal)
     gm = np.sqrt(both.sites * both.observers)
     both["label"] = gm.rank(ascending=False, method="first") <= 10
+    # continent comes with the country (Natural Earth, see prep_mpc)
+    both["continent"] = both.country.map(mpc.dropna(subset=["country"]).groupby("country").continent.first())
+    assert both.continent.notna().all()
+    print("  continents " + ", ".join(f"{k} {v}" for k, v in both.continent.value_counts().items()))
     write(both, "country_sites_observers.csv", "1.3", len(both),
           "countries present in both MPC (spatial join) and COBS")
 
@@ -408,7 +481,8 @@ def prep_gan():
     frames = []
     for y in YEARS:
         g = pd.read_csv(RAW / "GlobeAtNight" / f"GaN{y}.csv", low_memory=False,
-                        usecols=["ID", "Latitude", "Longitude", "UTDate", "Country"])
+                        usecols=["ID", "Latitude", "Longitude", "UTDate", "Country",
+                                 "LimitingMag", "CloudCover"])
         frames.append(g)
     g = pd.concat(frames).drop_duplicates("ID")
     n0 = len(g)
@@ -428,6 +502,55 @@ def prep_gan():
     write(hm, "gan_country_year.csv", "4.1", hm.n.sum(), "top 25 countries by submissions")
     by_year = g.groupby("year").size().rename("n").reset_index()
     write(by_year, "gan_year.csv")
+
+    # 4.3 sky darkness map: clear-sky reports binned to 2-degree squares, mean
+    # limiting magnitude (faintest star seen, 0-7; -9999 = not given)
+    s = g.copy()
+    for c in ["Latitude", "Longitude", "LimitingMag"]:
+        s[c] = pd.to_numeric(s[c], errors="coerce")
+    s = s[(s.CloudCover == "clear") & s.LimitingMag.between(0, 7)
+          & s.Latitude.between(-90, 90) & s.Longitude.between(-180, 180)
+          & ~((s.Latitude == 0) & (s.Longitude == 0))]
+    # Location check: the continent under the report (Natural Earth, nearest
+    # outline when at sea, looked up per 0.25-degree point) must match the
+    # continent of the country the report names. A mismatch (an Alabama report
+    # placed in Sicily, say) is a location error and is dropped.
+    said = ne_continent_by_name() | GAN_CONTINENT
+    s["said"] = s.country.map(said)
+    assert s.said.notna().all(), f"no continent for {s[s.said.isna()].country.unique()}"
+    s["qy"], s["qx"] = (np.floor(s.Latitude * 4) + 0.5) / 4, (np.floor(s.Longitude * 4) + 0.5) / 4
+    pts = s[["qy", "qx"]].drop_duplicates().reset_index(drop=True)
+    world50 = fetch(WORLD50_URL, CACHE / "countries-50m.json")
+    home, _ = assign_country(pts.qx, pts.qy, topo_polygons(world50), max_km=np.inf)
+    pts["continent"] = pd.Series(home).map(atlas_continents(json.loads(world50.read_text(encoding="utf-8"))))
+    s = s.merge(pts, on=["qy", "qx"])
+    bad = s.said != s.continent
+    print(f"  4.3 clear-sky reports {len(s):,}; location on another continent than the "
+          f"named country {bad.sum():,} ({bad.mean() * 100:.1f}%), dropped; most from "
+          + ", ".join(f"{k} {v}" for k, v in s[bad].Country.value_counts().head(3).items()))
+    s = s[~bad]
+    s["lat0"] = (np.floor(s.Latitude / 2) * 2).astype(int)
+    s["lon0"] = (np.floor(s.Longitude / 2) * 2).astype(int)
+    mode = lambda x: x.astype(str).mode().iloc[0]  # noqa: E731
+    cells = (s.groupby(["lat0", "lon0"])
+             .agg(n=("LimitingMag", "size"), lm=("LimitingMag", "mean"),
+                  top=("Country", mode), continent=("continent", mode))
+             .reset_index())
+    cells["lm"] = cells.lm.round(2)
+    full = cells[cells.n >= 10]
+    print(f"  4.3 clear-sky reports kept {len(s):,} in {len(cells):,} squares; "
+          f">= 10 reports {len(full)} squares ({full.n.sum():,} reports)")
+    print(f"  4.3 reports at magnitude <= 3: {(s.LimitingMag <= 3).mean() * 100:.1f}%, "
+          f">= 5: {(s.LimitingMag >= 5).mean() * 100:.1f}%; "
+          f"squares (>= 10) by mean: < 2 {(full.lm < 2).sum()}, >= 5 {(full.lm >= 5).sum()}")
+    print("  4.3 continents (squares >= 10): "
+          + ", ".join(f"{k} {v}" for k, v in full.continent.value_counts().items())
+          + "; all squares: " + ", ".join(f"{k} {v}" for k, v in cells.continent.value_counts().items()))
+    cols = ["lat0", "lon0", "n", "lm", "top"]
+    print("  4.3 darkest squares (>= 10):\n" + full.nlargest(8, "lm")[cols].to_string(index=False))
+    print("  4.3 brightest squares (>= 10):\n" + full.nsmallest(8, "lm")[cols].to_string(index=False))
+    write(cells[["lat0", "lon0", "n", "lm", "top", "continent"]], "gan_sky_cells.csv", "4.3",
+          len(s), "clear-sky reports, 2-degree squares")
 
 
 # --------------------------------------------------------------------------
@@ -492,7 +615,7 @@ def main(steps):
     print(f"  events.csv {len(ev)} events")
     counts.append(("events", "events.csv", len(ev), "celestial events 2021-2025"))
 
-    fetch(WORLD110_URL, OUT / "world-110m.json")
+    write_basemap()
     mpc = prep_mpc()
     if "cobs" in steps:
         prep_cobs(mpc)

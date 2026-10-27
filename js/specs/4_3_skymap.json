@@ -1,0 +1,117 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "4.3 Globe at Night clear-sky reports in 2-degree squares, coloured by mean limiting magnitude (faintest star seen). Same continent menu, zoom slider, Ctrl + scroll and drag as map 1.1 (the map_* params are shared with dashboard.js; keep map_views in step with 1_1_map.json)",
+  "width": "container",
+  "height": "container",
+  "params": [
+    {
+      "name": "map_continent",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+        "labels": ["World", "Africa", "Asia", "Europe", "North America", "Oceania", "South America"],
+        "name": "Continent",
+        "element": "#sky-binds"
+      }
+    },
+    {
+      "name": "map_zoom",
+      "value": 1,
+      "bind": { "input": "range", "min": 1, "max": 8, "step": 0.1, "name": "Zoom", "element": "#sky-binds" }
+    },
+    { "name": "pan_x", "value": 0 },
+    { "name": "pan_y", "value": 0 },
+    {
+      "name": "map_views",
+      "value": {
+        "All": [0, 0, 1],
+        "Africa": [16, 1, 1.7],
+        "Antarctica": [100, -60, 5.5],
+        "Asia": [87.5, 21, 2],
+        "Europe": [10, 46, 3.7],
+        "North America": [-106, 36, 3],
+        "Oceania": [145, -25, 3.1],
+        "South America": [-59, -19, 1.9]
+      }
+    },
+    { "name": "map_view", "expr": "map_views[map_continent]" },
+    { "name": "map_base", "expr": "min((width - 2) / 5.4133, (height - 2) / 2.6347)" }
+  ],
+  "projection": {
+    "type": "equalEarth",
+    "rotate": { "expr": "[-map_view[0], 0, 0]" },
+    "center": { "expr": "[0, map_view[1]]" },
+    "scale": { "expr": "map_base * map_view[2] * map_zoom" },
+    "translate": { "expr": "[width / 2 + pan_x * map_zoom, height / 2 + pan_y * map_zoom]" }
+  },
+  "layer": [
+    {
+      "data": { "sphere": true },
+      "mark": { "type": "geoshape", "fill": "@ocean", "stroke": "@grid", "strokeWidth": 1, "clip": true }
+    },
+    {
+      "data": {
+        "url": "data/prepared/world-110m.json",
+        "format": { "type": "topojson", "feature": "countries" }
+      },
+      "mark": { "type": "geoshape", "stroke": "@surface", "strokeWidth": 0.6, "clip": true },
+      "encoding": {
+        "fill": {
+          "condition": { "test": "map_continent === 'All' || datum.properties.continent === map_continent", "value": "@land" },
+          "value": "@landOff"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/prepared/gan_sky_cells.csv",
+        "format": { "parse": { "lat0": "number", "lon0": "number", "n": "number", "lm": "number" } }
+      },
+      "transform": [
+        { "filter": "map_continent === 'All' || datum.continent === map_continent" },
+        {
+          "calculate": "{type: 'Feature', geometry: {type: 'Polygon', coordinates: [[[datum.lon0, datum.lat0], [datum.lon0, datum.lat0 + 2], [datum.lon0 + 2, datum.lat0 + 2], [datum.lon0 + 2, datum.lat0], [datum.lon0, datum.lat0]]]}}",
+          "as": "geo"
+        },
+        {
+          "calculate": "min(abs(datum.lat0), abs(datum.lat0 + 2)) + '–' + max(abs(datum.lat0), abs(datum.lat0 + 2)) + '°' + (datum.lat0 < 0 ? 'S' : 'N') + ', ' + min(abs(datum.lon0), abs(datum.lon0 + 2)) + '–' + max(abs(datum.lon0), abs(datum.lon0 + 2)) + '°' + (datum.lon0 < 0 ? 'W' : 'E')",
+          "as": "square"
+        },
+        {
+          "calculate": "datum.n < 10 ? 'not shown (fewer than 10 reports)' : format(datum.lm, '.1f')",
+          "as": "lm_text"
+        }
+      ],
+      "mark": { "type": "geoshape", "stroke": "@surface", "strokeWidth": 0.4, "clip": true },
+      "encoding": {
+        "shape": { "field": "geo", "type": "geojson" },
+        "color": {
+          "condition": { "test": "datum.n < 10", "value": "@nodata" },
+          "field": "lm",
+          "type": "quantitative",
+          "title": "Faintest star seen (mean limiting magnitude)",
+          "scale": {
+            "type": "threshold",
+            "domain": [1, 2, 3, 4, 5, 6],
+            "range": ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
+          },
+          "legend": { "orient": "bottom", "direction": "horizontal", "gradientLength": 280, "titleLimit": 400 }
+        },
+        "tooltip": [
+          { "field": "square", "title": "Square" },
+          { "field": "n", "type": "quantitative", "title": "Clear-sky reports" },
+          { "field": "lm_text", "title": "Mean limiting magnitude" },
+          { "field": "top", "title": "Most reports from" }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/prepared/world-110m.json",
+        "format": { "type": "topojson", "feature": "countries" }
+      },
+      "mark": { "type": "geoshape", "fill": null, "stroke": "@ink2", "strokeWidth": 0.35, "strokeOpacity": 0.5, "clip": true }
+    }
+  ]
+}

@@ -26,15 +26,21 @@ Requires Python 3 with pandas and numpy. Nothing else.
 
 The script reads the raw files in `data/<source>/` and never writes there.
 Outputs go to `data/prepared/`, one small CSV per chart, and it prints the row
-count of every file. The first run downloads two reference files into
+count of every file. The first run downloads four reference files into
 `prep/cache/`:
 
 - `ObsCodes.html` from the Minor Planet Center. `data/MPC/mpc_sites.csv` lost
   its site codes (the fetcher wrote it with `index=False`), so they are joined
   back from this list.
 - `countries-50m.json` (world-atlas / Natural Earth) for the spatial join that
-  gives each MPC site a country. `data/prepared/world-110m.json` is the map
-  basemap.
+  gives each MPC site a country.
+- `countries-110m.json` (world-atlas), written to `data/prepared/world-110m.json`
+  as the map basemap with a `continent` property added to every country.
+- `ne_50m_admin_0_countries.geojson` (Natural Earth 5.1.2) for its `CONTINENT`
+  field, which world-atlas drops. It is joined to world-atlas by country name
+  (ISO numeric id as fallback). A site's continent is its country's, so Russia
+  counts as Europe and overseas territories follow their country; the 3 sites
+  outside every country outline take the continent of the nearest one.
 
 ### Filters applied
 
@@ -43,6 +49,7 @@ count of every file. The first run downloads two reference files into
 | COBS | observation date 2021-01-01 to 2025-12-31 (the API filtered on submission date) |
 | GMN | `num_stat` / `n_stations` ≥ 2; sporadics (`iau_code == "..."` or `iau_no == -1`) dropped for the shower chart, kept for totals; the string `"nan"` read as missing |
 | Globe at Night | rows at 0°, 0° dropped; year from `UTDate`; `United States - <State>` merged into United States |
+| Globe at Night, map 4.3 | cloud cover `clear` only; `LimitingMag` 0–7 (−9999 = not given). The report's location must lie on the same continent as the country it names (Natural Earth names; 4 GaN-only names mapped in `GAN_CONTINENT`). 901 reports (2.1%) fail this check and are dropped as location errors. Mean magnitude per 2° square, shown where a square has ≥ 10 reports |
 | MPC | sites without parallax constants dropped (done in `data/MPC/convert.py`) |
 
 GMN files for 2022–2025 have no `year`, `month`, `n_stations` or `countries`
@@ -77,8 +84,39 @@ every year encoding). Each data source has one fixed hue: MPC blue, COBS
 orange, GMN aqua, Globe at Night magenta. No chart shows two sources at once.
 Grey (`@nodata`) marks missing data and sits outside every scale.
 
+Continents (scatter 1.3) have six fixed hues (`@africa` … `@southAmerica`),
+chosen from the categorical palette as the six-hue subset that passes the
+all-pairs check a scatter needs: normal-vision ΔE ≥ 15.6, worst colour-blind
+ΔE 6.9 (red/aqua). That falls in the 6–8 band, so every continent also has
+its own shape. Aqua and yellow fall below 3:1 on white, so they go to the two
+smallest groups (Oceania, Africa), and the card carries a data table.
+The colour follows the continent, so filtering never repaints a point.
+
 ## Notes
 
+- Map 1.1 is interactive. The spec declares the controls as Vega-Lite params:
+  `map_continent` (a menu) filters the sites and dims the other continents'
+  land, and `map_zoom` (a slider) zooms. Picking a continent flies to its entry
+  in `map_views`: `[centre longitude, centre latitude, zoom relative to the
+  world view]`. `dashboard.js` (`enableMapZoom`) adds Ctrl + scroll to zoom at
+  the pointer and mouse drag to pan by writing the same params (`map_zoom`,
+  `pan_x`, `pan_y`). Plain scrolling and touch still scroll the page, and phones
+  use the menu and slider. The projection sets its scale by hand instead of
+  `fit`, because `fit` would override zoom. 5.4133 × 2.6347 is the size of the
+  whole Equal Earth globe at scale 1, so `map_base` is the world-fitting scale.
+  Cells with no site on the chosen continent keep their full count and are
+  drawn at size 0. The size scale's domain therefore stays the same under
+  every filter, and a 50-site circle is the same size everywhere.
+- Map 4.3 (`4_3_skymap.json`, data `gan_sky_cells.csv`) uses the same
+  controls. It declares the same `map_*` params, so the same `enableMapZoom`
+  runs on it, and its controls go into `#sky-binds`. Its `map_views` block is a
+  copy of 1.1's, so change both together. Each 2° square is built as a GeoJSON
+  polygon in the spec (`calculate`, corners clockwise, as d3 expects) and drawn
+  with `geoshape`.
+- Scatter 1.3 has its own continent menu (`scatter_continent`, independent of
+  the map's) that filters the countries. The axes keep fixed domains, so a
+  filter never rescales. The `<details data-table>` under it is filled by
+  `fillTables()` in `dashboard.js`, and any card can reuse it.
 - The chart N lines are filled at load time from `data/prepared/chart_counts.csv`.
   No row count is typed by hand.
 - Caption claims marked `[VERIFY]` go beyond what the chart shows on its own.

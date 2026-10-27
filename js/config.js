@@ -39,6 +39,23 @@ const DASH = {
     // dumbbell baseline (a reference value, not a series hue)
     baseline: "#a8a79f",
 
+    // continents (1.3 scatter): six categorical hues validated all-pairs for a
+    // scatter (normal-vision dE >= 15.6; worst CVD dE 6.9, red/aqua, so every
+    // continent also gets its own shape). Aqua and yellow are under 3:1 on
+    // white, so they go to the two smallest groups and the card has a table view.
+    africa: "#eda100",       // yellow, 2.2:1
+    asia: "#008300",         // green
+    europe: "#4a3aa7",       // violet
+    northAmerica: "#2a78d6", // blue
+    oceania: "#1baf7a",      // aqua, 2.8:1
+    southAmerica: "#e34948", // red
+
+    // 1.1 map: basemap and single-site dots
+    ocean: "#f6f6f3",
+    land: "#e8e7e1",
+    landOff: "#f0efea",   // countries outside the chosen continent
+    siteDot: "#0d366b",   // darkest step of the counts ramp
+
     // 3.1 event-window categories (comet window reuses the COBS hue, set below)
     eclipseWin: "#8a8983",  // 3.5:1 on white
     otherDays: "#dedcd5",

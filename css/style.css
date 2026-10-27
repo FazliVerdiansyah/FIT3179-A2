@@ -146,7 +146,54 @@ p { margin: 0; }
 }
 .chart { width: 100%; min-width: 0; }
 .chart.fixed { display: flex; justify-content: center; }
-.chart.map { aspect-ratio: 1.8 / 1; min-height: 240px; }
+.chart.map { aspect-ratio: 1.8 / 1; min-height: 240px; cursor: grab; user-select: none; }
+.chart.map.dragging { cursor: grabbing; }
+
+/* chart controls (1.1, 1.3): Vega puts each spec's bound params (continent
+   menu, zoom slider) into .chart-binds; display: contents lets them sit in the
+   same row as any button beside them */
+.chart-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 20px;
+  margin-bottom: 10px;
+  font-size: var(--size-3s);
+  color: var(--ink-2);
+}
+.chart-binds { display: contents; }
+.chart-binds label { display: flex; align-items: center; gap: 8px; }
+.chart-binds .vega-bind-name { font-weight: 600; }
+.chart-binds select,
+.chart-controls button {
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--muted);
+  border-radius: 6px;
+  padding: 3px 8px;
+}
+.chart-controls button { cursor: pointer; }
+.chart-controls button:hover { background: var(--page); }
+.chart-binds input[type="range"] { width: 140px; accent-color: var(--accent); }
+.chart-binds input[type="range"] + span { min-width: 4ch; font-variant-numeric: tabular-nums; }
+.chart-binds input[type="range"] + span::after { content: "×"; }
+.map-hint { color: var(--muted); margin-left: auto; }
+@media (hover: none) { .map-hint { display: none; } }
+
+/* table view of a chart's data (filled by dashboard.js from data-table) */
+.data-table {
+  margin-top: 12px;
+  color: var(--ink-2);
+  font-size: var(--size-3s);
+}
+.data-table summary { cursor: pointer; margin-left: 14px; list-style-position: outside; }
+.data-table summary::marker { color: var(--muted); }
+.data-table .table-scroll { max-height: 300px; overflow: auto; margin: 6px 0 0 14px; }
+.data-table table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; }
+.data-table th, .data-table td { text-align: left; padding: 3px 12px 3px 0; border-bottom: 1px solid var(--border); }
+.data-table th { position: sticky; top: 0; background: var(--surface); color: var(--ink-2); font-weight: 600; }
+.data-table td.num, .data-table th.num { text-align: right; }
 .chart svg { max-width: 100%; height: auto; }
 .chart-error { color: var(--ink-2); font-size: var(--size-3s); }
 

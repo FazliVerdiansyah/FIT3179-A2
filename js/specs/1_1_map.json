@@ -1,33 +1,85 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "1.1 MPC observatory sites, proportional symbols per 5-degree grid cell",
+  "description": "1.1 MPC observatory sites, proportional symbols per 5-degree grid cell. The continent menu filters the sites and flies to that continent; the slider zooms (dashboard.js adds Ctrl + scroll and drag)",
   "width": "container",
   "height": "container",
-  "projection": { "type": "equalEarth", "fit": { "type": "Sphere" } },
+  "params": [
+    {
+      "name": "map_continent",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": ["All", "Africa", "Antarctica", "Asia", "Europe", "North America", "Oceania", "South America"],
+        "labels": ["World", "Africa", "Antarctica", "Asia", "Europe", "North America", "Oceania", "South America"],
+        "name": "Continent",
+        "element": "#map-binds"
+      }
+    },
+    {
+      "name": "map_zoom",
+      "value": 1,
+      "bind": { "input": "range", "min": 1, "max": 8, "step": 0.1, "name": "Zoom", "element": "#map-binds" }
+    },
+    { "name": "pan_x", "value": 0 },
+    { "name": "pan_y", "value": 0 },
+    {
+      "name": "map_views",
+      "value": {
+        "All": [0, 0, 1],
+        "Africa": [16, 1, 1.7],
+        "Antarctica": [100, -60, 5.5],
+        "Asia": [87.5, 21, 2],
+        "Europe": [10, 46, 3.7],
+        "North America": [-106, 36, 3],
+        "Oceania": [145, -25, 3.1],
+        "South America": [-59, -19, 1.9]
+      }
+    },
+    { "name": "map_view", "expr": "map_views[map_continent]" },
+    { "name": "map_base", "expr": "min((width - 2) / 5.4133, (height - 2) / 2.6347)" }
+  ],
+  "projection": {
+    "type": "equalEarth",
+    "rotate": { "expr": "[-map_view[0], 0, 0]" },
+    "center": { "expr": "[0, map_view[1]]" },
+    "scale": { "expr": "map_base * map_view[2] * map_zoom" },
+    "translate": { "expr": "[width / 2 + pan_x * map_zoom, height / 2 + pan_y * map_zoom]" }
+  },
   "layer": [
     {
       "data": { "sphere": true },
-      "mark": { "type": "geoshape", "fill": "#f6f6f3", "stroke": "@grid", "strokeWidth": 1 }
+      "mark": { "type": "geoshape", "fill": "@ocean", "stroke": "@grid", "strokeWidth": 1, "clip": true }
     },
     {
       "data": {
         "url": "data/prepared/world-110m.json",
         "format": { "type": "topojson", "feature": "countries" }
       },
-      "mark": { "type": "geoshape", "fill": "#e8e7e1", "stroke": "#ffffff", "strokeWidth": 0.6 }
+      "mark": { "type": "geoshape", "stroke": "@surface", "strokeWidth": 0.6, "clip": true },
+      "encoding": {
+        "fill": {
+          "condition": { "test": "map_continent === 'All' || datum.properties.continent === map_continent", "value": "@land" },
+          "value": "@landOff"
+        }
+      }
     },
     {
       "data": { "url": "data/prepared/mpc_sites.csv" },
       "transform": [
         { "calculate": "floor(datum.lat / 5) * 5 + ',' + floor(datum.lon / 5) * 5", "as": "cell" },
+        { "calculate": "map_continent === 'All' || datum.continent === map_continent ? 1 : 0", "as": "shown" },
+        { "calculate": "datum.shown ? datum.lat : null", "as": "shown_lat" },
+        { "calculate": "datum.shown ? datum.lon : null", "as": "shown_lon" },
         {
           "aggregate": [
-            { "op": "count", "as": "sites" },
-            { "op": "mean", "field": "lat", "as": "clat" },
-            { "op": "mean", "field": "lon", "as": "clon" }
+            { "op": "count", "as": "all_sites" },
+            { "op": "sum", "field": "shown", "as": "shown_sites" },
+            { "op": "mean", "field": "shown_lat", "as": "clat" },
+            { "op": "mean", "field": "shown_lon", "as": "clon" }
           ],
           "groupby": ["cell"]
-        }
+        },
+        { "calculate": "datum.shown_sites || datum.all_sites", "as": "sites" }
       ],
       "mark": {
         "type": "circle",
@@ -35,17 +87,26 @@
         "opacity": 0.35,
         "stroke": "@mpc",
         "strokeWidth": 1,
-        "strokeOpacity": 0.9
+        "strokeOpacity": 0.9,
+        "clip": true
       },
       "encoding": {
         "longitude": { "field": "clon", "type": "quantitative" },
         "latitude": { "field": "clat", "type": "quantitative" },
         "size": {
+          "condition": { "test": "datum.shown_sites === 0", "value": 0 },
           "field": "sites",
           "type": "quantitative",
           "title": "Sites per 5° cell",
           "scale": { "type": "linear", "range": [0, { "expr": "width * width / 620" }], "zero": true },
-          "legend": { "values": [10, 50, 100], "orient": "bottom", "direction": "horizontal", "symbolFillColor": "@mpc", "symbolOpacity": 0.35, "symbolStrokeColor": "@mpc" }
+          "legend": {
+            "values": [10, 50, 100],
+            "orient": "bottom",
+            "direction": "horizontal",
+            "symbolFillColor": "@mpc",
+            "symbolOpacity": 0.35,
+            "symbolStrokeColor": "@mpc"
+          }
         },
         "order": { "field": "sites", "sort": "descending" },
         "tooltip": [
@@ -55,7 +116,16 @@
     },
     {
       "data": { "url": "data/prepared/mpc_sites.csv" },
-      "mark": { "type": "circle", "size": 5, "color": "#0d366b", "opacity": 0.75 },
+      "transform": [
+        { "filter": "map_continent === 'All' || datum.continent === map_continent" }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": { "expr": "5 * sqrt(map_view[2] * map_zoom)" },
+        "color": "@siteDot",
+        "opacity": 0.75,
+        "clip": true
+      },
       "encoding": {
         "longitude": { "field": "lon", "type": "quantitative" },
         "latitude": { "field": "lat", "type": "quantitative" },
@@ -64,7 +134,8 @@
           { "field": "code", "title": "MPC code" },
           { "field": "lat", "type": "quantitative", "format": ".2f", "title": "Latitude" },
           { "field": "lon", "type": "quantitative", "format": ".2f", "title": "Longitude" },
-          { "field": "country", "title": "Country (spatial join)" }
+          { "field": "country", "title": "Country (spatial join)" },
+          { "field": "continent", "title": "Continent" }
         ]
       }
     }

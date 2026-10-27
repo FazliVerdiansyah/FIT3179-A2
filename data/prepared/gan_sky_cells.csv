@@ -1,0 +1,956 @@
+lat0,lon0,n,lm,top,continent
+-90,16,1,0.0,Antarctica,Antarctica
+-54,-72,4,3.25,Chile,South America
+-52,-72,2,7.0,Argentina,South America
+-52,-62,1,6.0,Falkland Islands,South America
+-50,-74,1,7.0,Argentina,South America
+-48,-74,1,4.0,Chile,South America
+-48,168,21,5.76,New Zealand,Oceania
+-46,-74,3,2.67,Chile,South America
+-46,168,8,5.0,New Zealand,Oceania
+-46,170,5,5.4,New Zealand,Oceania
+-44,-74,6,4.33,Chile,South America
+-44,-66,3,5.33,Argentina,South America
+-44,144,1,6.0,Australia,Oceania
+-44,146,17,5.59,Australia,Oceania
+-44,148,1,6.0,Australia,Oceania
+-44,170,34,5.88,New Zealand,Oceania
+-44,172,7,5.0,New Zealand,Oceania
+-42,-74,16,3.19,Chile,South America
+-42,-72,1,3.0,Uruguay,South America
+-42,-70,1,0.0,Chile,South America
+-42,-64,1,4.0,Argentina,South America
+-42,-60,1,2.0,Uruguay,South America
+-42,144,1,2.0,Australia,Oceania
+-42,146,2,5.5,Australia,Oceania
+-42,148,1,6.0,Australia,Oceania
+-42,172,1,5.0,New Zealand,Oceania
+-42,174,34,3.18,New Zealand,Oceania
+-40,-74,51,3.22,Chile,South America
+-40,-72,4,4.5,Chile,South America
+-40,-62,2,2.5,Argentina,South America
+-40,144,5,3.8,Australia,Oceania
+-40,146,1,6.0,Australia,Oceania
+-40,174,9,4.22,New Zealand,Oceania
+-40,176,6,3.5,New Zealand,Oceania
+-38,-98,1,3.0,Uruguay,South America
+-38,-74,57,2.77,Chile,South America
+-38,-72,14,3.43,Chile,South America
+-38,-58,2,3.5,Argentina,South America
+-38,-56,1,3.0,Uruguay,South America
+-38,-54,2,2.0,Uruguay,South America
+-38,-52,1,3.0,Chile,South America
+-38,140,1,6.0,Australia,Oceania
+-38,142,13,5.0,Australia,Oceania
+-38,144,28,3.14,Australia,Oceania
+-38,148,1,3.0,Australia,Oceania
+-38,174,22,3.5,New Zealand,Oceania
+-38,176,2,5.5,New Zealand,Oceania
+-36,-74,15,4.53,Chile,South America
+-36,-72,79,3.14,Chile,South America
+-36,-68,1,2.0,Uruguay,South America
+-36,-62,2,6.5,Argentina,South America
+-36,-60,17,2.76,Argentina,South America
+-36,-58,2575,2.62,Uruguay,South America
+-36,-56,1557,3.08,Uruguay,South America
+-36,-54,80,3.58,Uruguay,South America
+-36,18,3,2.67,South Africa,Africa
+-36,114,1,6.0,Australia,Oceania
+-36,116,2,6.0,Australia,Oceania
+-36,118,1,6.0,Australia,Oceania
+-36,138,11,4.36,Australia,Oceania
+-36,148,7,3.43,Australia,Oceania
+-36,150,3,5.0,Australia,Oceania
+-36,154,1,3.0,Australia,Oceania
+-36,172,1,4.0,New Zealand,Oceania
+-36,174,5,4.4,New Zealand,Oceania
+-34,-72,264,2.55,Chile,South America
+-34,-70,20,3.0,Argentina,South America
+-34,-68,1,0.0,Chile,South America
+-34,-60,314,2.95,Uruguay,South America
+-34,-58,198,3.32,Uruguay,South America
+-34,-56,143,3.01,Uruguay,South America
+-34,-54,11,3.09,Uruguay,South America
+-34,18,5,3.2,South Africa,Africa
+-34,24,1,3.0,South Africa,Africa
+-34,26,1,0.0,South Africa,Africa
+-34,114,13,3.23,Australia,Oceania
+-34,116,3,3.67,Australia,Oceania
+-34,118,1,6.0,Australia,Oceania
+-34,122,1,6.0,Australia,Oceania
+-34,148,2,4.0,Australia,Oceania
+-34,150,28,3.93,Australia,Oceania
+-34,152,4,4.25,Australia,Oceania
+-32,-104,1,4.0,Chile,South America
+-32,-72,179,3.1,Chile,South America
+-32,-66,1,2.0,Argentina,South America
+-32,-60,8,2.88,Uruguay,South America
+-32,-58,499,2.74,Uruguay,South America
+-32,-56,401,2.57,Uruguay,South America
+-32,-54,1,0.0,Uruguay,South America
+-32,-52,5,3.2,Brazil,South America
+-32,116,5,4.2,Australia,Oceania
+-32,138,6,5.5,Australia,Oceania
+-32,148,1,6.0,Australia,Oceania
+-32,150,2,5.5,Australia,Oceania
+-32,152,5,4.6,Australia,Oceania
+-30,-72,112,3.16,Chile,South America
+-30,-64,2,2.0,Uruguay,South America
+-30,-58,2,1.5,Argentina,South America
+-30,-54,1,7.0,Bolivia,South America
+-30,-52,1,2.0,Brazil,South America
+-30,-48,1,4.0,Uruguay,South America
+-30,26,1,4.0,South Africa,Africa
+-30,30,2,2.5,South Africa,Africa
+-30,120,2,6.0,Australia,Oceania
+-30,134,1,6.0,Australia,Oceania
+-30,138,1,6.0,Australia,Oceania
+-30,152,3,5.67,Australia,Oceania
+-30,160,1,4.0,Australia,Oceania
+-28,-72,13,3.92,Chile,South America
+-28,-70,1,1.0,Chile,South America
+-28,-68,1,2.0,Chile,South America
+-28,-66,1,1.0,Bolivia,South America
+-28,-60,3,2.67,Argentina,South America
+-28,-58,1,5.0,Argentina,South America
+-28,-56,2,2.5,Argentina,South America
+-28,-52,1,0.0,Bolivia,South America
+-28,-50,8,3.5,Brazil,South America
+-28,26,3,3.0,South Africa,Africa
+-28,28,4,3.0,South Africa,Africa
+-28,118,2,5.0,Australia,Oceania
+-28,146,1,5.0,Australia,Oceania
+-28,150,2,6.0,Australia,Oceania
+-28,152,243,5.07,Australia,Oceania
+-26,-62,1,2.0,Argentina,South America
+-26,-58,1,1.0,Paraguay,South America
+-26,-56,1,6.0,Argentina,South America
+-26,-54,1,7.0,Uruguay,South America
+-26,-50,4,2.5,Brazil,South America
+-26,-42,1,0.0,Uruguay,South America
+-26,16,22,5.95,Namibia,Africa
+-26,24,3,5.0,Botswana,Africa
+-26,28,1,4.0,South Africa,Africa
+-26,114,1,6.0,Australia,Oceania
+-26,128,1,6.0,Australia,Oceania
+-26,132,3,5.33,Australia,Oceania
+-26,134,1,6.0,Australia,Oceania
+-26,148,1,6.0,Australia,Oceania
+-26,150,1,4.0,Australia,Oceania
+-26,152,4,6.25,Australia,Oceania
+-24,-72,10,3.6,Chile,South America
+-24,-70,5,4.4,Chile,South America
+-24,-52,2,2.0,Brazil,South America
+-24,-50,4,2.5,Brazil,South America
+-24,-48,57,2.4,Brazil,South America
+-24,-46,9,2.56,Brazil,South America
+-24,-44,3,1.33,Brazil,South America
+-24,132,2,5.0,Australia,Oceania
+-24,134,1,6.0,Australia,Oceania
+-24,136,1,6.0,Australia,Oceania
+-24,140,1,6.0,Australia,Oceania
+-24,142,17,5.35,Australia,Oceania
+-22,-72,4,1.75,Chile,South America
+-22,-66,1,5.0,Uruguay,South America
+-22,-62,1,3.0,Uruguay,South America
+-22,-52,1,0.0,Uruguay,South America
+-22,-50,9,3.44,Brazil,South America
+-22,-48,2,3.5,Brazil,South America
+-22,-46,1,4.0,Brazil,South America
+-22,118,1,3.0,Australia,Oceania
+-20,-72,3,2.67,Chile,South America
+-20,-62,1,2.0,Uruguay,South America
+-20,-58,1,3.0,Uruguay,South America
+-20,-50,1,0.0,Brazil,South America
+-20,-48,7,4.71,Brazil,South America
+-20,-46,14,1.57,Brazil,South America
+-20,-44,17,1.71,Brazil,South America
+-20,-42,2,3.0,Brazil,South America
+-20,142,1,6.0,Australia,Oceania
+-20,144,1,6.0,Australia,Oceania
+-18,-68,1,1.0,Bolivia,South America
+-18,-64,1,0.0,Bolivia,South America
+-18,-50,12,2.58,Brazil,South America
+-18,-44,2,1.0,Brazil,South America
+-18,-36,1,4.0,Uruguay,South America
+-18,14,1,0.0,Namibia,Africa
+-18,22,1,0.0,Namibia,Africa
+-18,30,8,3.62,Zimbabwe,Africa
+-18,144,1,3.0,Australia,Oceania
+-16,-72,1,4.0,Peru,South America
+-16,-50,4,2.0,Brazil,South America
+-16,-48,12,3.92,Brazil,South America
+-16,-30,1,3.0,Uruguay,South America
+-14,-78,1,3.0,Peru,South America
+-14,-74,1,4.0,Peru,South America
+-14,-40,8,3.62,Brazil,South America
+-12,-52,1,7.0,Uruguay,South America
+-12,-42,1,0.0,Brazil,South America
+-12,-38,1,4.0,Brazil,South America
+-10,-64,1,3.0,Brazil,South America
+-10,-54,1,1.0,Uruguay,South America
+-10,-52,1,5.0,Uruguay,South America
+-10,-44,1,7.0,Brazil,South America
+-10,-38,9,0.44,Brazil,South America
+-10,-36,9,1.56,Brazil,South America
+-10,110,2,6.0,Indonesia,Asia
+-10,112,2,1.5,Indonesia,Asia
+-10,114,1,2.0,Indonesia,Asia
+-10,116,1,2.0,Indonesia,Asia
+-8,-64,1,3.0,Uruguay,South America
+-8,-38,44,3.98,Brazil,South America
+-8,-36,17,2.47,Brazil,South America
+-8,28,1,1.0,Democratic Republic of the Congo,Africa
+-8,46,1,0.0,Tanzania,Africa
+-8,106,486,1.22,Indonesia,Asia
+-8,108,2,2.0,Indonesia,Asia
+-8,110,1,2.0,Indonesia,Asia
+-8,112,9,1.44,Indonesia,Asia
+-6,-152,1,0.0,Kiribati,Oceania
+-6,-44,4,3.5,Brazil,South America
+-6,-42,20,5.2,Brazil,South America
+-6,-38,6,1.0,Brazil,South America
+-6,-36,1,0.0,Brazil,South America
+-6,38,2,4.5,Tanzania,Africa
+-6,120,1,0.0,Indonesia,Asia
+-6,122,1,4.0,Indonesia,Asia
+-4,-80,4,0.5,Ecuador,South America
+-4,-60,1,1.0,Brazil,South America
+-4,-44,2,5.5,Brazil,South America
+-2,-82,1,0.0,Ecuador,South America
+-2,-80,1,0.0,Ecuador,South America
+-2,-50,1,2.0,Brazil,South America
+-2,-48,1,3.0,Brazil,South America
+-2,32,1,0.0,Kenya,Africa
+-2,36,10,2.9,Kenya,Africa
+-2,112,1,0.0,Indonesia,Asia
+-2,116,2,2.0,Indonesia,Asia
+-2,134,1,6.0,Indonesia,Asia
+0,32,32,3.44,Uganda,Africa
+0,102,10,3.3,Malaysia,Asia
+0,110,1,3.0,Malaysia,Asia
+2,4,1,1.0,Nigeria,Africa
+2,98,2,1.0,Indonesia,Asia
+2,100,13,3.46,Malaysia,Asia
+2,102,4,2.5,Malaysia,Asia
+4,-76,34,2.56,Colombia,South America
+4,-74,7,3.0,Colombia,South America
+4,-2,1,2.0,Ghana,Africa
+4,100,10,2.9,Malaysia,Asia
+4,102,4,3.75,Malaysia,Asia
+4,114,1,6.0,Malaysia,Asia
+4,116,38,2.42,Malaysia,Asia
+4,118,4,2.25,Malaysia,Asia
+6,-76,2,3.5,Colombia,South America
+6,-74,2,6.0,Colombia,South America
+6,-68,1,2.0,Venezuela,South America
+6,-58,1,5.0,Guyana,South America
+6,2,1,4.0,Nigeria,Africa
+6,6,12,2.42,Nigeria,Africa
+6,98,2,3.0,Malaysia,Asia
+6,102,4,2.75,Malaysia,Asia
+6,116,3,5.33,Malaysia,Asia
+8,-98,1,5.0,United States - Texas,North America
+8,-86,1,0.0,Costa Rica,North America
+8,-84,6,4.33,Costa Rica,North America
+8,-72,3,2.33,Venezuela,South America
+8,6,1,3.0,Nigeria,Africa
+8,8,1,2.0,Nigeria,Africa
+8,76,3,1.33,India,Asia
+10,-86,235,2.06,Costa Rica,North America
+10,-76,42,2.81,Colombia,South America
+10,-72,2,2.5,Venezuela,South America
+10,-70,1,2.0,Venezuela,South America
+10,-68,1,2.0,Venezuela,South America
+10,-66,3,4.33,Venezuela,South America
+10,-62,8,1.75,Trinidad and Tobago,North America
+10,78,6,2.5,India,Asia
+10,92,1,2.0,India,Asia
+10,102,1,2.0,Cambodia,Asia
+10,106,3,1.0,Vietnam,Asia
+10,122,1,2.0,Philippines,Asia
+12,-90,1,3.0,El Salvador,North America
+12,-88,4,3.5,Nicaragua,North America
+12,-86,3,6.0,Nicaragua,North America
+12,-60,3,4.67,Barbados,North America
+12,74,5,1.0,India,Asia
+12,76,10,2.0,India,Asia
+12,78,1,0.0,India,Asia
+12,80,86,2.02,India,Asia
+14,-120,1,6.0,United States - Nevada,North America
+14,-92,4,4.0,Guatemala,North America
+14,-88,1,2.0,Honduras,North America
+14,-74,1,0.0,United States - Alabama,North America
+14,14,1,3.0,Chad,Africa
+14,32,1,3.0,Sudan,Africa
+14,74,7,2.14,India,Asia
+14,76,2,2.5,India,Asia
+14,78,2,1.0,India,Asia
+14,120,13,2.69,Philippines,Asia
+16,-120,1,5.0,United States - Pennsylvania,North America
+16,-102,3,3.33,Mexico,North America
+16,-100,2,4.0,Mexico,North America
+16,-94,5,3.2,Mexico,North America
+16,-92,1,3.0,Mexico,North America
+16,-90,1,2.0,Guatemala,North America
+16,-68,520,2.69,Puerto Rico,North America
+16,-66,30,2.33,Puerto Rico,North America
+16,72,1,4.0,India,Asia
+16,74,4,2.0,India,Asia
+16,78,28,2.61,India,Asia
+16,82,1,0.0,India,Asia
+16,106,1,0.0,Vietnam,Asia
+18,-156,12,3.42,United States - Hawaii,North America
+18,-104,1,3.0,Mexico,North America
+18,-100,52,2.73,Mexico,North America
+18,-98,3,2.67,Mexico,North America
+18,-90,2,5.0,Mexico,North America
+18,-80,1,0.0,Jamaica,North America
+18,-78,1,5.0,Jamaica,North America
+18,-70,2,3.5,Dominican Republic,North America
+18,-68,259,3.08,Puerto Rico,North America
+18,-66,104,3.08,Puerto Rico,North America
+18,42,1,6.0,Saudi Arabia,Asia
+18,72,15,1.93,India,Asia
+18,74,3,1.33,India,Asia
+18,78,26,3.46,India,Asia
+18,80,1,4.0,India,Asia
+18,88,1,0.0,Saudi Arabia,Asia
+20,-160,3,2.0,United States - Hawaii,North America
+20,-158,10,2.3,United States - Hawaii,North America
+20,-156,7,6.0,United States,North America
+20,-106,4,2.25,Mexico,North America
+20,-104,16,4.25,Mexico,North America
+20,-102,14,3.71,Mexico,North America
+20,-100,6,3.83,Mexico,North America
+20,-90,8,2.25,Mexico,North America
+20,-88,5,3.4,Mexico,North America
+20,38,2,2.0,Saudi Arabia,Asia
+20,44,1,0.0,Bahrain,Asia
+20,70,4,3.5,India,Asia
+20,74,1,6.0,India,Asia
+20,78,4,4.5,India,Asia
+20,80,1,2.0,India,Asia
+20,82,2,3.0,India,Asia
+20,84,1,1.0,India,Asia
+20,86,1,0.0,India,Asia
+20,104,2,2.5,Vietnam,Asia
+20,106,2,4.0,Vietnam,Asia
+20,110,1,5.0,China,Asia
+22,-160,1,6.0,United States - Hawaii,North America
+22,-112,12,5.92,Mexico,North America
+22,-110,14,5.86,Mexico,North America
+22,-86,1,4.0,Mexico,North America
+22,-82,2,2.0,Cuba,North America
+22,26,1,7.0,Egypt,Africa
+22,44,1,7.0,Saudi Arabia,Asia
+22,54,2,3.0,United Arab Emirates,Asia
+22,58,2,2.5,Oman,Asia
+22,70,3,2.67,India,Asia
+22,72,3,3.0,India,Asia
+22,74,1,3.0,India,Asia
+22,78,1,0.0,India,Asia
+22,84,1,2.0,India,Asia
+22,86,6,3.33,India,Asia
+22,88,47,1.28,India,Asia
+22,90,7,3.71,Bangladesh,Asia
+22,112,3,2.0,China,Asia
+22,114,7,2.43,China,Asia
+22,120,1,4.0,Taiwan,Asia
+24,-112,32,5.28,Mexico,North America
+24,-110,3,4.67,Mexico,North America
+24,-106,1,0.0,United States - California,North America
+24,-102,5,2.2,Mexico,North America
+24,-98,2,4.5,Mexico,North America
+24,-82,41,3.27,United States - Florida,North America
+24,32,1,4.0,Egypt,Africa
+24,44,1,3.0,Saudi Arabia,Asia
+24,48,16,4.5,Saudi Arabia,Asia
+24,50,2,2.0,Qatar,Asia
+24,52,1,2.0,United Arab Emirates,Asia
+24,54,12,2.25,United Arab Emirates,Asia
+24,72,5,3.8,India,Asia
+24,74,2,1.0,India,Asia
+24,76,1,0.0,India,Asia
+24,78,1,3.0,India,Asia
+24,84,2,1.5,India,Asia
+24,86,1,0.0,India,Asia
+24,120,10,2.3,Taiwan,Asia
+24,124,2,5.0,Japan,Asia
+26,-144,1,7.0,United States - California,North America
+26,-116,2,6.0,Mexico,North America
+26,-114,51,5.86,Mexico,North America
+26,-112,14,6.0,Mexico,North America
+26,-110,2,2.5,Mexico,North America
+26,-100,8,2.25,Mexico,North America
+26,-98,3,4.33,United States - Texas,North America
+26,-84,33,2.61,United States - Florida,North America
+26,-82,103,2.75,United States - Florida,North America
+26,-16,9,4.67,Spain,Europe
+26,-4,1,5.0,Morocco,Africa
+26,32,2,2.0,Egypt,Africa
+26,34,4,1.0,Egypt,Africa
+26,44,1,1.0,Saudi Arabia,Asia
+26,50,46,2.74,Saudi Arabia,Asia
+26,54,1,5.0,Iran,Asia
+26,62,4,5.75,Pakistan,Asia
+26,72,2,2.0,India,Asia
+26,78,2,3.0,India,Asia
+26,80,1,7.0,India,Asia
+26,82,5,3.4,Nepal,Asia
+26,84,25,3.52,Nepal,Asia
+26,86,10,4.4,Nepal,Asia
+26,88,2,2.5,India,Asia
+26,126,7,3.14,Japan,Asia
+26,128,3,4.0,Japan,Asia
+28,-116,2,4.5,Mexico,North America
+28,-112,5,3.4,Mexico,North America
+28,-106,10,6.1,United States - Texas,North America
+28,-104,23,6.26,United States - Texas,North America
+28,-102,4,4.5,United States - Texas,North America
+28,-100,221,5.16,United States - Texas,North America
+28,-98,4,4.0,United States - Texas,North America
+28,-96,113,2.22,United States - Texas,North America
+28,-92,17,1.76,United States - Louisiana,North America
+28,-86,2,6.0,United States - Florida,North America
+28,-84,43,3.58,United States - Florida,North America
+28,-82,71,2.76,United States - Florida,North America
+28,-64,1,6.0,United States - Kansas,North America
+28,-58,1,1.0,United States - California,North America
+28,-18,1331,3.46,Spain,Europe
+28,-16,24,3.17,Spain,Europe
+28,-14,3,3.0,Spain,Europe
+28,30,7,3.57,Egypt,Africa
+28,34,3,2.67,Israel,Asia
+28,46,2,1.0,Kuwait,Asia
+28,48,4,2.5,Kuwait,Asia
+28,52,1,6.0,Iran,Asia
+28,76,21,1.62,India,Asia
+28,78,1,5.0,India,Asia
+28,80,6,4.0,Nepal,Asia
+28,82,1,6.0,Nepal,Asia
+28,84,1,1.0,Nepal,Asia
+30,-118,5,5.0,Mexico,North America
+30,-116,3,5.0,Mexico,North America
+30,-114,4,4.0,Mexico,North America
+30,-112,64,5.23,United States - Arizona,North America
+30,-110,49,5.35,United States - Arizona,North America
+30,-108,12,3.58,United States - Texas,North America
+30,-106,4,5.75,United States - Texas,North America
+30,-104,28,4.57,United States,North America
+30,-102,7,5.86,United States - Texas,North America
+30,-100,95,3.79,United States - Texas,North America
+30,-98,309,3.42,United States - Texas,North America
+30,-96,145,3.11,United States - Texas,North America
+30,-92,76,1.84,United States - Louisiana,North America
+30,-90,70,2.44,United States - Mississippi,North America
+30,-88,87,2.49,United States - Florida,North America
+30,-86,16,2.56,United States - Alabama,North America
+30,-84,4,2.5,United States - Georgia,North America
+30,-82,52,3.08,United States - Florida,North America
+30,-64,1,3.0,United States - Pennsylvania,North America
+30,-8,18,4.5,Morocco,Africa
+30,30,12,3.25,Egypt,Africa
+30,34,29,2.59,Israel,Asia
+30,46,1,2.0,Iraq,Asia
+30,70,2,4.0,Pakistan,Asia
+30,74,8,2.12,India,Asia
+30,76,3,3.67,India,Asia
+30,78,1,2.0,India,Asia
+30,118,2,3.0,China,Asia
+30,120,5,0.8,China,Asia
+30,130,6,3.33,Japan,Asia
+30,176,1,7.0,United States - Connecticut,North America
+32,-120,23,2.52,United States - California,North America
+32,-118,522,2.5,United States - California,North America
+32,-116,27,4.81,Mexico,North America
+32,-114,387,2.75,United States - Arizona,North America
+32,-112,709,3.23,United States - Arizona,North America
+32,-110,10,5.1,United States - New Mexico,North America
+32,-108,19,5.0,United States - New Mexico,North America
+32,-106,5,2.8,United States - New Mexico,North America
+32,-104,20,5.25,United States - Texas,North America
+32,-102,11,2.73,United States - Texas,North America
+32,-100,13,3.46,United States - Texas,North America
+32,-98,345,2.52,United States - Texas,North America
+32,-96,10,3.6,United States - Texas,North America
+32,-94,3,4.33,United States - Louisiana,North America
+32,-92,4,2.25,United States - Mississippi,North America
+32,-90,6,1.33,United States - Mississippi,North America
+32,-88,1968,2.2,United States - Alabama,North America
+32,-86,129,2.41,United States - Georgia,North America
+32,-84,27,3.07,United States - Georgia,North America
+32,-82,25,3.2,United States - South Carolina,North America
+32,-80,12,2.0,United States - South Carolina,North America
+32,-76,1,7.0,United States - North Carolina,North America
+32,-8,1,6.0,Morocco,Africa
+32,-6,1,7.0,Morocco,Africa
+32,12,1,0.0,Libya,Africa
+32,34,9,2.33,Lebanon,Asia
+32,44,5,1.6,Iraq,Asia
+32,50,3,0.0,Iran,Asia
+32,54,1,6.0,Iran,Asia
+32,56,1,6.0,Iran,Asia
+32,58,3,4.0,Iran,Asia
+32,72,4,3.75,Pakistan,Asia
+32,74,1,2.0,India,Asia
+32,78,2,4.0,India,Asia
+32,108,1,1.0,China,Asia
+32,118,7,0.43,China,Asia
+32,128,3,3.0,Japan,Asia
+32,130,24,4.29,Japan,Asia
+32,132,24,4.58,Japan,Asia
+32,134,4,5.0,Japan,Asia
+32,136,1,4.0,Japan,Asia
+32,140,1,3.0,Japan,Asia
+34,-122,155,3.94,United States - California,North America
+34,-120,173,2.34,United States - California,North America
+34,-118,88,2.8,United States - California,North America
+34,-116,30,5.57,United States - California,North America
+34,-114,29,4.9,United States - Arizona,North America
+34,-112,373,4.02,United States - Arizona,North America
+34,-110,6,5.67,United States - New Mexico,North America
+34,-108,51,5.0,United States - New Mexico,North America
+34,-106,1,3.0,United States - New Mexico,North America
+34,-104,2,2.5,United States - Alabama,North America
+34,-102,2,4.5,United States - Texas,North America
+34,-100,1,5.0,United States - Oklahoma,North America
+34,-98,47,2.96,United States - Oklahoma,North America
+34,-96,8,2.75,United States - Arkansas,North America
+34,-94,42,3.43,United States - Arkansas,North America
+34,-92,2,4.0,United States - Arkansas,North America
+34,-90,19,3.11,United States - Tennessee,North America
+34,-88,117,2.98,United States - Alabama,North America
+34,-86,54,2.85,United States - Georgia,North America
+34,-84,68,3.44,United States - North Carolina,North America
+34,-82,44,3.09,United States - North Carolina,North America
+34,-80,353,2.44,United States - North Carolina,North America
+34,-78,9,2.33,United States - North Carolina,North America
+34,-76,5,5.0,United States - North Carolina,North America
+34,-8,1,4.0,Morocco,Africa
+34,-6,1,3.0,Morocco,Africa
+34,8,1,4.0,Tunisia,Africa
+34,24,1,3.0,Italy,Europe
+34,26,1,1.0,Macedonia,Europe
+34,32,22,4.27,Cyprus,Asia
+34,34,1,0.0,Lebanon,Asia
+34,50,3,1.0,Iran,Asia
+34,52,1,6.0,Iran,Asia
+34,74,4,3.25,India,Asia
+34,76,4,4.25,India,Asia
+34,104,1,1.0,China,Asia
+34,128,12,2.42,South Korea,Asia
+34,130,7,5.29,Japan,Asia
+34,132,30,5.0,Japan,Asia
+34,134,53,3.17,Japan,Asia
+34,136,20,4.05,Japan,Asia
+34,138,430,1.99,Japan,Asia
+34,140,66,2.67,Japan,Asia
+36,-124,111,2.77,United States - California,North America
+36,-122,175,2.97,United States - California,North America
+36,-120,41,2.39,United States - California,North America
+36,-118,1,0.0,United States - California,North America
+36,-116,52,1.62,United States - Nevada,North America
+36,-114,50,4.7,United States - Utah,North America
+36,-112,185,3.95,United States - Arizona,North America
+36,-110,5,4.4,United States - Colorado,North America
+36,-108,26,4.46,United States - Colorado,North America
+36,-106,95,5.94,United States - Colorado,North America
+36,-104,2,6.0,United States - Oklahoma,North America
+36,-102,12,3.5,United States - Kansas,North America
+36,-100,6,2.67,United States - Kansas,North America
+36,-98,41,3.05,United States - Kansas,North America
+36,-96,69,3.23,United States - Arkansas,North America
+36,-94,47,5.15,United States - Missouri,North America
+36,-92,49,5.29,United States - Missouri,North America
+36,-90,149,3.01,United States - Missouri,North America
+36,-88,58,2.97,United States - Tennessee,North America
+36,-86,13,2.08,United States - Kentucky,North America
+36,-84,24,3.04,United States - Kentucky,North America
+36,-82,184,2.76,United States - North Carolina,North America
+36,-80,166,4.11,United States - North Carolina,North America
+36,-78,61,3.41,United States - Virginia,North America
+36,-76,6,3.5,United States - North Carolina,North America
+36,-10,2,5.5,Portugal,Europe
+36,-8,8,3.25,Spain,Europe
+36,-6,8,3.12,Spain,Europe
+36,-4,6,3.83,Spain,Europe
+36,-2,23,3.7,Spain,Europe
+36,6,8,4.12,Algeria,Africa
+36,14,2,3.5,Italy,Europe
+36,16,1,2.0,Macedonia,Europe
+36,22,26,2.62,Greece,Europe
+36,26,1,4.0,Greece,Europe
+36,28,1,2.0,Turkey,Asia
+36,30,1,4.0,Turkey,Asia
+36,32,1,3.0,Turkey,Asia
+36,48,3,5.67,Iran,Asia
+36,58,1,2.0,Iran,Asia
+36,116,1,5.0,China,Asia
+36,126,4,2.5,South Korea,Asia
+36,128,3,4.0,South Korea,Asia
+36,136,5,3.6,Japan,Asia
+36,138,53,2.81,Japan,Asia
+36,140,29,3.24,Japan,Asia
+38,-124,38,4.76,United States - California,North America
+38,-122,80,3.02,United States - California,North America
+38,-120,428,4.32,United States - Nevada,North America
+38,-114,2,3.0,United States - Utah,North America
+38,-112,1,5.0,United States - Utah,North America
+38,-110,15,4.93,United States - Utah,North America
+38,-108,20,5.0,United States - Colorado,North America
+38,-106,306,3.35,United States - Colorado,North America
+38,-104,5,6.0,United States - Colorado,North America
+38,-102,6,3.67,United States - Kansas,North America
+38,-100,38,2.87,United States - Kansas,North America
+38,-98,301,3.87,United States - Kansas,North America
+38,-96,105,3.09,United States - Kansas,North America
+38,-94,74,4.39,United States - Missouri,North America
+38,-92,289,3.25,United States - Missouri,North America
+38,-90,16,3.0,United States - Illinois,North America
+38,-88,62,3.98,United States - Indiana,North America
+38,-86,117,3.11,United States - Kentucky,North America
+38,-84,176,3.19,United States - Ohio,North America
+38,-82,14,3.14,United States - West Virginia,North America
+38,-80,113,3.74,United States - West Virginia,North America
+38,-78,554,2.82,United States - Maryland,North America
+38,-76,245,3.38,United States - New Jersey,North America
+38,-10,12,2.25,Portugal,Europe
+38,-8,8,3.12,Spain,Europe
+38,-6,6,6.17,Spain,Europe
+38,-4,1,4.0,Spain,Europe
+38,-2,8,3.75,Spain,Europe
+38,2,2,1.5,Spain,Europe
+38,8,3,5.67,Italy,Europe
+38,16,4,4.0,Italy,Europe
+38,20,1,5.0,Greece,Europe
+38,22,6,1.17,Greece,Europe
+38,28,2,6.0,Turkey,Asia
+38,32,1,0.0,Turkey,Asia
+38,34,36,3.47,Turkey,Asia
+38,138,1,0.0,Japan,Asia
+38,140,1,6.0,Japan,Asia
+40,-126,2,0.0,United States - California,North America
+40,-124,9,4.67,United States - California,North America
+40,-122,7,5.14,United States - California,North America
+40,-120,1,6.0,United States - Nevada,North America
+40,-118,4,4.0,United States - Nevada,North America
+40,-114,16,4.12,United States - Utah,North America
+40,-112,32,3.34,United States - Utah,North America
+40,-110,25,5.72,United States - Utah,North America
+40,-108,10,4.9,United States - Wyoming,North America
+40,-106,340,2.95,United States - Colorado,North America
+40,-100,5,3.6,United States - Nebraska,North America
+40,-98,30,3.43,United States - Nebraska,North America
+40,-96,3,3.33,United States - Nebraska,North America
+40,-94,383,5.34,United States - Missouri,North America
+40,-92,2,2.0,United States - Iowa,North America
+40,-90,131,2.68,United States - Illinois,North America
+40,-88,137,1.99,United States - Illinois,North America
+40,-86,10,2.9,United States - Indiana,North America
+40,-84,191,3.48,United States - Ohio,North America
+40,-82,544,2.73,United States - Pennsylvania,North America
+40,-80,105,2.65,United States - Pennsylvania,North America
+40,-78,927,2.64,United States - Pennsylvania,North America
+40,-76,566,2.62,United States - Pennsylvania,North America
+40,-74,257,2.8,United States - New York,North America
+40,-72,90,3.58,United States - Rhode Island,North America
+40,-70,6,4.33,United States - Massachusetts,North America
+40,-10,57,1.0,Portugal,Europe
+40,-8,1,4.0,Portugal,Europe
+40,-6,7,3.0,Spain,Europe
+40,-4,105,2.53,Spain,Europe
+40,-2,2,4.5,Spain,Europe
+40,0,6,3.33,Spain,Europe
+40,2,103,4.09,Spain,Europe
+40,8,4,4.0,Italy,Europe
+40,12,24,2.54,Italy,Europe
+40,14,9,4.11,Italy,Europe
+40,16,441,2.47,Italy,Europe
+40,20,867,2.85,Macedonia,Europe
+40,22,121,2.08,Macedonia,Europe
+40,24,13,4.15,Bulgaria,Europe
+40,28,8,1.25,Turkey,Asia
+40,68,1,0.0,Uzbekistan,Asia
+40,116,1,2.0,China,Asia
+40,140,3,2.67,Japan,Asia
+42,-124,14,3.5,United States - Oregon,North America
+42,-122,22,5.27,United States - Oregon,North America
+42,-120,1,5.0,United States - Oregon,North America
+42,-118,14,4.07,United States - Idaho,North America
+42,-116,9,3.78,United States - Idaho,North America
+42,-114,9,1.89,United States - Idaho,North America
+42,-112,3,3.67,United States,North America
+42,-110,1,2.0,United States - Alabama,North America
+42,-108,1,6.0,United States - Wyoming,North America
+42,-106,1,3.0,United States - Wyoming,North America
+42,-104,12,6.08,United States - South Dakota,North America
+42,-102,2,3.0,United States - Nebraska,North America
+42,-94,6,3.17,United States - Iowa,North America
+42,-92,8,3.62,United States - Wisconsin,North America
+42,-90,43,2.95,United States - Wisconsin,North America
+42,-88,29,2.93,United States - Illinois,North America
+42,-86,25,2.68,United States - Michigan,North America
+42,-84,48,2.38,United States - Michigan,North America
+42,-82,12,2.58,United States - Pennsylvania,North America
+42,-80,123,1.95,Canada,North America
+42,-78,23,3.0,United States - New York,North America
+42,-76,225,2.71,United States - New York,North America
+42,-74,164,3.64,United States - Massachusetts,North America
+42,-72,496,2.97,United States - Massachusetts,North America
+42,-70,4,3.25,United States - Maine,North America
+42,-10,18,3.78,Spain,Europe
+42,-8,2,5.5,Spain,Europe
+42,-6,22,5.73,Spain,Europe
+42,-4,3,2.33,Spain,Europe
+42,-2,1,6.0,France,Europe
+42,0,26,5.12,Spain,Europe
+42,2,9,4.56,Spain,Europe
+42,4,4,4.25,France,Europe
+42,6,1,6.0,France,Europe
+42,8,4,5.0,France,Europe
+42,10,124,2.18,Italy,Europe
+42,12,45,3.8,Italy,Europe
+42,16,13,4.15,Croatia,Europe
+42,18,7,2.57,Montenegro,Europe
+42,20,7,3.0,Macedonia,Europe
+42,22,17,3.18,Macedonia,Europe
+42,24,2,2.5,Bulgaria,Europe
+42,50,1,4.0,Kazakhstan,Asia
+42,68,1,0.0,Kazakhstan,Asia
+42,76,1,2.0,Kyrgyzstan,Asia
+42,140,7,2.86,Japan,Asia
+42,142,2,5.5,Japan,Asia
+42,144,1,6.0,Japan,Asia
+44,-128,1,0.0,United States - Nevada,North America
+44,-126,4,6.0,United States - Oregon,North America
+44,-124,79,3.95,United States - Oregon,North America
+44,-122,15,4.2,United States - Oregon,North America
+44,-120,15,3.93,United States - Oregon,North America
+44,-118,2,4.0,United States - Idaho,North America
+44,-112,1,3.0,United States,North America
+44,-110,10,3.2,United States - Montana,North America
+44,-108,3,4.67,United States - Wyoming,North America
+44,-104,1,1.0,United States - South Dakota,North America
+44,-102,1,4.0,United States - Arizona,North America
+44,-100,11,2.18,United States - South Dakota,North America
+44,-98,7,4.29,United States - South Dakota,North America
+44,-96,19,3.47,United States - Minnesota,North America
+44,-94,547,2.81,United States - Minnesota,North America
+44,-92,5,3.8,United States - Wisconsin,North America
+44,-90,107,3.5,United States - Wisconsin,North America
+44,-88,4,3.75,United States - Wisconsin,North America
+44,-86,6,5.67,United States - Michigan,North America
+44,-84,1,6.0,United States - Michigan,North America
+44,-82,2,6.0,Canada,North America
+44,-80,15,3.07,Canada,North America
+44,-78,21,5.52,Canada,North America
+44,-76,32,4.06,Canada,North America
+44,-74,129,3.07,Canada,North America
+44,-72,21,4.38,United States - Maine,North America
+44,-70,62,5.66,United States - Maine,North America
+44,-68,2,4.5,United States - Maine,North America
+44,-66,1,3.0,Canada,North America
+44,-64,7,3.14,Canada,North America
+44,-62,1,5.0,Canada,North America
+44,-2,4,5.0,France,Europe
+44,0,2,6.0,France,Europe
+44,2,3,5.33,France,Europe
+44,4,6,3.83,France,Europe
+44,6,25,2.36,Italy,Europe
+44,8,55,2.69,Italy,Europe
+44,10,116,2.2,Italy,Europe
+44,12,40,3.72,Croatia,Europe
+44,14,4826,3.19,Croatia,Europe
+44,16,108,2.56,Croatia,Europe
+44,20,1,6.0,Croatia,Europe
+44,22,2,3.0,Romania,Europe
+44,24,5,5.2,Romania,Europe
+44,26,1,4.0,Romania,Europe
+44,36,3,3.0,Russia,Europe
+44,112,1,2.0,Mongolia,Asia
+44,142,10,4.3,Japan,Asia
+46,-150,1,0.0,United States - Nevada,North America
+46,-124,611,2.9,United States - Washington,North America
+46,-122,10,3.7,United States - Washington,North America
+46,-120,4,2.5,United States - Washington,North America
+46,-118,4,4.0,United States - Washington,North America
+46,-114,2,6.0,United States - Montana,North America
+46,-112,3,6.0,United States - Montana,North America
+46,-102,1,7.0,United States - Texas,North America
+46,-100,3,3.67,United States - North Dakota,North America
+46,-98,13,3.77,United States - Minnesota,North America
+46,-96,28,4.18,United States - Minnesota,North America
+46,-94,45,3.62,United States - Minnesota,North America
+46,-92,20,5.2,United States - Minnesota,North America
+46,-90,6,4.83,United States - Minnesota,North America
+46,-82,1,2.0,United States - California,North America
+46,-80,1,4.0,United States - Connecticut,North America
+46,-78,1,3.0,Canada,North America
+46,-76,2,6.0,Canada,North America
+46,-70,4,4.25,Canada,North America
+46,-68,1,2.0,United States - Maine,North America
+46,-2,4,5.0,France,Europe
+46,2,2,3.0,France,Europe
+46,4,4,5.75,France,Europe
+46,6,35,4.26,Switzerland,Europe
+46,8,79,5.18,Switzerland,Europe
+46,10,24,4.25,Italy,Europe
+46,12,22,5.32,Austria,Europe
+46,14,31,4.32,Austria,Europe
+46,16,49,3.08,Croatia,Europe
+46,18,5,4.8,Hungary,Europe
+46,20,143,5.92,Hungary,Europe
+46,26,9,4.44,Romania,Europe
+46,28,1,5.0,Moldova,Europe
+46,30,2,3.5,Ukraine,Europe
+46,94,1,6.0,Mongolia,Asia
+46,104,1,2.0,Mongolia,Asia
+46,106,19,1.11,Mongolia,Asia
+48,-126,1,5.0,Canada,North America
+48,-124,24,2.79,Canada,North America
+48,-120,2,3.5,Canada,North America
+48,-118,3,4.67,United States - Idaho,North America
+48,-116,2,5.5,United States - California,North America
+48,-114,15,5.6,United States - Montana,North America
+48,-112,1,6.0,United States - Montana,North America
+48,-102,6,2.33,United States - North Dakota,North America
+48,-96,2,4.0,Canada,North America
+48,-94,8,3.75,United States - Minnesota,North America
+48,-70,2,3.0,Canada,North America
+48,-66,1,0.0,Canada,North America
+48,-40,1,1.0,United States - California,North America
+48,-4,25,4.72,France,Europe
+48,-2,1,3.0,France,Europe
+48,0,1,4.0,France,Europe
+48,2,9,3.22,France,Europe
+48,4,7,5.43,France,Europe
+48,6,10,4.3,France,Europe
+48,8,185,3.25,Germany,Europe
+48,10,30,3.17,Germany,Europe
+48,12,16,4.25,Czech Republic,Europe
+48,14,31,3.52,Czech Republic,Europe
+48,16,45,3.69,Czech Republic,Europe
+48,18,12,3.83,Slovakia,Europe
+48,20,29,3.03,Poland,Europe
+48,22,10,1.5,Poland,Europe
+48,24,9,3.78,Ukraine,Europe
+48,26,1,7.0,Ukraine,Europe
+48,106,2,1.5,Mongolia,Asia
+48,114,1,0.0,Mongolia,Asia
+50,-144,1,3.0,United States - Texas,North America
+50,-122,3,4.0,Canada,North America
+50,-116,24,2.88,Canada,North America
+50,-114,9,2.89,Canada,North America
+50,-100,2,6.5,Canada,North America
+50,-86,1,2.0,United States,North America
+50,-42,1,1.0,United States - Alabama,North America
+50,-10,8,3.88,Ireland,Europe
+50,-6,2,4.5,United Kingdom,Europe
+50,-4,24,4.62,United Kingdom,Europe
+50,-2,83,3.45,United Kingdom,Europe
+50,0,13,4.15,United Kingdom,Europe
+50,2,280,3.72,Belgium,Europe
+50,4,277,3.58,Belgium,Europe
+50,6,118,4.06,Germany,Europe
+50,8,16,3.88,Germany,Europe
+50,10,21,3.14,Germany,Europe
+50,12,44,3.73,Czech Republic,Europe
+50,14,60,2.93,Czech Republic,Europe
+50,16,6,4.0,Czech Republic,Europe
+50,18,17,2.94,Poland,Europe
+50,20,3,2.67,Poland,Europe
+50,22,7,3.14,Poland,Europe
+50,26,4,4.25,Ukraine,Europe
+50,54,1,0.0,India,Asia
+52,-118,1,1.0,Canada,North America
+52,-116,1,4.0,Canada,North America
+52,-114,8,3.25,Canada,North America
+52,-84,1,3.0,United States - Pennsylvania,North America
+52,-12,9,6.0,Ireland,Europe
+52,-10,5,4.2,Ireland,Europe
+52,-8,7,3.0,Ireland,Europe
+52,-4,14,3.64,United Kingdom,Europe
+52,-2,31,4.03,United Kingdom,Europe
+52,0,2,3.5,United Kingdom,Europe
+52,4,19,3.58,Netherlands,Europe
+52,6,38,3.76,Germany,Europe
+52,8,191,3.35,Germany,Europe
+52,10,8,3.25,Germany,Europe
+52,12,31,4.13,Germany,Europe
+52,14,1,4.0,Poland,Europe
+52,16,3,5.0,Poland,Europe
+52,18,27,3.0,Poland,Europe
+52,20,76,3.13,Poland,Europe
+52,22,1,2.0,Poland,Europe
+52,38,1,4.0,Russia,Europe
+52,68,1,1.0,Kazakhstan,Asia
+52,70,1,0.0,Kazakhstan,Asia
+52,92,1,0.0,Russia,Europe
+54,-106,2,0.0,Canada,North America
+54,-8,3,4.67,United Kingdom,Europe
+54,-6,4,3.25,United Kingdom,Europe
+54,-4,10,5.4,United Kingdom,Europe
+54,-2,5,3.0,United Kingdom,Europe
+54,8,2,3.5,Denmark,Europe
+54,10,8,5.38,Denmark,Europe
+54,12,18,4.5,Germany,Europe
+54,14,1,4.0,Poland,Europe
+54,18,4,2.5,Poland,Europe
+54,172,1,3.0,United States - Illinois,North America
+56,-114,1,3.0,United States - Alabama,North America
+56,-84,1,0.0,Canada,North America
+56,-78,1,2.0,United States,North America
+56,-66,1,1.0,Canada,North America
+56,-6,5,4.6,United Kingdom,Europe
+56,10,7,3.57,Sweden,Europe
+56,12,1,6.0,Denmark,Europe
+56,14,3,5.0,Sweden,Europe
+56,24,1,0.0,Latvia,Europe
+56,26,1,6.0,Estonia,Europe
+56,38,1,0.0,Russia,Europe
+56,44,1,7.0,Russia,Europe
+56,60,1,1.0,Russia,Europe
+56,76,1,4.0,Russia,Europe
+58,-152,1,5.0,United States - Alaska,North America
+58,-136,1,3.0,United States - Alaska,North America
+58,-4,1,6.0,United Kingdom,Europe
+58,8,8,3.12,Norway,Europe
+58,10,12,3.33,Norway,Europe
+58,12,11,5.91,Sweden,Europe
+58,14,2,3.5,Sweden,Europe
+58,16,9,2.67,Sweden,Europe
+58,18,6,3.33,Sweden,Europe
+58,24,2,4.5,Estonia,Europe
+58,26,26,4.0,Estonia,Europe
+58,30,1,7.0,Russia,Europe
+60,-150,7,4.14,United States - Alaska,North America
+60,-148,1,3.0,United States - Alabama,North America
+60,-146,2,3.0,United States - Alaska,North America
+60,-136,9,3.89,Canada,North America
+60,4,9,5.44,Norway,Europe
+60,8,1,6.0,Norway,Europe
+60,24,2,2.5,Finland,Europe
+60,26,2,1.0,Finland,Europe
+62,108,1,0.0,Russia,Europe
+64,-148,3,0.0,United States - Alaska,North America
+64,-22,2,3.0,Iceland,Europe
+76,-88,1,5.0,Canada,North America
+76,-70,1,2.0,United States - Illinois,North America
+76,-28,1,4.0,Costa Rica,North America
+76,-24,1,3.0,Greenland,North America
+78,-52,1,0.0,United States - Missouri,North America
+78,-50,1,7.0,Greenland,North America
+78,-4,1,0.0,United States - Alabama,North America
+78,82,1,1.0,Macedonia,Europe
+80,-102,1,0.0,United States - Pennsylvania,North America
+80,-56,1,3.0,United States - Pennsylvania,North America
+80,-20,1,7.0,Greenland,North America
+80,-2,1,3.0,Canada,North America
+80,58,1,0.0,Russia,Europe
+84,-48,1,0.0,Greenland,North America
+84,112,1,0.0,Czech Republic,Europe
+86,100,1,5.0,Estonia,Europe
+88,-128,1,4.0,United States - Texas,North America
+88,78,1,3.0,Puerto Rico,North America
+88,144,1,0.0,Costa Rica,North America
