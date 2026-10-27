@@ -124,9 +124,12 @@ The colour follows the continent, so filtering never repaints a point.
   and makes Reset send that double-click. `width: "container"` works on each
   view in a `vconcat` but autosize `fit` does not, so the spec sets
   `autosize: pad`.
-- Ridgeline 1.2, Lorenz curve 2.1 and dumbbell 3.3 use `height: "container"` and
-  `class="chart fill"`. Each takes the height left in its card, so it lines up
-  with the taller card beside it (1.3, 2.2, 3.2).
+- Ridgeline 1.2, Lorenz curve 2.1, dumbbell 3.3 and tile map 4.2 use
+  `height: "container"` and `class="chart fill"`. Each takes the height left in
+  its card, so it lines up with the taller card beside it (1.3, 2.2, 3.2, 4.1).
+  The tile map sizes its tiles from the space (`tile`, `tile_h` in the spec):
+  as wide as 12 columns allow, and up to 20% taller than wide to use spare
+  height, with every state the same area.
 - Radial chart 3.2 has a Year menu (`radial_year`, bound to `#radial-binds`):
   all five rings, or one year's ring alone. The radius scale and the year
   colours stay fixed, so a ring keeps its size and colour. Shower labels come

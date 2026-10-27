@@ -104,6 +104,15 @@ p { margin: 0; }
 
 .lede, .closing { color: var(--ink); }
 
+/* headline figures in intros, captions and the findings list: one or two per
+   paragraph, so the numbers that carry each point can be skimmed */
+.key {
+  font-weight: 700;
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
 /* ---- closing: paragraph | one finding per section ---- */
 .closing-block {
   border-top: 1px solid var(--border);
